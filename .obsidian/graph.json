@@ -1,0 +1,22 @@
+{
+  "collapse-filter": false,
+  "search": "-path:\"Programming for Bioinformatics\" -path:\"Quantitative Biology\" -path:\"Molecular Structural Biology\"",
+  "showTags": false,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -0.2,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.118245442708333,
+  "repelStrength": 12.4788411458333,
+  "linkStrength": 0.67724609375,
+  "linkDistance": 185,
+  "scale": 0.05117065160730357,
+  "close": true
+}
