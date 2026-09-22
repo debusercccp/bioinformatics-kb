@@ -1,0 +1,30 @@
+/* ================================================================
+ *  Oscura corsi non di interesse nel File Explorer
+ *  - Programming for Bioinformatics
+ *  - Quantitative Biology
+ *  - Molecular Structural Biology
+ *  Copre sia la cartella del corso sia tutte le Lezioni al suo interno,
+ *  perché il match è su sottostringa del data-path.
+ *  ================================================================ */
+
+.nav-folder-title[data-path*="Programming for Bioinformatics"],
+.nav-file-title[data-path*="Programming for Bioinformatics"],
+.nav-folder-title[data-path*="Quantitative Biology"],
+.nav-file-title[data-path*="Quantitative Biology"],
+.nav-folder-title[data-path*="Molecular Structural Biology"],
+.nav-file-title[data-path*="Molecular Structural Biology"] {
+    opacity: 0.32;
+    filter: grayscale(70%);
+    transition: opacity 0.15s ease, filter 0.15s ease;
+}
+
+/* Torna leggibile al passaggio del mouse, per poterle comunque aprire */
+.nav-folder-title[data-path*="Programming for Bioinformatics"]:hover,
+.nav-file-title[data-path*="Programming for Bioinformatics"]:hover,
+.nav-folder-title[data-path*="Quantitative Biology"]:hover,
+.nav-file-title[data-path*="Quantitative Biology"]:hover,
+.nav-folder-title[data-path*="Molecular Structural Biology"]:hover,
+.nav-file-title[data-path*="Molecular Structural Biology"]:hover {
+    opacity: 1;
+    filter: none;
+}

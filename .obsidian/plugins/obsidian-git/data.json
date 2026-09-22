@@ -1,0 +1,9 @@
+{
+  "basePath": "",
+  "commitMessage": "bioinfo backup: {{date}}",
+  "autoCommitMessage": "bioinfo backup: {{date}}",
+  "autoSaveInterval": 10,
+  "autoPullOnBoot": true,
+  "autoPullInterval": 10,
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss"
+}
