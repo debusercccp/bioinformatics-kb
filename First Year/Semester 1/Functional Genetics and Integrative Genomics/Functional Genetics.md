@@ -52,6 +52,26 @@ Corso: Laurea Magistrale in Molecular and Computational Biology (cod. 6254).
 
 Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/558801)
 
+## Appunti (MCB)
+
+Fonte: `MCB/FGIG/FG/FunctionalGen_RS.docx` — 15 note collegate in ordine.
+
+1. [[FG 01 - What is functional genomics + Genomic equivalence – the premise of the discipline|What is functional genomics + Genomic equivalence – the premise of the discipline]]
+2. [[FG 02 - Why function requires perturbation + Forward genetics|Why function requires perturbation + Forward genetics]]
+3. [[FG 03 - Reverse genetics + Gene mutation – molecular consequences (what is the nature of the allele)|Reverse genetics + Gene mutation – molecular consequences (what is the nature of the allele)]]
+4. [[FG 04 - Effects of mutations on gene function – Müller's classification|Effects of mutations on gene function – Müller's classification]]
+5. [[FG 05 - Where do we measure gene function|Where do we measure gene function]]
+6. [[FG 06 - What is a model organism|What is a model organism]]
+7. [[FG 07 - Why comparison works – the evolutionary basis|Why comparison works – the evolutionary basis]]
+8. [[FG 08 - Animal models in biomedical research|Animal models in biomedical research]]
+9. [[FG 09 - Introduction to Caenorhabditis elegans|Introduction to Caenorhabditis elegans]]
+10. [[FG 10 - Caenorhabditis elegans · Genetics of C. elegans – overview + Forward genetics in C. elegans|Caenorhabditis elegans · Genetics of C. elegans – overview + Forward genetics in C. elegans]]
+11. [[FG 11 - Caenorhabditis elegans · Reverse genetics in C. elegans|Caenorhabditis elegans · Reverse genetics in C. elegans]]
+12. [[FG 12 - Drosophila melanogaster · The fly as a model organism|Drosophila melanogaster · The fly as a model organism]]
+13. [[FG 13 - Drosophila melanogaster · Forward genetics in Drosophila|Drosophila melanogaster · Forward genetics in Drosophila]]
+14. [[FG 14 - Drosophila melanogaster · Reverse genetics in Drosophila|Drosophila melanogaster · Reverse genetics in Drosophila]]
+15. [[FG 15 - Danio rerio (zebrafish)|Danio rerio (zebrafish)]]
+
 ## Exam
 
 ⚠️ Modalità d'esame non ancora definita nella scheda ufficiale — verrà comunicata dai docenti all'inizio del corso ("The examination procedures will be discussed with the students at the beginning of the course"). Uso di IA: consentito solo in modo limitato, dichiarato e non sostanziale (es. riassumere/riformulare); non consentito per completare parti sostanziali della valutazione.

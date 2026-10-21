@@ -65,6 +65,13 @@ Two kinds of links do two different jobs:
 
   Use them to connect related/prerequisite courses and to link grouping nodes to their courses. The **Backlinks** pane shows every note pointing here, so links are bidirectional for free.
 
+## Appunti (second brain)
+Study notes imported from `MCB/*.docx` are split into **atomic notes** (one topic each) inside `<Course>/Appunti/`.
+- Tags `#note` + course key (`#aml`, `#mbd`, `#bfb`, `#fg`, `#ig`, `#sataumv`) — they are **not** `#course`, so the Dashboard is untouched.
+- Name: `<KEY> NN - Title`. Each note has a prev / ↑ module / next bar, and the module note (`## Appunti (MCB)`) holds the ordered index.
+- `## Collegamenti` at the bottom links related concepts **across courses** (e.g. gradient descent in AML ↔ multivariable calculus in MBD).
+- Images live in `_attachments/` (`KEY-imageN.ext`).
+
 ## Special cases
 - **Integrated courses (I.C.)** — e.g. *Introduction to Computing in Biology*, *Programming for Bioinformatics*: each **module** is its own `#course` note (with its own `code`/`cfu`); set `area: … (I.C.)`.
 - **Electives / group choices** — create a `#course` note only for the course you actually chose, with `required: false` (it lands in the "🟡 Still to choose" view).

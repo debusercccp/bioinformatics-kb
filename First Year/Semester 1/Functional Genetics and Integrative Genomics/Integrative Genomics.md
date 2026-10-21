@@ -51,6 +51,16 @@ Corso: Laurea Magistrale in Molecular and Computational Biology (cod. 6254).
 
 Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/558801)
 
+## Appunti (MCB)
+
+Fonte: `MCB/FGIG/IG/IntegrativeGen_RS.docx` — 5 note collegate in ordine.
+
+1. [[IG 01 - Sources … Enhancer–promoter crosstalk|Sources … Enhancer–promoter crosstalk]]
+2. [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family]]
+3. [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter]]
+4. [[IG 04 - Genomic imprinting + Enhancer RNAs (eRNAs)|Genomic imprinting + Enhancer RNAs (eRNAs)]]
+5. [[IG 05 - Chromatin and remodelling + Cautions and corrections to keep in mind|Chromatin and remodelling + Cautions and corrections to keep in mind]]
+
 ## Exam
 
 ⚠️ Modalità d'esame non ancora definita nella scheda ufficiale — verrà comunicata dai docenti all'inizio del corso ("The examination procedures will be discussed with the students at the beginning of the course"). Uso di IA: consentito solo in modo limitato, dichiarato e non sostanziale (es. riassumere/riformulare); non consentito per completare parti sostanziali della valutazione.

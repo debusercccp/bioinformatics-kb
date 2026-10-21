@@ -59,6 +59,16 @@ Nessuna sezione Testi/Bibliografia nella scheda ufficiale — nessun libro di te
 
 Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2026/558807)
 
+## Appunti (MCB)
+
+Fonte: `MCB/BFB/Bioinformatics_For_Biology.docx` — 5 note collegate in ordine.
+
+1. [[BFB 01 - Introduction to bioinformatics|Introduction to bioinformatics]]
+2. [[BFB 02 - The practical hardware needs of biology (Chapter I)|The practical hardware needs of biology (Chapter I)]]
+3. [[BFB 03 - Access to sequence data and related information (Chapter II)|Access to sequence data and related information (Chapter II)]]
+4. [[BFB 04 - Pairwise sequence alignment (Chapter III)|Pairwise sequence alignment (Chapter III)]]
+5. [[BFB 05 - Basic Local Alignment Search Tool – BLAST (Chapter IV)|Basic Local Alignment Search Tool – BLAST (Chapter IV)]]
+
 ## Exam
 
 **Scritto (quiz).** Quiz a scelta multipla sugli argomenti del corso. Uso di IA vietato in sede d'esame.
