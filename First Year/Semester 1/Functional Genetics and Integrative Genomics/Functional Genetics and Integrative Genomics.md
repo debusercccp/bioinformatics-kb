@@ -21,7 +21,7 @@ tags: [course, hub]
 - [[Functional Genetics]]
 - [[Integrative Genomics]]
 
-Docenti: Giovanni Perini (Modulo 1, Functional Genetics, dal 30/09/2026 al 30/10/2026), Nicola Facchinello (Modulo 2, Integrative Genomics, dal 02/10/2026 al 13/01/2027). Calendario lezioni completo nelle singole pagine modulo.
+Docenti: Giovanni Perini (Modulo 1, Functional Genetics, dal 30/09/2026 al 30/10/2026), Nicola Facchinello (Modulo 2, Integrative Genomics, dal 02/10/2026 al 13/01/2027).
 
 **Modulo 1 — Functional Genetics**
 1. Introduzione alla genetica/genomica funzionale (concetto di funzione genica e perturbazioni genetiche)

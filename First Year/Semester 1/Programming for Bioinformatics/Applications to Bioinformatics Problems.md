@@ -18,7 +18,7 @@ tags: [course]
 
 ## Lectures
 
-Docente: Matteo Manfredi. Dal 11/12/2026 al 26/01/2027.
+Docente: Matteo Manfredi.
 
 Obiettivi: applicare tecniche di programmazione e calcolo computazionale per risolvere problemi bioinformatici, inclusa la scrittura di script Python per l'analisi di dati biologici, lo sviluppo di soluzioni computazionali e l'implementazione di metodi rilevanti per i workflow bioinformatici.
 

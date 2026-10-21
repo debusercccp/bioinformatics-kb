@@ -18,7 +18,7 @@ tags: [course]
 
 ## Lectures
 
-Docente: Ivan Lanese. Dal 29/10/2026 al 21/12/2026.
+Docente: Ivan Lanese.
 
 Il corso è composto da 2 moduli:
 1. Programmazione Python: variabili, espressioni e istruzioni, funzioni, condizionali, iterazione, stringhe, liste, tuple, dizionari, file, ricorsione, programmazione orientata agli oggetti

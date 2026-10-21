@@ -17,7 +17,6 @@ tags: [course]
 
 > [!info] Modulo di [[Applied Machine Learning]]
 
-
 ## Lectures
 
 Docente: Luca Clissa (AML-Advanced).
@@ -32,22 +31,11 @@ Docente: Luca Clissa (AML-Advanced).
 - Cenni di Quantum Machine Learning
 - Hands-on su dataset benchmark (IRIS, MNIST) per ciascun argomento
 
-### Calendario lezioni
-
-- [[Lezioni/Applied Machine Learning (AML-Advanced)/Lezione 01 - 2026-12-14|Lezione 01]] - 14/12/2026 (Lunedì) 10:00-13:00
-- [[Lezioni/Applied Machine Learning (AML-Advanced)/Lezione 02 - 2027-01-12|Lezione 02]] - 12/01/2027 (Martedì) 10:00-13:00
-- [[Lezioni/Applied Machine Learning (AML-Advanced)/Lezione 03 - 2027-01-13|Lezione 03]] - 13/01/2027 (Mercoledì) 14:00-17:00
-- [[Lezioni/Applied Machine Learning (AML-Advanced)/Lezione 04 - 2027-01-15|Lezione 04]] - 15/01/2027 (Venerdì) 10:00-13:00
-- [[Lezioni/Applied Machine Learning (AML-Advanced)/Lezione 05 - 2027-01-18|Lezione 05]] - 18/01/2027 (Lunedì) 14:00-17:00
-- [[Lezioni/Applied Machine Learning (AML-Advanced)/Lezione 06 - 2027-01-19|Lezione 06]] - 19/01/2027 (Martedì) 09:00-12:00
-- [[Lezioni/Applied Machine Learning (AML-Advanced)/Lezione 07 - 2027-01-21|Lezione 07]] - 21/01/2027 (Giovedì) 14:00-18:00
-- [[Lezioni/Applied Machine Learning (AML-Advanced)/Lezione 08 - 2027-01-25|Lezione 08]] - 25/01/2027 (Lunedì) 10:00-13:00
-
 ## Notes
 
 Bibliografia aggiornata di anno in anno e fornita alla prima lezione (materia in rapida evoluzione). Tutti i materiali (slide, notebook) disponibili in un repository digitale dedicato.
 
-Corso valido anche per la LM in Bioinformatics (cod. 6767). Dal 13/10/2026 al 25/01/2027.
+Corso valido anche per la LM in Bioinformatics (cod. 6767).
 
 Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2026/558922)
 

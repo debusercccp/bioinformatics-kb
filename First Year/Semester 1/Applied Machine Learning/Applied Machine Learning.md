@@ -17,7 +17,7 @@ tags: [course, hub]
 > [!info] Corso composto da 2 moduli/insegnamenti integrati. Vedi le singole pagine per lezioni, argomenti, note ed esame.
 
 ## Moduli
-Docenti: Daniele Bonacorsi (Modulo 1, AML-Basic), Luca Clissa (Modulo 2, AML-Advanced). Dal 13/10/2026 al 25/01/2027. Calendario lezioni completo nelle singole pagine modulo.
+Docenti: Daniele Bonacorsi (Modulo 1, AML-Basic), Luca Clissa (Modulo 2, AML-Advanced).
 
 - [[Applied Machine Learning (AML-Basic)]]
 - [[Applied Machine Learning (AML-Advanced)]]
