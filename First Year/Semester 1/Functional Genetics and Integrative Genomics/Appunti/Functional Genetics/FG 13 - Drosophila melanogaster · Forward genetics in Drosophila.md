@@ -307,7 +307,9 @@ The result is that **new mutations are induced by transposition of the single P 
 
 ![[FG-image32.png|543]]
 
-![[FG-image33.png|335]]**How the flanking gene is identified.** Two classic methods:
+![[FG-image33.png|335]]
+
+**How the flanking gene is identified.** Two classic methods:
 
 - **Plasmid rescue.** The P construct is built to contain a **bacterial origin of replication (*ori*)** and a **resistance gene (*kan*ʳ)**. Genomic DNA is extracted and **digested with XbaI**; the fragments are **circularised with DNA ligase**; competent *E. coli* are transformed, so that only the fragments carrying *ori* and *kan*ʳ — that is, the element **plus its genomic flanks** — produce colonies; the plasmid DNA is recovered and characterised by **restriction digestion and sequencing**.
 
