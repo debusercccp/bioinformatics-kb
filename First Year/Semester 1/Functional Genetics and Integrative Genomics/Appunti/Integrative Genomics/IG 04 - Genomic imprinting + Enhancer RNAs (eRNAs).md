@@ -63,11 +63,11 @@ We already must figure out why lncRNAs are in the cytoplasm: most of the time, w
 ### How can we prove that eRNAs are important?
 
 - **siRNA:** small RNA that forms a dsRNA targeting RNA, loaded into the **RISC (RNA-induced silencing complex)** ⇒ not so efficient, because siRNAs remain in the cytoplasm whereas eRNAs are mostly nuclear.
-- **Cas13**, which, unlike Cas9, targets RNA.
+- ![[IG-image12.png|271]]**Cas13**, which, unlike Cas9, targets RNA.
 
 **How Cas13 knocks down an eRNA** (diagram of CRISPR-Cas13):
 
-1.  ![[IG-image12.png|271]]A CRISPR array is transcribed into a pre-crRNA (repeats and spacers).
+1.  A CRISPR array is transcribed into a pre-crRNA (repeats and spacers).
 2.  Cas13 processes it into mature crRNAs, each carrying one spacer.
 3.  The Cas13–crRNA complex scans RNA and base-pairs through the spacer with a complementary target RNA.
 4.  Target recognition activates the RNase domains, which cut the target. Both cytoplasmic RNA and targeted RNA are cleaved.

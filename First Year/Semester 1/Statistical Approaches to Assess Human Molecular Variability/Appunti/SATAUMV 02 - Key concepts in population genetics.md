@@ -12,7 +12,7 @@ tags: [note, sataumv]
 
 ## 2.1 Definition and aims
 
-**Population genetics** investigates biological inheritance patterns and changes in genetic composition within and among populations, in order to study the processes that shape and modify genetic variation. The perspective shifts from single organisms to **large groups of individuals**: populations are the fundamental units of analysis, and changes in **genetic composition** are examined over time and space.
+**Population genetics** investigates biological inheritance patterns and changes in genetic composition within and among populations, to study the processes that shape and modify genetic variation. The perspective shifts from single organisms to **large groups of individuals**: populations are the fundamental units of analysis, and changes in **genetic composition** are examined over time and space.
 
 Typical questions: how does genetic variation arise? How is it distributed within and among populations? How does it change over time and space? Which processes generated it?
 

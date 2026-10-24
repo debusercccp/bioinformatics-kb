@@ -39,7 +39,7 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/it/studiare
 
 Fonte: `MCB/FGIG/IG/IntegrativeGen_RS.docx` — 5 note collegate in ordine.
 
-1. [[IG 01 - Sources … Enhancer–promoter crosstalk|Sources … Enhancer–promoter crosstalk]]
+1. [[IG 01 - Lecture notes – key facts … Enhancer–promoter crosstalk|Lecture notes – key facts … Enhancer–promoter crosstalk]]
 2. [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family]]
 3. [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter]]
 4. [[IG 04 - Genomic imprinting + Enhancer RNAs (eRNAs)|Genomic imprinting + Enhancer RNAs (eRNAs)]]

@@ -64,7 +64,7 @@ A **SNP-chip microarray** uses DNA probes fixed on a solid matrix to genotype mi
 
 SNP-chip genotypes are usually stored in **PLINK** format, which exists in a **human-readable (text)** version and in a **binary** version.
 
-![[SATAUMV-image24.png|615]]
+![[SATAUMV-image24.png|470]]
 
 The **.ped** file has one row per sample and a variable number of columns. The first six describe the individual: **Family ID**, **Sample ID** (the individual's identifier within the family), **paternal ID** (father, 0 if unknown), **maternal ID** (mother, 0 if unknown), **sex** (1 = male, 2 = female, 0 = unknown) and **phenotype** (−9 = missing). From column 7 onwards, each SNP takes **two columns**, one for each allele of the genotype (e.g. G G, A G). A genome-wide chip therefore gives about 10² rows (one per sample) and 10⁵–10⁶ SNPs, so roughly twice that number of genotype columns.
 

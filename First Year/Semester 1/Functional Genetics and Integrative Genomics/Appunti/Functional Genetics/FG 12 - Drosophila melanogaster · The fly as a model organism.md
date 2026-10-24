@@ -32,7 +32,7 @@ The lecture lists seven reasons:
 
 ### Life cycle
 
-At **25 °C** the whole cycle takes about **9–10 days**: fertilisation and egg deposition, then embryogenesis (roughly 24 h), three larval instars (L1, L2, L3), pupation at about 5 days, and eclosion (*sfarfallamento*) of the adult at about 9 days. Females become sexually mature at about 12 h after eclosion, males at about 9–45 h.
+At **25 °C** the whole cycle takes about **9–10 days**: fertilization and egg deposition, then embryogenesis (roughly 24 h), three larval instars (L1, L2, L3), pupation at about 5 days, and eclosion (*sfarfallamento*) of the adult at about 9 days. Females become sexually mature at about 12 h after eclosion, males at about 9–45 h.
 
 Embryogenesis itself is the part that matters for the screens described later. **Drosophila eggs are polarised** (anterior–posterior and dorsal–ventral axes are already defined in the egg), and development proceeds through:
 
@@ -44,7 +44,7 @@ Embryogenesis itself is the part that matters for the screens described later. *
 
 ![[FG-image21.png|349]]
 
-*Further detail:* the syncytial phase is exactly what makes the fly so convenient experimentally — until cellularisation, injected molecules (RNA, protein, dsRNA) diffuse through the whole embryo, and transcription factors can act as true **morphogen gradients** across a shared cytoplasm.
+*Further detail:* the syncytial phase is exactly what makes the fly so convenient experimentally — until cellularisation, injected molecules (RNA, protein, dsRNA) diffuse through the **whole embryo**, and transcription factors can act as true **morphogen gradients** across a shared cytoplasm.
 
 ### Polytene chromosomes
 

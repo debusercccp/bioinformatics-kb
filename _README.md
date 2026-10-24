@@ -72,6 +72,12 @@ Study notes imported from `MCB/*.docx` are split into **atomic notes** (one topi
 - `## Collegamenti` at the bottom links related concepts **across courses** (e.g. gradient descent in AML ↔ multivariable calculus in MBD).
 - Images live in `_attachments/` (`KEY-imageN.ext`).
 
+### Updating after editing a docx
+From the vault folder run `.scripts/update.sh`: it re-imports only the `MCB/*.docx` changed since the last import (hashes in `.scripts/last-import.sha256`). Pass keys (`.scripts/update.sh FG IG`) or `--all` to force. Then check `git status`.
+- ⚠️ Hand edits inside `Appunti/` notes are **overwritten**: fix the docx instead, or add a recurring fix to `FIXES` in `.scripts/build.py`.
+- Cross-course links are kept in `.scripts/links.py` (`REL`, by note code like `AML 03`).
+- Needs `python3`, `soffice` and `magick`; pandoc is installed automatically under `~/.cache/bioinformatics-import` if missing.
+
 ## Special cases
 - **Integrated courses (I.C.)** — e.g. *Introduction to Computing in Biology*, *Programming for Bioinformatics*: each **module** is its own `#course` note (with its own `code`/`cfu`); set `area: … (I.C.)`.
 - **Electives / group choices** — create a `#course` note only for the course you actually chose, with `required: false` (it lands in the "🟡 Still to choose" view).

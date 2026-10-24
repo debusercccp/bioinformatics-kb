@@ -40,11 +40,11 @@ TADs impose a **preferential, not absolute, insulation** and cannot be the only 
 
 Integrated model from the lecture and **\[SF19\]** (“selecting – facilitating – specifying”).
 
-- **Selecting.** Pioneer TFs bind compacted chromatin, chromatin remodelers (SWI/SNF) open it, histone methyltransferases deposit H3K4me1, and p300/CBP add H3K27ac. A cell-type-specific subset of enhancers becomes accessible and “active”.
-- ![[IG-image9.png|231]]**Recruitment.** Cell-type TFs bind the open enhancer and recruit coactivators (Mediator, p300/CBP, BRD4 which reads H3K27ac) and **RNA Pol II**.
+- ![[IG-image9.png|231]]**Selecting.** Pioneer TFs bind compacted chromatin, chromatin remodelers (SWI/SNF) open it, histone methyltransferases deposit H3K4me1, and p300/CBP add H3K27ac. A cell-type-specific subset of enhancers becomes accessible and “active”.
+- **Recruitment.** Cell-type TFs bind the open enhancer and recruit coactivators (Mediator, p300/CBP, BRD4 which reads H3K27ac) and **RNA Pol II**.
 - **Facilitating.** 3D genome structure reduces the search space: compartments (A/B), TADs and CTCF–cohesin loops, relocation to transcription factories/phase-separated condensates (BRD4 and MED1 form condensates at super-enhancers).
 - **Loop formation.** Cohesin is loaded by NIPBL and extrudes a loop until it meets CTCF sites in convergent orientation; WAPL unloads it.
-- **Specifying.** Proteins bound at enhancer and promoter (Mediator, YY1 homodimers, LDB1) stabilise the chance encounter into a preferential contact. No “postcode” is predicted.
+- **Specifying.** Proteins bound at enhancer and promoter (Mediator, YY1 homodimers, LDB1) stabilize the chance encounter into a preferential contact. No “postcode” is predicted.
 - **Output.** Contact brings enhancer-bound factors to the promoter: assembly of the transcription machinery (initiation), higher burst frequency, and **release of paused Pol II** (P-TEFb phosphorylates DSIF and NELF, NELF dissociates, Pol II enters elongation).
 
 **Points to remember:** contact frequency alone does not prove regulation; contacts may “prime” genes and a second trigger (e.g. p53 binding, eRNA production, stalled Pol II release) can be required.

@@ -66,13 +66,13 @@ Forward genetics goes **from phenotype to gene**: the whole animal is mutagenise
 
 1.  **Complementation analysis:** Cross different mutant strains to define whether they affect the same gene (non-complementation) or different genes (complementation).
 
-**How to read it:** cross two recessive mutants. If m1/m2 is **mutant** → **same gene** (neither chromosome provides a working copy). If m1/m2 is **wild type** → **different genes** (each parent supplies the working copy the other lacks).
+> **How to read it:** cross two recessive mutants. If m1/m2 is **mutant** → **same gene** (neither chromosome provides a working copy). If m1/m2 is **wild type** → **different genes** (each parent supplies the working copy the other lacks).
 
 2.  **Mapping and cloning of the gene:** Use classical genetic mapping or molecular techniques to identify the mutated gene.
 
 3.  **Transformation:** Perform functional validation of the candidate gene through **rescue experiments** (restoring the wild-type phenotype with a wild-type gene copy) or expression studies.
 
-**Key point:** **rescue is the definitive proof**. If adding a wild-type copy of the candidate gene restores the normal phenotype, it is the right gene.
+> **Key point:** **rescue is the definitive proof**. If adding a wild-type copy of the candidate gene restores the normal phenotype, it is the right gene.
 
 4.  **Microinjection:** Direct delivery of cloned DNA with a fine glass needle into *C. elegans* gonads to generate transgenic lines.
 

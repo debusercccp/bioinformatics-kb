@@ -104,7 +104,7 @@ Approximate dates on the migration map:
 | Arrival in Taiwan / Philippines region (Austronesian expansion) | About 3,500 |
 | Arrival in Polynesia | About 2,500 |
 
-**Serial founder model.** A starting population with high diversity gives rise to a small founder population with reduced diversity. That founder population expands, and from it a second small founder population forms, with a further reduction in diversity. Repeated over the course of the expansion, this leaves less diversity in populations that are farther from Africa.
+**Serial founder model.** A starting population with **high diversity** gives rise to a small founder population with **reduced diversity**. That founder population expands, and from it a second small founder population forms, with a further reduction in diversity. Repeated over the course of the expansion, this leaves less diversity in populations that are farther from Africa.
 
 **Other factors shaping current variation.** Current patterns of variability reflect **demographic** processes, **adaptive** processes and **cultural** factors:
 

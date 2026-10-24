@@ -116,9 +116,11 @@ Reverse genetics goes **from gene to phenotype**: a known gene is altered on pur
 
 - **B. Translational reporters (promoter** $\rightarrow$ **ATG–\[Exons/Introns fused to gfp\]–STOP** $\rightarrow$ **3' UTR):** The reporter gene is fused **in-frame** with the coding sequence of the gene of interest, producing a chimeric fusion protein that reveals subcellular protein localization.
 
-**In short:** **transcriptional reporter** → when and where the gene is transcribed; **translational reporter** → where the protein is inside the cell.
-
 > ![[FG-image20.png|481]]
+
+**In short:** **transcriptional reporter** → when and where the gene is transcribed;
+
+**translational reporter** → where the protein is inside the cell.
 
 **Applications and Nobel recognition:**
 
@@ -149,6 +151,8 @@ Reverse genetics goes **from gene to phenotype**: a known gene is altered on pur
 - **Fluorescence imaging across aging (Panel A, days 3, 5, 11, 13, 16):** Control worms expressing **YFP** alone show diffuse fluorescence throughout aging, whereas worms expressing $\alpha\text{-syn-YFP}$ progressively accumulate discrete fluorescent aggregates with age.
 
 - **Western blot analysis (Panels B & C, days 3, 5, 11, 17):** Immunoblotting with **LB509** (anti-$\alpha$-synuclein) and **Anti-GFP** antibodies in $\alpha\text{S}$ transgenic worms compared to **N2** wild-type controls and **YFP** controls (using $\alpha$**-actin** as a loading control) detects intact $\alpha\text{S-YFP}$ and reveals age-dependent **degradation/truncation** products at day 17.
+
+“The **green fluorescent protein** (**GFP**) is a [protein](https://en.wikipedia.org/wiki/Protein) that exhibits green [fluorescence](https://en.wikipedia.org/wiki/Fluorescence) when exposed to light in the blue to [ultraviolet](https://en.wikipedia.org/wiki/Ultraviolet) range” — From Wikipedia, The Free Encyclopedia \<3
 
 ---
 > [[FG 10 - Caenorhabditis elegans · Genetics of C. elegans – overview + Forward genetics in C. elegans|← Caenorhabditis elegans · Genetics of C. elegans – overview + Forward genetics in C. elegans]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 12 - Drosophila melanogaster · The fly as a model organism|Drosophila melanogaster · The fly as a model organism →]]

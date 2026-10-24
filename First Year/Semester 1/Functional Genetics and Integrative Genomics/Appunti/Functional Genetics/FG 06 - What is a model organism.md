@@ -70,7 +70,7 @@ The criteria conflict, so **every model is a compromise**:
 
 ### What the genomes of model organisms taught us
 
-Sequencing showed that the number of **completely sequenced genomes** has grown exponentially (charts from 2009 and up to 2025, on a logarithmic scale, with bacteria, eukaryotes and archaea; the 2011 NCBI table shows more than a thousand complete genomes). Comparing genomes gave an important result: a large fraction of human genes has a homologue in the model organisms. Percentages of **human genes also present in other species**:
+Sequencing showed that the number of **completely sequenced genomes** has grown exponentially (charts from 2009 and up to 2025, on a logarithmic scale, with bacteria, eukaryotes and archaea; the 2011 NCBI table shows more than a thousand complete genomes). Comparing genomes gave an important result: a large fraction of human genes has **homologue** in the model organisms. Percentages of **human genes also present in other species**:
 
 - about **30%** in *S. cerevisiae*;
 

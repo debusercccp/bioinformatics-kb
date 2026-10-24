@@ -20,16 +20,14 @@ tags: [note, ig]
 
 **Gal4**: one of the major TFs in yeast.
 
-![[IG-image13.jpeg|188]]
-
 - *Gal4/PIC reconstitution.* In vitro steps in the figure: (i) **Gal4 binds its sites** upstream of a TATA promoter; (ii) incubate with Gal4 and TFIID (TBP); (iii) wash; (iv) add the other factors and RNA polymerase; (v) add NTPs; (vi) assay the transcript by primer extension. Reading: pre-binding by Gal4 is needed to recruit the machinery, and Gal4 also supports **re-initiation** (the scaffold left on the promoter fires again).
-- *Hierarchy of packaging.* DNA double helix (2 nm) → nucleosome “beads on a string” (~11 nm) → 30-nm fibre → ~300-nm looped fibre → ~700-nm condensed fibre → ~1,400-nm metaphase chromosome.
+- ![[IG-image13.jpeg|188]]*Hierarchy of packaging.* DNA double helix (2 nm) → nucleosome “beads on a string” (~11 nm) → 30-nm fibre → ~300-nm looped fibre → ~700-nm condensed fibre → ~1,400-nm metaphase chromosome.
 - *Nucleosome.* Core octamer: two each of H2A, H2B, H3, H4. Linker histone H1 seals the entry/exit DNA; the figure shows fully folded, partially folded and unfolded fibre states. ~2 m of DNA per diploid cell must fit a ~90 fL nucleus (~6 µm diameter).
 - *Structural methods.* A cryo-EM slide and EM class averages with angular reconstitution of the 70S ribosome (*Structure* 1995) show how large complexes such as nucleosomes and remodellers are resolved. They are method illustrations, not part of the regulatory argument.
 
 Naked DNA does not exist in vivo. And the chromatin is organized in fractals.
 
-> “The Gal4 transcription factor is a positive regulator of gene expression of galactose-induced genes. This protein represents a large fungal family of transcription factors, Gal4 family, which includes over 50 members in the yeast *S. cerevisiae* e.g. Oaf1, Pip2, Pdr1, Pdr3, Leu3.” — From Wikipedia, The Free Encyclopedia ([Gal4 transcription factor](https://en.wikipedia.org/wiki/Gal4_transcription_factor))
+> “The Gal4 transcription factor is a positive regulator of gene expression of galactose-induced genes. This protein represents a large fungal family of transcription factors, Gal4 family, which includes over 50 members in the yeast *S. cerevisiae* e.g. Oaf1, Pip2, Pdr1, Pdr3, Leu3.” — From Wikipedia, The Free Encyclopedia \<3
 
 ### The mechanism of mating-type switching (gene conversion)
 

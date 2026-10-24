@@ -8,7 +8,21 @@ tags: [note, ig]
 
 > [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family →]]
 
-# Sources
+# Lecture notes – key facts
+
+**Integrative Genomics** = How does the genome shape the phenotype?
+
+- The first eukaryotic RNA Pol II structure was solved from *S. cerevisiae* (Kornberg, Nobel 2006); today bacterial and human RNA pol structures are also available
+- Humans have ≈ 20,000 genes and 10<sup>14</sup> cells
+- *C. elegans* has ≈ 20,000 protein-coding genes and 959 somatic cells (adult hermaphrodite; invariant cell lineage)
+- **Surfomics** = all the proteins on the plasma membrane
+- The majority of genes in *C. elegans* go through **trans-splicing**
+- Every time there's a level of complexity, there's also a level of control
+- **Nonsense-mediated decay** = control pathway that finds and destroys mRNAs with premature stop codons
+- ~170 known types of RNA modifications (epitranscriptome)
+- IG combines bioinformatics with genomics
+
+## Sources
 
 Papers behind this:
 

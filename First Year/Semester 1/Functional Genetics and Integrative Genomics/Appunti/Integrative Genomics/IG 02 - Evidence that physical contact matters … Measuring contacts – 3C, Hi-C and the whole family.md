@@ -6,7 +6,7 @@ order: 2
 tags: [note, ig]
 ---
 
-> [[IG 01 - Sources … Enhancer–promoter crosstalk|← Sources … Enhancer–promoter crosstalk]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter →]]
+> [[IG 01 - Lecture notes – key facts … Enhancer–promoter crosstalk|← Lecture notes – key facts … Enhancer–promoter crosstalk]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter →]]
 
 # Evidence that physical contact matters
 
@@ -107,4 +107,4 @@ In the **Hi-C protocol**, the crosslinked DNA is **digested** with an enzyme, th
 - The test of function is always a **perturbation**: CRISPR deletion or inversion of a boundary, forced looping as for Hbb, degron removal of CTCF/cohesin, followed by **RNA-seq** or a **reporter read-out**.
 
 ---
-> [[IG 01 - Sources … Enhancer–promoter crosstalk|← Sources … Enhancer–promoter crosstalk]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter →]]
+> [[IG 01 - Lecture notes – key facts … Enhancer–promoter crosstalk|← Lecture notes – key facts … Enhancer–promoter crosstalk]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter →]]

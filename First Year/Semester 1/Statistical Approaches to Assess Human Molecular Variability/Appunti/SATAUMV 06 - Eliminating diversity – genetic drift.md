@@ -51,7 +51,7 @@ A **metapopulation** may not be randomly mating because it is made up of **parti
 
 ## 6.5 Measures of population structure: F<sub>ST</sub>
 
-F<sub>ST</sub> measures the **apportionment of variation between demes** by comparing the mean diversity of demes with the diversity of the metapopulation. It is the **proportion of genetic diversity** that is due to **allele frequency differences among subpopulations**:
+F<sub>ST</sub> measures the **apportionment of variation between demes** by comparing the mean diversity of **demes** with the diversity of the **metapopulation**. It is the **proportion of genetic diversity** that is due to **allele frequency differences among subpopulations**:
 
 *F<sub>ST</sub> = (H<sub>T</sub> − H<sub>S</sub>) / H<sub>T</sub>*
 
