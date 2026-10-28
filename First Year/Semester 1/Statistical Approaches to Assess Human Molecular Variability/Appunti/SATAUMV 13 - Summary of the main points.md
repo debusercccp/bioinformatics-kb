@@ -2,11 +2,11 @@
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 source: "MCB/SATAUMV/Statistical_approaches.docx"
-order: 12
+order: 13
 tags: [note, sataumv]
 ---
 
-> [[SATAUMV 11 - Post-processing quality controls, dataset assembly, imputation and phasing|← Post-processing quality controls, dataset assembly, imputation and phasing]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]]
+> [[SATAUMV 12 - Summary statistics and genetic distances|← Summary statistics and genetic distances]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]]
 
 # Summary of the main points
 
@@ -28,6 +28,10 @@ tags: [note, sataumv]
 - **LD pruning** (--indep-pairwise window step r²) removes markers in high LD to leave approximately independent sites, producing plink.prune.in and plink.prune.out lists.
 - **Phasing** reconstructs haplotypes from genotypes: trio-based phasing is accurate but requires family data; in unrelateds, Clark's parsimony and EM work for small numbers of tightly linked SNPs, while HMM-based methods using a reference panel are the standard for genome-wide data.
 - **Imputation** predicts untyped variants by matching phased haplotypes to a dense reference panel, increasing marker density and power, but its accuracy depends on the representativeness of the panel and is lower for rare variants and underrepresented populations; phasing errors propagate into imputation.
+- **Summary statistics** describe within-population variability: segregating sites (S) and number of haplotypes (k) depend strongly on sample size, while nucleotide diversity π = n/(n − 1) Σ xᵢxⱼdᵢⱼ and gene/haplotype diversity h = n/(n − 1)(1 − Σ pᵢ²) are corrected for it; computed in sliding windows they provide a genome-wide baseline for spotting unusually low or high diversity.
+- **Distance matrices** (square, zero diagonal, symmetric, hence shown in triangular form) summarize pairwise differences; FST = (HT − HS)/HT = Var(p)/\[p̄(1 − p̄)\] is the most used **genetic distance** (Wright: \< 0.05 little, 0.05–0.15 moderate, 0.15–0.25 great, \> 0.25 very great differentiation).
+- **Trees** are built with distance-based (UPGMA, NJ) or character-based (MP, ML, Bayesian) methods, by clustering or searching; UPGMA joins the closest pair and averages distances, giving an ultrametric tree, while NJ follows minimum evolution and gives an unrooted tree.
+- **MDS** projects a distance matrix into 2–3 dimensions minimizing the stress S = Σ(Dᵢⱼ − dᵢⱼ)²; the **genome-wide FST distribution** is dominated by low values, and clustered outlier peaks mark highly differentiated regions.
 
 ---
-> [[SATAUMV 11 - Post-processing quality controls, dataset assembly, imputation and phasing|← Post-processing quality controls, dataset assembly, imputation and phasing]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]]
+> [[SATAUMV 12 - Summary statistics and genetic distances|← Summary statistics and genetic distances]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]]

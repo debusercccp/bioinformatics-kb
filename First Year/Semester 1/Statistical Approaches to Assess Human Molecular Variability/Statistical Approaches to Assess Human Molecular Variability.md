@@ -37,7 +37,7 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/en/study/co
 
 ## Appunti (MCB)
 
-Fonte: `MCB/SATAUMV/Statistical_approaches.docx` — 12 note collegate in ordine.
+Fonte: `MCB/SATAUMV/Statistical_approaches.docx` — 13 note collegate in ordine.
 
 1. [[SATAUMV 01 - Human molecular variability – general concepts|Human molecular variability – general concepts]]
 2. [[SATAUMV 02 - Key concepts in population genetics|Key concepts in population genetics]]
@@ -50,7 +50,8 @@ Fonte: `MCB/SATAUMV/Statistical_approaches.docx` — 12 note collegate in ordine
 9. [[SATAUMV 09 - Technologies for genomic data generation and data formats|Technologies for genomic data generation and data formats]]
 10. [[SATAUMV 10 - Reference sequences and population genomic databases|Reference sequences and population genomic databases]]
 11. [[SATAUMV 11 - Post-processing quality controls, dataset assembly, imputation and phasing|Post-processing quality controls, dataset assembly, imputation and phasing]]
-12. [[SATAUMV 12 - Summary of the main points|Summary of the main points]]
+12. [[SATAUMV 12 - Summary statistics and genetic distances|Summary statistics and genetic distances]]
+13. [[SATAUMV 13 - Summary of the main points|Summary of the main points]]
 
 ## Exam
 

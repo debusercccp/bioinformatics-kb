@@ -22,7 +22,7 @@ Reverse genetics goes **from gene to phenotype**: a known gene is altered on pur
 
   1.  **Non-Homologous End Joining (NHEJ):** An error-prone repair pathway that introduces small insertions or deletions (indels), causing frameshifts that disrupt the gene to generate a targeted **knock-out**.
 
-  2.  **Homology-Directed Repair (HDR):** Uses a co-injected exogenous **donor DNA template** to introduce a precise sequence modification, point mutation, or fluorescent tag insertion into the endogenous locus (**knock-in**).
+  2.  **Homology-Directed Repair (HDR):** Uses a co-injected exogenous **donor DNA template** to introduce a **precise** sequence modification, point mutation, or fluorescent tag insertion into the endogenous locus (**knock-in**).
 
 **Crispants (**$F_{0}$ **mosaic screening):** Injecting $F_{0}$ embryos/gonads with multiple CRISPR/Cas9 guides against the same target gene generates biallelic frameshift mutations across many somatic cells (genetic mosaicism), allowing immediate phenotypic evaluation in the $F_{0}$ generation without waiting several generations to establish a stable line.
 
@@ -58,7 +58,7 @@ Reverse genetics goes **from gene to phenotype**: a known gene is altered on pur
 
 - **Step C (siRNA and RISC assembly):** The resulting **small interfering RNA (siRNA)** duplexes associate with proteins to form the **RNA-Induced Silencing Complex (RISC)**.
 
-- ![[FG-image17.png|292]]**Step D (Passenger strand cleavage / RISC activation):** Inside **RISC**, the siRNA duplex is unwound and the sense (**passenger**) strand is cleaved and discarded, leaving the single-stranded antisense guide RNA bound to the active RISC complex.
+- ![[FG-image17.png|292]]**Step D (Passenger strand cleavage / RISC activation):** Inside **RISC**, the siRNA duplex is unwound and the sense (**passenger**) strand is **cleaved and discarded**, leaving the single-stranded antisense guide RNA **bound to the active RISC complex**.
 
 - **Step E (Target mRNA recognition):** The single-stranded guide RNA directs the activated **RISC** complex to bind by sequence complementarity to the endogenous **target mRNA** (carrying a $3'\text{~AAAAAAA}$ poly-A tail).
 
@@ -110,17 +110,17 @@ Reverse genetics goes **from gene to phenotype**: a known gene is altered on pur
 
 **Two types of reporter constructs:**
 
-- **A. Transcriptional reporters (promoter** $\rightarrow$ **ATG–gfp–STOP** $\rightarrow$ **3' UTR):** The promoter of the gene of interest drives GFP expression directly to show when and where the gene is transcribed.
+- **A. Transcriptional reporters (promoter** $\rightarrow$ **ATG–gfp–STOP** $\rightarrow$ **3' UTR):** The promoter of the gene of interest drives GFP expression directly to show **when and where** the gene is transcribed.
 
 > ![[FG-image19.png|481]]
 
-- **B. Translational reporters (promoter** $\rightarrow$ **ATG–\[Exons/Introns fused to gfp\]–STOP** $\rightarrow$ **3' UTR):** The reporter gene is fused **in-frame** with the coding sequence of the gene of interest, producing a chimeric fusion protein that reveals subcellular protein localization.
+- **B. Translational reporters (promoter** $\rightarrow$ **ATG–\[Exons/Introns fused to gfp\]–STOP** $\rightarrow$ **3' UTR):** The reporter gene is fused **in-frame** with the coding sequence of the gene of interest, producing a chimeric fusion protein that reveals **subcellular protein localization**.
 
 > ![[FG-image20.png|481]]
 
-**In short:** **transcriptional reporter** → when and where the gene is transcribed;
+**In short:** **transcriptional reporter** → **when** and **where** the gene is transcribed;
 
-**translational reporter** → where the protein is inside the cell.
+**translational reporter** → **where** the protein is inside the cell.
 
 **Applications and Nobel recognition:**
 

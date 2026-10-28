@@ -29,7 +29,7 @@ Both methods give the same result, and p + q must always equal 1. Note that each
 
 ## 2.3 Real vs. ideal populations
 
-The aim is to study how allele frequencies change in space and time and to understand the mechanisms that may have acted. Real populations are too complex, so models require **mathematical approximation**. Mathematical models give a formal description of the **expected behaviour** of genetic variation **under specific assumptions**, and act as simplified reference frameworks (**null models**) against which empirical observations can be compared.
+The aim is to study **how allele frequencies change in space and time** and to understand the mechanisms that may have acted. Real populations are too complex, so models require **mathematical approximation**. Mathematical models give a formal description of the **expected behaviour** of genetic variation **under specific assumptions**, and act as simplified reference frameworks (**null models**) against which empirical observations can be compared.
 
 The **ideal population** is:
 

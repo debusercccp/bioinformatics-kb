@@ -45,11 +45,11 @@ Enhancers can give rise to **non-coding RNAs** (**eRNAs**), a **novel layer** of
 
 ### What eRNAs do, mechanism by mechanism
 
-![[IG-image10.png|548]]
+![[IG-image11.png|548]]
 
 In more detail, **YY1 binds** the enhancer DNA, **drives** the eRNA transcription and also **binds** the nascent eRNA, which increases the YY1 occupancy at the enhancer (**positive feedback loop**). In the **pause release**, Pol II is held near the promoter by **NELF/DSIF**; a stimulus (e.g. neuronal activity or the androgen receptor) induces the eRNA, which binds NELF and acts as a **decoy**, so NELF dissociates and Pol II enters elongation (in prostate cancer, the **KLK3 eRNA** also activates P-TEFb); this is probably a **contributor** rather than the **only determinant**, since the pause release is also needed to produce the eRNAs. eRNAs bind **CBP** and stimulate its acetyltransferase activity (more H3K27ac), and BRD4 binds both acetylated histones and eRNAs through its bromodomains, so the eRNA reinforces the BRD4 retention (e.g. the SNAI1 eRNA); m6A-eRNAs read by **YTHDC2** engage **MLL1**, which increases H3K4me3 and accessibility at super-enhancers in pancreatic cancer (PDAC). In looping, eRNAs bind **cohesin** (RAD21, SMC3), **CTCF** (CCAT1-L at the MYC locus) or **Mediator** (MED1), and the knockdown of the eRNA with **ASOs** loosens the loop and lowers the target transcription. The condensates formed by m6A-eRNAs and YTHDC1 are abolished when m6A is removed with dCas13d–FTO. Finally, the **HOXD eRNA** binds PRC2-covered CpG islands, removes **EZH2** and activates glioma driver genes.
 
-![[IG-image11.png|545]]
+![[IG-image12.png|545]]
 
 We already must figure out why lncRNAs are in the cytoplasm: most of the time, we see them associated with ribosomes. They may control the activity of the ribosomes, or they can be no longer long non-coding RNA, encoding for small proteins.
 
@@ -63,11 +63,11 @@ We already must figure out why lncRNAs are in the cytoplasm: most of the time, w
 ### How can we prove that eRNAs are important?
 
 - **siRNA:** small RNA that forms a dsRNA targeting RNA, loaded into the **RISC (RNA-induced silencing complex)** ⇒ not so efficient, because siRNAs remain in the cytoplasm whereas eRNAs are mostly nuclear.
-- ![[IG-image12.png|271]]**Cas13**, which, unlike Cas9, targets RNA.
+- **Cas13**, which, unlike Cas9, targets RNA.
 
 **How Cas13 knocks down an eRNA** (diagram of CRISPR-Cas13):
 
-1.  A CRISPR array is transcribed into a pre-crRNA (repeats and spacers).
+1.  ![[IG-image13.png|271]]A CRISPR array is transcribed into a pre-crRNA (repeats and spacers).
 2.  Cas13 processes it into mature crRNAs, each carrying one spacer.
 3.  The Cas13–crRNA complex scans RNA and base-pairs through the spacer with a complementary target RNA.
 4.  Target recognition activates the RNase domains, which cut the target. Both cytoplasmic RNA and targeted RNA are cleaved.

@@ -6,7 +6,7 @@ order: 14
 tags: [note, fg]
 ---
 
-> [[FG 13 - Drosophila melanogaster · Forward genetics in Drosophila|← Drosophila melanogaster · Forward genetics in Drosophila]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 15 - Danio rerio (zebrafish)|Danio rerio (zebrafish) →]]
+> [[FG 13 - Drosophila melanogaster · Forward genetics in Drosophila|← Drosophila melanogaster · Forward genetics in Drosophila]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 15 - Danio rerio · Zebrafish as a model organism|Danio rerio · Zebrafish as a model organism →]]
 
 # Reverse genetics in Drosophila
 
@@ -52,9 +52,15 @@ P-element insertion is **random**, so two transgenic lines are never strictly co
 
 - A **donor plasmid** containing the transgene and the ***attB*** sequence is **co-injected with ΦC31 integrase mRNA** into *attP*-containing recipient embryos → **site-specific insertion** of the transgene into the *attP* site.
 
-- The reaction produces the **hybrid sites *attL* and *attR***, which **prevent further integrase-catalysed movement** of the integrated transgene: the event is irreversible. This is what **distinguishes ΦC31 from Cre/loxP or FLP/FRT**, where the recombinase catalyses both integration and excision.
+- The reaction produces the **hybrid sites *attL* and *attR***, which **prevent further integrase-catalyzed movement** of the integrated transgene: the event is irreversible. This is what **distinguishes ΦC31 from Cre/loxP or FLP/FRT**, where the recombinase catalyzes both integration and excision.
 
-**In short:** **attB × attP → attL + attR**, which the integrase no longer recognises → the insertion is **irreversible** and **always at the same site**.
+**In short:** **attB × attP → attL + attR**, which the integrase no longer recognizes → the insertion is **irreversible** and **always at the same site**.
+
+**Focus — The enzyme and the chemistry.** ΦC31 integrase (~613 aa) is a **serine recombinase**, a family distinct from the tyrosine recombinases (Cre, FLP, λ-Int). Four subunits form a synaptosome on **attB** (~34 bp) and **attP** (~39 bp minimum), which are **different sequences** sharing only a short central core around the crossover dinucleotide. Each subunit attacks the DNA with its active-site serine, forming a covalent **5′-phosphoserine** bond and leaving 2-nucleotide 3′ overhangs. Then — the hallmark of serine recombinases — half of the complex physically **rotates by 180°** relative to the other half, and the strands are religated in the recombinant configuration. There is no Holliday junction intermediate and no host accessory factor is needed (unlike λ, which requires IHF).
+
+**Focus — Why it is irreversible, and how it differs from Cre and FLP.** Recombination produces the hybrid sites **attL** and **attR**, chimeras of the two parental ones, which the integrase alone does not recognize as substrates: catalyzing the reverse reaction requires a separate phage cofactor, the **RDF** (recombination directionality factor, gp3), which is absent from the system. This is the opposite of **Cre/loxP** and **FLP/FRT**, where the two sites are **identical** and the product is still a substrate: the reaction is at equilibrium and, for reasons of local concentration, excision dominates over integration. Hence Cre and FLP are used to **remove** DNA and ΦC31 to **insert** it.
+
+**Focus — A detail on the landing site.** 3xP3 is an artificial promoter (three Pax6 sites upstream of a minimal TATA) driving RFP in the eyes; being floxed, the marker can be removed with Cre after integration, which matters because two fluorescent markers in the same animal are hard to tell apart. Supplying the integrase as **injected mRNA** has the advantage of being transient: the enzyme disappears and cannot catalyse anything else.
 
 **The widely used system (Bischof et al., PNAS 2007).** The donor is **pUASTattB**, carrying the *white* marker, a loxP site, the UAS–MCS–SV40 cassette and *attB*. The host stock carries a **loxP–3xP3-RFP–loxP–*attP*** landing site, where the **artificial 3xP3 promoter** drives strong RFP expression in the eyes and is **flanked by loxP sites**, so the marker can be removed later by **Cre-mediated excision**. The integrase itself is supplied by a transgenic stock expressing **ΦC31 integrase in the germ cells** from the ***nanos*** (or ***vasa***) promoter.
 
@@ -67,6 +73,16 @@ P-element insertion is **random**, so two transgenic lines are never strictly co
 - **Chromosome mapping is not required.**
 
 - A **large collection of lines with precisely mapped *attP* sites** on the four major chromosomes is available, already tested for accessibility and expression behaviour.
+
+**Focus — ΦC31 and the silencing problem.** With random P-element insertion, a UAS-YFG cassette can land in heterochromatin or in a region carrying repressive histone marks (e.g. H3K9me3 bound by HP1): GAL4 cannot access the UAS, and the transgene is silent or expressed in a variegated, cell-to-cell pattern (position-effect variegation). A first warning comes from the marker: pale or mottled mini-white eyes suggest a repressive insertion site. The classical answer is empirical — generate several independent lines, cross each to a ubiquitous driver (e.g. tubulin-GAL4 or Actin5C-GAL4) and keep only those that express well. ΦC31 removes the problem at the source: the attP landing sites in common use (e.g. attP2 on 3L, attP40 on 2L) were selected precisely because they lie in open, permissive chromatin and support robust GAL4-induced expression, so every UAS construct integrated there is expressed reliably and at comparable levels. Some vectors add a further layer of protection by flanking the cassette with insulators (gypsy/Su(Hw) binding sites, as in the VALIUM RNAi vectors), which block the spreading of repressive chromatin and the influence of neighbouring enhancers.
+
+#### Focus: CRISPR/Cas9 in Drosophila
+
+- **Focus —** Genome editing in the fly is organised as a **binary system**, in the same philosophy as GAL4/UAS: germline stocks express **Cas9** from the **nos** or **vasa** promoters and are crossed to stocks expressing the **sgRNA** from a **U6** promoter (Pol III, which makes non-polyadenylated RNAs, ideal for guides). Cas9 decides where and when, the guide decides what. Putting Cas9 under UAS control gives tissue-specific editing with any existing driver.
+
+- **Focus — Knock-ins.** Donors frequently include **attP** and **loxP** sites, so the edited locus itself becomes a reusable landing site: the marker can be removed with Cre afterwards, and further constructs can be integrated into the same position with ΦC31 integrase. Homologous recombination is inefficient in the fly, which is why CRISPR replaced the classical gene-targeting schemes rather than complementing them.
+
+- **Focus — Why this matters for the logic of the course.** Every reverse-genetics tool answers three questions: **what it hits** (heritable DNA — P element, ΦC31, CRISPR — or transient RNA — RNAi, morpholinos); **how specific it is** (random — transposons — or site-specific — ΦC31, Cas9); and **who decides where and when** (the promoter of the construct, or a binary system layered on top — GAL4/UAS, GAL80<sup>ts</sup>, germline Cas9 plus guides). CRISPR came to dominate because it is the only one that answers all three well: permanent, site-specific, and reprogrammable with 20 nucleotides of oligo instead of a new construct every time.
 
 ### Targeted gene expression
 
@@ -110,6 +126,14 @@ These limits are what drove **the development of alternative strategies for tran
 
 **The GAL4 protein.** GAL4 (881 aa) is the yeast activator of the galactose-induced genes. It binds DNA as a **dimer** on a **17 bp site** (the UAS, found between *GAL10* and *GAL1*) through a **zinc-finger DNA-binding domain** (residues 1–65), with a dimerisation domain (65–94) and two activation regions (148–196 and 768–881; GAL80 binds residues 851–881). Variants used in flies include optimised UAS sequences and **GAL4-VP16**, a stronger hybrid activator (GAL4 DNA-binding domain fused to the acidic activation domain of herpes simplex VP16).
 
+**Focus — Domain map in detail.** Residues **1–65** form the DNA-binding domain, a binuclear **Zn(II)₂Cys₆ zinc cluster** (six cysteines coordinating two shared zinc atoms — a fold essentially restricted to fungi, not a classical zinc finger); **65–94** is the dimerisation region, so GAL4 binds DNA as a homodimer; **148–196** and **768–881** are two acidic activation regions that recruit Mediator and the basal machinery; **851–881**, inside the second activation domain, is the GAL80 binding site.
+
+**Focus — The UAS itself.** It is a **17 bp palindromic site** (consensus CGG-N₁₁-CCG): each CGG half-site is contacted by one monomer, and the 11 central bp act as a spacer fixing the geometry of the dimer.
+
+**Focus — Why the system is orthogonal.** Neither GAL4 nor UAS exists in **Drosophila**. GAL4 on its own has no endogenous targets in the fly, so the driver line is phenotypically neutral; and UAS on its own is not recognised by any fly factor, so the responder line is silent. This is precisely what allows **lethal or toxic constructs** to be kept as stocks: they exist, but they are off until you cross them.
+
+**Focus — A stronger variant.** GAL4-VP16 fuses the GAL4 DNA-binding domain to the acidic activation domain of herpes simplex VP16, giving a much stronger activator — at the cost of greater toxicity.
+
 **The two lines.**
 
 1.  **Driver line:** carries the **GAL4** gene under the control of a **specific promoter or enhancer**. GAL4 is produced **only in the tissues and at the times when that promoter is active**, and **has no endogenous target genes** in the fly, so it does nothing on its own.
@@ -118,13 +142,13 @@ These limits are what drove **the development of alternative strategies for tran
 
 2.  **Responder line:** carries the **gene of interest downstream of UAS**. The gene is **inactive by default**, since UAS alone cannot drive expression.
 
-**In short:** the **driver decides where**, the **responder decides what**. Neither does anything alone; crossing them switches the gene on only in GAL4-expressing cells. Because the responder is **silent in its own stock**, even toxic or lethal genes can be kept.
-
 ![[FG-image39.png|512]]
+
+**In short:** the **driver decides where**, the **responder decides what**. Neither does anything alone; crossing them switches the gene on only in GAL4-expressing cells. Because the responder is **silent in its own stock**, even toxic or lethal genes can be kept.
 
 **The cross.** The progeny carry **both transgenes**: GAL4 is made in the driver's pattern, binds the UAS, and **activates the gene of interest in exactly those cells**.
 
-![[FG-image40.png|424]]
+![[FG-image40.png|472]]
 
 **How many progeny express the gene?** If both parental lines are **heterozygous** for their transgene (e.g. kept over a balancer), only ½ × ½ = **¼ (25%)** of the progeny carry both GAL4 and UAS-gene and show the effect; with homozygous driver and responder stocks, all the progeny do.
 
@@ -158,7 +182,11 @@ These limits are what drove **the development of alternative strategies for tran
 
 The modern version is **pUASTattB**, the same cassette plus an ***attB*** site and *mini-white*, so that the responder can be integrated at a defined *attP* landing site by ΦC31 integrase.
 
+**Focus — Why pUAST does not work in the germ line, and what to use instead.** UAS constructs are subject to germline transgene silencing and the **hsp70** minimal promoter is poorly active there. For germline experiments the vector of choice is **pUASp**, in which the minimal promoter is that of the P transposase and the **K10** 3′UTR is included.
+
 **Directed RNA interference.** The same binary system is used for **loss of function**: the responder carries an **inverted-repeat (IR) construct** — the gene of interest (GoI) in **sense and antisense orientation separated by an unrelated spacer** (the spacer overcomes the instability of symmetrical sequences) — downstream of 5× UAS. In the F1 of a cross with a GAL4 driver, the IR construct is transcribed in the GAL4-expressing cells and folds into an **RNA hairpin**; the resulting **dsRNA mediates gene-specific RNAi** exactly where the driver is active. This is how a tissue-specific knockdown is obtained in an animal where RNAi by feeding (as in *C. elegans*) does not work.
+
+**Focus — Libraries and controls.** Genome-wide collections of UAS-IR lines exist (**VDRC** and **TRiP**, the latter using miRNA-based constructs, more efficient and with fewer off-targets). The known problem is **off-target knockdown** through partial homology, made worse by CAN/CAG repeats; the correct control is to use **two independent RNAi lines** against the same gene, or a rescue construct.
 
 ![[FG-image41.png|470]]
 
@@ -182,15 +210,17 @@ The modern version is **pUASTattB**, the same cassette plus an ***attB*** site a
 
 This **combines spatial and temporal control**: the driver decides *where*, the heat shock decides *when*.
 
-**3. The TARGET system (Temporal And Regional Gene Expression Targeting).** This is the version actually used, because it avoids heat shock altogether. The UAS–GAL4 pair is regulated by a **temperature-sensitive allele of GAL80 (GAL80^ts)**, expressed from a **ubiquitous promoter**:
+**Focus — How GAL80 actually inhibits.** It binds residues 851–881 of GAL4, i.e. it physically **masks the second activation domain** without preventing DNA binding. GAL4 stays bound to the UAS but no longer recruits Mediator: the inhibition works by **occlusion of the activation domain**, not by competition on the DNA.
 
-- ***tub-GAL80^ts*** is a chimeric transgene: the **tubulin 1α promoter** drives ubiquitous, high-level expression of the **temperature-sensitive form of GAL80**.
+**3. The TARGET system (Temporal And Regional Gene Expression Targeting).** This is the version actually used, because it avoids heat shock altogether. The UAS–GAL4 pair is regulated by a **temperature-sensitive allele of GAL80 (GAL80<sup>ts</sup>)**, expressed from a **ubiquitous promoter**:
 
-- At **low (permissive) temperature, 18–19 °C**: GAL80^ts is folded and **blocks GAL4** → **the gene is OFF**.
+- ***tub-GAL80<sup>ts</sup>*** is a chimeric transgene: the **tubulin 1α promoter** drives ubiquitous, high-level expression of the **temperature-sensitive form of GAL80**.
 
-- At **high (restrictive) temperature, 29–32 °C**: GAL80^ts is inactivated and **fails to inhibit GAL4** → **the gene is ON**.
+- At **low (permissive) temperature, 18–19 °C**: GAL80<sup>ts</sup> is folded and **blocks GAL4** → **the gene is OFF**.
 
-**Mnemonic:** **cold** = GAL80^ts works = gene **OFF**; **warm** = GAL80^ts broken = gene **ON**.
+- At **high (restrictive) temperature, 29–32 °C**: GAL80<sup>ts</sup> is inactivated and **fails to inhibit GAL4** → **the gene is ON**.
+
+**Mnemonic:** **cold** = GAL80<sup>ts</sup> works = gene **OFF**; **warm** = GAL80<sup>ts</sup> broken = gene **ON**.
 
 ![[FG-image45.png|271]] ![[FG-image46.png|274]]
 
@@ -212,11 +242,15 @@ Its practical advantages are that it **works with any existing GAL4 driver and U
 
 The inducer here is a drug fed to the flies, which avoids both heat shock and temperature shifts.
 
+**Focus — The molecular detail.** In the absence of ligand the hormone-binding domain holds the protein in an inactive complex with **HSP90**; RU486 (mifepristone), fed to the flies, induces the conformational change, releases HSP90 and exposes the **p65** activation domain (taken from NF-κB), switching on transcription.
+
 **5. The Tet systems (TetOFF / TetON),** based on a **tetracycline-sensitive transactivator**.
 
 - **TetOFF:** the expression of the transactivator (**tTA**) is driven by a specific promoter. **In the absence of tetracycline** the transactivator binds its operator (**tet-O**) and **activates** the reporter gene; **in the presence of tetracycline** the transactivator is **inactive → gene OFF**.
 
 - **TetON:** uses the **reverse transactivator (rtTA)**, which is **inactive without tetracycline** and **active in its presence** — the logic is inverted.
+
+- **Focus — How the Tet switch works.** tTA is the bacterial repressor **TetR** fused to **VP16**; it binds the **tetO** operator and activates. Tetracycline binds TetR and changes its conformation, abolishing DNA binding → drug = gene OFF. **rtTA** is a TetR mutant with inverted logic: it binds **tetO** only in the presence of doxycycline → drug = gene ON.
 
 ![[FG-image47.png|282]] ![[FG-image48.png|276]]
 
@@ -229,6 +263,8 @@ The inducer here is a drug fed to the flies, which avoids both heat shock and te
 - It uses the **yeast FLP recombinase** under **heat-shock promoter** control.
 
 - FLP promotes ***cis* recombination between FRT sequences**; if the FRTs are oriented **in the same direction**, the **intervening DNA is excised**.
+
+- **Focus — The chemistry, and why orientation matters.** FLP is a **tyrosine recombinase**: nucleophilic attack by the active-site tyrosine, covalent 3′-phosphotyrosine bond, Holliday junction intermediate, resolution. An **FRT** is a 34 bp site made of two 13 bp inverted repeats plus an **asymmetric 8 bp spacer**, and it is the asymmetry of the spacer that defines orientation: FRTs in the same direction → **excision** of the intervening DNA; FRTs in opposite directions → **inversion**; FRTs at the same position on the two homologues → **mitotic recombination**.
 
 ![[FG-image50.png|505]]
 
@@ -246,6 +282,10 @@ By tuning the **length of the heat shock** one controls how many clones are indu
 
 **In short:** heat shock → **FLP** → excision of the STOP between the **FRTs** → **GAL4 permanently on** in that cell and all its descendants → a **mosaic**: labelled (or mutant) clones inside an otherwise normal animal.
 
+**Focus — The most powerful use: FRT-mediated mitotic recombination.** With FRTs at the same position on both homologues, FLP generates **homozygous mutant clones** inside an otherwise heterozygous animal — the way to study **lethal genes** in adult tissues. The refined version is **MARCM** (Mosaic Analysis with a Repressible Cell Marker): GAL80 sits on the wild-type arm, so only the clone that loses GAL80 — i.e. the homozygous mutant one — is also labelled by GAL4. Mutant and fluorescent in the same event.
+
+**Focus — Why UAS-tau as a reporter.** Tau is a microtubule-associated protein distributed by slow transport throughout the cytoplasm and along axons, so it fills the entire cellular morphology, arborisation included — unlike a soluble nuclear reporter, which only marks the cell body.
+
 ### What makes a good expression system
 
 The lecture closes with the four criteria against which all of the above should be judged:
@@ -261,4 +301,4 @@ The lecture closes with the four criteria against which all of the above should 
 No single system satisfies all four: heat shock is fast but has side effects and is leaky; TARGET is clean and works with every existing line but needs temperature shifts that are themselves not neutral; GeneSwitch and Tet are chemically inducible but slower. The choice, as with the choice of the model organism itself, is a **compromise dictated by the question**.
 
 ---
-> [[FG 13 - Drosophila melanogaster · Forward genetics in Drosophila|← Drosophila melanogaster · Forward genetics in Drosophila]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 15 - Danio rerio (zebrafish)|Danio rerio (zebrafish) →]]
+> [[FG 13 - Drosophila melanogaster · Forward genetics in Drosophila|← Drosophila melanogaster · Forward genetics in Drosophila]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 15 - Danio rerio · Zebrafish as a model organism|Danio rerio · Zebrafish as a model organism →]]

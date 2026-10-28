@@ -71,6 +71,7 @@ Study notes imported from `MCB/*.docx` are split into **atomic notes** (one topi
 - Name: `<KEY> NN - Title`. Each note has a prev / ↑ module / next bar, and the module note (`## Appunti (MCB)`) holds the ordered index.
 - `## Collegamenti` at the bottom links related concepts **across courses** (e.g. gradient descent in AML ↔ multivariable calculus in MBD).
 - Images live in `_attachments/` (`KEY-imageN.ext`).
+- **Hand-written notes** (not from a docx) go **outside** `Appunti/`, because the import wipes that folder: e.g. the Bash slides (`bashprog/*.pdf`) are summarised in `Introduction to Computing in Biology/Bash/` as `CTS 01–04` (tag `#cts`), indexed under `## Appunti` in [[Computational Tools and Scripting]].
 
 ### Updating after editing a docx
 From the vault folder run `.scripts/update.sh`: it re-imports only the `MCB/*.docx` changed since the last import (hashes in `.scripts/last-import.sha256`). Pass keys (`.scripts/update.sh FG IG`) or `--all` to force. Then check `git status`.

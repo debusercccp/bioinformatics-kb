@@ -67,15 +67,15 @@ Early in vitro experiments in the 1980s defined the stepwise assembly of the Pre
 
 ### The “sufficiency” paradox
 
-While theoretically this basal machinery is sufficient to drive transcription **in vitro** on naked synthetic DNA templates (as shown in the 1990s), this is **not true in vivo**. Inside the cell, DNA is wrapped in repressive chromatin. Generating a stable and efficient transcript requires specific combinations of activating TFs to stabilize RNAPII and recruit chromatin remodelers.
+While theoretically this basal machinery is sufficient to drive transcription **in vitro** on naked synthetic DNA templates (as shown in the 1990s), this is **not true in vivo**. Inside the cell, DNA is wrapped in repressive chromatin. Generating a stable and efficient transcript requires specific **combinations of activating TFs** to stabilize RNAPII and **recruit chromatin remodelers**.
 
 In the 1990s, in vitro experiments demonstrated that providing a synthetic naked DNA template, RNA Polymerase II, and all the general transcription factors (GTFs) is sufficient to assemble the pre-initiation complex. Once nucleotides (NTPs) are added, a basal level of transcription occurs. However, to achieve robust and regulated transcript generation, **specific transcription factors and co-activators are strictly required to control the stability of RNAPII and stimulate its firing rate.**
 
 ### “Sometimes being weak means being strong”
 
-In eukaryotes, maximizing gene activity requires the coordination of multiple TFs. (Note: Humans have roughly 1,600 specific TFs.)
+In eukaryotes, maximizing gene activity requires the **coordination of multiple TFs**. (Note: Humans have roughly 1,600 specific TFs.)
 
-When comparing simple eukaryotes (like yeast) to mammals, multicellular organisms rely heavily on a vast array of “weak” TFs rather than a few “strong” ones. This “weakness is a strength” paradigm allows for high variability and precise fine-tuning: combining multiple weak, tissue-specific TFs with cofactors (e.g., p300, Mediator, BRG1) generates highly specific, combinatorial transcriptional responses.
+When comparing simple eukaryotes (like yeast) to mammals, multicellular organisms rely heavily on a **vast array of “weak” TFs** rather than a few “strong” ones. This “weakness is a strength” paradigm allows for high variability and precise fine-tuning: combining multiple weak, tissue-specific TFs with cofactors (e.g., p300, Mediator, BRG1) generates highly specific, combinatorial transcriptional responses.
 
 Yeast only needs one factor to activate about 15% of the genes ⇒ ON/OFF mechanism, because the moment you have one TF bound you have the maximum activity. In multicellular organisms, the maximum activity is reached with 6–10 TFs bound ⇒ weak TFs. *Apes together, strong lol.*
 
@@ -93,7 +93,7 @@ Yeast only needs one factor to activate about 15% of the genes ⇒ ON/OFF mechan
 
 ### The poised state in development
 
-This poised state is crucial during embryonic development. Embryonic stem cells (e.g., within a mouse blastocyst containing 40–50 undifferentiated cells) possess many poised enhancers. Upon implantation into the uterus, signaling cascades instruct lineage commitment. Because these enhancers are already “poised,” the cell does not need to undergo slow, extensive chromatin remodeling from scratch; genes can rapidly transition to an active or silenced state to drive tissue differentiation.
+This poised state is crucial during embryonic development. Embryonic stem cells (e.g., within a mouse blastocyst containing 40–50 undifferentiated cells) possess many poised enhancers. Upon implantation into the uterus, signaling cascades instruct lineage commitment. Because these enhancers are already “poised,” the cell **does not need to undergo slow, extensive chromatin remodeling from scratch**; genes can rapidly **transition to an active or silenced state to drive tissue differentiation**.
 
 ---
 > [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family →]]

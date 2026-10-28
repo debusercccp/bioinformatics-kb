@@ -12,7 +12,7 @@ tags: [note, ig]
 
 ### The historical logic
 
-- Biochemistry of the ’80s–’90s: in vitro reconstitution defined activators and the pre-initiation complex (PIC). Example: **Gal4** must pre-bind its sites to recruit the machinery and helps re-initiation.
+- Biochemistry of the ’80s–’90s: in vitro reconstitution defined activators and the pre-initiation complex (PIC). Example: **Gal4** must **pre-bind its sites to recruit the machinery and helps re-initiation**.
 - Problem: transcription **in vitro is inhibited when the template is nucleosomal** rather than naked DNA. So chromatin is not neutral; it is a regulated barrier (“the chromatin player”, Kornberg).
 - Histones: small (10–23 kDa), basic, highly conserved; they pack ~2 m of DNA into a nucleus of ~90 fL (~6 µm diameter). Nucleosome = DNA wrapped around a histone octamer.
 
@@ -20,8 +20,8 @@ tags: [note, ig]
 
 **Gal4**: one of the major TFs in yeast.
 
-- *Gal4/PIC reconstitution.* In vitro steps in the figure: (i) **Gal4 binds its sites** upstream of a TATA promoter; (ii) incubate with Gal4 and TFIID (TBP); (iii) wash; (iv) add the other factors and RNA polymerase; (v) add NTPs; (vi) assay the transcript by primer extension. Reading: pre-binding by Gal4 is needed to recruit the machinery, and Gal4 also supports **re-initiation** (the scaffold left on the promoter fires again).
-- ![[IG-image13.jpeg|188]]*Hierarchy of packaging.* DNA double helix (2 nm) → nucleosome “beads on a string” (~11 nm) → 30-nm fibre → ~300-nm looped fibre → ~700-nm condensed fibre → ~1,400-nm metaphase chromosome.
+- ![[IG-image14.jpeg|188]]*Gal4/PIC reconstitution.* In vitro steps in the figure: (i) **Gal4 binds its sites** upstream of a TATA promoter; (ii) incubate with Gal4 and TFIID (TBP); (iii) wash; (iv) add the other factors and RNA polymerase; (v) add NTPs; (vi) assay the transcript by primer extension. Reading: pre-binding by Gal4 is needed to recruit the machinery, and Gal4 also supports **re-initiation** (the scaffold left on the promoter fires again).
+- *Hierarchy of packaging.* DNA double helix (2 nm) → nucleosome “beads on a string” (~11 nm) → 30-nm fibre → ~300-nm looped fibre → ~700-nm condensed fibre → ~1,400-nm metaphase chromosome.
 - *Nucleosome.* Core octamer: two each of H2A, H2B, H3, H4. Linker histone H1 seals the entry/exit DNA; the figure shows fully folded, partially folded and unfolded fibre states. ~2 m of DNA per diploid cell must fit a ~90 fL nucleus (~6 µm diameter).
 - *Structural methods.* A cryo-EM slide and EM class averages with angular reconstitution of the 70S ribosome (*Structure* 1995) show how large complexes such as nucleosomes and remodellers are resolved. They are method illustrations, not part of the regulatory argument.
 
@@ -42,14 +42,14 @@ This switch is a specialized form of gene conversion that unfolds in specific bi
 3.  **Strand invasion:** Driven by a recombinase (such as Rad51), the single-stranded tail invades the opposite silent cassette to use it as a template.
 4.  **Overwriting:** The genetic information from the silent cassette is copied and substituted into the MAT locus. This is a non-reciprocal transfer: the donor cassette remains completely unchanged, while the old MAT sequence is permanently overwritten.
 
-#### Directionality and the Recombination Enhancer (RE)
+#### **Directionality and the Recombination Enhancer (RE)**
 
 To successfully switch to the opposite sex, the recombinase must actively choose the correct silent cassette. This choice is dictated by the Recombination Enhancer (RE):
 
 - In MATa cells, the RE strongly biases the repair machinery to use the HMLα cassette (~85–90% of the time) rather than HMRa (~10–15%).
 - If the RE is deleted (REΔ), this directionality flips almost entirely, resulting in the cell choosing HML only ~5–10% of the time and incorrectly choosing the already-matching HMR ~90–95% of the time.
 
-#### Gene conversion in meiosis
+#### **Gene conversion in meiosis**
 
 Mating type switching is a form of **gene conversion**: a **double-strand break** is **repaired** by copying the information of a **homologous donor**. In **meiosis**, the break is made by a **Spo11 homodimer**, the 5′ ends are resected (5′→3′ resection), the 3′ end invades the homologous chromosome (strand invasion) and, after further processing, the **copied region gives non-Mendelian ratios in the spores**, such as 5:3 and 6:2 instead of 4:4 \[note: the ratios refer to the 8 spores of an octad (e.g. in *Sordaria* or *Neurospora*), so 6:2 is a conversion of a whole chromatid and 5:3 a conversion of a single strand (post-meiotic segregation)\]; this happens because gene conversion is a **non-reciprocal transfer of information**.
 
@@ -62,9 +62,9 @@ The link between **chromatin** and **transcription** came from **yeast genetics*
 
 These two classes of mutant phenotypes fall in the **same complementation group**; in other words, they are caused by the **same mutated genes**: SWI and SNF mutants partly overlap, e.g. SWI2 = SNF2, and their products form the same complex (SWI/SNF). So, the **same genes** control the transcription of **unrelated targets**, which means that they are **general regulators** of transcription. Suppression screens reveal that **suppressor mutations** occur **within histone genes**, and amino acid **substitutions** in histones **H3** and **H4 relieve the requirement** of swi2/snf2 for transcription.
 
-#### The SWI phenotype and suppressor genetics
+#### **The SWI phenotype and suppressor genetics**
 
-The SWI mutants (named because they cannot switch mating types) fail to execute this process because they cannot transcribe the HO gene. Without the HO endonuclease, the initial double-strand break is never made.
+The SWI mutants (named because they cannot switch mating types) fail to execute this process because they **cannot transcribe the HO gene**. Without the HO endonuclease, the initial double-strand break is never made.
 
 The biology of the SWI/SNF regulatory complex was mapped using suppressor screens, a genetic logic tool used to prove that two proteins physically interact:
 
@@ -72,7 +72,7 @@ The biology of the SWI/SNF regulatory complex was mapped using suppressor screen
 - **First mutation (m):** mutating one gene breaks the interaction, rendering the complex inactive.
 - **Second mutation (s — suppressor):** a subsequent mutation in a second interacting gene (e.g., a structural change in a histone) compensates for the first defect. This restores the interaction or bypasses the need for the first gene entirely, restoring activity. (Note: the suppressor mutation alone in a wild-type background would typically render the complex inactive.)
 
-![[IG-image14.png|602]]
+![[IG-image15.png|602]]
 
 **Logic of genetic interaction (charge example):**
 
@@ -105,7 +105,7 @@ The next step: once the nucleosomes are moved, **TBP/TFIID, other general factor
 - **EMSA (gel shift):** a **labelled probe** is **incubated** with a **protein** and the complexes are **separated on a native gel**: the **free probe runs fast**, the **probe** bound by the **protein runs slower** (**shift**), and the addition of an **antibody** against the protein **slows it further** (**supershift**). An unlabelled specific competitor abolishes the shift, while a mutant or non-specific competitor doesn’t.
 - **In vitro footprinting:** a **DNA fragment** labelled at one end is **digested by DNase I** with or without the DNA-binding protein, with about **one cut per molecule**; the fragments are **separated on a gel** next to the sequencing lanes, and the region bound by the protein is **protected from cleavage**, so it appears as a **gap** in the ladder (footprint).
 
-#### SWI/SNF promotes GAL4-AH binding to its own cognate site in the nucleosome
+#### **SWI/SNF promotes GAL4-AH binding to its own cognate site in the nucleosome**
 
 A nucleosome containing a GAL4 site was incubated with GAL4-AH, with or without SWI/SNF and ATP:
 

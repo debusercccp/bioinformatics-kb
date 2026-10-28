@@ -76,7 +76,7 @@ A **selective sweep** is the footprint left by positive selection: a **loss of g
 - **After selection**, the chromosomes carrying the beneficial allele have become frequent and look alike in the surrounding region, because linked variants are dragged along with the selected allele; the other haplotypes are lost.
 - Recombination progressively breaks the association with distance, so the footprint is **localized** around the selected site (see LD in chapter 5).
 
-![[SATAUMV-image18.png|390]]
+![[SATAUMV-image18.png|440]]
 
 ## 8.6 Models of positive selection
 

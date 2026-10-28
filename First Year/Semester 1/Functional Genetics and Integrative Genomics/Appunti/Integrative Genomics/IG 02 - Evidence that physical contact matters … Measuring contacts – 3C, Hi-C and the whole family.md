@@ -10,11 +10,13 @@ tags: [note, ig]
 
 # Evidence that physical contact matters
 
-As we said before: there is strong evidence in support of physical **contact** between enhancers and promoters, as shown by the **Blobel experiments** on the Hbb locus. Many studies show that enhancer–promoter contacts form **together with gene expression**, but a correlation cannot say what is the **cause** and what is the **consequence**: the forced looping experiments are the **direct evidence** that a contact can cause transcription.
+![[IG-image3.png|371]]As we said before: there is strong evidence in support of physical **contact** between enhancers and promoters, as shown by the **Blobel experiments** on the Hbb locus. Many studies show that enhancer–promoter contacts form **together with gene expression**, but a correlation cannot say what is the **cause** and what is the **consequence**: the forced looping experiments are the **direct evidence** that a contact can cause transcription.
 
 ### Forced looping at the Hbb locus
 
-![[IG-image3.png|441]]In the **Hbb locus**, the **LCR is far from the Hbb gene**. **LDB1** is fused to **zinc-finger proteins** designed to **bind the LCR** (L-ZF) and the **Hbb promoter** (P-ZF): since LDB1 **self-associates**, the two regions are **brought together** (forced chromatin looping), and **Hbb is transcribed** even though Hbb and LCR are 40–60 kb distant, and **even without GATA1**, the erythroid TF that normally brings LDB1 to the locus. This suggests a **therapeutic idea**: rerouting the LCR towards the **γ-globin** gene (HBG), which is silenced after birth, could compensate for β-thalassemia and sickle cell disease.
+In the **Hbb locus**, the **LCR is far from the Hbb gene**. **LDB1** is fused to **zinc-finger proteins** designed to **bind the LCR** (L-ZF) and the **Hbb promoter** (P-ZF): since LDB1 **self-associates**, the two regions are **brought together** (forced chromatin looping), and **Hbb is transcribed** even though Hbb and LCR are 40–60 kb distant, and **even without GATA1**, the erythroid TF that normally brings LDB1 to the locus. This suggests a **therapeutic idea**: rerouting the LCR towards the **γ-globin** gene (HBG), which is silenced after birth, could compensate for β-thalassemia and sickle cell disease.
+
+### LCR = enhancer cluster (super-enhancer).
 
 ### Reversible induced contacts (dCas9)
 
@@ -41,18 +43,18 @@ The ZRS and the Shh promoter are **close in space also in cells that do not expr
 
 ## 5. Measuring contacts: 3C, Hi-C and the whole family
 
-One-line answer: 3C and Hi-C do not look at DNA, they count how often two pieces of DNA were stuck together in the nucleus; TADs are the squares that this counting reveals, and the proof that they matter comes from experiments that break or move them (section 6).
+One-line answer: 3C and Hi-C do not look at DNA, they count **how often** two pieces of DNA were stuck together in the nucleus; TADs are the **squares** that this counting reveals, and the proof that they matter comes from experiments that break or move them (section 6).
 
 ### Step 1. How 3C measures contact between two loci
 
 - ![[IG-image4.png|376]]**Crosslink.** Formaldehyde fixes cells, gluing together DNA segments that are physically close (through the proteins between them). This freezes the 3D arrangement at one moment.
-- **Cut.** A restriction enzyme cuts the DNA into fragments (a few kb). Crosslinked fragments stay held together in complexes.
-- **Ligate under dilution.** DNA ligase joins ends. At low concentration, ends that are crosslinked together ligate to each other far more often than to random fragments. A new hybrid molecule forms: piece of locus A joined to piece of locus B.
+- **Cut.** A restriction enzyme cuts the DNA into fragments (a few kb). Crosslinked fragments **stay held together** in complexes.
+- **Ligate under dilution.** DNA ligase joins ends. At low concentration, ends that are crosslinked together **ligate to each other** far more often than to random fragments. A new hybrid molecule forms piece of locus A joined to piece of locus B.
 - **Reverse the crosslinks** and purify the DNA.
 - **Detect the hybrid.** PCR with one primer in A and one in B (3C = “one vs one”). The amount of product is proportional to how often A and B were close in the cell population.
 - **Control.** The same PCR on a random-ligation library (naked DNA) corrects for primer efficiency and distance, so an E–P signal is compared against background.
 
-To prove that Locus A and Locus B were in contact, you must prove that the ligation junction exists.
+To prove that Locus A and Locus B **were in contact**, you must prove that the **ligation junction exists**.
 
 *Primer placement:* you design one unidirectional primer specific to Locus A, placed just upstream of its restriction cut site, and a second unidirectional primer specific to Locus B, placed just downstream of its cut site.
 
@@ -75,7 +77,9 @@ To prove that Locus A and Locus B were in contact, you must prove that the ligat
 
 ### Step 3. How Hi-C gives a genome-wide map (unbiased)
 
-![[IG-image6.png|247]]**Hi-C maps all the contacts of the genome**, and the results are shown as **contact maps**, i.e. **heatmaps** in which each pixel is the contact frequency between two regions (**the intensity of the pixel is directly proportional to the interaction frequency**). The **signal** is **strongest** along the **diagonal**, because regions close on the linear DNA contact each other more often (the contact frequency falls steeply with the genomic distance, as described by the **scaling** or **P(s) curve**); the squares along the diagonal are domains that interact mostly inside themselves (**TADs**), and the **dots** outside the diagonal are **loops** between two specific sites. Contacts can also be shown in a **circular plot**, in which the **lines connect interacting regions**.
+![[IG-image6.png|247]]**Hi-C maps all the contacts of the genome**, and the results are shown as **contact maps**, i.e. **heatmaps** in which each pixel is the contact frequency between two regions (**the intensity of the pixel is directly proportional to the interaction frequency**). The **signal** is **strongest** along the **diagonal**, because regions close on the linear DNA contact each other more often (the contact frequency falls steeply with the genomic distance, as described by the **scaling** or **P(s) curve**); the **squares along the diagonal are domains** that interact mostly inside themselves (**TADs**), and the **dots** outside the diagonal are **loops between two specific sites**. Contacts can also be shown in a **circular plot**, in which the **lines connect interacting regions**.
+
+![[IG-image7.png|283]]🡺 https://github.com/debusercccp/clew-hic
 
 In the **Hi-C protocol**, the crosslinked DNA is **digested** with an enzyme, the **ends are filled in with biotin and ligated**, and then the DNA is **fragmented**, and the **biotinylated junctions are pulled down** and **amplified** for **sequencing**. The junctions are pulled down with **streptavidin**, which removes the huge amount of non-chimeric DNA, and with **paired-end sequencing** each read pair corresponds to **one contact**, with one end from each of the two pieces of DNA. The Hi-C **reads** (FASTQ) are then **analysed** with the Distiller pipeline (mapping, filtering, balancing), which produces:
 
@@ -83,16 +87,14 @@ In the **Hi-C protocol**, the crosslinked DNA is **digested** with an enzyme, th
 - **Pairs** (Sample.nodups.pairs.gz), used for scaling plots;
 - **Coolers** (Sample.1000.cool, Sample.1000.mcool), which can optionally be converted to C-world.
 
-![[IG-image7.png|433]]
+![[IG-image8.png|433]]
 
 ### Step 4. Reading the Hi-C map
 
 - **Strong diagonal:** loci close on the linear genome always contact most; frequency falls steeply with distance (the scaling or P(s) curve).
-- **Compartments (plaid pattern):** large regions that contact other regions of the same type. A compartment is A (active, gene-rich, open) or B (inactive, closed). Found by the first principal component of the correlation matrix.
-- **TADs (triangles/squares on the diagonal):** blocks where loci contact each other much more inside the block than with loci just outside. Typically submegabase. The edge is a **boundary**.
+- ![[IG-image9.png|389]]**Compartments (plaid pattern):** large regions that contact other regions of the same type. A compartment is A (active, gene-rich, open) or B (inactive, closed). Found by the first principal component of the correlation matrix.
+- **TADs (triangles/squares on the diagonal):** blocks where loci contact each other much more inside the block than with loci just outside. Typically, submegabase. The edge is a **boundary**.
 - **Loops (dots at the corner of a TAD or square):** a single pair of loci with a specific, strong contact, usually two convergent CTCF sites with cohesin.
-
-![[IG-image8.png|446]]
 
 ### Step 5. How TADs are called from the map
 

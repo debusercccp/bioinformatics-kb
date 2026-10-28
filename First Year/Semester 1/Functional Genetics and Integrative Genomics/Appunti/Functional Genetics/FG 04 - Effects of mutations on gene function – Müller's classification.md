@@ -160,7 +160,7 @@ tags: [note, fg]
 
 - *1st infection:* a fragment of the phage DNA is acquired into the **CRISPR locus** as a new spacer between DNA repeats (Cas1/Cas2 mediate acquisition).
 
-- *2nd infection:* the CRISPR locus is transcribed into **crRNAs**; together with the **tracrRNA** they form a complex with **Cas9**, which recognises foreign DNA matching and **cleaves** it → resistance to the virus.
+- *2nd infection:* the CRISPR locus is transcribed into **crRNAs**; together with the **tracrRNA** they form a complex with **Cas9**, which recognizes foreign DNA matching and **cleaves** it → resistance to the virus.
 
 - A **single guide RNA (sgRNA)** directs Cas9 to a target next to a **PAM sequence** and makes a **double-strand break (DSB)**.
 
@@ -171,6 +171,12 @@ tags: [note, fg]
   - **Homology-directed repair (HDR):** uses a supplied **donor DNA** template → **precise correction or insertion** (knock-in).
 
 **In short:** **Cas9 only cuts**; the outcome depends on how the cell repairs the cut. No template → **NHEJ** → indels → frameshift → **knock-out**. Template with homology arms → **HDR** → precise edit (**knock-in**, point mutation, GFP tag).
+
+**Focus — How the target is actually found.** Cas9 does not scan for the guide sequence: it scans for the **PAM (5′-NGG-3′)**, read in the major groove by Arg1333 and Arg1335, which hydrogen-bond the two guanines. Only after engaging a PAM does Cas9 locally destabilize the duplex immediately upstream and attempt pairing with the guide, proceeding **PAM-proximal → PAM-distal**. If the first ~10–12 nt (the **seed region**) do not pair, the complex dissociates within milliseconds and resumes the search; if they do, pairing continues until a complete **R-loop** is formed.
+
+**Focus — Two practical consequences.** First, **no PAM, no cut**, whatever the homology — which is also how the bacterial CRISPR locus protects itself, since it contains the spacers but not their PAMs. Second, mismatches in the seed abolish cleavage while PAM-distal mismatches are often tolerated, and that is exactly where **off-targets** come from.
+
+**Focus — The cut itself.** Once the R-loop is complete, HNH undergoes a conformational rearrangement that brings it into contact with the target strand; this movement acts as an **allosteric checkpoint** that also licenses RuvC. The two domains cut almost simultaneously, generating a **blunt double-strand break 3 bp upstream of the PAM**. The position is predictable, and that predictability is what makes precise insertions designable.
 
 ### Morpholinos (knock-down)
 

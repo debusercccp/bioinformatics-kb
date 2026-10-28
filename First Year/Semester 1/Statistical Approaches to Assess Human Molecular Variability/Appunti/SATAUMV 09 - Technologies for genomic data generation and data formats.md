@@ -42,9 +42,7 @@ Typical performance: **96- or 384-well plates**, reads of **up to 1 kb** of DNA,
 
 ## 9.3 SNP chips: microarray-based technologies
 
-![[SATAUMV-image22.png|179]]
-
-A **SNP-chip microarray** uses DNA probes fixed on a solid matrix to genotype millions of SNPs/SNVs across the genome simultaneously.
+![[SATAUMV-image22.png|179]]A **SNP-chip microarray** uses DNA probes fixed on a solid matrix to genotype millions of SNPs/SNVs across the genome simultaneously.
 
 - The array contains **beads** on which **allele-specific oligonucleotide probes** are immobilized (50-nt SNV-specific primers; 3 µm beads sit in wells of a silicon wafer, built by photolithography: photoresist, plasma etching, cleaning).
 - **Fragmented DNA** (whole-genome amplified) binds by complementarity to the probes; a **single-base extension reaction** then incorporates **fluorescent-labelled ddNTPs**.
@@ -94,18 +92,18 @@ Binary files are much more compact and faster to read; conversion in both direct
 
 ![[SATAUMV-image25.png|624]]
 
-## 9.6 Illumina's short-read sequencing
+## ![[SATAUMV-image26.png|241]]9.6 Illumina's short-read sequencing
 
-- ![[SATAUMV-image26.png|251]]**DNA fragmentation and library preparation:** genomic DNA is fragmented into short pieces of specific size (150–200 bp); the ends are repaired, an A overhang is added and "forward" and "reverse read" **adapters** are ligated at both ends of each fragment. Adapters allow binding to the flow cell and provide the binding sites for the **primers** needed during amplification and sequencing.
-- ![[SATAUMV-image27.png|254]]**Bridge amplification and cluster generation:** fragments attached to the flow-cell surface are amplified locally through **bridge amplification**, producing **clusters of identical DNA molecules** with hundreds of copies of each original fragment (about 1000 molecules per cluster, millions of clusters, each ≤ 1 µm). A sequencing primer is then annealed.
-- ![[SATAUMV-image28.png|252]]**Sequencing:** in each cluster a DNA polymerase incorporates **fluorescently labelled terminating nucleotides** into the growing strand. The fluorescent signal is recorded by imaging the clusters and its colour identifies which base was added; the terminator is then removed (deblock) and the cycle repeats to extend the strand. The process continues for all the copies of each cluster, so **multiple sequencing reads** are obtained for each single DNA fragment.
-- ![[SATAUMV-image29.png|247]]**Alignment and data analysis:** the sequencing reads are **mapped and aligned** to a **reference genome** and **variant calling** is then performed. The slide figure shows reads carrying a *known SNV* and an *unknown SNV* relative to the reference sequence.
+- **DNA fragmentation and library preparation:** genomic DNA is fragmented into short pieces of specific size (150–200 bp); the ends are repaired, an A overhang is added and "forward" and "reverse read" **adapters** are ligated at both ends of each fragment. Adapters allow binding to the flow cell and provide the binding sites for the **primers** needed during amplification and sequencing.
+- **Bridge amplification and cluster generation:** fragments attached to the flow-cell surface are amplified locally through **bridge amplification**, producing **clusters of identical DNA molecules** with hundreds of copies of each original fragment (about 1000 molecules per cluster, millions of clusters, each ≤ 1 µm). A sequencing primer is then annealed.
+- **Sequencing:** in each cluster a DNA polymerase incorporates **fluorescently labelled terminating nucleotides** into the growing strand. The fluorescent signal is recorded by imaging the clusters and its colour identifies which base was added; the terminator is then removed (deblock) and the cycle repeats to extend the strand. The process continues for all the copies of each cluster, so **multiple sequencing reads** are obtained for each single DNA fragment.
+- ![[SATAUMV-image27.png|247]]**Alignment and data analysis:** the sequencing reads are **mapped and aligned** to a **reference genome** and **variant calling** is then performed. The slide figure shows reads carrying a *known SNV* and an *unknown SNV* relative to the reference sequence.
 
 The chemistry is therefore related to Sanger sequencing (labelled terminating nucleotides), but it is run in cycles and in millions of clusters in parallel on the same flow cell.
 
 ## 9.7 From reads to variants: the NGS workflow
 
-![[SATAUMV-image30.png|126]] ![[SATAUMV-image31.png|473]]
+![[SATAUMV-image28.png|126]] ![[SATAUMV-image29.png|473]]
 
 | **Step** | **Output** |
 |:---|:---|
@@ -122,7 +120,7 @@ In the slide figure the reads aligned to the reference sequence show a **heteroz
 
 A FASTQ file contains **four lines per read**:
 
-![[SATAUMV-image32.png|624]]
+![[SATAUMV-image30.png|624]]
 
 | **Line** | **Content** |
 |:---|:---|
@@ -165,7 +163,7 @@ Note: the offset must be known to read a FASTQ correctly, because the same chara
 
 ## 9.10 SAM/BAM files
 
-![[SATAUMV-image33.png|624]]
+![[SATAUMV-image31.png|624]]
 
 After sequencing, the reads in the FASTQ file are aligned to a reference genome and the alignments are stored in **SAM** or **BAM** files.
 
@@ -198,7 +196,7 @@ After sequencing, the reads in the FASTQ file are aligned to a reference genome 
 | 10 | SEQ | String | Segment sequence |
 | 11 | QUAL | String | ASCII of Phred-scaled base quality |
 
-Thus a line carries the read name and position (fields 1, 4), the reference sequence name (3), the sequence string (10) and the base qualities taken from the FASTQ (11), plus additional information such as mapping quality (5) and CIGAR string (6).
+Thus, a line carries the read name and position (fields 1, 4), the reference sequence name (3), the sequence string (10) and the base qualities taken from the FASTQ (11), plus additional information such as mapping quality (5) and CIGAR string (6).
 
 **MAPQ (mapping quality)** is equal to −10 log₁₀ Pr{mapping position is wrong}, rounded to the nearest integer: it is a Phred score of the alignment, not of the base calls. A value of 255 indicates that the mapping quality is not available.
 
@@ -222,7 +220,7 @@ Second example, from the alignment-section slide: FLAG = 113, POS = 497, MAPQ = 
 
 **Variant calling** identifies genetic variants, i.e. the differences in DNA sequence between the reference genome and the analysed samples, based on the aligned reads (SAM/BAM/CRAM files in; VCF, or its binary version BCF, out). For each identified polymorphism a **genotype** is assigned to each individual from the combination of reference and/or alternative alleles observed, according to ploidy (diploid, n = 2: Ref/Ref, Ref/Alt, Alt/Alt).
 
-![[SATAUMV-image34.png|624]]
+![[SATAUMV-image32.png|624]]
 
 - **REF:** the nucleotide matches the reference sequence.
 - **ALT:** the nucleotide does not match the reference.
@@ -245,7 +243,7 @@ Note: REF/ALT are defined only with respect to the reference genome and **do not
 | FORMAT | List of the fields found in the sample columns (e.g. GT:AD:DP:GQ) |
 | Sample columns | One per sample (e.g. NA12878, NA12879), with the values in the order given by FORMAT |
 
-![[SATAUMV-image35.png|624]]
+![[SATAUMV-image33.png|624]]
 
 Fields of the sample columns:
 

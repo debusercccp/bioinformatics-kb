@@ -54,7 +54,7 @@ A single linear reference, even if complete, cannot represent global variation, 
 - **Phased diploid assemblies:** each individual contributes both haplotypes, so the pairs of underlying chromosome sequences are resolved.
 - **Not a single consensus sequence but a genome graph model:** the sequences of all individuals are aligned into a graph in which shared segments are common nodes and alternative paths represent variants. The slide shows examples of a **CNV**, an **SNV** and an **inversion**.
 
-![[SATAUMV-image36.png|598]]
+![[SATAUMV-image34.png|598]]
 
 ## 10.5 Human Genome Diversity Project (HGDP)
 
@@ -73,7 +73,7 @@ The heat maps on the slide show the LD pattern for YRI, CEU and CHB+JPT: the red
 
 *Note on the slide:* the HapMap sample size is reported with different values in the slides: 270 individuals (phases I and II), about 1,300 samples (HapMap 3), 708–1,600 in the summary table and 692 people in the *Nature* milestone figure. The differences come from counting different subsets (phases, related individuals and trios). The summary table also lists the technology as "sequencing", but HapMap data are **genotypes obtained with arrays**, as stated in the HapMap slide.
 
-![[SATAUMV-image37.png|610]]
+![[SATAUMV-image35.png|610]]
 
 ## 10.7 1000 Genomes Project (1KGP)
 

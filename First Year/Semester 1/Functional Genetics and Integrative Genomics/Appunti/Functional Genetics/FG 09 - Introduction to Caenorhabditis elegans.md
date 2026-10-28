@@ -98,7 +98,7 @@ tags: [note, fg]
 
 ### Biological Life Cycle and Larval Stages
 
-**Microscopy and temperature-dependent growth.** *C. elegans* can be visualized with a **stereomicroscope** for general morphology and behavior, while **fluorescence microscopy** (e.g., confocal or wide-field fluorescence) enables the visualization of specific cellular and molecular processes using fluorescent proteins like GFP. *C. elegans* grows between **16°C and 25°C**, and the growth rate increases with temperature (~5.5 days at 15°C, ~3.5 days at 20°C, and ~2.5 days at 25°C).
+**Microscopy and temperature-dependent growth.** *C. elegans* can be visualized with a **stereomicroscope** for general morphology and behavior, while **fluorescence microscopy** (e.g., confocal or wide-field fluorescence) enables the visualization of specific cellular and molecular processes using fluorescent proteins like **GFP**. *C. elegans* grows between **16°C and 25°C**, and the growth rate increases with temperature (~5.5 days at 15°C, ~3.5 days at 20°C, and ~2.5 days at 25°C).
 
 **Responses to nutritional deprivation and stress:**
 

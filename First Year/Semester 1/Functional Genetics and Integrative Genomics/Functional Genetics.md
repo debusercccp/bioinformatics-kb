@@ -37,7 +37,7 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/it/studiare
 
 ## Appunti (MCB)
 
-Fonte: `MCB/FGIG/FG/FunctionalGen_RS.docx` — 15 note collegate in ordine.
+Fonte: `MCB/FGIG/FG/FunctionalGen_RS.docx` — 21 note collegate in ordine.
 
 1. [[FG 01 - What is functional genomics + Genomic equivalence – the premise of the discipline|What is functional genomics + Genomic equivalence – the premise of the discipline]]
 2. [[FG 02 - Why function requires perturbation + Forward genetics|Why function requires perturbation + Forward genetics]]
@@ -53,7 +53,13 @@ Fonte: `MCB/FGIG/FG/FunctionalGen_RS.docx` — 15 note collegate in ordine.
 12. [[FG 12 - Drosophila melanogaster · The fly as a model organism|Drosophila melanogaster · The fly as a model organism]]
 13. [[FG 13 - Drosophila melanogaster · Forward genetics in Drosophila|Drosophila melanogaster · Forward genetics in Drosophila]]
 14. [[FG 14 - Drosophila melanogaster · Reverse genetics in Drosophila|Drosophila melanogaster · Reverse genetics in Drosophila]]
-15. [[FG 15 - Danio rerio (zebrafish)|Danio rerio (zebrafish)]]
+15. [[FG 15 - Danio rerio · Zebrafish as a model organism|Danio rerio · Zebrafish as a model organism]]
+16. [[FG 16 - Danio rerio · Forward genetics in zebrafish + Reverse genetics in zebrafish|Danio rerio · Forward genetics in zebrafish + Reverse genetics in zebrafish]]
+17. [[FG 17 - Danio rerio · Transgenesis and gene targeting|Danio rerio · Transgenesis and gene targeting]]
+18. [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|Danio rerio · Reporter lines – making gene expression visible]]
+19. [[FG 19 - Danio rerio · CRISPRCas9 – from gene to disease model|Danio rerio · CRISPRCas9 – from gene to disease model]]
+20. [[FG 20 - Danio rerio · Modelling cancer in zebrafish|Danio rerio · Modelling cancer in zebrafish]]
+21. [[FG 21 - Danio rerio · Optogenetics|Danio rerio · Optogenetics]]
 
 ## Exam
 

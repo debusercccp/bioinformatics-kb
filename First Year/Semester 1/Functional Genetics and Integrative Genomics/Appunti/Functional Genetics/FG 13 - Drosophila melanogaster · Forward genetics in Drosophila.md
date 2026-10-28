@@ -28,7 +28,7 @@ The logic is the one introduced in Module 1: a **wide range of mutagens** is use
 
 **EMS (ethyl methanesulfonate)** is the chemical mutagen actually used in fly screens. It is an **alkylating agent** and mainly induces **single base changes, i.e. point mutations**: -\> Predictable base substitutions.
 
-**Why are EMS mutations so predictable?** EMS is **not targeted to a gene or a position**: it hits random sites across the genome. What is predictable is the **type** of change, and that comes from its chemistry. (1) EMS only **transfers an ethyl group to single atoms of individual bases**; it does not break the DNA backbone, so it gives **point mutations, not deletions**. (2) It ethylates several atoms, but **only those involved in base pairing cause mutations**. The most frequent adduct, **N7-ethylguanine**, sits in the major groove, outside the Watson–Crick interface, so it does not change pairing (at most it causes depurination). The mutagenic one is **O⁶-ethylguanine**: the O⁶ is part of the G–C pairing face, and once ethylated the base pairs with **T** instead of C. (3) O⁶-ethylG is still a purine and T is a pyrimidine, so the pair keeps normal purine–pyrimidine geometry: the polymerase accepts it and the result can only be a **transition, never a transversion**. Over two rounds of replication: **G:C → (O⁶-etG):T → A:T**. (4) Because this lesion dominates, the **large majority of EMS mutations are G:C → A:T**. You can even predict which codons can become stop codons, e.g. **TGG (Trp) → TAG/TGA (stop)** or **CAA/CAG (Gln) → TAA/TAG (stop)**. The atoms involved are:
+**Why are EMS mutations so predictable?** EMS is **not targeted to a gene or a position**: it hits random sites across the genome. What is predictable is the **type of change**, and that comes from its chemistry. (1) EMS only **transfers an ethyl group to single atoms of individual bases**; it does not break the DNA backbone, so it gives **point mutations, not deletions**. (2) It ethylates several atoms, but **only those involved in base pairing cause mutations**. The most frequent adduct, **N7-ethylguanine**, sits in the major groove, outside the Watson–Crick interface, so it does not change pairing (at most it causes depurination). The mutagenic one is **O⁶-ethylguanine**: the O⁶ is part of the G–C pairing face, and once ethylated the base pairs with **T** instead of C. (3) O⁶-ethylG is still a purine and T is a pyrimidine, so the pair keeps normal purine–pyrimidine geometry: the polymerase accepts it and the result can only be a **transition, never a transversion**. Over two rounds of replication: **G:C → (O⁶-etG):T → A:T**. (4) Because this lesion dominates, the **large majority of EMS mutations are G:C → A:T**. You can even predict which codons can become stop codons, e.g. **TGG (Trp) → TAG/TGA (stop)** or **CAA/CAG (Gln) → TAA/TAG (stop)**. The atoms involved are:
 
 - it **ethylates DNA principally at oxygens**, such as the **O⁶ of guanine**: O⁶-ethylguanine pairs with thymine, giving the **transition C:G → T:A**;
 
@@ -60,13 +60,15 @@ The logic is the one introduced in Module 1: a **wide range of mutagens** is use
 
 - **One male will mate with many females**, so a single treated genome can be propagated into many lines.
 
-![[FG-image23.png|341]]**The general scheme of a chemical-mutagenesis screen** (Hales et al., *Genetics* 2015) is: (A) males eat food with the mutagen; (B) each developing sperm carries a **different** new mutation; (C) the males are crossed to wild-type females; (D) the offspring each carry different mutations; (E) the offspring are outcrossed separately; (F) inbred lines of the new mutations are established; (G) the homozygotes, **if alive**, are tested for the phenotype of interest.
+> ![[FG-image23.png|341]]
+
+**The general scheme of a chemical-mutagenesis screen** (Hales et al., *Genetics* 2015) is: (A) males eat food with the mutagen; (B) each developing sperm carries a **different** new mutation; (C) the males are crossed to wild-type females; (D) the offspring each carry different mutations; (E) the offspring are outcrossed separately; (F) inbred lines of the new mutations are established; (G) the homozygotes, **if alive**, are tested for the phenotype of interest.
 
 The weak point of this scheme is step (F): a newly induced recessive mutation is invisible in the heterozygote and is lost by recombination unless it is protected. This is what balancer chromosomes are for.
 
 ### Balancer chromosomes
 
-**Identified by H. J. Muller in 1918.** A balancer is a chromosome engineered (or found) so that it can carry a mutagenised homologue through the generations without ever recombining with it.
+**Identified by H. J. Muller in 1918.** A balancer is a chromosome engineered (or found) so that it can carry a mutagenised homologue through the generations **without ever recombining with it**.
 
 ![[FG-image24.png|254]]**Properties:**
 
@@ -79,6 +81,14 @@ The weak point of this scheme is step (F): a newly induced recessive mutation is
 4.  **Recessive visible mutations** that can be useful in crosses (e.g. eye-colour markers).
 
 **In short:** **inversions** → no viable recombinants, so the mutagenised chromosome stays intact; **recessive lethal** → balancer homozygotes die, so the balancer cannot become fixed; **dominant marker** (*Curly*) → you see by eye who carries it. A mut/CyO stock is **self-maintaining**: CyO/CyO die, mut/mut die (if the mutation is lethal), only mut/CyO survive.
+
+**Focus — Why the marker must be dominant.** A balancer is lethal when homozygous by construction, so the only genotype in which it is ever seen **alive** is the **heterozygote balancer/homologue**. A recessive marker would be covered by the wild-type allele of the other chromosome and could only be scored as a homozygote, which is dead: it would be invisible forever. The marker therefore has to be dominant, not for convenience but by necessity. In Müller's terms these markers are gain-of-function alleles (hypermorphs or neomorphs) or antimorphs. The molecularly clearest case is **Stubble** (**Sb**, third chromosome), a transmembrane serine protease whose mutant subunit poisons the complex it joins — a dominant negative — giving short thick bristles in the heterozygote.
+
+**Focus — Why one inverted chromosome is enough: dominance in a mechanical sense.** Meiotic recombination is not a property of one chromosome but of the **pair**: it requires base-by-base synaptonemal alignment. If one homologue carries an inverted block and the other does not, the two can only pair by forming an **inversion loop**, so a single abnormal chromosome distorts the geometry of both. That is the sense in which the effect is dominant.
+
+**Focus — What actually happens to the recombinants.** A crossover inside the loop of a **paracentric** inversion (centromere outside the inverted block) produces one **dicentric** chromatid and one **acentric** fragment: the dicentric is stretched into an anaphase bridge between the two poles and breaks, the acentric is not segregated and is lost. A crossover inside the loop of a **pericentric** inversion (centromere inside the block) produces chromatids carrying a duplication of one segment and a deletion of another. In both cases the recombinant products are **aneuploid and lethal**. So recombination is not physically prevented: the recombinant gametes simply never become flies. The filter acts downstream, and the only viable gametes are the parental ones — either the intact balancer or the intact mutagenized chromosome. This is also why **multiple, overlapping** inversions are used: they cover the whole length of the chromosome and leave no uncovered region where a crossover could still be viable.
+
+**Focus — A side effect worth knowing.** The inversion breakpoints can themselves generate dominant phenotypes, either because a breakpoint falls inside a gene (which then becomes haploinsufficient) or by **position effect**: a euchromatic gene moved next to heterochromatin is silenced in a patchy, clonal way (PEV, position-effect variegation). The physical construction of a balancer and its dominant marking are therefore not entirely independent.
 
 Additional points from the lecture:
 
@@ -110,13 +120,13 @@ Additional points from the lecture:
 
 1.  **P:** EMS-treated males (*cn bw sp*) × females carrying the **CyO balancer** (*Cy pr cn²*/*pr cn*).
 
-2.  **F1:** select **balanced males** carrying one mutagenised chromosome over the balancer (*cn bw* \* *sp* / *CyO*, where \* marks the new EMS-induced recessive lethal); each male carries a **different mutagenised chromosome**, recognisable by eye colour (bright red vs orange). Cross each F1 male individually with *CyO* females.
+2.  **F1:** select **balanced males** carrying one mutagenized chromosome over the balancer (*cn bw* \* *sp* / *CyO*, where \* marks the new EMS-induced recessive lethal); each male carries a **different mutagenized chromosome**, recognizable by eye color (bright red vs orange). Cross each F1 male individually with *CyO* females.
 
-3.  **F2:** 25% *CyO*/*CyO* (**lethal**), 25% balancer over the non-mutagenised chromosome, 50% carrying the mutagenised chromosome. A single F2 pair of **balanced siblings** is intercrossed.
+3.  **F2:** 25% *CyO*/*CyO* (**lethal**), 25% balancer over the non-mutagenized chromosome, 50% carrying the mutagenized chromosome. A single F2 pair of **balanced siblings** is intercrossed.
 
-4.  **F3:** the stock segregates balancer homozygotes (die as larvae), **balanced mutant stock** (viable, the line that is kept), and **homozygotes for the mutagenised chromosome** — these are the embryos that are collected and screened for the cuticular phenotype.
+4.  **F3:** the stock segregates balancer homozygotes (die as larvae), **balanced mutant stock** (viable, the line that is kept), and **homozygotes for the mutagenized chromosome** — these are the embryos that are collected and screened for the cuticular phenotype.
 
-**Why F3 (and not F2 as in the worm):** the fly **cannot self-fertilise**. One generation is needed to put each mutagenised chromosome over the balancer (**F1**), one to build a balanced stock of siblings (**F2**); only their intercross produces homozygous embryos (**F3**).
+**Why F3 (and not F2 as in the worm):** the fly **cannot self-fertilize**. One generation is needed to put each mutagenized chromosome over the balancer (**F1**), one to build a balanced stock of siblings (**F2**); only their intercross produces homozygous embryos (**F3**).
 
 ![[FG-image26.png|402]]
 
@@ -175,9 +185,7 @@ After a species-dependent number of mitotic cycles, the **MZT (maternal-to-zygot
 
 The result is that **genetic control of development is transferred from the maternal to the zygotic genome**. This is a **fundamental process conserved in metazoans**: echinoderms (*Strongylocentrotus purpuratus*), nematodes (*C. elegans*), insects (*Drosophila melanogaster*), fish (*Danio rerio*), amphibians (*Xenopus laevis*), mammals (*Mus musculus*) and plants.
 
-![[FG-image29.png|329]]
-
-**Maternal-effect genes.** A maternal-effect gene is one whose product is supplied by the **mother** during oogenesis: the phenotype of the offspring therefore depends on the **mother's genotype, not on its own**.
+![[FG-image29.png|329]]**Maternal-effect genes.** A maternal-effect gene is one whose product is supplied by the **mother** during oogenesis: the phenotype of the offspring therefore depends on the **mother's genotype, not on its own**.
 
 - *A/A* males × *A/A* females → the "A" gene product is loaded into the egg → **fertile**, normal embryos.
 
@@ -189,7 +197,7 @@ The result is that **genetic control of development is transferred from the mate
 
 - **Reciprocal cross:** *a/a* homozygous mutant males × *A/a* females → **viable offspring**, again whatever their genotype.
 
-**The lethal phenotype of the zygote is determined by the mother's genotype.** This is the signature of a maternal-effect mutation and is how *bicoid*, *nanos* and the other axis-determining genes were recognised.
+**The lethal phenotype of the zygote is determined by the mother's genotype.** This is the signature of a maternal-effect mutation and is how *bicoid*, *nanos* and the other axis-determining genes were recognized.
 
 **Zygotic genes, by contrast,** are transcribed from the embryo's own genome. A recessive lethal mutation in a zygotic gene required for normal embryonic development behaves in a strictly Mendelian way: *a/A* × *a/A* → 1 *A/A* : 2 *a/A* (all normal) : 1 ***a/a*, which dies**. The Nüsslein-Volhard and Wieschaus screen was designed specifically to catch **this** class, which is why it screened F3 homozygous embryos.
 
@@ -269,13 +277,29 @@ The four classes above build a correct **number** of segments with correct **pol
 
 **Two points worth keeping.** First, the cascade is **progressive and irreversible in direction**: information flows downwards, from a continuous maternal gradient to a discrete 14-stripe pattern, and each level is **narrower in space but more precise** than the one above. Second, the first three levels operate in a **syncytium**, where transcription factors can simply diffuse; the fourth operates in a **cellularised** embryo and therefore had to invent **signalling between cells** — which is why the segment-polarity genes, and not the others, turned out to be the conserved developmental signalling pathways of all animals.
 
+### 
+
+### 
+
+### 
+
 ### Insertional mutagenesis: the P element
 
 The P element is the transposon that turned *Drosophila* from an organism you could only **break** into one you could also **build**.
 
 ![[FG-image31.png|619]]
 
-**Structure of the active (autonomous) P element.** It consists of **two 31 bp inverted repeats (IR)** flanking an open reading frame — organised in exons 0, 1, 2 and 3 — encoding a **transposase**; internal 11 bp inverted repeats are also present, and the whole element is flanked by an **8 bp duplication of the genomic insertion site** generated on insertion.
+**Structure of the active (autonomous) P element.** It consists of **two 31 bp inverted repeats (IR)** surrounding an open reading frame — organised in exons 0, 1, 2 and 3 — encoding a **transposase**; internal 11 bp inverted repeats are also present, and the whole element is flanked by an **8 bp duplication of the genomic insertion site** generated on insertion.
+
+**Focus — In numbers.** The autonomous element is **2907 bp**. The terminal 31 bp inverted repeats are the substrate of cleavage, while the internal 11 bp inverted repeats are the actual **transposase binding sites**. The 8 bp target-site duplication is the molecular signature of the event and tells you that insertion proceeds through a staggered cut in the genomic DNA.
+
+**Focus — Why it transposes only in the germ line.** The primary transcript contains three introns. The first two are removed everywhere, but the third one (**IVS3**) is spliced **only in the germ line**. In somatic cells an hnRNP-like protein, **PSI (P-element Somatic Inhibitor)**, together with hrp48 binds exonic sequences upstream of the splice site and blocks removal of IVS3. The outcome: in the soma IVS3 is retained, the ORF is truncated and a **66 kDa repressor** is made; in the germ line IVS3 is removed, the ORF is complete and the active **87 kDa transposase** is made. This is why the P element is a germinal and not a somatic mutagen, and it is also the molecular basis of **hybrid dysgenesis** (P males × M females: the M maternal cytoplasm lacks the repressor and the piRNAs that silence the element, so transposition explodes in the germ line of the progeny → sterility, mutations, chromosome breaks).
+
+**Focus — Transposition mechanism: cut-and-paste.** The transposase, as a multimer, binds the internal 11-mers, synapses the two ends and cuts. The cuts are staggered, leaving **17-nucleotide 3′ extensions** on the element. The excised element is inserted elsewhere through an 8 bp staggered cut which, once filled in by the polymerase, generates the target-site duplication. The mechanism is **non-replicative**: the element moves, it does not copy itself.
+
+**Focus — What happens at the donor site.** Excision leaves a double-strand break that the cell must repair. If it repairs by homologous recombination using the **sister chromatid** (which still carries the element), the element reappears at the donor site: copy number apparently increases even though the mechanism is conservative. If it repairs by end joining, a **footprint** is left — a few residual bp of the inverted repeats, often causing a frameshift. This is the basis of **imprecise excision**, used historically to generate deletions starting from a known insertion.
+
+**Focus — Insertion bias.** Insertion is **not random**: the P element strongly prefers the 5′ regions of genes, promoters and first introns, with hotspots and coldspots. This is why no collection of P insertions saturates the genome, and why other transposons with different and complementary preferences — **piggyBac** and **Minos** — were introduced later.
 
 **The key idea: transposon and transposase can be separated.** This gives a **binary system** that allows two things:
 
@@ -303,6 +327,8 @@ The result is that **new mutations are induced by transposition of the single P 
 
 **In short:** the **mutator** alone cannot move (no transposase); the **jumpstarter** alone cannot move (no inverted repeats). Together in the F1 they cause a jump; in the F2 you keep flies that carry the new insertion but have **lost the jumpstarter**, so the insertion is frozen into a **stable, tagged allele**.
 
+**Focus — The classical transposase source.** The standard jumpstarter is **Δ2-3(99B)**, a transgene in which IVS3 has already been deleted at the DNA level: it therefore produces transposase constitutively, soma included, without depending on tissue-specific splicing. Having lost the inverted repeats, it is an illegal substrate for itself and cannot move.
+
 **"Many ways to kill a gene".** An insertion can land in the **enhancer**, the **promoter**, the **5′ UTR**, an **exon**, an **intron** or the **3′ UTR**, and the severity of the allele depends on where it lands — which is the molecular counterpart of the allelic series of Module 1.
 
 ![[FG-image32.png|543]]
@@ -316,6 +342,10 @@ The result is that **new mutations are induced by transposition of the single P 
 - ![[FG-image34.png|227]]**IPCR (inverse PCR).** Genomic DNA is digested, the fragments are **circularised**, and PCR is run with primers pointing **outwards** from the known P-element sequence; 30 cycles amplify across the circle, so the product contains the **unknown flanking genomic region**.
 
 **Common logic:** both methods exploit the fact that the **P-element sequence is known**; it is used as a handle to recover the **unknown genomic DNA next to the insertion**.
+
+**Focus — Why plasmid rescue works.** The P construct is deliberately built as an **incomplete plasmid**: it carries a bacterial origin of replication and a resistance gene inside itself. After digestion with an enzyme that does not cut between **ori** and **kan**ʳ but does cut in the surrounding genome, each linear fragment contains part of the element plus the adjacent genomic DNA. Ligation is then carried out at **very low DNA concentration**, because in dilute conditions the intramolecular reaction (self-circularisation) is kinetically favoured over the intermolecular one. On transformation only the circles containing **ori** and **kan**ʳ — that is, only those derived from the insertion — give colonies.
+
+**Focus — Why inverse PCR works.** Primers pointing **outwards** from the known P-element sequence would amplify nothing on a linear template; on a circle they end up facing each other across the genomic flank, so the product contains exactly the unknown region. It is faster and scalable, and it is the method that allowed the large insertion collections to be mapped (Berkeley Drosophila Genome Project).
 
 #### P elements as expression vectors: enhancer traps
 
@@ -331,7 +361,7 @@ The **enhancer trap** turns this round: instead of choosing the promoter, the el
 
 - the element also carries the **trailer sequence and polyadenylation site of *hsp70***, *kan*ʳ and *ori* for plasmid rescue, and ***rosy⁺*** as a transformation marker.
 
-![[FG-image35.png|590]]
+![[FG-image35.png|527]]
 
 When the element inserts near a **genomic enhancer (E)**, that enhancer acts on the weak P promoter and **drives *lacZ* in the enhancer's own pattern**. Staining for β-galactosidase then reveals the expression pattern directly in embryos, imaginal discs and adult tissues — and, because the element is also a mutagen and a molecular tag, **the same insertion gives the pattern, a mutant allele and a handle for cloning at once**.
 

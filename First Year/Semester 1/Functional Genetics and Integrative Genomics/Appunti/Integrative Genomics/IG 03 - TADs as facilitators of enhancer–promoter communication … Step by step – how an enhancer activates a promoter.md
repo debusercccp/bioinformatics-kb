@@ -40,7 +40,7 @@ TADs impose a **preferential, not absolute, insulation** and cannot be the only 
 
 Integrated model from the lecture and **\[SF19\]** (“selecting – facilitating – specifying”).
 
-- ![[IG-image9.png|231]]**Selecting.** Pioneer TFs bind compacted chromatin, chromatin remodelers (SWI/SNF) open it, histone methyltransferases deposit H3K4me1, and p300/CBP add H3K27ac. A cell-type-specific subset of enhancers becomes accessible and “active”.
+- ![[IG-image10.png|231]]**Selecting.** Pioneer TFs bind compacted chromatin, chromatin remodelers (SWI/SNF) open it, histone methyltransferases deposit H3K4me1, and p300/CBP add H3K27ac. A cell-type-specific subset of enhancers becomes accessible and “active”.
 - **Recruitment.** Cell-type TFs bind the open enhancer and recruit coactivators (Mediator, p300/CBP, BRD4 which reads H3K27ac) and **RNA Pol II**.
 - **Facilitating.** 3D genome structure reduces the search space: compartments (A/B), TADs and CTCF–cohesin loops, relocation to transcription factories/phase-separated condensates (BRD4 and MED1 form condensates at super-enhancers).
 - **Loop formation.** Cohesin is loaded by NIPBL and extrudes a loop until it meets CTCF sites in convergent orientation; WAPL unloads it.

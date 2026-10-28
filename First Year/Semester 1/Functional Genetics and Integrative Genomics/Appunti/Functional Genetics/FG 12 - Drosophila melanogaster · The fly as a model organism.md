@@ -50,7 +50,7 @@ Embryogenesis itself is the part that matters for the screens described later. *
 
 Polytene chromosomes are found in the **salivary glands of third-instar larvae** and are one of the historical reasons the fly became a model organism.
 
-- They are formed by **endomitosis**: repeated **replication without division**, so that each chromosome is made of hundreds of identical chromatids lying side by side.
+- They are formed by **endomitosis**: repeated **replication without division**, so that each chromosome is made of hundreds of identical chromatids **lying side by side**.
 
 - All of them are joined at a **chromocenter**, made of the heterochromatic, centromeric regions.
 
