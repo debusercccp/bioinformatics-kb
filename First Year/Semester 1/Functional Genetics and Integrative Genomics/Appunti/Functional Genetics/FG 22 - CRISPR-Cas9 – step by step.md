@@ -10,7 +10,7 @@ aliases:
   - HDR
 ---
 
-> [[FG 21 - Danio rerio · Optogenetics|← Danio rerio · Optogenetics]] · [[Functional Genetics|↑ Functional Genetics]]
+> [[FG 21 - Danio rerio · Optogenetics|← Danio rerio · Optogenetics]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 23 - Balancer chromosomes – step by step|Balancer chromosomes — step by step →]]
 
 # CRISPR-Cas9 — step by step
 
@@ -159,4 +159,4 @@ Injecting the RNP into the one-cell embryo gives a phenotype immediately, but th
 - Zebrafish was the first vertebrate in which CRISPR/Cas9 showed efficient in vivo editing (Hwang et al., 2013).
 
 ---
-> [[FG 21 - Danio rerio · Optogenetics|← Danio rerio · Optogenetics]] · [[Functional Genetics|↑ Functional Genetics]]
+> [[FG 21 - Danio rerio · Optogenetics|← Danio rerio · Optogenetics]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 23 - Balancer chromosomes – step by step|Balancer chromosomes — step by step →]]

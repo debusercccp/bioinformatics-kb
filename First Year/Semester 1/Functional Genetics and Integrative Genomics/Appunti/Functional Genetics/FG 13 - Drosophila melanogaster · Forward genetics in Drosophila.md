@@ -12,6 +12,8 @@ tags: [note, fg]
 
 Forward genetics goes **from phenotype to gene**: mutagenise at random, screen for a phenotype, then identify the gene responsible. In the fly the classic toolkit is **chemical mutagenesis with EMS**, **balancer chromosomes** to keep the new recessive mutations, and the **saturation screen** of Nüsslein-Volhard and Wieschaus; **insertional mutagenesis with the P element** adds a molecular tag that makes the mutated gene easy to clone, and **enhancer traps** use the same random insertions to find genes by their expression pattern.
 
+*Companion step-by-step: [[FG 23 - Balancer chromosomes – step by step|Balancer chromosomes]] · [[FG 24 - Breaking, switching on, switching off – step by step|P element, GAL4/UAS, RNAi]]*
+
 ### The mutagens
 
 The logic is the one introduced in Module 1: a **wide range of mutagens** is used to induce mutations at a rate much higher than the spontaneous one, and **a given mutagen increases the rate of some kinds of mutation but not others**. The three classes are physical, chemical and biological (insertional).
@@ -276,12 +278,6 @@ The four classes above build a correct **number** of segments with correct **pol
 | **Homeotic (Hox)** | the **zygote** | **identity** of each segment | **homeotic transformation** (legs for antennae, four wings) | *Antennapedia* and *Bithorax* complexes |
 
 **Two points worth keeping.** First, the cascade is **progressive and irreversible in direction**: information flows downwards, from a continuous maternal gradient to a discrete 14-stripe pattern, and each level is **narrower in space but more precise** than the one above. Second, the first three levels operate in a **syncytium**, where transcription factors can simply diffuse; the fourth operates in a **cellularised** embryo and therefore had to invent **signalling between cells** — which is why the segment-polarity genes, and not the others, turned out to be the conserved developmental signalling pathways of all animals.
-
-### 
-
-### 
-
-### 
 
 ### Insertional mutagenesis: the P element
 

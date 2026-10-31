@@ -61,6 +61,8 @@ Fonte: `MCB/FGIG/FG/FunctionalGen_RS.docx` — 21 note collegate in ordine.
 20. [[FG 20 - Danio rerio · Modelling cancer in zebrafish|Danio rerio · Modelling cancer in zebrafish]]
 21. [[FG 21 - Danio rerio · Optogenetics|Danio rerio · Optogenetics]]
 22. [[FG 22 - CRISPR-Cas9 – step by step|CRISPR-Cas9 — step by step]] — nota aggiuntiva (meccanismo), non dal docx
+23. [[FG 23 - Balancer chromosomes – step by step|Balancer chromosomes — step by step]] — nota aggiuntiva (companion di FG 13), non dal docx
+24. [[FG 24 - Breaking, switching on, switching off – step by step|Breaking, switching on, switching off — step by step]] — nota aggiuntiva (P element, GAL4/UAS, RNAi; companion di FG 13–14), non dal docx
 
 ## Exam
 

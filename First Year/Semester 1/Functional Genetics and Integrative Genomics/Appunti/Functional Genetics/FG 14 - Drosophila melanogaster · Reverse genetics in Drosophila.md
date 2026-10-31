@@ -12,6 +12,8 @@ tags: [note, fg]
 
 Reverse genetics goes **from gene to phenotype**: start from a known gene, change it or its expression on purpose, and look at the consequence. In the fly this rests on **transgenesis** — getting a construct into the germ line, at random with the P element or at a defined landing site with ΦC31 — and on **binary expression systems** (GAL4/UAS and its derivatives) that decide **where and when** the transgene is on, for gain of function (ectopic expression) or loss of function (UAS-RNAi).
 
+*Companion step-by-step: [[FG 24 - Breaking, switching on, switching off – step by step|P element, GAL4/UAS, RNAi]]*
+
 ### Transgenesis
 
 #### P-element-mediated germline transformation
