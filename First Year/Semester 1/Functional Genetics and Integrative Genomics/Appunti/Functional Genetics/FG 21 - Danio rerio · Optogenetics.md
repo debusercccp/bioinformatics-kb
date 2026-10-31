@@ -6,7 +6,7 @@ order: 21
 tags: [note, fg]
 ---
 
-> [[FG 20 - Danio rerio · Modelling cancer in zebrafish|← Danio rerio · Modelling cancer in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]]
+> [[FG 20 - Danio rerio · Modelling cancer in zebrafish|← Danio rerio · Modelling cancer in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 22 - CRISPR-Cas9 – step by step|CRISPR-Cas9 — step by step →]]
 
 # Optogenetics
 
@@ -142,4 +142,4 @@ The gain in **temporal and cellular precision** is the whole point — paid for 
 - Interpretation stands or falls on **controls**: **opsin-negative animals**, **verified expression**, **calibrated light**, and the distinction between **sufficiency and necessity**.
 
 ---
-> [[FG 20 - Danio rerio · Modelling cancer in zebrafish|← Danio rerio · Modelling cancer in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]]
+> [[FG 20 - Danio rerio · Modelling cancer in zebrafish|← Danio rerio · Modelling cancer in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 22 - CRISPR-Cas9 – step by step|CRISPR-Cas9 — step by step →]]

@@ -45,6 +45,8 @@ Fonte: `MCB/FGIG/IG/IntegrativeGen_RS.docx` — 5 note collegate in ordine.
 4. [[IG 04 - Genomic imprinting + Enhancer RNAs (eRNAs)|Genomic imprinting + Enhancer RNAs (eRNAs)]]
 5. [[IG 05 - Chromatin and remodelling + Cautions and corrections to keep in mind|Chromatin and remodelling + Cautions and corrections to keep in mind]]
 
+Nota aggiuntiva: [[IG 03 - Selecting, Facilitating, Specifying|Selecting, Facilitating, Specifying]] — modello integrato della lezione 3 (lezione + Schoenfelder & Fraser 2019), con modello 3D interattivo.
+
 ## Exam
 
 ⚠️ Modalità d'esame non ancora definita nella scheda ufficiale — verrà comunicata dai docenti all'inizio del corso ("The examination procedures will be discussed with the students at the beginning of the course"). Uso di IA: consentito solo in modo limitato, dichiarato e non sostanziale (es. riassumere/riformulare); non consentito per completare parti sostanziali della valutazione.

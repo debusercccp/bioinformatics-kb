@@ -60,6 +60,7 @@ Fonte: `MCB/FGIG/FG/FunctionalGen_RS.docx` — 21 note collegate in ordine.
 19. [[FG 19 - Danio rerio · CRISPRCas9 – from gene to disease model|Danio rerio · CRISPRCas9 – from gene to disease model]]
 20. [[FG 20 - Danio rerio · Modelling cancer in zebrafish|Danio rerio · Modelling cancer in zebrafish]]
 21. [[FG 21 - Danio rerio · Optogenetics|Danio rerio · Optogenetics]]
+22. [[FG 22 - CRISPR-Cas9 – step by step|CRISPR-Cas9 — step by step]] — nota aggiuntiva (meccanismo), non dal docx
 
 ## Exam
 
