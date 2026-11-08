@@ -78,6 +78,7 @@ Study notes imported from `MCB/*.docx` are split into **atomic notes** (one topi
 From the vault folder run `.scripts/update.sh`: it re-imports only the `MCB/*.docx` changed since the last import (hashes in `.scripts/last-import.sha256`). Pass keys (`.scripts/update.sh FG IG`) or `--all` to force. Then check `git status`.
 - ⚠️ Hand edits inside `Appunti/` notes are **overwritten**: fix the docx instead, or add a recurring fix to `FIXES` in `.scripts/build.py`.
 - Cross-course links are kept in `.scripts/links.py` (`REL`, by note code like `AML 03`).
+- **Windows setup:** double-click `.scripts/setup-windows.cmd` — installs Git, Python, Pandoc, LibreOffice and ImageMagick with winget (only what is missing), runs a test import and pushes to GitHub.
 - Needs `python3`, `soffice` and `magick`; pandoc is installed automatically under `~/.cache/bioinformatics-import` if missing.
 - Source paths are in `SOURCES` (`.scripts/build.py`), relative to the folder that contains `MCB/`. That folder is picked by OS: on **Windows** `C:\Users\Rocco\Documents\Universita` (`WIN_ROOT`); on **Linux** the folder next to the vault, else `~/Documents/Universita` (`LINUX_ROOTS`). `MCB_ROOT=<folder> .scripts/update.sh` overrides both.
 - Functional Genetics (`FG`) is imported from `MCB/Functional_Genetics/FunctionalGen_common.docx`.
