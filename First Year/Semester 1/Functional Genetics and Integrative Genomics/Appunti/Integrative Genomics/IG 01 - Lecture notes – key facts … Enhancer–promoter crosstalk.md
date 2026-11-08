@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Integrative Genomics]]"
-source: "MCB/FGIG/IG/IntegrativeGen_RS.docx"
+source: "MCB/Functional_Genetics/IntegrativeGen_RS.docx"
 order: 1
 tags: [note, ig]
 ---
@@ -28,6 +28,10 @@ Papers behind this:
 
 - **\[SF19\]** Schoenfelder & Fraser, *Long-range enhancer–promoter contacts in gene expression control*, Nat Rev Genet 20:437–455 (2019)
 - **\[W26\]** Wang, ten Dijke & Fan, *Deciphering the regulatory landscape of enhancer RNAs in health and disease*, Signal Transduct Target Ther 11:29 (2026)
+- **\[VB25\]** Vanyai & Blewitt, *Catalytic-independent roles of chromatin modifiers in mammalian development and the implications for treating human disease*, Biochem Soc Trans 53:1507–1516 (2025), doi:10.1042/BST20253098
+- **\[B93\]** Braunstein, Rose, Holmes, Allis & Broach, *Transcriptional silencing in yeast is associated with reduced nucleosome acetylation*, Genes Dev 7:592–604 (1993)
+- **\[R00\]** Rea, Eisenhaber, O’Carroll, Strahl, Sun, Schmid, Opravil, Mechtler, Ponting, Allis & Jenuwein, *Regulation of chromatin structure by site-specific histone H3 methyltransferases*, Nature 406:593–599 (2000)
+- **\[S12\]** Smith et al., *A unique regulatory phase of DNA methylation in the early mammalian embryo*, Nature 484:339–344 (2012)
 
 ## 1. The big question
 
@@ -75,7 +79,7 @@ In the 1990s, in vitro experiments demonstrated that providing a synthetic naked
 
 In eukaryotes, maximizing gene activity requires the **coordination of multiple TFs**. (Note: Humans have roughly 1,600 specific TFs.)
 
-When comparing simple eukaryotes (like yeast) to mammals, multicellular organisms rely heavily on a **vast array of “weak” TFs** rather than a few “strong” ones. This “weakness is a strength” paradigm allows for high variability and precise fine-tuning: combining multiple weak, tissue-specific TFs with cofactors (e.g., p300, Mediator, BRG1) generates highly specific, combinatorial transcriptional responses.
+When comparing simple eukaryotes (like yeast) to mammals, multicellular organisms rely heavily on a **vast array of “weak” TFs** rather than a few “strong” ones. This “weakness is a strength” paradigm allows for high variability and precise fine-tuning: combining **multiple weak, tissue-specific TFs** with cofactors (e.g., p300, Mediator, BRG1) generates **highly specific, combinatorial transcriptional responses**.
 
 Yeast only needs one factor to activate about 15% of the genes ⇒ ON/OFF mechanism, because the moment you have one TF bound you have the maximum activity. In multicellular organisms, the maximum activity is reached with 6–10 TFs bound ⇒ weak TFs. *Apes together, strong lol.*
 

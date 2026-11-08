@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 7
 tags: [note, aml]
 ---
@@ -120,8 +120,8 @@ The Normal Equation method is particularly useful when:
 However, for very large datasets, the computational cost of matrix inversion can be prohibitive, and GD or its variants may be more practical.
 
 ## Collegamenti
-- [[MBD 14 - Module 5 – Multivariable Calculus and Optimisation]] — gradiente di funzioni di più variabili
-- [[MBD 09 - Module 2 – Matrices and Linear Systems · Linear systems Ax=b]] — soluzione in forma chiusa di Ax=b / minimi quadrati
+- [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation]] — gradiente di funzioni di più variabili
+- [[MBD 06 - Module 2 – Matrices · Transpose matrix … Orthogonal matrices]] — matrice inversa (soluzione in forma chiusa)
 
 ---
 > [[AML 06 - Univariate Model Regression · GD Implementation – Derivative Term … Local Minimum|← Univariate Model Regression · GD Implementation – Derivative Term … Local Minimum]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 08 - Multivariate Model Regression|Multivariate Model Regression →]]

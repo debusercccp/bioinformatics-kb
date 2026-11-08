@@ -37,23 +37,23 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/it/studiare
 
 ## Appunti (MCB)
 
-Fonte: `MCB/FGIG/FG/FunctionalGen_RS.docx` — 21 note collegate in ordine.
+Fonte: `MCB/Functional_Genetics/FunctionalGen_common.docx` — 21 note collegate in ordine.
 
 1. [[FG 01 - What is functional genomics + Genomic equivalence – the premise of the discipline|What is functional genomics + Genomic equivalence – the premise of the discipline]]
 2. [[FG 02 - Why function requires perturbation + Forward genetics|Why function requires perturbation + Forward genetics]]
 3. [[FG 03 - Reverse genetics + Gene mutation – molecular consequences (what is the nature of the allele)|Reverse genetics + Gene mutation – molecular consequences (what is the nature of the allele)]]
 4. [[FG 04 - Effects of mutations on gene function – Müller's classification|Effects of mutations on gene function – Müller's classification]]
 5. [[FG 05 - Where do we measure gene function|Where do we measure gene function]]
-6. [[FG 06 - What is a model organism|What is a model organism]]
-7. [[FG 07 - Why comparison works – the evolutionary basis|Why comparison works – the evolutionary basis]]
-8. [[FG 08 - Animal models in biomedical research|Animal models in biomedical research]]
-9. [[FG 09 - Introduction to Caenorhabditis elegans|Introduction to Caenorhabditis elegans]]
-10. [[FG 10 - Caenorhabditis elegans · Genetics of C. elegans – overview + Forward genetics in C. elegans|Caenorhabditis elegans · Genetics of C. elegans – overview + Forward genetics in C. elegans]]
-11. [[FG 11 - Caenorhabditis elegans · Reverse genetics in C. elegans|Caenorhabditis elegans · Reverse genetics in C. elegans]]
-12. [[FG 12 - Drosophila melanogaster · The fly as a model organism|Drosophila melanogaster · The fly as a model organism]]
-13. [[FG 13 - Drosophila melanogaster · Forward genetics in Drosophila|Drosophila melanogaster · Forward genetics in Drosophila]]
-14. [[FG 14 - Drosophila melanogaster · Reverse genetics in Drosophila|Drosophila melanogaster · Reverse genetics in Drosophila]]
-15. [[FG 15 - Danio rerio · Zebrafish as a model organism|Danio rerio · Zebrafish as a model organism]]
+6. [[FG 06 - What is a model organism + Why comparison works – the evolutionary basis|What is a model organism + Why comparison works – the evolutionary basis]]
+7. [[FG 07 - Animal models in biomedical research|Animal models in biomedical research]]
+8. [[FG 08 - Introduction to Caenorhabditis elegans|Introduction to Caenorhabditis elegans]]
+9. [[FG 09 - Caenorhabditis elegans · Genetics of C. elegans – overview + Forward genetics in C. elegans|Caenorhabditis elegans · Genetics of C. elegans – overview + Forward genetics in C. elegans]]
+10. [[FG 10 - Caenorhabditis elegans · Reverse genetics in C. elegans|Caenorhabditis elegans · Reverse genetics in C. elegans]]
+11. [[FG 11 - Drosophila melanogaster · The fly as a model organism|Drosophila melanogaster · The fly as a model organism]]
+12. [[FG 12 - Drosophila melanogaster · Forward genetics in Drosophila|Drosophila melanogaster · Forward genetics in Drosophila]]
+13. [[FG 13 - Drosophila melanogaster · Reverse genetics in Drosophila|Drosophila melanogaster · Reverse genetics in Drosophila]]
+14. [[FG 14 - Danio rerio · Zebrafish as a model organism|Danio rerio · Zebrafish as a model organism]]
+15. [[FG 15 - Danio rerio · Embryonic development of zebrafish|Danio rerio · Embryonic development of zebrafish]]
 16. [[FG 16 - Danio rerio · Forward genetics in zebrafish + Reverse genetics in zebrafish|Danio rerio · Forward genetics in zebrafish + Reverse genetics in zebrafish]]
 17. [[FG 17 - Danio rerio · Transgenesis and gene targeting|Danio rerio · Transgenesis and gene targeting]]
 18. [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|Danio rerio · Reporter lines – making gene expression visible]]

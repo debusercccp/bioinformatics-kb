@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 21
 tags: [note, aml]
 ---
@@ -18,7 +18,7 @@ If a learning algorithm doesn't perform as expected, it's often due to either:
 
 We can visualize this by **plotting** the **<u>training error and cross-validation error</u>** **against** the **<u>hypothesis</u>** **<u>complexity</u>** (typically represented by the degree of a polynomial).
 
-> ![[AML-image115.jpg|463]]
+> ![[AML-image112.jpg|463]]
 
 **TRAINING ERROR**
 
@@ -44,7 +44,7 @@ Overfitting occurs when the model starts capturing noise in the data rather than
 
 Suppose we have a learning algorithm that performs below our expectations and we want to understand whether there's a bias or variance issue, by **plotting the training error and validation error on the same graph**, we can observe their trends.
 
-> ![[AML-image116.jpg|392]]
+> ![[AML-image113.jpg|392]]
 
 The ultimate goal in model optimization is to strike a balance between bias and variance, aiming for an optimal point where both errors are minimized. This optimal point indicates that the model has learned to generalize effectively beyond the training data without overly memorizing them, achieving a desirable level of performance on unseen data.
 
@@ -58,7 +58,7 @@ In this scenario, as the complexity of the model increases, the training error d
 
 It occurs when both the **training error** and the **validation error** **remain consistently high** and do not decrease as the model's complexity increases. This situation arises when the **model is too simplistic to capture the underlying complexity of the data adequately**. Consequently, the model fails to fit the training data well, resulting in persistently high errors for both training and validation datasets.
 
-> ![[AML-image117.jpg|491]]
+> ![[AML-image114.jpg|491]]
 
 ---
 > [[AML 20 - Model Diagnostics · Model Selections & Tvt Sets|← Model Diagnostics · Model Selections & Tvt Sets]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 22 - Model Diagnostics · Regularisation Bias and Variance|Model Diagnostics · Regularisation Bias and Variance →]]

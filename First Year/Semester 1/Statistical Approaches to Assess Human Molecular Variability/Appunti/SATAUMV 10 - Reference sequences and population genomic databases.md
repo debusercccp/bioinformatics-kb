@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/SATAUMV/Statistical_approaches.docx"
+source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
 order: 10
 tags: [note, sataumv]
 ---
@@ -14,8 +14,8 @@ tags: [note, sataumv]
 
 In addition to the technological advances described in the previous chapter, **two other fundamental steps** signaled massive advances in the study of human genomic variation: the public availability of the **human reference sequence** and the creation of **large-scale population genomic databases**.
 
-- **Human reference sequence:** the coordinate system that serves as the fundamental standard for identifying differences and describing genetic variation.
-- **Population genomic databases:** collections of genomes that capture diversity across different human populations and give a picture of the distribution of genetic variation.
+- **Human reference sequence:** the **coordinate system** that serves as the **fundamental standard for identifying differences** and describing genetic variation.
+- **Population genomic databases:** collections of genomes that **capture diversity** across different human populations and **give a picture of the distribution of genetic variation**.
 
 If the reference genome provides the **"map"**, population genomic databases reveal the **"variation" across the map**.
 

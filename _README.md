@@ -78,6 +78,8 @@ From the vault folder run `.scripts/update.sh`: it re-imports only the `MCB/*.do
 - ⚠️ Hand edits inside `Appunti/` notes are **overwritten**: fix the docx instead, or add a recurring fix to `FIXES` in `.scripts/build.py`.
 - Cross-course links are kept in `.scripts/links.py` (`REL`, by note code like `AML 03`).
 - Needs `python3`, `soffice` and `magick`; pandoc is installed automatically under `~/.cache/bioinformatics-import` if missing.
+- Source paths are in `SOURCES` (`.scripts/build.py`), relative to the folder that contains `MCB/`. That folder is picked by OS: on **Windows** `C:\Users\Rocco\Documents\Universita` (`WIN_ROOT`); on **Linux** the folder next to the vault, else `~/Documents/Universita` (`LINUX_ROOTS`). `MCB_ROOT=<folder> .scripts/update.sh` overrides both.
+- Functional Genetics (`FG`) is imported from `MCB/Functional_Genetics/FunctionalGen_common.docx`.
 
 ## Special cases
 - **Integrated courses (I.C.)** — e.g. *Introduction to Computing in Biology*, *Programming for Bioinformatics*: each **module** is its own `#course` note (with its own `code`/`cfu`); set `area: … (I.C.)`.

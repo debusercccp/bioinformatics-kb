@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/FGIG/FG/FunctionalGen_RS.docx"
+source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
 order: 1
 tags: [note, fg]
 ---
@@ -10,7 +10,7 @@ tags: [note, fg]
 
 # What is functional genomics?
 
-**Definition.** Functional genomics tries to understand the relationship between **genotype and phenotype on a global scale**, i.e. across the whole genome and not one gene at a time.
+**Definition.** Functional genetics tries to understand the relationship between **genotype and phenotype on a global scale**, i.e. across the whole genome and not one gene at a time.
 
 It looks at the processes that turn genomic information into biology: **transcription, translation, epigenetic regulation, protein–protein interaction**. The typical questions are:
 
@@ -70,6 +70,8 @@ This was a **claim that had to be demonstrated**. It was demonstrated by **nucle
 
 **Type of intervention:** **nuclear transfer (cloning)**, as above, but the egg nucleus is **destroyed by UV irradiation** instead of being removed by hand, and the donor nuclei come from **differentiated tadpole intestinal cells**. The donor carried a natural **genetic marker** (the *1-nu* mutation: one nucleolus instead of two) to prove that the clones came from the transplanted nucleus and not from a surviving egg nucleus. Still **no genetic modification**: the marker is a natural mutation, not a transgene.
 
+> **Paper — Gurdon, 2009** (Nat. Med. 15:1141–1144): Gurdon’s own account of the *Xenopus* experiments: the **1-nu** marker proved that the tadpoles came from the transplanted nucleus, and fertile frogs from **intestinal epithelium** nuclei showed that differentiation involves no loss or permanent inactivation of genes, against the conclusion of Briggs and King. The one real exception is the rearrangement of immunoglobulin genes in B cells.
+
 ![[FG-image3.png|532]]
 
 ### Wilmut et al., 1997 – Dolly, the first cloned mammal
@@ -83,6 +85,8 @@ This was a **claim that had to be demonstrated**. It was demonstrated by **nucle
 - **Efficiency was tiny: about 1 success per 434 oocytes implanted.** Meaning: the genome is unaltered, but reprogramming is hard and inefficient.
 
 **Type of intervention:** **somatic cell nuclear transfer (SCNT) = reproductive cloning**, combined with **cell culture** and **embryo transfer**. Steps: culture of adult mammary cells and **serum starvation** (quiescence); **enucleation** of a metaphase II oocyte; **electrofusion** of donor cell and enucleated oocyte; **electrical activation**; in vitro culture; transfer into a **surrogate mother**. **No genetic modification**: Dolly is a genetic copy of the donor, not a transgenic animal.
+
+> **Paper — Wilmut et al., 1997** (Nature 385:810–813): Lambs were obtained from embryonic, fetal and adult mammary donor cells made quiescent by serum starvation (**G0** in the paper); with mammary cells, 277 fused couplets gave a single live lamb, **Dolly**, whose donor origin was confirmed by breed and microsatellite markers.
 
 ![[FG-image4.png|346]]
 

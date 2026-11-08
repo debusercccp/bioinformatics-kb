@@ -5,8 +5,9 @@
 #   .scripts/update.sh FG SATAUMV just these keys (see: python3 .scripts/build.py --list)
 #   .scripts/update.sh --all      everything
 #
-# Needs: python3, soffice + magick (EMF images). pandoc is used from PATH,
-# otherwise pypandoc_binary is installed in a venv under $IMPORT_WORK.
+# Works on Linux and on Windows (Git Bash). Needs: Python 3, LibreOffice (soffice) and
+# ImageMagick (magick; `convert` on Linux is fine) for EMF images. pandoc >= 3 is used
+# from PATH, otherwise pypandoc_binary is installed in a venv under $IMPORT_WORK.
 # Hand edits inside Appunti notes are overwritten: put recurring fixes in FIXES (build.py).
 set -euo pipefail
 
@@ -15,18 +16,28 @@ export IMPORT_WORK="${IMPORT_WORK:-$HOME/.cache/bioinformatics-import}"
 STAMP="$HERE/last-import.sha256"
 mkdir -p "$IMPORT_WORK/conv"
 
-if command -v pandoc >/dev/null; then
+# Python: python3 on Linux; python / py on Windows (Git Bash). The Windows Store
+# "python3" alias is a stub that fails, so each candidate is actually run.
+PY=""
+for c in python3 python py; do
+    if command -v "$c" >/dev/null && "$c" -c 'import sys; sys.exit(sys.version_info < (3, 8))' 2>/dev/null; then PY="$c"; break; fi
+done
+[ -n "$PY" ] || { echo "Python 3 not found" >&2; exit 1; }
+export PYTHONIOENCODING=utf-8 PYTHONUTF8=1
+
+case "$(uname -s)" in MINGW*|MSYS*|CYGWIN*) VBIN=Scripts ;; *) VBIN=bin ;; esac
+if command -v pandoc >/dev/null && pandoc --version | head -1 | grep -qE ' (3|[4-9])\.'; then
     PANDOC=pandoc
-else
-    if [ ! -x "$IMPORT_WORK/venv/bin/python" ]; then
-        python3 -m venv "$IMPORT_WORK/venv"
-        "$IMPORT_WORK/venv/bin/pip" -q install pypandoc_binary
+else   # pandoc missing or too old (< 3): private copy via pypandoc_binary
+    if [ ! -e "$IMPORT_WORK/venv/$VBIN/python" ] && [ ! -e "$IMPORT_WORK/venv/$VBIN/python.exe" ]; then
+        "$PY" -m venv "$IMPORT_WORK/venv"
+        "$IMPORT_WORK/venv/$VBIN/python" -m pip -q install pypandoc_binary
     fi
-    PANDOC="$("$IMPORT_WORK/venv/bin/python" -c 'import pypandoc; print(pypandoc.get_pandoc_path())')"
+    PANDOC="$("$IMPORT_WORK/venv/$VBIN/python" -c 'import pypandoc; print(pypandoc.get_pandoc_path())')"
 fi
 
 declare -A SRC
-while IFS=$'\t' read -r key path; do SRC[$key]="$path"; done < <(python3 "$HERE/build.py" --list)
+while IFS=$'\t' read -r key path; do SRC[$key]="$path"; done < <("$PY" "$HERE/build.py" --list | tr -d '\r')
 
 hash_of() { sha256sum "$1" | cut -d' ' -f1; }
 old_hash() { grep -s "^$1 " "$STAMP" | cut -d' ' -f2 || true; }
@@ -50,8 +61,8 @@ for k in "${keys[@]}"; do
         --lua-filter="$HERE/tablemath.lua" --extract-media=media -o "$k.md")
 done
 
-python3 "$HERE/build.py" "${keys[@]}" | grep -v '^    '
-python3 "$HERE/links.py" >/dev/null
+"$PY" "$HERE/build.py" "${keys[@]}" | grep -v '^    '
+"$PY" "$HERE/links.py" >/dev/null
 
 { for k in "${!SRC[@]}"; do
     if printf '%s\n' "${keys[@]}" | grep -qx "$k"; then echo "$k $(hash_of "${SRC[$k]}")"; else grep -s "^$k " "$STAMP" || true; fi

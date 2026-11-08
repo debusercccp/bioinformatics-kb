@@ -1,3 +1,4 @@
 # la KB versiona solo note markdown
 .trash/
 .obsidian/workspace*.json
+__pycache__/

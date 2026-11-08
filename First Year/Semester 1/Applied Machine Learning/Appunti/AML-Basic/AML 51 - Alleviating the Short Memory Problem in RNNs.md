@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 51
 tags: [note, aml]
 ---
@@ -32,7 +32,7 @@ tags: [note, aml]
 >
 > The current input vector x(t) and the previous short-term state h(t–1) are fed to **4 different FC layers**.
 >
-> ![[AML-image365.jpg|338]]
+> ![[AML-image320.jpg|338]]
 >
 > The **main layer** is the one that outputs g(t).
 >
@@ -44,7 +44,7 @@ tags: [note, aml]
 
 > The three other layers are **gate controllers:**
 >
-> ![[AML-image366.jpg|285]]Since they use the logistic activation function, their outputs range from **0 to 1**. Their outputs are fed to element-wise multiplication operations, so if they output 0s, they close the gate, and if they output 1s, they open it.
+> ![[AML-image321.jpg|285]]Since they use the logistic activation function, their outputs range from **0 to 1**. Their outputs are fed to element-wise multiplication operations, so if they output 0s, they close the gate, and if they output 1s, they open it.
 >
 > Specifically:
 
@@ -54,7 +54,7 @@ tags: [note, aml]
 
 - The ***output gate*** (controlled by *o(t)* ) controls which parts of the long-term state should be read and output at this time step, both to h(t) and y(t). **LSTM computations**
 
-![[AML-image367.jpg|616]]
+![[AML-image322.jpg|616]]
 
 > **Peephole connections**
 >
@@ -68,7 +68,7 @@ tags: [note, aml]
 >
 > The **Gated Recurrent Unit** (**GRU**) cell was proposed in 2014. The GRU cell is a simplified version of the LSTM cell. These are the main simplifications:
 
-- ![[AML-image368.jpg|278]]Both state vectors are **merged** into a single vector **h(t)**
+- ![[AML-image323.jpg|278]]Both state vectors are **merged** into a single vector **h(t)**
 
 - A single gate controller **z(t)** controls both the **forget** **gate** and the **input** **gate** ❖ if the gate controller outputs a 1, the forget gate is open (= 1), the input gate is closed (1 – 1 = 0)
 
@@ -80,7 +80,7 @@ tags: [note, aml]
 
 - There is no output gate; the **full** **state** **vector** is output at every time step. However, there is a new gate controller **r(t)** that controls which part of the previous state will be shown to the main layer (**g(t)**) It seems to perform just as well
 
-![[AML-image369.jpg|382]]
+![[AML-image324.jpg|382]]
 
 ---
 > [[AML 50 - Handling Long Sequences – Part 2 + Alleviating the Unstable Gradient Problem for RNNs|← Handling Long Sequences – Part 2 + Alleviating the Unstable Gradient Problem for RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 52 - Using 1D convolutional layers to process sequences|Using 1D convolutional layers to process sequences →]]

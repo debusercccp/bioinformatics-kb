@@ -1,12 +1,12 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/FGIG/FG/FunctionalGen_RS.docx"
+source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
 order: 5
 tags: [note, fg]
 ---
 
-> [[FG 04 - Effects of mutations on gene function – Müller's classification|← Effects of mutations on gene function – Müller's classification]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 06 - What is a model organism|What is a model organism →]]
+> [[FG 04 - Effects of mutations on gene function – Müller's classification|← Effects of mutations on gene function – Müller's classification]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 06 - What is a model organism + Why comparison works – the evolutionary basis|What is a model organism + Why comparison works – the evolutionary basis →]]
 
 # Where do we measure gene function?
 
@@ -96,6 +96,8 @@ There is also so-called **2.5D** culture, an intermediate (cells on a layer of m
 
 Building organoids and tissues requires stem cells. The transcription factors active during development (the example from the literature is the dorsal and ventral pancreatic bud, liver, stomach, intestine, common bile duct) can drive cells toward a specific fate.
 
+Ngn3 is the endocrine progenitor factor: it drives stem cells towards the endocrine fate through downstream transcription factors.
+
 The breakthrough is the **reprogramming of somatic cells into induced pluripotent stem cells (iPSCs)**:
 
 - **Takahashi and Yamanaka (Cell, 2006)** showed that from mouse fibroblasts one can obtain cells with a gene expression profile and developmental potential similar to those of embryonic stem cells (ESCs), using only **four transcription factors: OCT3/4, SOX2, KLF4 and MYC (OSKM)**.
@@ -112,9 +114,11 @@ The breakthrough is the **reprogramming of somatic cells into induced pluripoten
 
 In 2012 the **Nobel Prize in Physiology or Medicine** went to **John B. Gurdon** (nuclear transfer, experiments in amphibians) and **Shinya Yamanaka**. The conceptual meaning is **nuclear equivalence**: *all the genes in the genome are retained in every specialised cell type, even if silent and not used by that cell*. Specialisation is therefore epigenetic and regulatory, not a loss of DNA.
 
-Here is a possible application of iPSCs to treat diabetes:
+> **Focus — the Yamanaka factors: OCT4 (OCT3/4), SOX2, KLF4, c-MYC (OSKM).** Pluripotency TFs; c-MYC is an oncogene and dispensable (OSK).
+>
+> **Paper — Takahashi & Yamanaka, 2006** (Cell 126:663–676): 24 candidate ES-cell genes were transduced by retrovirus into fibroblasts carrying a **Fbx15–βgeo** reporter (only pluripotent cells survive G418), and removing one factor at a time narrowed them down to the four **OSKM** factors, while Nanog proved dispensable. Pluripotency was shown by teratomas with all three germ layers and by contribution to chimeric embryos.
 
-![[FG-image10.png|464]]
+![[FG-image10.png|368]]Here is a possible application of iPSCs to treat diabetes:
 
 ### How many organs does a human have? The limit of in vitro models
 
@@ -128,5 +132,7 @@ This leads to the question: **can computer models and cell cultures (3D cultures
 
 - the best answer comes from using **animal and non-animal models together**.
 
+> **Focus — why organoids can miss late-onset phenotypes.** iPSC organoids keep the genome but reset age marks and lack vasculature and immune cells, so late-onset phenotypes may not appear.
+
 ---
-> [[FG 04 - Effects of mutations on gene function – Müller's classification|← Effects of mutations on gene function – Müller's classification]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 06 - What is a model organism|What is a model organism →]]
+> [[FG 04 - Effects of mutations on gene function – Müller's classification|← Effects of mutations on gene function – Müller's classification]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 06 - What is a model organism + Why comparison works – the evolutionary basis|What is a model organism + Why comparison works – the evolutionary basis →]]

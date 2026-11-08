@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 9
 tags: [note, aml]
 ---
@@ -18,7 +18,7 @@ Feature engineering does not involve adding new information to the dataset; rath
 
 While creating new features, there's a possibility of introducing bias. However, when combining existing features, we're simply adjusting the data without artificially adding to it. This process might seem unconventional, even akin to "inventing data," but in reality, it's about optimizing the representation of the data for the learning algorithm.
 
-![[AML-image53.jpg|350]]Consider an example: Suppose we're predicting house prices. In Amsterdam, where houses are historically narrow, the facade width becomes a meaningful parameter. In contrast, elsewhere, this parameter might be less significant. Depending on the scenario, we might choose to use existing features like facade width (x1) or total size in square meters (x2), or we could create a new feature by multiplying these parameters (x1 \* x2).
+![[AML-image52.jpg|350]]Consider an example: Suppose we're predicting house prices. In Amsterdam, where houses are historically narrow, the facade width becomes a meaningful parameter. In contrast, elsewhere, this parameter might be less significant. Depending on the scenario, we might choose to use existing features like facade width (x1) or total size in square meters (x2), or we could create a new feature by multiplying these parameters (x1 \* x2).
 
 The decision to define new features depends on the insights we have into the problem at hand, rather than merely relying on the features initially available. Sometimes, by crafting new features, we can achieve a more effective model that better captures the underlying patterns in the data.
 
@@ -28,11 +28,11 @@ Polynomial regression is a technique closely tied to feature selection, particul
 
 Consider the housing price dataset depicted in the provided plot. A linear hypothesis would struggle to accurately estimate the prices of large houses, potentially leading to overestimations. To address this limitation, we can introduce quadratic terms, allowing for greater flexibility in modeling the relationship between the features and the target variable.
 
-![[AML-image56.jpg|380]]In polynomial regression, we extend the feature space by introducing higher-order terms of the original features. For instance, if we have a single feature 'x', we might include 'x<sup>2</sup>', ‘x<sup>3</sup>' and so on.
+![[AML-image55.jpg|380]]In polynomial regression, we extend the feature space by introducing higher-order terms of the original features. For instance, if we have a single feature 'x', we might include 'x<sup>2</sup>', ‘x<sup>3</sup>' and so on.
 
 Although these higher-order features may not exhibit linear relationships individually, polynomial regression allows us to capture more complex patterns in the data.
 
-![[AML-image57.jpg|291]]**By introducing these additional features, we effectively transform the problem into a multivariate regression scenario, where each higher-order feature corresponds to a distinct parameter.** This approach enables the model to learn which powers of 'x' are most relevant for accurately predicting the target variable.
+![[AML-image56.jpg|291]]**By introducing these additional features, we effectively transform the problem into a multivariate regression scenario, where each higher-order feature corresponds to a distinct parameter.** This approach enables the model to learn which powers of 'x' are most relevant for accurately predicting the target variable.
 
 It's essential to note that feature scaling becomes crucial in polynomial regression to ensure that the optimization process converges efficiently. Moreover, polynomial regression allows us to explore a broader range of functions beyond linear ones, with the training process guiding us to identify the best model for our dataset. Essentially, we can employ any function, and the training process will determine which model best fits the data.
 
@@ -104,14 +104,11 @@ To apply the normal equation, we first build:
 
 This matrix is then inverted to extract the optimal parameter values.
 
-![[AML-image58.jpg|407]]
+![[AML-image57.jpg|407]]
 
-![[AML-image59.jpg|462]]
+![[AML-image58.jpg|462]]
 
 ![](media/media/image62.jpeg)
-
-## Collegamenti
-- [[MBD 19 - Module 7 – Correlation and Regression]] — regressione polinomiale e overfitting
 
 ---
 > [[AML 08 - Multivariate Model Regression|← Multivariate Model Regression]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 10 - Classification|Classification →]]

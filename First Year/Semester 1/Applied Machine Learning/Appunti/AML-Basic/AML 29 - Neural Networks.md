@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 29
 tags: [note, aml]
 ---
@@ -90,11 +90,11 @@ tags: [note, aml]
 
 > Despite its simplicity, this model showed that **networks of such neurons** can compute any basic **logical function** (AND, OR, NOT, etc.).
 
-![[AML-image148.jpg|589]]
+![[AML-image146.jpg|589]]
 
 > **Threshold Logic Unit (TLU) / Linear Threshold Unit (LTU)**
 >
-> ![[AML-image149.jpg|317]]The **TLU (or LTU)** is an enhanced version of the McCulloch-Pitts model, introducing **numerical inputs and weighted connections**.
+> ![[AML-image147.jpg|317]]The **TLU (or LTU)** is an enhanced version of the McCulloch-Pitts model, introducing **numerical inputs and weighted connections**.
 
 - Inputs and outputs are **real numbers**, not just binary
 
@@ -112,7 +112,7 @@ tags: [note, aml]
 >
 > The **Perceptron** is an architecture composed of a **single layer of TLUs**, where:
 
-- ![[AML-image150.jpg|382]]Each TLU is **fully connected** to all input features
+- ![[AML-image148.jpg|382]]Each TLU is **fully connected** to all input features
 
 - A special **bias input** is added (typically x0=1x_0 = 1x0=1) via a **bias neuron** that always outputs 1
 
@@ -142,7 +142,7 @@ tags: [note, aml]
 
 > **Training Process:**
 >
-> ![[AML-image155.jpg|360]]The Perceptron processes **one training instance at a time**.
+> ![[AML-image151.jpg|360]]The Perceptron processes **one training instance at a time**.
 
 - For each input:
 
@@ -154,7 +154,7 @@ tags: [note, aml]
 >
 > is like **rewarding** the inputs that would’ve helped the model be correct.
 
-![[AML-image156.jpg|642]]
+![[AML-image152.jpg|642]]
 
 > The main limitations are the fact that Each output neuron has a linear decision boundary.
 >
@@ -164,7 +164,7 @@ tags: [note, aml]
 >
 > To address the linearity issue of simple Perceptrons, we **stack multiple layers** of neurons: This creates a **Multi-Layer Perceptron (MLP)** — a more powerful **artificial neural network (ANN)** architecture.
 >
-> ![[AML-image157.jpg|520]]
+> ![[AML-image153.jpg|520]]
 >
 > **MLPs:**
 

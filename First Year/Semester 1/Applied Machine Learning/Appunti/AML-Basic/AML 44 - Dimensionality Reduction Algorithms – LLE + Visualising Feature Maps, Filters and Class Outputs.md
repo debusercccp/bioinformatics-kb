@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 44
 tags: [note, aml]
 ---
@@ -20,7 +20,7 @@ tags: [note, aml]
 
 ## VISUALISING FEATURE MAPS, FILTERS AND CLASS OUTPUTS
 
-> ![[AML-image314.jpg|387]]VGG is a classical CNN from 2014. VGG has 16 layers.
+> ![[AML-image276.jpg|387]]VGG is a classical CNN from 2014. VGG has 16 layers.
 >
 > **VGG architecture**
 >
@@ -54,13 +54,13 @@ tags: [note, aml]
 >
 > We want to visualize exactly those. So we take input image, pass it through the CNN and try to see the intermediate activation. We will check different feature map in that volume, checking how the original input is transformed.
 
-![[AML-image315.jpg|476]]
+![[AML-image277.jpg|476]]
 
 > We can check some block and convolutional layer, **BlockX-convY** gives us the block number and conv layer number. The more the number block is high the more you ultimate convolutional layer in that specific block. Regions activate in the intermediate activation are those where the **filter is detecting some pattern**: highlighted area are the one reacted positively to the filter used. It looks like the filter is trying to **encode** **something** to be visually recognise as eye and nose.
 >
 > I can check more feature map. So I can number these thing and select them more. The first thing is to check some convolution per block. As we discussed last time is evident that on average what is noticeable is the overall vision of thigs. You can be focusing in different details. You still see a cat in the first images, but the more you go on the less of a cat you can recognize.
 >
-> ![[AML-image316.jpg|411]]
+> ![[AML-image278.jpg|411]]
 
 - Feature maps from first layer (block1_conv1), lower-level, retain most of the info in the original image. In CNN architectures, first layers usually act as **edge/shape** detectors
 
@@ -86,7 +86,7 @@ tags: [note, aml]
 >
 > If in every position of the picture there is a bird, the function will be activate: **translational invariance** of a CNN. So, for feature maps: lower-layers encode/detect simple structures and as we go further the layer build on top of each other and learn to encode more complex patterns.
 >
-> ![[AML-image317.jpg|325]]**Visualising class outputs**
+> ![[AML-image279.jpg|325]]**Visualising class outputs**
 >
 > What comes out from **multi-class classification**. We want to visualize the very final **SoftMax layer** in output. You can choose a category of object and you ask the CNN to generate an image to represent **maximally** **that** **image**. The method to do this is a trick, is a similar method to the one used to visualize the filter, from blank, you generate the image to maximise probability
 >

@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 5
 tags: [note, aml]
 ---
@@ -59,7 +59,8 @@ The logic of the algorithm revolves around a set of parameters θj (where j repr
 Failure to update them simultaneously can lead to convergence issues. For instance, if one parameter is updated based on the newly adjusted value of another parameter, convergence may not be achieved.
 
 ## Collegamenti
-- [[MBD 14 - Module 5 – Multivariable Calculus and Optimisation]] — gradiente e ottimizzazione multivariata
+- [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation]] — gradiente e ottimizzazione multivariata
+- [[MBD 16 - Module 4 – Calculus in One Variable · Numerical approximation of minima (gradient descent)]] — gradient descent in una variabile
 
 ---
 > [[AML 04 - Univariate Model Regression · Minimization and Cost Function|← Univariate Model Regression · Minimization and Cost Function]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 06 - Univariate Model Regression · GD Implementation – Derivative Term … Local Minimum|Univariate Model Regression · GD Implementation – Derivative Term … Local Minimum →]]

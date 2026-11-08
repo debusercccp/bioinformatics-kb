@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/FGIG/FG/FunctionalGen_RS.docx"
+source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
 order: 17
 tags: [note, fg]
 ---
@@ -40,8 +40,6 @@ tags: [note, fg]
 
 **Full-length vs minimal vector** (Kawakami, 2007). The full-length element contains the **transposase coding sequence** between the TIRs. The **minimal Tol2 vector** keeps only about **200 bp and 150 bp of DNA from the left and right ends**; between them it can carry a DNA fragment of interest with its **promoter**.
 
-*Tol2 transgenesis: transposase mRNA + transposon plasmid co-injected; excision, integration and germline transmission.*
-
 **How it is done:**
 
 - the cloned Tol2 cDNA is **transcribed in vitro** → **transposase mRNA**;
@@ -52,7 +50,7 @@ tags: [note, fg]
 
 - the injected **founder** has a mosaic germ line; crossed to wild type, it gives **F1 embryos expressing GFP**, and the insertions are identified by Southern blot.
 
-**Focus — Why the transposase comes as mRNA.** This is the same binary logic as the P-element vector plus helper plasmid in *Drosophila*: the transposase is supplied only transiently, so once the transposon has jumped into the genome no enzyme is left to remobilise it, and the insertion is stable.
+> **Focus — Why the transposase comes as mRNA. It is supplied transiently, so the insertion stays stable.**
 
 ### Tol2 Gateway: an upgrade
 
@@ -64,15 +62,7 @@ A **four-vector system** (Kwan et al., 2007): **(1) 5′ entry clones** (promote
 
 - **Advantages**: it simplifies the generation of expression constructs thanks to an **extensive library of existing building blocks** (entry clones), with **high transgenesis efficiency**.
 
-**Focus — The “green heart” marker.** Destination vectors often carry a second cassette, **cmlc2:EGFP**, which labels the heart. Transgenic embryos can then be selected by eye within two days, even when the transgene of interest is not yet expressed or is not fluorescent.
-
-### Yield in transgenesis
-
-| **Method** | **Transgenesis yield** | **Notes** |
-|----|----|----|
-| Classical: injection of linearised plasmids | ~5% (rarely up to 25%) | Concatemers, mosaicism, silencing over generations |
-| Tol2 system | 12.5%, ~50% after improvements | Usually single, stable insertions (by F5): no concatemers, no silencing, no rearrangements |
-| I-SceI meganuclease | ~30% |  |
+> **Focus — The “green heart” marker. cmlc2:EGFP lets you select transgenics by eye.**
 
 ---
 > [[FG 16 - Danio rerio · Forward genetics in zebrafish + Reverse genetics in zebrafish|← Danio rerio · Forward genetics in zebrafish + Reverse genetics in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|Danio rerio · Reporter lines – making gene expression visible →]]

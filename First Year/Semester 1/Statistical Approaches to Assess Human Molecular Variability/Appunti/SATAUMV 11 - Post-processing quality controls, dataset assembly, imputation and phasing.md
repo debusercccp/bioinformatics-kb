@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/SATAUMV/Statistical_approaches.docx"
+source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
 order: 11
 tags: [note, sataumv]
 ---
@@ -23,15 +23,15 @@ Per-individual QC consists of at least four steps:
 - identification of individuals with a **high missingness genotype rate**;
 - identification of samples with **outlying heterozygosity rate**;
 - identification of **duplicated or related individuals**;
-- identification of **sex mismatches** (comparison of reported sex with genetically determined sex from X-chromosome homozygosity).
+- *\[Not in the updated slides, deck 7 NEW\]* identification of **sex mismatches** (comparison of reported sex with genetically determined sex from X-chromosome homozygosity).
 
 **Sample missingness rate.** The missingness rate of an individual is the **number of missing genotypes divided by the total number of genotyped markers**. PLINK calculates missingness with the **--missing** command and produces two files: **.imiss** (per individual) and **.lmiss** (per locus). Samples with high missingness rates (e.g. **\> 1% or \> 5%**) are often removed with the **--mind** PLINK function.
 
 ![[SATAUMV-image36.png|283]]**Heterozygosity rate.** For a given individual the heterozygosity rate is computed as (N.NM − O.HOM) / N.NM, where N.NM is the total number of **non-missing genotypes** and O.HOM is the **observed number of homozygous genotypes**. The PLINK **--het** function produces a file with individual heterozygosity information used to calculate this rate.
 
-Heterozygosity and missingness are best examined **jointly** (heterozygosity on the y-axis, SNP missingness on the x-axis): samples with **high heterozygosity** are suggestive of **contamination** (DNA from more than one individual), whereas samples with **low heterozygosity** suggest **inbreeding**. Samples with high missingness are simply **poor quality**. Thresholds are usually set at ±3 standard deviations from the mean heterozygosity, and failing samples are removed.
+Heterozygosity and missingness are best examined **jointly** (heterozygosity on the y-axis, SNP missingness on the **x**-axis): samples with **high heterozygosity** are suggestive of **contamination** (DNA from more than one individual), whereas samples with **low heterozygosity** suggest **inbreeding**. Samples with high missingness are simply **poor quality**. Thresholds are usually set at ±3 standard deviations from the mean heterozygosity, and failing samples are removed.
 
-**Relatedness.** In PLINK the **--genome** function estimates identity-by-descent (IBD) sharing between all pairs of individuals. The key statistic is **PI_HAT (π̂)**, the proportion of the genome that is IBD, calculated as **Z2 + 0.5 × Z1**, where Z0, Z1 and Z2 are the probabilities that two individuals share zero, one or two alleles IBD at a given locus. Expected values for the main relationship classes:
+**Relatedness.** In PLINK the **--genome** function estimates identity-by-descent (IBD) sharing between all pairs of individuals. The key statistic is **PI_HAT (π̂)**, the proportion of the genome that is IBD, calculated as **Z2 + 0.5 × Z1**, where **Z0**, **Z1** and **Z2** are the probabilities that two individuals share zero, one or two alleles IBD at a given locus. Expected values for the main relationship classes:
 
 ![[SATAUMV-image37.png|432]]
 
@@ -42,14 +42,14 @@ Heterozygosity and missingness are best examined **jointly** (heterozygosity on 
 | Duplicate / monozygotic twins (MZ) | 1 | 0 | 0 | 1 |
 | Full siblings (FS) | 0.5 | 0.25 | 0.5 | 0.25 |
 | Parent-offspring (PO) | 0.5 | 0 | 1 | 0 |
-| Half-siblings (HS) | 0.25 | 0.5 | 0.5 | 0 |
+| Half-siblings (**HS**) | 0.25 | 0.5 | 0.5 | 0 |
 | Unrelated (U) | 0 | 1 | 0 | 0 |
 
-A histogram of π̂ across all pairs shows clear modes: unrelated pairs cluster near 0, third-degree relatives near ~0.125–0.25, second-degree near ~0.25, first-degree near 0.5 and duplicates near 1. In population-genetic analyses unrelated individuals are usually kept (one of each duplicate pair is removed); in association studies one member of each related pair is typically removed, or relatedness is modelled explicitly.
+A histogram of **π̂** across all pairs shows clear modes: unrelated pairs cluster near 0, third-degree relatives near ~0.125–0.25, second-degree near ~0.25, first-degree near 0.5 and duplicates near 1. In population-genetic analyses unrelated individuals are usually kept (one of each duplicate pair is removed); in association studies one member of each related pair is typically removed, or relatedness is modelled explicitly.
 
-**Assigned-sex check.** The homozygosity score on chromosome X is compared with the reported sex: males (XY) are expected to be homozygous at nearly all X-chromosome markers, whereas females (XX) show heterozygosity. Discordant samples are flagged and usually removed (they may indicate sample swaps or contamination).
+*\[Not in the updated slides, deck 7 NEW\]* **Assigned-sex check.** The homozygosity score on chromosome X is compared with the reported sex: males (XY) are expected to be homozygous at nearly all X-chromosome markers, whereas females (XX) show heterozygosity. Discordant samples are flagged and usually removed (they may indicate sample swaps or contamination).
 
-In PLINK the sex check is run with **--check-sex**: F \> 0.8 = male, F \< 0.2 = female. Individuals whose sex inferred from the homozygosity of the X chromosome doesn't match the reported sex are removed, because the mismatch suggests a sample mix-up.
+*\[Not in the updated slides, deck 7 NEW\]* In PLINK the sex check is run with **--check-sex**: **F** \> 0.8 = male, **F** \< 0.2 = female. Individuals whose sex inferred from the homozygosity of the X chromosome doesn't match the reported sex are removed, because the mismatch suggests a sample mix-up.
 
 ## 11.3 Per-marker QC
 
@@ -61,17 +61,17 @@ Per-marker QC consists of at least three steps:
 
 ![[SATAUMV-image39.png|353]]
 
-**Marker missingness rate.** The missingness rate of a SNP is the proportion of individuals for whom that variant was not successfully genotyped; it is used to filter out low-quality markers. PLINK again uses **--missing** (output .lmiss), and markers are removed with the **--geno** option followed by a threshold for the lower limit of the call rate. For example, **--geno 0.02** removes all SNPs with more than 2% missing data, i.e. it keeps only SNPs with at least 98% successful call rate. A plot of the proportion of markers remaining as a function of the call-rate threshold typically shows an "elbow": removing variants with more than 1% missing leaves almost all variants (≥ 99% call rate), whereas pushing the threshold towards 100% discards an increasingly large fraction of the data.
+**Marker missingness rate.** The missingness rate of a SNP is the proportion of individuals for whom that variant was **not successfully genotyped**; it is used to filter out low-quality markers. PLINK again uses **--missing** (output .lmiss), and markers are removed with the **--geno** option followed by a threshold for the lower limit of the call rate. For example, **--geno 0.02** removes all SNPs with more than 2% missing data, i.e. it keeps only SNPs with at least 98% successful call rate. A plot of the proportion of markers remaining as a function of the call-rate threshold typically shows an "elbow": removing variants with more than 1% missing leaves almost all variants (≥ 99% call rate), whereas pushing the threshold towards 100% discards an increasingly large fraction of the data.
 
 The proportion of SNPs remaining decreases as the call rate threshold increases: with a threshold of 0.99, all the variants with more than 1% missing genotypes are removed and only the variants with at least 99% call rate remain (about 94% of the SNPs), while with stricter thresholds the proportion drops rapidly, down to about 40% with a threshold close to 1.
 
 **Hardy-Weinberg equilibrium test.** The **--hardy** option in PLINK writes a list of genotype counts and HWE exact test statistics to a **.hwe** file.
 
-The **--hwe** option filters out all variants whose HWE exact-test p-value is below the provided threshold. A very stringent (low) threshold is recommended, because the goal is to detect **serious genotyping or calling errors**, which often yield extreme p-values, rather than genuine biological departures from HWE (e.g. caused by selection, drift or inbreeding — see chapter 3). A typical genome-wide threshold is a chi-square test p-value of 10⁻⁶ to 10⁻⁴; markers are usually filtered on the control/unrelated subset to avoid removing true associations in case-control data. Interpretation of the p-value: **p \> 0.05** means no significant deviation from HWE; **p \< 0.05** means significant deviation.
+The **--hwe** option filters out all variants whose HWE exact-test **p**-value is below the provided threshold. A very stringent (low) threshold is recommended, because the goal is to detect **serious genotyping or calling errors**, which often yield extreme **p**-values, rather than genuine biological departures from HWE (e.g. caused by selection, drift or inbreeding — see chapter 3). A typical genome-wide threshold is a chi-square test **p**-value of 10⁻⁶ to 10⁻⁴; markers are usually filtered on the control/unrelated subset to avoid removing true associations in case-control data. Interpretation of the **p**-value: **p \> 0.05** means no significant deviation from HWE; **p \< 0.05** means significant deviation.
 
-(A typical genome-wide threshold is p \< 10⁻⁶, e.g. --hwe 1e-6, much lower than 0.05, because with hundreds of thousands of SNPs many of them would be below 0.05 just by chance. Also, PLINK uses an exact test, not a chi-square test.)
+(A typical genome-wide threshold is **p** \< 10⁻⁶, e.g. --hwe 1e-6, much lower than 0.05, because with hundreds of thousands of SNPs many of them would be below 0.05 just by chance. Also, PLINK uses an exact test, not a chi-square test.)
 
-Example of the calculation of the HWE exact test statistics using PLINK: GENO reports the counts of the three genotypes (A1A1/A1A2/A2A2), O(HET) and E(HET) the observed and expected heterozygosity and P the p-value of the exact test. For example, at position 1:14930:A:G, out of 502 samples there are 407 heterozygous genotypes (written 0\|1 or 1\|0), 4 homozygous genotypes AA (0\|0) and 91 homozygous genotypes GG (1\|1), so the observed heterozygosity (0.81) is much higher than expected (0.485) and the p-value (4.864 × 10⁻⁶¹) indicates a strong deviation from HWE. The same happens at 1:104186:T:C (observed heterozygosity 0.70 vs 0.5 expected, p = 6.418 × 10⁻²⁰), while the other SNPs have high p-values (no deviation).
+Example of the calculation of the HWE exact test statistics using PLINK: GENO reports the counts of the three genotypes (A1A1/A1A2/A2A2), O(HET) and E(HET) the observed and expected heterozygosity and **P** the **p**-value of the exact test. For example, at position 1:14930:A:G, out of 502 samples there are 407 heterozygous genotypes (written 0\|1 or 1\|0), 4 homozygous genotypes AA (0\|0) and 91 homozygous genotypes GG (1\|1), so the observed heterozygosity (0.81) is much higher than expected (0.485) and the **p**-value (4.864 × 10⁻⁶¹) indicates a strong deviation from HWE. The same happens at 1:104186:T:C (observed heterozygosity 0.70 vs 0.5 expected, **p** = 6.418 × 10⁻²⁰), while the other SNPs have high **p**-values (no deviation).
 
 ![[SATAUMV-image40.png|563]]
 
@@ -98,7 +98,7 @@ After QC, the dataset is assembled in the three steps below, and the critical on
 
 Dataset assembly proceeds in three steps:
 
-- **Step 1 — Prepare data:** prepare variant data from multiple sources (datasets 1…n), each QCed as above.
+- **Step 1 — Prepare data:** prepare variant data from multiple sources (datasets 1…**n**), each QCed as above.
 - **Step 2 — Data integration:** merge variants from the different datasets into a single file; it must consider the batch effect.
 - **Step 3 — Data analysis:** perform population structure and other analyses on the merged dataset.
 
@@ -115,27 +115,27 @@ Merging datasets in PLINK uses the **--merge** or **--bmerge** command to combin
 
 ## 11.5 Linkage disequilibrium and LD pruning
 
-![[SATAUMV-image42.png|270]]**Linkage disequilibrium (LD)** is the non-random association of alleles at different loci: specific combinations of alleles (haplotypes) occur more or less frequently than expected by chance. The **closer the markers**, the **stronger the LD**, because recombination occurs at a lower rate between them. LD is created by mutation, drift, inbreeding, admixture, population structure and selection, and decays over generations as *D<sub>t</sub> = (1 − r)<sup>t</sup> × D₀*. The overall LD pattern carries important signals for population-genetic inferences (demographic history, selection events) and is useful in GWAS to detect causal variants; however, some analyses require **site independence** (markers in approximate linkage equilibrium).
+![[SATAUMV-image42.png|270]]**Linkage disequilibrium (LD)** is the non-random association of alleles at different loci: specific combinations of alleles (haplotypes) occur more or less frequently than expected by chance. The **closer the markers**, the **stronger the LD**, because recombination occurs at a lower rate between them. LD is created by mutation, drift, inbreeding, admixture, population structure and selection, and decays over generations as ***D<sub>t</sub>** = (1 − **r**)**<sup>t</sup>** × **D₀***. The overall LD pattern carries important signals for population-genetic inferences (demographic history, selection events) and is useful in GWAS to detect causal variants; however, some analyses require **site independence** (markers in approximate linkage equilibrium).
 
-Under linkage equilibrium the frequency of each haplotype is the product of the frequencies of its alleles, while under LD some haplotypes, such as Ab and aB, are more frequent and others, such as AB and ab, less frequent. The measures of LD (D, D′ and r²) are the same seen in chapter 5. In LD plots, each diamond represents the LD between two SNVs (low, moderate or high LD), and in real data the plot shows blocks of high LD.
+Under linkage equilibrium the frequency of each haplotype is the product of the frequencies of its alleles, while under LD some haplotypes, such as Ab and aB, are more frequent and others, such as AB and ab, less frequent. The measures of LD (**D**, **D′** and **r²**) are the same seen in chapter 5. In LD plots, each diamond represents the LD between two SNVs (low, moderate or high LD), and in real data the plot shows blocks of high LD.
 
-**LD pruning** removes markers in **high LD to ensure that the remaining sites are independent**. PLINK implements this with the **--indep-pairwise** option, which performs LD thinning based on pairwise r² so that all SNP pairs within a certain distance have LD below a specified threshold. All pairs of markers within a moving window are compared, and if any pair exceeds the threshold one marker of the pair is removed. The command takes three parameters:
+**LD pruning** removes markers in **high LD to ensure that the remaining sites are independent**. PLINK implements this with the **--indep-pairwise** option, which performs LD thinning based on pairwise **r²** so that all SNP pairs within a certain distance have LD below a specified threshold. All pairs of markers within a moving window are compared, and if any pair exceeds the threshold one marker of the pair is removed. The command takes three parameters:
 
 - **window size** (number of SNPs in the window, e.g. 50);
 - **step size** (how far the window shifts forward each time, e.g. 5 SNPs);
 - **r² threshold** (e.g. 0.5).
 
-For example, **--indep-pairwise 50 5 0.5** considers a window of 50 SNPs, calculates LD between each pair of SNPs in the window, removes one SNP of any pair whose r² is greater than 0.5, then shifts the window 5 SNPs forward and repeats the procedure. The output consists of two SNP lists: **plink.prune.in** (SNPs kept) and **plink.prune.out** (SNPs removed). The LD-heatmap comparison on the slide shows the dramatic effect: before pruning, large red (high-LD) blocks are visible; after default pruning the map is almost entirely blue (low LD).
+For example, **--indep-pairwise 50 5 0.5** considers a window of 50 SNPs, calculates LD between each pair of SNPs in the window, removes one SNP of any pair whose **r²** is greater than 0.5, then shifts the window 5 SNPs forward and repeats the procedure. The output consists of two SNP lists: **plink.prune.in** (SNPs kept) and **plink.prune.out** (SNPs removed). The LD-heatmap comparison on the slide shows the dramatic effect: before pruning, large red (high-LD) blocks are visible; after default pruning the map is almost entirely blue (low LD).
 
 | **Command** | **Comment** |
 |:---|:---|
-| `plink --file ``data_in`` --``indep``-pairwise 50 5 0.5 --out ``data_out` | Window size 50 SNPs, step size 5 SNPs, r² threshold 0.5 |
+| `plink --file ``data_in`` --``indep``-pairwise 50 5 0.5 --out ``data_out` | Window size 50 SNPs, step size 5 SNPs, **r²** threshold 0.5 |
 
 ## 11.6 From genotypes to haplotypes: phasing
 
 **Genotype:** the set of alleles present at each locus, without knowing which alleles are physically linked together on the same chromosome.
 
-**Haplotype:** a group of alleles at multiple loci that have been inherited together on the same chromosome. **Phasing** is the process of determining **which alleles at different variant sites are located on the same chromosome copy** (the gametic phase), i.e. of reconstructing the two haplotypes of a diploid individual from unphased genotypes. In VCF terms: unphased genotypes are written with "/" (alleles unordered, e.g. 0/1), phased genotypes with "\|" (alleles assigned to specific haplotypes, e.g. 0\|1).
+**Haplotype:** a group of alleles at multiple loci that have been inherited together on the same chromosome. **Phasing** is the process of determining **which alleles at different variant sites are located on the same chromosome copy** (the gametic phase), i.e. of reconstructing the **two haplotypes of a diploid individual** from **unphased genotypes**. In VCF terms: unphased genotypes are written with "/" (alleles unordered, e.g. 0/1), phased genotypes with "\|" (alleles assigned to specific haplotypes, e.g. 0\|1).
 
 While it is "easy" to determine which alleles are present at each locus, it is not the same to reconstruct the gametic phase, i.e. how they are physically associated together on a chromosome, forming a haplotype.
 
@@ -156,8 +156,8 @@ Only the heterozygous sites (C/A and C/T) are phase-informative sites, because a
 
 For example, for an autosomal locus containing two SNVs (G/A and T/C) and a child with genotype GA,TC:
 
-- In family (a), the father is GG,TT and the mother GA,CC, so the child received G and T from the father and A and C from the mother: the child's haplotypes are resolved by the parental genotypes (paternal G-T, maternal A-C);
-- In family (b), the father is GG,TC and the mother AA,TC, so the child received G from the father and A from the mother, but both parents may have transmitted T or C: the child's haplotypes are not resolved by the parental genotypes (paternal G-T and maternal A-C, or paternal G-C and maternal A-T).
+- In family (a), the father is GG,TT and the mother GA,CC, so the child received G and T from the father and A and C from the mother: the child's haplotypes are **resolved by the parental genotypes** (paternal G-T, maternal A-C);
+- In family (b), the father is GG,TC and the mother AA,TC, so the child received G from the father and A from the mother, but **both parents may have transmitted T or C**: the child's haplotypes are **not resolved by the parental genotypes** (paternal G-T and maternal A-C, or paternal G-C and maternal A-T).
 
 ![[SATAUMV-image43.png|391]]
 
@@ -202,17 +202,17 @@ Step by step, for example with two individuals genotyped at two SNPs.
 
 For individual 2, AC + AT and AT + AC are the same pair, because individual 2 is homozygous at SNP1 and has only one possible phase; counting it twice with probability 0.5 each gives the same result as counting it once with probability 1.
 
-**Step 1, initial guess** of the haplotype frequencies, which can be random or uniform: here f(AC) = f(AT) = f(GC) = f(GT) = 0.25.
+**Step 1, initial guess** of the haplotype frequencies, which can be random or uniform: here **f**(AC) = **f**(AT) = **f**(GC) = **f**(GT) = 0.25.
 
 **Step 2, E-step:** compute the probability of each pair as the product of the frequencies of its haplotypes:
 
-*P(h₁ + h₂) = f(h₁) × f(h₂)*
+***P**(**h₁** + **h₂**) = **f**(**h₁**) × **f**(**h₂**)*
 
-For individual 1, P(AC + GT) = 0.25 × 0.25 = 0.0625 and P(AT + GC) = 0.25 × 0.25 = 0.0625, so after normalization each pair has probability 0.0625/(0.0625 + 0.0625) = 0.5; the same happens for the two pairs of individual 2.
+For individual 1, **P**(AC + GT) = 0.25 × 0.25 = 0.0625 and **P**(AT + GC) = 0.25 × 0.25 = 0.0625, so after normalization each pair has probability 0.0625/(0.0625 + 0.0625) = 0.5; the same happens for the two pairs of individual 2.
 
 **Step 3, M-step:** update the haplotype frequencies, by computing the expected count of each haplotype (the sum of the probabilities of the pairs that contain it) and converting it to a frequency:
 
-*f(h) = expected count of h / total number of haplotypes*
+***f**(**h**) = expected count of **h** / total number of haplotypes*
 
 | **Haplotype** | **Initial frequency** | **Expected count** | **Updated frequency** |
 |:---|:---|:---|:---|
@@ -235,7 +235,9 @@ Hap 5 is a mosaic of two reference haplotypes, and the switch from Hap 1 to Hap 
 
 ## 11.7 Genotype imputation
 
-**Genotype imputation** is the process of **inferring unobserved or missing genetic variants** by leveraging phased haplotype data, exploiting the LD structure of the genome and the availability of a reference population. After phasing, each individual's haplotype is aligned to a reference panel of densely genotyped or sequenced haplotypes (e.g. the 1000 Genomes Project); by matching haplotypes between the two panels, the genotypes of unobserved or missing variants can be predicted based on shared haplotype segments. Reference haplotypes are used to impute alleles into samples to create imputed genotypes.
+*Not in the updated slides (deck 7 NEW): kept for reference.*
+
+**Genotype imputation** is the process of **inferring unobserved or missing genetic variants** by leveraging phased haplotype data, exploiting the LD structure of the genome and the availability of a reference population. After phasing, each individual's haplotype is **aligned to a reference panel** of densely genotyped or sequenced haplotypes (e.g. the 1000 Genomes Project); by matching haplotypes between the two panels, the genotypes of unobserved or missing variants **can be predicted** based on **shared haplotype segments**. Reference haplotypes are used to impute alleles into samples to create imputed genotypes.
 
 The process is:
 
@@ -246,9 +248,6 @@ The process is:
 **Pros:** inference of variants not directly genotyped; increased marker density; improved power and resolution of some analyses.
 
 **Cons:** less robust for rare variants; strongly depends on the representativeness of the reference panel; poorly matched panels or underrepresented populations may suffer from lower accuracy and bias; errors in phasing propagate into imputation results; computationally demanding for very large datasets.
-
-## Collegamenti
-- [[MBD 20 - Module 8 – Principal Component Analysis]] — PCA per la struttura di popolazione
 
 ---
 > [[SATAUMV 10 - Reference sequences and population genomic databases|← Reference sequences and population genomic databases]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]] · [[SATAUMV 12 - Summary statistics and genetic distances|Summary statistics and genetic distances →]]

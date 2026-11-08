@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/SATAUMV/Statistical_approaches.docx"
+source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
 order: 5
 tags: [note, sataumv]
 ---
@@ -33,13 +33,13 @@ Linkage disequilibrium (LD) is simply the term for when the alleles stick togeth
 
 Consider two loci, A and B. If there is no association between them (**linkage equilibrium**), the frequency of haplotype AB should equal the product of the frequencies of A and B:
 
-![[SATAUMV-image6.png|229]]
+> ***P<sub>AB</sub>** = **P<sub>A</sub>** × **P<sub>B</sub>***
 
-*P<sub>AB</sub> = P<sub>A</sub> × P<sub>B</sub>*
+![[SATAUMV-image6.png|229]]
 
 The deviation from this expectation is the coefficient of linkage disequilibrium:
 
-*D = P<sub>AB</sub> − P<sub>A</sub> × P<sub>B</sub> = (P<sub>AB</sub> · P<sub>ab</sub>) − (P<sub>Ab</sub> · P<sub>aB</sub>)*
+***D** = **P<sub>AB</sub>** − **P<sub>A</sub>** × **P<sub>B</sub>** = (**P<sub>AB</sub>** · **P<sub>ab</sub>**) − (**P<sub>Ab</sub>** · **P<sub>aB</sub>**)*
 
 *(observed AB frequency minus the AB frequency expected under equilibrium)*
 
@@ -51,11 +51,11 @@ Graphically, under linkage equilibrium the area of each haplotype square equals 
 
 | **Measure** | **Definition** | **Interpretation** |
 |:---|:---|:---|
-| D (Lewontin and Kojima, 1960) | *D = P<sub>AB</sub> − P<sub>A</sub>P<sub>B</sub>* | Raw deviation from equilibrium. Depends on allele frequencies, so hard to compare across pairs of loci. |
-| D′ (Lewontin, 1964) | *D′ = D / D<sub>max</sub>*, where *D<sub>max</sub> = min(P<sub>A</sub>P<sub>b</sub>, P<sub>a</sub>P<sub>B</sub>)* if *D \> 0*, and *min(P<sub>A</sub>P<sub>B</sub>, P<sub>a</sub>P<sub>b</sub>)* if *D \< 0* | \|D′\| = 1 means **complete LD**: no recombination between the loci (in the sample). |
-| r² (Hill and Robertson, 1968) | *r² = D² / (P<sub>A</sub>P<sub>a</sub>P<sub>B</sub>P<sub>b</sub>)* | r² = 1 means **perfect LD**: complete LD **and** identical allele frequencies at the two loci. |
+| **D** (Lewontin and Kojima, 1960) | ***D** = **P<sub>AB</sub>** − **P<sub>A</sub>P<sub>B</sub>*** | Raw deviation from equilibrium. Depends on allele frequencies, so hard to compare across pairs of loci. |
+| **D′** (Lewontin, 1964) | ***D′** = **D** / **D<sub>max</sub>***, where ***D<sub>max</sub>** = min(**P<sub>A</sub>P<sub>b</sub>**, **P<sub>a</sub>P<sub>B</sub>**)* if ***D** \> 0*, and *min(**P<sub>A</sub>P<sub>B</sub>**, **P<sub>a</sub>P<sub>b</sub>**)* if ***D** \< 0* | \|**D′**\| = 1 means **complete LD**: no recombination between the loci (in the sample). |
+| **r²** (Hill and Robertson, 1968) | ***r²** = **D²** / (**P<sub>A</sub>P<sub>a</sub>P<sub>B</sub>P<sub>b</sub>**)* | **r²** = 1 means **perfect LD**: complete LD **and** identical allele frequencies at the two loci. |
 
-*Note:* the slide writes r² = D / √(P<sub>A</sub>P<sub>a</sub>P<sub>B</sub>P<sub>b</sub>). That expression is r (the correlation coefficient); r² is its square, as written in the table above.
+*Note:* the slide writes **r²** = **D** / √(**P<sub>A</sub>P<sub>a</sub>P<sub>B</sub>P<sub>b</sub>**). That expression is **r** (the correlation coefficient); **r²** is its square, as written in the table above.
 
 ## 5.5 Genome-wide patterns of LD
 
@@ -69,21 +69,21 @@ Graphically, under linkage equilibrium the area of each haplotype square equals 
 
 **Recombination progressively breaks haplotypes** over subsequent generations, so LD decays. The slide illustrates a new mutation (N → D) that initially sits on a single haplotype background; after 10 and 90 generations recombination has replaced the surrounding segments, leaving the mutation associated with an ever-smaller block of its original haplotype.
 
-*D<sub>t</sub> = (1 − r)<sup>t</sup> × D₀*
+***D<sub>t</sub>** = (1 − **r**)**<sup>t</sup>** × **D₀***
 
-*(r = recombination fraction between the loci, t = generations)*
+*(**r** = recombination fraction between the loci, **t** = generations)*
 
 ![[SATAUMV-image9.png|624]]
 
 | **Recombination fraction** | **Behaviour of LD (graph with D₀ = 0.25)** |
 |:---|:---|
-| r = 0 | No recombination: D stays constant at 0.25 (complete linkage). |
-| r = 0.01 | Very slow decay, D is still close to 0.2 after 25 generations. |
-| r = 0.05 | Moderate decay, D falls to about 0.07 after 25 generations. |
-| r = 0.1 | Faster decay, D falls to about 0.02 after 25 generations. |
-| r = 0.5 (unlinked loci) | Rapid decay: D is essentially 0 within about 5–10 generations. |
+| **r** = 0 | No recombination: **D** stays constant at 0.25 (complete linkage). |
+| **r** = 0.01 | Very slow decay, **D** is still close to 0.2 after 25 generations. |
+| **r** = 0.05 | Moderate decay, **D** falls to about 0.07 after 25 generations. |
+| **r** = 0.1 | Faster decay, **D** falls to about 0.02 after 25 generations. |
+| **r** = 0.5 (unlinked loci) | Rapid decay: **D** is essentially 0 within about 5–10 generations. |
 
-Worked example: for r = 0.01 and t = 100 generations, D₁₀₀ = (0.99)¹⁰⁰ × D₀ ≈ 0.366 × D₀, so about 37% of the initial LD remains. The smaller r is, the longer LD persists, which is why tightly linked variants stay associated for many generations.
+Worked example: for **r** = 0.01 and **t** = 100 generations, **D₁₀₀** = (0.99)¹⁰⁰ × **D₀** ≈ 0.366 × **D₀**, so about 37% of the initial LD remains. The smaller **r** is, the longer LD persists, which is why tightly linked variants stay associated for many generations.
 
 ---
 > [[SATAUMV 04 - Generating diversity – mutation|← Generating diversity – mutation]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]] · [[SATAUMV 06 - Eliminating diversity – genetic drift|Eliminating diversity – genetic drift →]]

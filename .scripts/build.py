@@ -9,8 +9,43 @@ from pathlib import Path
 VAULT = Path(__file__).resolve().parent.parent
 SCR = Path(os.environ.get('IMPORT_WORK', Path.home() / '.cache' / 'bioinformatics-import'))
 CONV = SCR / 'conv'
-# MCB/ sits next to the vault; `src` paths below are relative to that parent folder
-ROOT = Path(os.environ.get('MCB_ROOT', VAULT.parent))
+# `src` paths below are relative to the folder that contains MCB/ (ROOT).
+# Order: MCB_ROOT env var > OS-specific path > folder next to the vault.
+WIN_ROOT = Path(r'C:\Users\Rocco\Documents\Universita')   # C:\Users\Rocco\Documents\Universita\MCB
+LINUX_ROOTS = [VAULT.parent, Path.home() / 'Documents' / 'Universita']
+
+
+def find_root():
+    if os.environ.get('MCB_ROOT'):
+        return Path(os.environ['MCB_ROOT'])
+    if os.name == 'nt' or sys.platform in ('win32', 'cygwin', 'msys'):
+        return WIN_ROOT
+    for r in LINUX_ROOTS:
+        if (r / 'MCB').is_dir():
+            return r
+    sys.exit(f'MCB/ not found in {", ".join(map(str, LINUX_ROOTS))}: set MCB_ROOT')
+
+
+ROOT = find_root()
+
+
+def write(path, text):
+    """UTF-8 with LF line endings on every OS (no CRLF diffs from Windows)."""
+    with open(path, 'w', encoding='utf-8', newline='\n') as fh:
+        fh.write(text)
+
+
+def tool(*names):
+    """First executable found in PATH or in the usual Windows install folders."""
+    for n in names:
+        if shutil.which(n):
+            return shutil.which(n)
+    pf = [Path(os.environ.get(v, '')) for v in ('ProgramFiles', 'ProgramFiles(x86)', 'LOCALAPPDATA') if os.environ.get(v)]
+    for base in pf:
+        for n in names:
+            for hit in sorted(base.glob(f'*/{n}.exe')) + sorted(base.glob(f'*/program/{n}.exe')) + sorted(base.glob(f'Programs/*/{n}.exe')):
+                return str(hit)
+    sys.exit(f'Not found: {" / ".join(names)} (install it or add it to PATH)')
 S1 = VAULT / 'First Year' / 'Semester 1'
 ATT = VAULT / '_attachments'
 
@@ -20,31 +55,31 @@ SOURCES = {
         course='Statistical Approaches to Assess Human Molecular Variability',
         module_note='Statistical Approaches to Assess Human Molecular Variability',
         dir=S1 / 'Statistical Approaches to Assess Human Molecular Variability',
-        src='MCB/SATAUMV/Statistical_approaches.docx', label='Statistical Approaches'),
+        src='MCB/Statistical_Approaches/Statistical_approaches.docx', label='Statistical Approaches'),
     'FG': dict(
         course=FGIG, module_note='Functional Genetics', dir=S1 / FGIG,
-        src='MCB/FGIG/FG/FunctionalGen_RS.docx', label='Functional Genetics', sub='Functional Genetics'),
+        src='MCB/Functional_Genetics/FunctionalGen_common.docx', label='Functional Genetics', sub='Functional Genetics'),
     'IG': dict(
         course=FGIG, module_note='Integrative Genomics', dir=S1 / FGIG,
-        src='MCB/FGIG/IG/IntegrativeGen_RS.docx', label='Integrative Genomics', sub='Integrative Genomics'),
+        src='MCB/Functional_Genetics/IntegrativeGen_RS.docx', label='Integrative Genomics', sub='Integrative Genomics'),
     'AML': dict(
         course='Applied Machine Learning', module_note='Applied Machine Learning (AML-Basic)',
-        dir=S1 / 'Applied Machine Learning', src='MCB/AML/MLFULL.docx',
+        dir=S1 / 'Applied Machine Learning', src='MCB/Applied_ML/MLFULL.docx',
         label='AML-Basic', sub='AML-Basic'),
     'MBD': dict(
         course='Introduction to Computing in Biology',
         module_note='Introduction to Modeling of Biological Data',
-        dir=S1 / 'Introduction to Computing in Biology', src='MCB/MBD/ModelingBioData.docx',
+        dir=S1 / 'Introduction to Computing in Biology', src='MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx',
         label='Modeling of Biological Data'),
     'BFB': dict(
         course='Bioinformatics for Biology', module_note='Bioinformatics for Biology',
-        dir=S1 / 'Bioinformatics for Biology', src='MCB/BFB/Bioinformatics_For_Biology.docx',
+        dir=S1 / 'Bioinformatics for Biology', src='MCB/Bioinformatics_For_Biology/Bioinformatics_For_Biology.docx',
         label='Bioinformatics for Biology'),
 }
 
 # hand fixes re-applied after every rebuild: (note name prefix, old text, new text)
 FIXES = [
-    ('FG 13 -', '![[FG-image33.png|335]]**How the flanking gene', '![[FG-image33.png|335]]\n\n**How the flanking gene'),
+    ('FG 12 -', '![[FG-image32.png|303]]**How the flanking gene', '![[FG-image32.png|303]]\n\n**How the flanking gene'),
 ]
 
 BIG = 300      # lines: a chapter longer than this is split at its H2s
@@ -82,7 +117,7 @@ def parse_sections(text, key):
     lines = text.split('\n')
     out, cur = [], None
     in_code = False
-    late = False       # AML: after 13.5 the course topics are H4 headings
+    late = False       # AML: after 13.5 the course topics are H3/H4 headings
     for ln in lines:
         if ln.startswith('```'):
             in_code = not in_code
@@ -97,7 +132,7 @@ def parse_sections(text, key):
             np = False
             if key == 'AML' and re.match(r'^13\.5 ', title):
                 late = True
-            elif key == 'AML' and late and lvl == 4:
+            elif key == 'AML' and late and lvl in (3, 4):   # H4 or H3 depending on pandoc version
                 lvl, np = 2, True
             if lvl <= 2:
                 cur = [lvl, title, [], np]
@@ -205,11 +240,11 @@ def convert_media(key):
         if f.suffix.lower() == '.emf':
             tmp = SCR / 'emf' / key
             tmp.mkdir(parents=True, exist_ok=True)
-            subprocess.run(['soffice', '--headless', '--convert-to', 'png', '--outdir', str(tmp), str(f)],
+            subprocess.run([tool('soffice'), '--headless', '--convert-to', 'png', '--outdir', str(tmp), str(f)],
                            capture_output=True, timeout=180)
             png = tmp / (f.stem + '.png')
             if png.exists():
-                subprocess.run(['magick', str(png), '-trim', '+repage', '-define', 'png:exclude-chunks=date,time', str(dest / f'{key}-{f.stem}.png')], check=True)
+                subprocess.run([tool('magick', 'convert') if os.name != 'nt' else tool('magick'), str(png), '-trim', '+repage', '-define', 'png:exclude-chunks=date,time', str(dest / f'{key}-{f.stem}.png')], check=True)
                 media_map[f.name] = f.stem + '.png'
             continue
         shutil.copy2(f, dest / f'{key}-{f.name}')
@@ -222,7 +257,7 @@ def convert_media(key):
 
 def build(key):
     cfg = SOURCES[key]
-    text = (CONV / key / f'{key}.md').read_text()
+    text = (CONV / key / f'{key}.md').read_text(encoding='utf-8')
     media_map = convert_media(key)
     secs = parse_sections(text, key)
 
@@ -242,7 +277,7 @@ def build(key):
         title = heads[0] if heads else f'Part {i}'
         if len(heads) > 1 and ch[0][0] == 2:
             title = f'{heads[0]} … {heads[-1]}' if len(heads) > 2 else f'{heads[0]} + {heads[1]}'
-        if pre and pre.lower() not in title.lower() and pre.lower() != cfg['module_note'].lower():
+        if pre and pre.lower() not in title.lower() and cfg['module_note'].lower() not in pre.lower():
             title = f'{pre} · {title}'
         notes.append(dict(n=i, title=title, name=f'{key} {i:02d} - {title}', chunk=ch))
     for idx, nt in enumerate(notes):
@@ -265,7 +300,7 @@ def build(key):
         for prefix, old, new in FIXES:
             if nt['name'].startswith(prefix) and old in text:
                 text = text.replace(old, new)
-        nt['path'].write_text(text)
+        write(nt['path'], text)
     return cfg, notes, out_dir
 
 
@@ -280,7 +315,7 @@ def clean_heading(raw):
 def add_moc(cfg, notes, key):
     """Insert an '## Appunti' index into the module note, before '## Exam' (or append)."""
     f = cfg['dir'] / f'{cfg["module_note"]}.md'
-    t = f.read_text()
+    t = f.read_text(encoding='utf-8')
     t = re.sub(r'\n## Appunti \(MCB\)\n.*?(?=\n## |\Z)', '', t, flags=re.S)
     block = f'\n## Appunti (MCB)\n\nFonte: `{cfg["src"]}` — {len(notes)} note collegate in ordine.\n\n'
     block += '\n'.join(f'{n["n"]}. [[{n["name"]}|{n["title"]}]]' for n in notes) + '\n'
@@ -288,13 +323,14 @@ def add_moc(cfg, notes, key):
         t = t.replace('\n## Exam', block + '\n## Exam', 1)
     else:
         t = t.rstrip('\n') + '\n' + block
-    f.write_text(t)
+    write(f, t)
 
 
 if __name__ == '__main__':
+    sys.stdout.reconfigure(encoding='utf-8')
     if sys.argv[1:] == ['--list']:
         for k, cfg in SOURCES.items():
-            print(f'{k}\t{ROOT / cfg["src"]}')
+            print(f'{k}\t{(ROOT / cfg["src"]).as_posix()}')   # forward slashes: fine for bash on Windows too
         sys.exit()
     keys = sys.argv[1:] or list(SOURCES)
     for k in keys:
@@ -302,4 +338,4 @@ if __name__ == '__main__':
         add_moc(cfg, notes, k)
         print(f'{k}: {len(notes)} notes -> {d.relative_to(VAULT)}')
         for n in notes:
-            print('   ', n['name'], f'({sum(len(s[2]) for s in n['chunk'])} l)')
+            print('   ', n['name'], f'({sum(len(s[2]) for s in n["chunk"])} l)')

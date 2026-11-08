@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 3
 tags: [note, aml]
 ---
@@ -40,7 +40,7 @@ This table essentially represents the training set, which is the data used to tr
 
 > ![[AML-image9.jpg|278]]
 
-**3.1 HYPOTHESIS**
+## 3.1 HYPOTHESIS
 
 How do I represent this hypothesis h?
 
@@ -77,8 +77,8 @@ In univariate linear regression, the hypothesis hθ(x) is a function used to pre
 So, when we use the hypothesis *h*0(*x*) = *θ*0 + *θ*1*x* in univariate linear regression, we're essentially saying that we can predict the value of y for a given input value of x by multiplying the input value by the slope *θ*1 and adding the y-intercept *θ*0.
 
 ## Collegamenti
-- [[MBD 19 - Module 7 – Correlation and Regression]] — regressione lineare, lato matematico
-- [[MBD 04 - Module 1 – Vectors and Hyperplanes · Norm, distance, inner product – what is actually different]] — norma e distanza
+- [[MBD 01 - Module 1 – Vectors and Hyperplanes · Vectors … Vector operations]] — norma e distanza
+- [[MBD 02 - Module 1 – Vectors and Hyperplanes · Scalar (dot) product]] — prodotto scalare
 
 ---
 > [[AML 02 - Types of Machine Learning|← Types of Machine Learning]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 04 - Univariate Model Regression · Minimization and Cost Function|Univariate Model Regression · Minimization and Cost Function →]]

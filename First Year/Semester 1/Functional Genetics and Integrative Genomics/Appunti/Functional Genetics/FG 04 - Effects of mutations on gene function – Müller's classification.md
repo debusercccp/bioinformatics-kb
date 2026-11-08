@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/FGIG/FG/FunctionalGen_RS.docx"
+source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
 order: 4
 tags: [note, fg]
 ---
@@ -32,25 +32,27 @@ tags: [note, fg]
 
 ### Amorph (null, complete LOF)
 
-- Eliminates normal gene function; generally recessive.
+- **Eliminates normal gene function**; generally recessive.
 
 - The amorphic phenotype directly indicates the **stage or tissue that first requires the gene product**.
 
-- Testing whether a gene is essential requires a null allele.
+- Testing whether a gene is essential and requires a null allele.
 
 - **Dosage logic:** *null/null = null/Df = Df/Df* – no change in phenotype when placed over a deficiency, because there is no activity left to remove.
 
-![[FG-image5.png|461]]
+![[FG-image5.png|403]]
 
 ### Hypomorph (partial LOF, "weak" or "leaky" allele)
 
-- **Decreased** normal gene function; generally recessive.
+- **Decreased normal gene function**; generally recessive.
 
 - **Dosage logic:** *hypomorph/hypomorph \< hypomorph/Df \< Df/Df* (in terms of residual activity: the phenotype gets **more severe** over a deficiency, because you halve the amount of the weak product).
 
 - Rescued by extra wild-type copies.
 
-![[FG-image6.png|454]]
+> **Focus — reading a deficiency series.** m/Df = Df/Df → null; m/Df milder than Df/Df → hypomorph.
+
+![[FG-image6.png|404]]
 
 ### Hypermorph (GOF, increased wild-type activity)
 
@@ -74,11 +76,13 @@ tags: [note, fg]
 
 - **Example (ectopic expression):** a gene normally active in the forelegs is repressed in the antenna by a repressor element in its regulatory region. A mutation destroying that repressor site leaves the coding region intact but the gene is now expressed in the antenna as well → a leg-like structure in the wrong place. The same protein, in the wrong cell/tissue/stage, creates a new phenotype.
 
-![[FG-image8.png|462]]
+> **Focus — regulatory mutations and Müller's classes.** Classes reflect the effect on function, not the lesion site: ectopic expression = neomorph, more of the same activity = hypermorph.
+
+![[FG-image8.png|368]]
 
 ### Antimorph (dominant negative)
 
-- The mutant product **antagonizes the wild-type product**: in effect it **decreases wild-type activity** and is typically **dominant**.
+- The **mutant** product **antagonizes the wild-type product**: in effect it **decreases wild-type activity** and is typically **dominant**.
 
 - Often indicates a protein that **forms dimers or multimers**: the mutant subunit gets incorporated into the complex and poisons it.
 
@@ -92,7 +96,9 @@ tags: [note, fg]
 
 - **Dosage logic:** usually **rescued by increasing the WT dose**, usually **not enhanced by a deficiency**. Many antimorphic phenotypes **depend on the presence of a wild-type allele**; homozygotes may show no phenotype or a different one.
 
-![[FG-image9.png|424]]
+> **Focus — the arithmetic of dominant negatives.** Functional fraction = fⁿ: a 1:1 dimer keeps 25%, a tetramer ~6%, so a dominant negative is worse than a null heterozygote (50%).
+
+![[FG-image9.png|353]]
 
 ### Summary table
 
@@ -144,7 +150,7 @@ tags: [note, fg]
 
 - Study a gene's role by producing animals that **lack** it. Based on **homologous recombination** in **embryonic stem (ES) cells**.
 
-- Procedure: targeted ES cells are injected into blastocysts → implanted in foster mothers → **chimeric mice** → mated with normal mice → if the targeted cells contributed to the germline, offspring carry the modification (**gene-targeted mice**).
+- Procedure: targeted ES cells are **injected into blastocysts** → implanted in foster **mothers** → **chimeric mice** → mated with normal mice → if the targeted cells contributed to the germline, offspring carry the modification (**gene-targeted mice**).
 
 **Why ES cells.** **Homologous recombination is rare**, so it is done in cultured cells, where the few correctly targeted clones can be selected. ES cells are **pluripotent**: injected into a blastocyst they can colonise the **germline of the chimera**, which then transmits the modification to its offspring. HR works well in yeast and mouse ES cells, poorly in worm and fly, which is why those organisms rely on **CRISPR** and **transposons**.
 
@@ -154,13 +160,15 @@ tags: [note, fg]
 
 **Type of intervention:** **gene targeting by homologous recombination in ES cells** → **chimera** → **germline transmission**. This is **true transgenesis**: a **stable, heritable** modification of a specific gene.
 
+> **Focus — when early lethality masks later functions.** A null reveals only the first requirement; later roles need conditional removal (tissue-specific/inducible Cre/loxP).
+
 ### CRISPR/Cas9
 
 **In bacteria (natural function = adaptive immunity)**
 
-- *1st infection:* a fragment of the phage DNA is acquired into the **CRISPR locus** as a new spacer between DNA repeats (Cas1/Cas2 mediate acquisition).
+- *1st infection:* a fragment of the phage DNA is acquired into the **CRISPR locus** as a **new spacer** between DNA repeats (Cas1/Cas2 mediate acquisition).
 
-- *2nd infection:* the CRISPR locus is transcribed into **crRNAs**; together with the **tracrRNA** they form a complex with **Cas9**, which recognizes foreign DNA matching and **cleaves** it → resistance to the virus.
+- *2nd infection:* the **CRISPR locus** is transcribed into **crRNAs**; together with the **tracrRNA** they form a complex with **Cas9**, which recognizes foreign DNA matching and **cleaves** it → resistance to the virus.
 
 - A **single guide RNA (sgRNA)** directs Cas9 to a target next to a **PAM sequence** and makes a **double-strand break (DSB)**.
 
@@ -172,11 +180,11 @@ tags: [note, fg]
 
 **In short:** **Cas9 only cuts**; the outcome depends on how the cell repairs the cut. No template → **NHEJ** → indels → frameshift → **knock-out**. Template with homology arms → **HDR** → precise edit (**knock-in**, point mutation, GFP tag).
 
-**Focus — How the target is actually found.** Cas9 does not scan for the guide sequence: it scans for the **PAM (5′-NGG-3′)**, read in the major groove by Arg1333 and Arg1335, which hydrogen-bond the two guanines. Only after engaging a PAM does Cas9 locally destabilize the duplex immediately upstream and attempt pairing with the guide, proceeding **PAM-proximal → PAM-distal**. If the first ~10–12 nt (the **seed region**) do not pair, the complex dissociates within milliseconds and resumes the search; if they do, pairing continues until a complete **R-loop** is formed.
-
-**Focus — Two practical consequences.** First, **no PAM, no cut**, whatever the homology — which is also how the bacterial CRISPR locus protects itself, since it contains the spacers but not their PAMs. Second, mismatches in the seed abolish cleavage while PAM-distal mismatches are often tolerated, and that is exactly where **off-targets** come from.
-
-**Focus — The cut itself.** Once the R-loop is complete, HNH undergoes a conformational rearrangement that brings it into contact with the target strand; this movement acts as an **allosteric checkpoint** that also licenses RuvC. The two domains cut almost simultaneously, generating a **blunt double-strand break 3 bp upstream of the PAM**. The position is predictable, and that predictability is what makes precise insertions designable.
+> **Focus — How the target is actually found. Cas9 scans for the PAM (NGG) first, then pairs the guide starting from the seed (~10–12 nt); no seed match, no R-loop.**
+>
+> **Two practical consequences.** First, **no PAM, no cut**, whatever the homology — which is also how the bacterial CRISPR locus protects itself, since it contains the spacers but not their PAMs. Second, mismatches in the seed abolish cleavage while PAM-distal mismatches are often tolerated, and that is exactly where **off-targets** come from.
+>
+> **The cut itself.** Once the R-loop is complete, HNH undergoes a conformational rearrangement that brings it into contact with the target strand; this movement acts as an **allosteric checkpoint** that also licenses RuvC. The two domains cut almost simultaneously, generating a **blunt double-strand break 3 bp upstream of the PAM**. The position is predictable, and that predictability is what makes precise insertions designable.
 
 ### Morpholinos (knock-down)
 
@@ -197,6 +205,8 @@ tags: [note, fg]
 - This creates **genetic mosaicism from the F0 generation**, so the phenotype can be evaluated **immediately**, without waiting for several generations to establish a stable line.
 
 **Trade-off:** you **save generations**, but the F0 is a **mosaic** (not every cell carries the same mutation), so the phenotype is **more variable** than in a stable mutant line.
+
+> **Focus — why F0 crispants are variable.** Each cell repairs independently, so every F0 is a mosaic: genotype, use several gRNAs and confirm in stable lines.
 
 ---
 > [[FG 03 - Reverse genetics + Gene mutation – molecular consequences (what is the nature of the allele)|← Reverse genetics + Gene mutation – molecular consequences (what is the nature of the allele)]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 05 - Where do we measure gene function|Where do we measure gene function →]]

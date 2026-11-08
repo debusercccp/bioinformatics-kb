@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/SATAUMV/Statistical_approaches.docx"
+source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
 order: 1
 tags: [note, sataumv]
 ---
@@ -82,7 +82,7 @@ Human genetic diversity has a peculiar distribution within and between populatio
 | 21 Alu insertions | 82.9 | 8.2 | 8.9 |
 
 - Overall, about **83–88%** of autosomal variation is found among individuals *within* populations and only about **9–13%** *between* populations or continental groups. The summary figure gives roughly **85% within populations, 5% among populations and 10% among population groups**.
-- Comparison of F<sub>ST</sub> values: humans (worldwide) have a low F<sub>ST</sub>, comparable to waterbuck and impala (Kenya), and far lower than coyote, elephant, Grant's gazelle and especially the gray wolf (Eurasia), which has the highest value shown.
+- Comparison of **F<sub>ST</sub>** values: humans (worldwide) have a low **F<sub>ST</sub>**, comparable to waterbuck and impala (Kenya), and far lower than coyote, elephant, Grant's gazelle and especially the gray wolf (Eurasia), which has the highest value shown.
 - Conclusion: **low genetic diversity and little population differentiation** in humans.
 
 ## 1.7 Evolutionary history of our species

@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 17
 tags: [note, aml]
 ---
@@ -14,7 +14,7 @@ tags: [note, aml]
 
 Overfitting is a common issue in machine learning where a model learns to fit the training data too closely, resulting in poor performance when presented with new unseen data. **Overfitting** manifests as: —\> **<u>inability of the model to generalize beyond the training data.</u>**
 
-> ![[AML-image88.jpg|486]]
+> ![[AML-image85.jpg|486]]
 
 It's evident that the data points don't conform to a linear trend, this phenomenon is called under-fitting. While in traditional statistics, it may be interpreted simply as a linear fit, here it highlights a bias in our analysis: we’re attempting to impose a straight line on data that doesn't conform to linearity.
 
@@ -70,7 +70,7 @@ Optimization focuses on improving performance on the training data, while genera
 
 ## 10.2 OVERFITTING FOR LOGISTIC REGRESSION
 
-![[AML-image89.jpg|311]]Initially, I attempt to establish a linear decision boundary using a linear hypothesis, however this initial hypothesis proves to be overly simplistic.
+![[AML-image86.jpg|311]]Initially, I attempt to establish a linear decision boundary using a linear hypothesis, however this initial hypothesis proves to be overly simplistic.
 
 The second attempt at creating a decision boundary is more appropriate and better suited to the data.
 
@@ -108,7 +108,7 @@ The idea is to not stop only at the orange case, but apply the pink case and tun
 
 - We force *θ*3 and *θ*4 to be significantly smaller - though not zero - compared to the other parameters. If we aimed for them to be zero, we'd achieve the orange curve
 
-- ![[AML-image90.jpg|330]]While the blue curve may not perfectly match the orange curve, it effectively mitigates the overfitting problem by curbing the excessive complexity exhibited by the pink curve.
+- ![[AML-image87.jpg|330]]While the blue curve may not perfectly match the orange curve, it effectively mitigates the overfitting problem by curbing the excessive complexity exhibited by the pink curve.
 
 Instead of minimizing just the original cost function, an additional term (regularization term) is added to the cost function, which is the sum of the squares of the model's coefficients (thetas). This **REGULARIZATION TERM** is typically a **penalty term** that **discourages the model from fitting the training data too closely** and helps to prevent the model from becoming overly complex. In this way the features that are relevant stay relevant, the others are going to be tuned down.
 
@@ -132,13 +132,13 @@ In our exploration of linear regression, we previously examined two fundamental 
 
 The core principles underlying linear regression remain intact. We continue to seek the optimal parameters, denoted as *θ* to minimize the difference between predicted and actual values, as we know from the formula:
 
-![[AML-image93.png|264]]
+![[AML-image90.png|264]]
 
 **What changes**
 
 Regularisation introduces a penalty term that discourages overly complex models, effectively mitigating the risk of overfitting. This adjustment is encapsulated in the updated cost function:
 
-![[AML-image94.png|278]] *i*=1 *j*=1
+![[AML-image91.png|278]] *i*=1 *j*=1
 
 In this formula:
 
@@ -154,7 +154,7 @@ In this formula:
 
 - *θj*is the parameter associated with the *j*-th feature.
 
-![[AML-image95.jpg|700]]
+![[AML-image92.jpg|700]]
 
 To implement regularization in **normal gradient descent**, the update rule for the parameter *θj*will change to include the regularization term. Instead of the original update rule, which only considers the gradient of the cost function, the new update rule will also include the derivative of the regularization term with respect to *θj* This modified update rule ensures that the parameters are updated in a way that penalizes large values of *θj*, thus preventing overfitting.
 
@@ -176,7 +176,7 @@ Where:
 
 By adding *λI* to the matrix *X<sup>T</sup> X*, you ensure that the inverse exists even if *X<sup>T</sup> X* is not invertible due to linear dependence among features. This adjustment helps prevent overfitting by regularizing the model parameters.
 
-![[AML-image98.jpg|530]]
+![[AML-image95.jpg|530]]
 
 ## 10.6 REGULARISED LOGISTIC REGRESSION
 
@@ -188,7 +188,7 @@ We can adapt any technique above and make them work for **regularised logistic r
 
 For regularized logistic regression, the cost function with regularization is given by:
 
-![[AML-image101.png|75]]*J*∑*m* \[*y*<sup>(*i*)</sup> log(*h<sub>θ</sub>*(*x*<sup>(*i*)</sup>)) + (1 − *y*<sup>(*i*)</sup>)log(1 − *h<sub>θ </sub>*\] *λ* ∑*n θj*2
+![[AML-image98.png|75]]*J*∑*m* \[*y*<sup>(*i*)</sup> log(*h<sub>θ</sub>*(*x*<sup>(*i*)</sup>)) + (1 − *y*<sup>(*i*)</sup>)log(1 − *h<sub>θ </sub>*\] *λ* ∑*n θj*2
 
 > (*x*(*i*))) + 2*m*
 
@@ -206,18 +206,15 @@ For regularized logistic regression, the cost function with regularization is gi
 
 To implement regularization in gradient descent for logistic regression, you update the gradient descent rule as follows:
 
-![[AML-image102.png|323]]
+![[AML-image99.png|323]]
 
 - *α*: Learning rate
 
 - *x<sub>j</sub>*<sup>(*i*)</sup>: j-th feature of the *i*-th training example
 
-- ![[AML-image103.jpg|425]]*m<u>λ</u> θj*: Regularization term
+- ![[AML-image100.jpg|425]]*m<u>λ</u> θj*: Regularization term
 
 - *λ*: Regularization parameter
-
-## Collegamenti
-- [[MBD 19 - Module 7 – Correlation and Regression]] — regolarizzazione (ridge/lasso)
 
 ---
 > [[AML 16 - Alternatives to GD|← Alternatives to GD]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 18 - Model Diagnostics|Model Diagnostics →]]

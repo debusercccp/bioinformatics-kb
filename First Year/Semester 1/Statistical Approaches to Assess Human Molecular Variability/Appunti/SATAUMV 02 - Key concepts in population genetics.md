@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/SATAUMV/Statistical_approaches.docx"
+source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
 order: 2
 tags: [note, sataumv]
 ---
@@ -23,7 +23,7 @@ Typical questions: how does genetic variation arise? How is it distributed withi
 
 ## 2.2 Worked example: genotype and allele frequencies
 
-Both methods give the same result, and p + q must always equal 1. Note that each diploid individual contributes two alleles, hence the factor 2 in the denominator.
+Both methods give the same result, and **p** + **q** must always equal 1. Note that each diploid individual contributes two alleles, hence the factor 2 in the denominator.
 
 ![[SATAUMV-image2.jpg|559]]
 

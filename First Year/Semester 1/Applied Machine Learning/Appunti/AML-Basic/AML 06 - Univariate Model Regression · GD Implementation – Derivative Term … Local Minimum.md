@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 6
 tags: [note, aml]
 ---
@@ -115,7 +115,8 @@ We will know that we have succeeded when our cost function J is at the very bott
 How does GD converge with a fixed step size α? The derivative approaches 0 as we approach the bottom of our convex function. At the minimum, the derivative will always be 0 and thus no parameters update are done NOTE: depending on where one starts on the graph, one could end up at different points. This is a propriety of GD.
 
 ## Collegamenti
-- [[MBD 14 - Module 5 – Multivariable Calculus and Optimisation]] — estremi, Hessiana, condizioni di ottimo
+- [[MBD 15 - Module 4 – Calculus in One Variable · Extreme points]] — punti estremi, derivata nulla
+- [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation]] — Hessiana e natura dei punti critici
 
 ---
 > [[AML 05 - Univariate Model Regression · Gradient Descent Algorithm|← Univariate Model Regression · Gradient Descent Algorithm]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 07 - Univariate Model Regression · Applying GD to Linear Regression + Batch Gradient Descent (bgd)|Univariate Model Regression · Applying GD to Linear Regression + Batch Gradient Descent (bgd) →]]

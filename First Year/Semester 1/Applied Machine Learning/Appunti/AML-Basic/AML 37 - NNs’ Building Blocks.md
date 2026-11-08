@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 37
 tags: [note, aml]
 ---
@@ -44,7 +44,7 @@ tags: [note, aml]
 >
 > Whenever time matters in your data (or the notion of **sequence** **order**), it makes sense to store it → a 3D time-series (or sequence) data tensor with an explicit time axis.
 
-- ![[AML-image251.jpg|385]]every sample can be encoded as a **sequence of vectors** (i.e. a 2D tensor).
+- ![[AML-image220.jpg|385]]every sample can be encoded as a **sequence of vectors** (i.e. a 2D tensor).
 
 - a batch of data will be encoded as a 3D tensor which has thus **an explicit time axis.**
 
@@ -74,7 +74,7 @@ tags: [note, aml]
 >
 > A video can be interpreted as a sequence of frames, each frame being a colour image → a vector of 4D image data tensors → 5D video data tensors
 
-![[AML-image252.jpg|468]]
+![[AML-image221.jpg|468]]
 
 > **Tensor Operations**
 >
@@ -88,7 +88,7 @@ tags: [note, aml]
 
 > Much along the same lines, all “transformations” that a deep NN can learn can be reduced to a handful of **tensor operations** applied **to tensors of numerical** **data**.
 >
-> ![[AML-image253.jpg|631]]
+> ![[AML-image222.jpg|631]]
 >
 > Dense layers on top of each other. Take one:
 
@@ -96,7 +96,7 @@ tags: [note, aml]
 
 > The function specifically does a dot product, an addition and then applies a function **relu**(x) (which is basically max(x,0)).
 
-![[AML-image254.jpg|395]]
+![[AML-image223.jpg|395]]
 
 > The **relu** operation and the addition are ***element-wise*** operations
 
@@ -116,7 +116,7 @@ tags: [note, aml]
 
 - e.g. a rotation of a 2D vector by an angle θ can be achieved via a dot product with a 2×2 rotation matrix R=\[u,v\], where u and v are vector of the plane, namely u=\[cos(θ), sin(θ)\] and v=\[-sin(θ), cos(θ)\]
 
-![[AML-image255.jpg|532]]
+![[AML-image224.jpg|532]]
 
 > Think of a neural network as a process that:
 

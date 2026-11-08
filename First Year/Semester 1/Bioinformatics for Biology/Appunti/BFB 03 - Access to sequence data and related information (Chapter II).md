@@ -1,7 +1,7 @@
 ---
 course: "[[Bioinformatics for Biology]]"
 module: "[[Bioinformatics for Biology]]"
-source: "MCB/BFB/Bioinformatics_For_Biology.docx"
+source: "MCB/Bioinformatics_For_Biology/Bioinformatics_For_Biology.docx"
 order: 3
 tags: [note, bfb]
 ---
@@ -34,6 +34,8 @@ The NCBI sequence database, formerly known as **Entrez**, is organised in two ma
 | Nucleotides | ~130,000,000 | 86,067,871 |
 | Organisms | ~580,000 | 184,752 |
 
+### 
+
 ### 3.2.1 nr — non-redundant sequences
 
 - **What it is**: the archival, submission-driven collection. Any sequence submitted by a recognised institution ends up here, with no curation of its biological content.
@@ -44,7 +46,7 @@ The NCBI sequence database, formerly known as **Entrez**, is organised in two ma
 
 ### 3.2.2 RefSeq — reference sequences
 
-- **What it is**: an expertly curated collection that provides, for a given gene/transcript/protein/genome, *the* stable, agreed-upon “reference” version of the sequence, with its own accession number.
+- **What it is**: an expertly curated collection that provides, for a given gene/transcript/protein/genome, *the* **stable**, agreed-upon “reference” version of the sequence, with its own accession number.
 - **Curation**: records are manually reviewed, which is why RefSeq contains roughly a third fewer organisms than nr and far fewer records: curation does not scale the way submission does.
 - **Properties that matter in practice**: one reference record per biological entity (non-redundant in the *biological* sense, not merely at the level of identical strings); consistent annotation across species; stable identifiers that can be cited in a paper and resolved years later; explicit links between the nucleotide record and the protein it encodes (`NM_` ↔ `NP_`).
 - **When to use it**: whenever you need a defined, citable, unambiguous sequence — designing primers, choosing a canonical transcript, comparing orthologues across species, reporting a variant’s coordinates, building a reproducible pipeline.

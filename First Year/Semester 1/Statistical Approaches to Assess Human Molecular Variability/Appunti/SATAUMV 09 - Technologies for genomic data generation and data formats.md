@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/SATAUMV/Statistical_approaches.docx"
+source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
 order: 9
 tags: [note, sataumv]
 ---
@@ -66,7 +66,7 @@ SNP-chip genotypes are usually stored in **PLINK** format, which exists in a **h
 
 The **.ped** file has one row per sample and a variable number of columns. The first six describe the individual: **Family ID**, **Sample ID** (the individual's identifier within the family), **paternal ID** (father, 0 if unknown), **maternal ID** (mother, 0 if unknown), **sex** (1 = male, 2 = female, 0 = unknown) and **phenotype** (−9 = missing). From column 7 onwards, each SNP takes **two columns**, one for each allele of the genotype (e.g. G G, A G). A genome-wide chip therefore gives about 10² rows (one per sample) and 10⁵–10⁶ SNPs, so roughly twice that number of genotype columns.
 
-The **.map** file describes the SNPs, with one row per SNP and exactly four columns: **chromosome**, **SNP ID** (e.g. rs4911642), **genetic map position in cM** and **physical position in bp**. The rows of the .map must be in the same order as the SNPs along the .ped, because the *n*-th SNP of the .ped is described by the *n*-th row of the .map. The two files are therefore complementary: the .ped holds *who* carries *which genotype*, and the .map tells *where* each SNP lies in the genome.
+The **.map** file describes the SNPs, with one row per SNP and exactly four columns: **chromosome**, **SNP ID** (e.g. rs4911642), **genetic map position in cM** and **physical position in bp**. The rows of the .map must be in the same order as the SNPs along the .ped, because the ***n***-th SNP of the .ped is described by the ***n***-th row of the .map. The two files are therefore complementary: the .ped holds *who* carries *which genotype*, and the .map tells *where* each SNP lies in the genome.
 
 The **binary** format has three files: .bed (the genotypes, encoded in binary), .bim (the .map information plus two extra columns, **Allele 1 = A1 = minor allele** and **Allele 2 = A2 = major allele**) and .fam (the first six columns of the .ped).
 
@@ -125,15 +125,15 @@ A FASTQ file contains **four lines per read**:
 | **Line** | **Content** |
 |:---|:---|
 | 1\. Read identifier | Starts with '@' |
-| 2\. Nucleotide sequence | The bases of the read (N = base that could not be called) |
+| 2\. Nucleotide sequence | The bases of the read (**N** = base that could not be called) |
 | 3\. Separator line | Starts with '+' |
 | 4\. Quality scores | One character for each nucleotide of line 2 |
 
 ## 9.9 Phred quality score
 
-The **Phred score (Q)** is a metric for the quality of nucleotide identification: it represents the probability (P) of an **incorrect base call**.
+The **Phred score (Q)** is a metric for the quality of nucleotide identification: it represents the probability (**P**) of an **incorrect base call**.
 
-*Q = −10 log₁₀ P* and *P = 10<sup>−Q/10</sup>*
+***Q** = −10 log₁₀ **P*** and ***P** = 10<sup>−**Q**/10</sup>*
 
 | **Phred quality score** | **Probability of incorrect base call** | **Base call accuracy** |
 |:---|:---|:---|
@@ -218,7 +218,7 @@ Second example, from the alignment-section slide: FLAG = 113, POS = 497, MAPQ = 
 
 ## 9.11 Variant calling and the VCF format
 
-**Variant calling** identifies genetic variants, i.e. the differences in DNA sequence between the reference genome and the analysed samples, based on the aligned reads (SAM/BAM/CRAM files in; VCF, or its binary version BCF, out). For each identified polymorphism a **genotype** is assigned to each individual from the combination of reference and/or alternative alleles observed, according to ploidy (diploid, n = 2: Ref/Ref, Ref/Alt, Alt/Alt).
+**Variant calling** identifies genetic variants, i.e. the differences in DNA sequence between the reference genome and the analysed samples, based on the aligned reads (SAM/BAM/CRAM files in; VCF, or its binary version BCF, out). For each identified polymorphism a **genotype** is assigned to each individual from the combination of reference and/or alternative alleles observed, according to ploidy (diploid, **n** = 2: Ref/Ref, Ref/Alt, Alt/Alt).
 
 ![[SATAUMV-image32.png|624]]
 
@@ -229,7 +229,7 @@ Note: REF/ALT are defined only with respect to the reference genome and **do not
 
 **VCF** (Variant Call Format) files are tab-delimited text files that store the **genotype and variant information for all the analysed samples**. They have two parts: a **header section** with the metadata and the **body**, with actual information on the detected variants.
 
-- **Header:** lines starting with `##`. They include the mandatory format line (`##``fileformat=VCFv4.2`), the `##contig` lines (chromosomes and lengths) and the `##INFO` and `##FORMAT` lines, which describe (ID, Number, Type, Description) the annotations used in the body. The last header line starts with `#CHROM` and gives the names of the columns of the body.
+- **Header:** lines starting with `##`. They include the mandatory format line (`##fileformat=VCFv4.2`), the `##contig` lines (chromosomes and lengths) and the `##INFO` and `##FORMAT` lines, which describe (ID, Number, Type, Description) the annotations used in the body. The last header line starts with `#CHROM` and gives the names of the columns of the body.
 - **Body:** one row per variant, with **9 mandatory columns** followed by one column per sample.
 
 | **Column** | **Content** |
@@ -250,11 +250,11 @@ Fields of the sample columns:
 - **GT (genotype):** allele values separated by **/** (unphased genotype) or **\|** (phased genotype). Alleles are encoded as 0 for the REF allele, 1 for the first allele listed in ALT, 2 for the second, and so on.
 - **DP (read depth):** read depth at this position for this sample.
 - **AD (allelic depths):** number of reads supporting the REF and ALT alleles, in the order listed.
-- **GQ (genotype quality):** conditional genotype quality, encoded as a Phred quality, −10 log₁₀ P(genotype call is wrong).
+- **GQ (genotype quality):** conditional genotype quality, encoded as a Phred quality, −10 log₁₀ **P**(genotype call is wrong).
 
 Worked examples from the slide, variant chr1:239339 (A → G, AC = 1, DP = 4), with FORMAT GT:AD:DP:GQ. **NA12878 = 0/1:9,6:15:99**: heterozygous A/G (A = REF = 0 in GT with 9 reads, G = ALT = 1 in GT with 6 reads), DP = 15 = 9 + 6, GQ = 99. **NA12879 = 0/0:15,0:15:33**: homozygous reference A/A, 15 reads supporting REF and none ALT, GQ = 33. AC = 1 is consistent with these genotypes: it counts the ALT alleles over all samples (one in NA12878, none in NA12879). At chr1:240898, AC = 3 corresponds to 1/1 (two ALT alleles) plus 0/1 (one).
 
-Note on the slide: it states that a GQ of 99 means a 1 in 100,000 chance of error. By the formula, 1 in 100,000 corresponds to Q = 50, whereas GQ = 99 corresponds to an error probability of about 10<sup>−9.9</sup>. In practice GQ is capped at 99, so a value of 99 simply means maximum confidence.
+Note on the slide: it states that a GQ of 99 means a 1 in 100,000 chance of error. By the formula, 1 in 100,000 corresponds to **Q** = 50, whereas GQ = 99 corresponds to an error probability of about 10<sup>−9.9</sup>. In practice GQ is capped at 99, so a value of 99 simply means maximum confidence.
 
 **Size and orientation of the files.** A whole-genome VCF has ≈ 30 M rows (1 × variant) and 1–10³ columns (1 × sample). The orientation is the opposite of the PLINK .ped file (samples in rows, SNPs in columns) and closer to the .map/.bim (variants in rows).
 

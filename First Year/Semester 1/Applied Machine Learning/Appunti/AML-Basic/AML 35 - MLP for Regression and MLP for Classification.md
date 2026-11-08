@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 35
 tags: [note, aml]
 ---
@@ -12,7 +12,7 @@ tags: [note, aml]
 
 > Good. So, what can you do with MLPs? And how you do it?
 
-![[AML-image240.jpg|642]]
+![[AML-image211.jpg|642]]
 
 > Remember the classical architecture of a **Neural network**: input layer, hidden layer and output layer, that could be smaller or larger, depending on what you are working on. The structure for regression or classification is similar, we will change that for classification, the activation function would be put together by the **SoftMax** layer.
 >
@@ -40,13 +40,13 @@ tags: [note, aml]
 >
 > **Huber loss**
 
-![[AML-image241.jpg|406]]
+![[AML-image212.jpg|406]]
 
 > is a combination of both (quadratic when the error is smaller than a threshold δ - typically 1, but linear when the error is larger than δ. This makes it less sensitive to outliers than MSE, and it is often more precise and converges faster than MAE.
 >
 > Architecture for Regression MLP
 
-![[AML-image242.jpg|597]]
+![[AML-image213.jpg|597]]
 
 > **Classification MLP**
 >
@@ -54,7 +54,7 @@ tags: [note, aml]
 
 - **1 neuron**
 
-- **Sigmoid** **activation**: gives a probability P(y=1![[AML-image243.png]]x)
+- **Sigmoid** **activation**: gives a probability P(y=1![[AML-image214.png]]x)
 
 - **Loss function: Binary Crossentropy** Classification tasks:
 
@@ -68,7 +68,7 @@ tags: [note, aml]
 
 - e.g. classes 0 through 9 for **MNIST** classification: each instance can belong only to a single class, there are several, and they are exclusive.
 
-![[AML-image244.jpg|471]]
+![[AML-image215.jpg|471]]
 
 ---
 > [[AML 34 - Keras Interface for a Shallow NN|← Keras Interface for a Shallow NN]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 36 - Training An ANN|Training An ANN →]]

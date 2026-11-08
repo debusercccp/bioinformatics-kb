@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/SATAUMV/Statistical_approaches.docx"
+source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
 order: 6
 tags: [note, sataumv]
 ---
@@ -30,11 +30,11 @@ The **Wright-Fisher model** is the **theoretical framework** for understanding t
 
 The model contains many *unrealistic assumptions*, because these factors vary among populations. To compare the amount of drift experienced by different populations, Wright introduced the concept of **effective population size** (**N<sub>e</sub>**): the size of an idealized population that would experience the same amount of drift as the studied population.
 
-N<sub>e</sub> is a basic parameter for many population-genetics models and is usually **smaller than** the absolute (census) population size N. Few populations are constant in size over many generations: the long-term N<sub>e</sub> equals the **harmonic mean** of population size over time (the reciprocal of the mean of the reciprocals), so N<sub>e</sub> stays close to the **smallest N**. For most of our past evolutionary history human populations had very small sizes, and *H. sapiens* expanded only recently; this is why N<sub>e</sub> is much smaller than N.
+**N<sub>e</sub>** is a basic parameter for many population-genetics models and is usually **smaller than** the absolute (census) population size **N**. Few populations are constant in size over many generations: the long-term **N<sub>e</sub>** equals the **harmonic mean** of population size over time (the reciprocal of the mean of the reciprocals), so **N<sub>e</sub>** stays close to the **smallest N**. For most of our past evolutionary history human populations had very small sizes, and *H. sapiens* expanded only recently; this is why **N<sub>e</sub>** is much smaller than **N**.
 
 ## 6.3 Bottleneck and founder effects
 
-Present-day variation depends on **past small population sizes**. Two population processes shape genetic diversity by reducing the ancestral N<sub>e</sub> and causing a **loss of genetic diversity**:
+Present-day variation depends on **past small population sizes**. Two population processes shape genetic diversity by reducing the ancestral **N<sub>e</sub>** and causing a **loss of genetic diversity**:
 
 - **Bottleneck effect:** more than 50% of a population is **killed or prevented from reproducing**, and the survivors carry only part of the original diversity.
 - **Founder effect:** related to the process of **colonization**; a subset of individuals separates from the source population, carrying only a **subset of its diversity**.
@@ -51,11 +51,11 @@ A **metapopulation** may not be randomly mating because it is made up of **parti
 
 ## 6.5 Measures of population structure: F<sub>ST</sub>
 
-F<sub>ST</sub> measures the **apportionment of variation between demes** by comparing the mean diversity of **demes** with the diversity of the **metapopulation**. It is the **proportion of genetic diversity** that is due to **allele frequency differences among subpopulations**:
+**F<sub>ST</sub>** measures the **apportionment of variation between demes** by comparing the mean diversity of **demes** with the diversity of the **metapopulation**. It is the **proportion of genetic diversity** that is due to **allele frequency differences among subpopulations**:
 
-*F<sub>ST</sub> = (H<sub>T</sub> − H<sub>S</sub>) / H<sub>T</sub>*
+***F<sub>ST</sub>** = (**H<sub>T</sub>** − **H<sub>S</sub>**) / **H<sub>T</sub>***
 
-H<sub>T</sub> is the expected heterozygosity of the metapopulation and H<sub>S</sub> is the mean expected heterozygosity across demes. F<sub>ST</sub> lies between 0 and 1: F<sub>ST</sub> ≈ 0 means **little differentiation** (high gene flow), while F<sub>ST</sub> ≈ 1 means **high differentiation** (H<sub>T</sub> much larger than the diversity within demes).
+**H<sub>T</sub>** is the **expected heterozygosity** of the metapopulation and **H<sub>S</sub>** is the **mean expected heterozygosity across demes**. **F<sub>ST</sub>** lies between 0 and 1: **F<sub>ST</sub>** ≈ 0 means **little differentiation** (high gene flow), while **F<sub>ST</sub>** ≈ 1 means **high differentiation** (**H<sub>T</sub>** much larger than the diversity within demes).
 
 Consider a locus with two alleles **A** and **a** with the following frequencies in three subpopulations:
 
@@ -65,7 +65,7 @@ Consider a locus with two alleles **A** and **a** with the following frequencies
 | S2                | 0.52  | 0.48  | 0.4992      |
 | S3                | 0.50  | 0.50  | 0.5000      |
 
-The mean expected heterozygosity across demes is H<sub>S</sub> = (0.4800 + 0.4992 + 0.5000)/3 = **0.4931**. The mean allele frequencies p = (0.60 + 0.52 + 0.50)/3 = 0.54 and q = (0.40 + 0.48 + 0.50)/3 = 0.46 give H<sub>T</sub> = 2pq = 2 × 0.54 × 0.46 = **0.4968**, hence F<sub>ST</sub> = (0.4968 − 0.4931)/0.4968 = **0.0074**, i.e. very little differentiation among the three subpopulations.
+The mean expected heterozygosity across demes is **H<sub>S</sub>** = (0.4800 + 0.4992 + 0.5000)/3 = **0.4931**. The mean allele frequencies **p** = (0.60 + 0.52 + 0.50)/3 = 0.54 and **q** = (0.40 + 0.48 + 0.50)/3 = 0.46 give **H<sub>T</sub>** = **2pq** = 2 × 0.54 × 0.46 = **0.4968**, hence **F<sub>ST</sub>** = (0.4968 − 0.4931)/0.4968 = **0.0074**, i.e. very little differentiation among the three subpopulations.
 
 ## 6.6 Mating choice
 

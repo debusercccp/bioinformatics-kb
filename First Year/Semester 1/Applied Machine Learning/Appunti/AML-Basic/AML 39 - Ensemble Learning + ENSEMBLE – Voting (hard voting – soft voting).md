@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 39
 tags: [note, aml]
 ---
@@ -34,7 +34,7 @@ tags: [note, aml]
 
 > I trained various classifiers. Each one achieving its **own** (goodish) **accuracy**.
 >
-> ![[AML-image262.jpg|313]]An even better classifier can be built by **aggregating** the **predictions** from each classifier and then predict, per each instance, the class that gets the most votes out of the ensemble of classifiers.
+> ![[AML-image231.jpg|313]]An even better classifier can be built by **aggregating** the **predictions** from each classifier and then predict, per each instance, the class that gets the most votes out of the ensemble of classifiers.
 >
 > These diverse predictions can say something about that. The **majority of votes wins**, but in this case, you just count the votes. Putting one classifier together with the other, the
 >
@@ -70,9 +70,9 @@ tags: [note, aml]
 >
 > Aggregation of predictions from all predictors is typically the **most frequent** (hard voting) for classification, or the average for regression. they can be **trained in parallel** (multiple CPUs or different servers, even), one of the reasons why they are popular: they scale up well.
 
-![[AML-image263.jpg|558]]
+![[AML-image232.jpg|558]]
 
-> With bagging, for any given predictor, some instances may be **sampled several times**, while others may not be sampled at all. only ![[AML-image264.png|10]]63% of the m training instances are sampled on average for each predictor. On m training instances, bagging (i.e. w/ replacement) gives a chance for an instance of not being selected in any of draws as (1-1/n)n, which for large n yields 1/e ≈ 0.37. These remaining 37% are called “**out-of-bag**” (oob) training. As a predictor never sees the **oob** instances during training, it can be **evaluated** on **these** **instances**, without the need for a separate validation set. by adding **oob_score**=**True** in my
+> With bagging, for any given predictor, some instances may be **sampled several times**, while others may not be sampled at all. only ![[AML-image233.png|10]]63% of the m training instances are sampled on average for each predictor. On m training instances, bagging (i.e. w/ replacement) gives a chance for an instance of not being selected in any of draws as (1-1/n)n, which for large n yields 1/e ≈ 0.37. These remaining 37% are called “**out-of-bag**” (oob) training. As a predictor never sees the **oob** instances during training, it can be **evaluated** on **these** **instances**, without the need for a separate validation set. by adding **oob_score**=**True** in my
 >
 > BaggingClassifier in sklearn, I can perform an oob evaluation of the ensemble’s accuracy on that test set (averages out the oob evaluations of each predictor).
 

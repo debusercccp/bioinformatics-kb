@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/FGIG/FG/FunctionalGen_RS.docx"
+source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
 order: 3
 tags: [note, fg]
 ---
@@ -24,7 +24,7 @@ tags: [note, fg]
 
 **Tools of reverse genetics:** transgenesis by gene addition, single-gene knock-outs and knock-ins, conditional gene modifications, chromosomal rearrangements, genome editing.
 
-**Pitfalls:** it will miss **redundant** or **conditionally required** genes (same limits as forward genetics).
+**Pitfalls:** it will miss **redundant** or **conditionally required** genes (same limits as forward genetics).<span id="_Toc244967875" class="anchor"></span>
 
 ### Forward vs reverse – summary
 
@@ -37,6 +37,8 @@ tags: [note, fg]
 | Weakness | Misses redundant/essential genes | Misses redundant/conditional genes |
 
 **Today the forward/reverse categorization no longer strictly holds**: full genome sequences plus genome-manipulation approaches (e.g. CRISPR screens) blend the two into innovative genetic approaches. Both routes converge on the same goal: understanding the biological process.
+
+> **Focus — what really separates forward and reverse genetics.** The direction of reasoning: phenotype → gene (forward) vs gene → phenotype (reverse).
 
 ## Gene mutation: molecular consequences ("what is the nature of the allele?")
 
@@ -72,7 +74,7 @@ tags: [note, fg]
 
   - **Non-conservative**: very different amino acid (Arg → Ile, via AGA → ATA), more likely to damage function.
 
-**Frameshift** (insertion or deletion of a number of bases not divisible by 3 in a coding region): the reading frame shifts, so **every codon downstream changes** and a premature stop is usually met. Example from the slide: AAG AGA GGT (Lys Arg Gly) becomes Glu Glu Arg… after insertion of a G, or Arg Glu Val… after deletion of an A.
+**Frameshift** (insertion or deletion of several bases not divisible by 3 in a coding region): the reading frame shifts, so **every codon downstream changes** and a premature stop is usually met. Example from the slide: AAG AGA GGT (Lys Arg Gly) becomes Glu Glu Arg… after insertion of a G, or Arg Glu Val… after deletion of an A.
 
 ---
 > [[FG 02 - Why function requires perturbation + Forward genetics|← Why function requires perturbation + Forward genetics]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 04 - Effects of mutations on gene function – Müller's classification|Effects of mutations on gene function – Müller's classification →]]

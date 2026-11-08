@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 61
 tags: [note, aml]
 ---
@@ -20,7 +20,7 @@ tags: [note, aml]
 
 > The goal of training is to make the Generator so good at creating "fakes" that the Discriminator can’t tell them apart from the real thing.
 >
-> ![[AML-image398.jpg|531]]
+> ![[AML-image354.jpg|531]]
 
 1.  **The Generator (G)** starts with random noise (a vector of numbers) and generates a “fake” image from it.
 

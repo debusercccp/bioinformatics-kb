@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Integrative Genomics]]"
-source: "MCB/FGIG/IG/IntegrativeGen_RS.docx"
+source: "MCB/Functional_Genetics/IntegrativeGen_RS.docx"
 order: 2
 tags: [note, ig]
 ---
@@ -47,7 +47,7 @@ One-line answer: 3C and Hi-C do not look at DNA, they count **how often** two pi
 
 ### Step 1. How 3C measures contact between two loci
 
-- ![[IG-image4.png|376]]**Crosslink.** Formaldehyde fixes cells, gluing together DNA segments that are physically close (through the proteins between them). This freezes the 3D arrangement at one moment.
+- ![[IG-image4.png|376]]**Crosslink.** Formaldehyde fixes cells, gluing together DNA segments that are **physically close** (through the proteins between them). This freezes the 3D arrangement at one moment.
 - **Cut.** A restriction enzyme cuts the DNA into fragments (a few kb). Crosslinked fragments **stay held together** in complexes.
 - **Ligate under dilution.** DNA ligase joins ends. At low concentration, ends that are crosslinked together **ligate to each other** far more often than to random fragments. A new hybrid molecule forms piece of locus A joined to piece of locus B.
 - **Reverse the crosslinks** and purify the DNA.
@@ -92,9 +92,9 @@ In the **Hi-C protocol**, the crosslinked DNA is **digested** with an enzyme, th
 ### Step 4. Reading the Hi-C map
 
 - **Strong diagonal:** loci close on the linear genome always contact most; frequency falls steeply with distance (the scaling or P(s) curve).
-- ![[IG-image9.png|389]]**Compartments (plaid pattern):** large regions that contact other regions of the same type. A compartment is A (active, gene-rich, open) or B (inactive, closed). Found by the first principal component of the correlation matrix.
-- **TADs (triangles/squares on the diagonal):** blocks where loci contact each other much more inside the block than with loci just outside. Typically, submegabase. The edge is a **boundary**.
-- **Loops (dots at the corner of a TAD or square):** a single pair of loci with a specific, strong contact, usually two convergent CTCF sites with cohesin.
+- ![[IG-image9.png|389]]**Compartments (plaid pattern):** large regions that **contact other regions of the same type**. A compartment is A (active, gene-rich, open) or B (inactive, closed). Found by the first principal component of the correlation matrix.
+- **TADs (triangles/squares on the diagonal):** blocks where loci **contact each other much more inside the block than with loci just outside**. Typically, submegabase. The edge is a **boundary**.
+- **Loops (dots at the corner of a TAD or square):** a single pair of loci with a specific, strong contact, usually **two convergent CTCF sites with cohesin**.
 
 ### Step 5. How TADs are called from the map
 

@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/AML/MLFULL.docx"
+source: "MCB/Applied_ML/MLFULL.docx"
 order: 60
 tags: [note, aml]
 ---
@@ -56,7 +56,7 @@ tags: [note, aml]
 
 - While GANs (Generative Adversarial Networks) might produce sharper outputs, VAEs are **more stable and principled**.
 
-![[AML-image396.jpg|283]]
+![[AML-image352.jpg|283]]
 
 > Just like any regular autoencoder, a **VAE** has two main parts:
 
@@ -86,7 +86,7 @@ tags: [note, aml]
 
 > The cost function of a VAE has two parts:
 
-![[AML-image397.jpg|642]]
+![[AML-image353.jpg|642]]
 
 1.  **Reconstruction loss**
 

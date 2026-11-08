@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/FGIG/FG/FunctionalGen_RS.docx"
+source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
 order: 20
 tags: [note, fg]
 ---
@@ -35,31 +35,11 @@ tags: [note, fg]
 | Duct of Cuvier | Circulation, invasion, metastasis |
 | Intraperitoneal cavity (adult) | Long-term studies; immunocompromised lines |
 
-![[FG-image64.png|602]]
+![[FG-image63.png|602]]
 
 *Injection sites for zebrafish xenografts.*
 
-**Focus — Why larval xenografts work.** The **adaptive immune system is not functional until about 3–4 weeks** post-fertilisation, so human cells are not rejected and no immunosuppression is needed; a few hundred cells are enough, and the result (growth, invasion, response to a drug) is read within days. Larvae are usually kept at a compromise temperature of about 34–35 °C, between the fish optimum and that of human cells. Adult xenografts need immunodeficient lines.
-
-### 
-
-### Single-cell visualisation of the tumour microenvironment
-
-- Reporter lines label the host: **Tg(fli1:eGFP)** vessels, **Tg(mpx:eGFP)** neutrophils, **Tg(mpeg1:mCherry)** macrophages.
-
-- In **Tg(mpeg1:mCherry; tnfa:eGFP)**, macrophages that are **TNFα⁺** are **anti-tumoral, M1-like**, while **TNFα⁻** ones are **pro-tumoral, M2-like** — the polarisation can be followed in the same larva from day 1 to day 4 (Martínez-López et al., 2025; Póvoa et al., 2021).
-
-**Key antibodies for immunofluorescence on xenografts** (Mendes et al., 2025):
-
-- **Caspase-3** → **apoptosis**; used to assess therapy-induced cell death;
-
-- **Ki-67** → **proliferation**; a **human-specific** antibody avoids cross-reaction with the zebrafish host;
-
-- **Phospho-histone H3** → **mitotic activity**.
-
-**Example: HP-NAP and melanoma** (Facchinello et al., 2022). The ***Helicobacter pylori* neutrophil-activating protein (HP-NAP)** reduces the growth of melanoma xenografts, and **macrophages are essential for its anti-tumour activity** (followed in *mpeg1:EGFP* larvae, 4 dpi).
-
-**Future perspectives:** automated imaging and AI-based analysis; automated microinjection for xenograft models (Ding et al., 2025); high-throughput drug screening; CRISPR/Cas9 for novel targets and cancer models; humanised zebrafish models; **personalised medicine** (patient-derived xenografts to choose a treatment, at reduced cost); integration with omics and single-cell technologies.
+> **Focus — Why larval xenografts work. No adaptive immunity until 3–4 wpf, so no rejection; read-out within days at ~34–35 °C.**
 
 ### Take-home messages
 

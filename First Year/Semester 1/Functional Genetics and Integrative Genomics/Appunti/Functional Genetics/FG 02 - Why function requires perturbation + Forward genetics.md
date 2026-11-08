@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/FGIG/FG/FunctionalGen_RS.docx"
+source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
 order: 2
 tags: [note, fg]
 ---
@@ -58,6 +58,8 @@ Two logics, running in opposite directions between phenotype and genotype:
 
 - *You will miss redundant genes* (another gene compensates, so no phenotype) *and essential genes* (the mutant dies too early to be scored).
 
+> **Focus — building an allelic series.** Point mutagens (EMS/ENU) give graded alleles; a whole-gene deletion gives only the null. The mutagen decides which alleles a screen recovers.
+
 ### Essential genes
 
 Essential genes are required for sustaining life.
@@ -70,7 +72,7 @@ Essential genes are required for sustaining life.
 
 **Conditionally essential genes =\>** Their necessity depends on a specific **environmental condition, developmental stage or tissue**. Mutants may show **no obvious phenotype under optimal laboratory conditions**. Examples: immune system genes (become essential on infection), stress responses, growth with limited nutrients. Many genes may be conditionally essential but the *condition* is simply unknown.
 
-**Key concept:** gene essentiality is **not an absolute and static property** of a gene. It depends on the environment and on the genetic context, and on how function is measured. To test whether a gene is essential you need a **null** mutation.
+**Key concept:** gene essentiality is **not an absolute and static property** of a gene. It depends on the **environment** and on the **genetic context**, and on how function is measured. To test whether a gene is essential you need a **null** mutation.
 
 ---
 > [[FG 01 - What is functional genomics + Genomic equivalence – the premise of the discipline|← What is functional genomics + Genomic equivalence – the premise of the discipline]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 03 - Reverse genetics + Gene mutation – molecular consequences (what is the nature of the allele)|Reverse genetics + Gene mutation – molecular consequences (what is the nature of the allele) →]]

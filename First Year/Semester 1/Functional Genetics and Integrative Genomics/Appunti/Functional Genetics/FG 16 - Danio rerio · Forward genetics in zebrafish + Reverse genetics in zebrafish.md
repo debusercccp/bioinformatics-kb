@@ -1,12 +1,12 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/FGIG/FG/FunctionalGen_RS.docx"
+source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
 order: 16
 tags: [note, fg]
 ---
 
-> [[FG 15 - Danio rerio · Zebrafish as a model organism|← Danio rerio · Zebrafish as a model organism]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 17 - Danio rerio · Transgenesis and gene targeting|Danio rerio · Transgenesis and gene targeting →]]
+> [[FG 15 - Danio rerio · Embryonic development of zebrafish|← Danio rerio · Embryonic development of zebrafish]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 17 - Danio rerio · Transgenesis and gene targeting|Danio rerio · Transgenesis and gene targeting →]]
 
 # Forward genetics in zebrafish
 
@@ -16,7 +16,9 @@ The forward-genetics approach in zebrafish is almost the same as in *Drosophila*
 
 **The Big Screen (1993).** Nüsslein-Volhard (Tübingen) and Driever (Boston) applied this scheme on a large scale and described about **4000 embryonic lethal mutants**, the vertebrate counterpart of the Heidelberg screen on the fly.
 
-**Focus — ENU and publication.** ENU is an alkylating agent that mutagenises the **pre-meiotic spermatogonia**, so a treated male produces mutant sperm for months; it is the most efficient mutagen for vertebrate germ cells (also in the mouse) and produces mainly **point mutations**. The results of the two screens were published together in 1996, in a dedicated issue of *Development*.
+> **Focus — ENU and publication. Alkylating spermatogonial mutagen, mainly point mutations; both screens published in 1996 (Development).**
+>
+> **Paper — Driever et al., 1996** (Development 123:37–46): The Boston half of the Big Screen, the first large-scale vertebrate screen: 2,383 mutations, 695 kept and 220 loci defined, with only 1.5 alleles per locus, too few to estimate saturation (unlike the fly screen).
 
 ## Reverse genetics in zebrafish
 
@@ -54,7 +56,7 @@ The forward-genetics approach in zebrafish is almost the same as in *Drosophila*
 
 **Problems with TILLING.** A mutation found in a given F1 fish is **only one of many heterozygous mutations in its genome**. With a detected rate of **2–4 mutations per megabase**, each F1 fish carries an estimated **3–6000 ENU-induced mutations**. As a result, **a phenotype seen in a clutch from two heterozygous F2 fish may well be due to another, unscreened ENU mutation**.
 
-**Focus — How the background problem is handled.** Each outcross to wild type halves the number of unlinked background mutations, so lines are **outcrossed for several generations** before phenotyping. Then causality is checked by (1) **co-segregation**: every embryo with the phenotype must be homozygous for the identified allele; (2) **complementation** with a second, independent allele; (3) **rescue** by injecting wild-type mRNA. Mutations tightly linked to the target cannot be removed by outcrossing, which is one more reason to want an independent allele.
+> **Focus — How the background problem is handled. Outcross, then check co-segregation, complementation and mRNA rescue.**
 
 ### Targeted gene perturbation approaches
 
@@ -82,7 +84,7 @@ The bases are the standard nucleic-acid bases, so a MO pairs with its target RNA
 
 - length: **25 nucleotides**;
 
-- activity: most effective up to about **50 hpf**, still useful through about **4 dpf**;
+- activity: most effective up to about **50 hpf (*hours post-fertilization)***, still useful through about **4 dpf (*days post-fertilization)***;
 
 - **translation-blocking** MO (blocks translation) or **splice-site** MO (blocks proper splicing of the pre-mRNA); they can also block miRNAs or their targets, and ribozyme activity;
 
@@ -92,7 +94,7 @@ The bases are the standard nucleic-acid bases, so a MO pairs with its target RNA
 
 - open issues: **dosage**, and **off-target effects** → **neurotoxicity due to p53 activation**.
 
-**Focus — The two types in practice.** A **translation-blocking** MO is designed on the 5′ UTR/start codon and stops the scanning ribosome; its efficacy can only be checked at the protein level (antibody, or a GFP reporter carrying the target site). A **splice-blocking** MO is designed on an exon–intron boundary and causes exon skipping or intron retention; its efficacy is checked easily by **RT-PCR**, and it does not affect maternally supplied, already spliced mRNA. p53-dependent toxicity is often mitigated by co-injecting a *p53* MO.
+> **Focus — The two types in practice. Translation-blocking (5′ UTR/ATG, checked on protein) vs splice-blocking (exon–intron junction, checked by RT-PCR).**
 
 **Example: decorin** (Zoeller et al., 2009). Decorin, a chondroitin-sulfate proteoglycan, regulates **collagen fibrillogenesis and cell growth**. Decorin morphants show a range of **truncated-body phenotypes**, classified as **mild, moderate or severe**. Two controls make the result credible:
 
@@ -108,7 +110,7 @@ The bases are the standard nucleic-acid bases, so a MO pairs with its target RNA
 | Bypasses the lethality problem |  |
 | “Caged” MOs: photoactivated to act in specific locations at specific times → conditional knockdowns |  |
 
-**Focus — Morphants vs mutants.** When stable mutants became easy to make, many morphant phenotypes were **not reproduced** by mutants of the same genes (Kok et al., 2015, reported about 80% discordance). Part of this reflects MO toxicity, part **genetic compensation** in the mutants (upregulation of related genes, absent in a knockdown). Current guidelines therefore ask that MO results be **validated with a mutant** and accompanied by mismatch and rescue controls.
+> **Focus — Morphants vs mutants. About 80% of morphant phenotypes were not reproduced in mutants (Kok et al., 2015): validate with mutants and controls.**
 
 ---
-> [[FG 15 - Danio rerio · Zebrafish as a model organism|← Danio rerio · Zebrafish as a model organism]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 17 - Danio rerio · Transgenesis and gene targeting|Danio rerio · Transgenesis and gene targeting →]]
+> [[FG 15 - Danio rerio · Embryonic development of zebrafish|← Danio rerio · Embryonic development of zebrafish]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 17 - Danio rerio · Transgenesis and gene targeting|Danio rerio · Transgenesis and gene targeting →]]

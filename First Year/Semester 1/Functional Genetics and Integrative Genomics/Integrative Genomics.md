@@ -37,13 +37,17 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/it/studiare
 
 ## Appunti (MCB)
 
-Fonte: `MCB/FGIG/IG/IntegrativeGen_RS.docx` — 5 note collegate in ordine.
+Fonte: `MCB/Functional_Genetics/IntegrativeGen_RS.docx` — 9 note collegate in ordine.
 
 1. [[IG 01 - Lecture notes – key facts … Enhancer–promoter crosstalk|Lecture notes – key facts … Enhancer–promoter crosstalk]]
 2. [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family]]
 3. [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter]]
 4. [[IG 04 - Genomic imprinting + Enhancer RNAs (eRNAs)|Genomic imprinting + Enhancer RNAs (eRNAs)]]
-5. [[IG 05 - Chromatin and remodelling + Cautions and corrections to keep in mind|Chromatin and remodelling + Cautions and corrections to keep in mind]]
+5. [[IG 05 - Chromatin and remodelling|Chromatin and remodelling]]
+6. [[IG 06 - Histone acetylation and methylation|Histone acetylation and methylation]]
+7. [[IG 07 - Histone variants, the histone code and epigenetic memory|Histone variants, the histone code and epigenetic memory]]
+8. [[IG 08 - DNA methylation + Methods – from one locus to the whole epigenome|DNA methylation + Methods – from one locus to the whole epigenome]]
+9. [[IG 09 - ChIP-seq (chromatin immunoprecipitation followed by sequencing) … Next-generation sequencing (NGS) – the read-out of every -seq method|ChIP-seq (chromatin immunoprecipitation followed by sequencing) … Next-generation sequencing (NGS) – the read-out of every -seq method]]
 
 ## Exam
 
