@@ -8,6 +8,8 @@ tags: [note, fg]
 
 > [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|← Danio rerio · Reporter lines – making gene expression visible]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 20 - Danio rerio · Modelling cancer in zebrafish|Danio rerio · Modelling cancer in zebrafish →]]
 
+*Approfondimento: [[FGx 01 - CRISPR-Cas9 – step by step|CRISPR-Cas9 – step by step]]*
+
 # CRISPR/Cas9: from gene to disease model
 
 ### How we can study gene function with zebrafish

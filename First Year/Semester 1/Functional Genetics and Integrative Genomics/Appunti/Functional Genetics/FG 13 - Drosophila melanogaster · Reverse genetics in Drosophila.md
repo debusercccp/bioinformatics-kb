@@ -8,6 +8,8 @@ tags: [note, fg]
 
 > [[FG 12 - Drosophila melanogaster · Forward genetics in Drosophila|← Drosophila melanogaster · Forward genetics in Drosophila]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 14 - Danio rerio · Zebrafish as a model organism|Danio rerio · Zebrafish as a model organism →]]
 
+*Approfondimento: [[FGx 03 - Breaking, switching on, switching off – step by step|Breaking, switching on, switching off – step by step]]*
+
 # Reverse genetics in Drosophila
 
 Reverse genetics goes **from gene to phenotype**: start from a known gene, change it or its expression on purpose, and look at the consequence. In the fly this rests on **transgenesis** — getting a construct into the germ line, at random with the P element or at a defined landing site with ΦC31 — and on **binary expression systems** (GAL4/UAS and its derivatives) that decide **where and when** the transgene is on, for gain of function (ectopic expression) or loss of function (UAS-RNAi).

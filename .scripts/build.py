@@ -304,6 +304,36 @@ def build(key):
     return cfg, notes, out_dir
 
 
+def extras(cfg):
+    """Hand-written notes in <course>/Approfondimenti/<sub>/ (never touched by the import).
+    Front-matter `companion_of: ["title fragment", ...]` links them from the matching Appunti notes."""
+    d = cfg['dir'] / 'Approfondimenti' / (cfg.get('sub') or '')
+    out = []
+    for f in sorted(d.glob('*.md')) if d.is_dir() else []:
+        t = f.read_text(encoding='utf-8')
+        fm = re.match(r'^---\n(.*?)\n---\n', t, re.S)
+        comp = []
+        if fm:
+            m = re.search(r'^companion_of:\n((?:[ \t]+- .*\n?)+)', fm.group(1) + '\n', re.M)
+            if m:
+                comp = [x.strip().strip('"\'') for x in re.findall(r'- (.*)', m.group(1))]
+        name = f.stem
+        out.append(dict(name=name, title=name.split(' - ', 1)[-1], comp=comp))
+    return out
+
+
+def link_extras(notes, ex):
+    """Add an 'Approfondimento' line under the top nav bar of the Appunti notes named in companion_of."""
+    for nt in notes:
+        hits = [e for e in ex if any(c.lower() in nt['title'].lower() for c in e['comp'])]
+        if not hits:
+            continue
+        t = nt['path'].read_text(encoding='utf-8')
+        line = '*Approfondimento: ' + ' · '.join(f'[[{e["name"]}|{e["title"]}]]' for e in hits) + '*'
+        i = t.index('\n\n', t.index('\n> ')) + 2      # right after the first nav blockquote
+        write(nt['path'], t[:i] + line + '\n\n' + t[i:])
+
+
 def clean_heading(raw):
     t = re.sub(r'<[^>]+>', '', raw).replace('*', '').strip()
     t = re.sub(r'\$`(.+?)`\$', lambda m: '$' + m.group(1) + '$', t)
@@ -319,6 +349,10 @@ def add_moc(cfg, notes, key):
     t = re.sub(r'\n## Appunti \(MCB\)\n.*?(?=\n## |\Z)', '', t, flags=re.S)
     block = f'\n## Appunti (MCB)\n\nFonte: `{cfg["src"]}` — {len(notes)} note collegate in ordine.\n\n'
     block += '\n'.join(f'{n["n"]}. [[{n["name"]}|{n["title"]}]]' for n in notes) + '\n'
+    ex = extras(cfg)
+    if ex:
+        block += '\nApprofondimenti (note scritte a mano in `Approfondimenti/`, non generate dal docx):\n\n'
+        block += '\n'.join(f'- [[{e["name"]}|{e["title"]}]]' for e in ex) + '\n'
     if '\n## Exam' in t:
         t = t.replace('\n## Exam', block + '\n## Exam', 1)
     else:
@@ -335,6 +369,7 @@ if __name__ == '__main__':
     keys = sys.argv[1:] or list(SOURCES)
     for k in keys:
         cfg, notes, d = build(k)
+        link_extras(notes, extras(cfg))
         add_moc(cfg, notes, k)
         print(f'{k}: {len(notes)} notes -> {d.relative_to(VAULT)}')
         for n in notes:

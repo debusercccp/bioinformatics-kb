@@ -71,6 +71,7 @@ Study notes imported from `MCB/*.docx` are split into **atomic notes** (one topi
 - Name: `<KEY> NN - Title`. Each note has a prev / ↑ module / next bar, and the module note (`## Appunti (MCB)`) holds the ordered index.
 - `## Collegamenti` at the bottom links related concepts **across courses** (e.g. gradient descent in AML ↔ multivariable calculus in MBD).
 - Images live in `_attachments/` (`KEY-imageN.ext`).
+- **Hand-written study notes for an imported course** go in `<Course>/Approfondimenti/<module>/`, named `<KEY>x NN - Title` (e.g. `FGx 01 - CRISPR-Cas9 – step by step`, tags `#note #fg #approfondimento`). The import lists them under the module's `## Appunti (MCB)` index, and the front-matter field `companion_of: ["title fragment"]` adds an *Approfondimento* link at the top of every Appunti note whose title contains that fragment. Links from them to Appunti notes are re-pointed automatically when a re-import renumbers the notes (same title, new `NN`).
 - **Hand-written notes** (not from a docx) go **outside** `Appunti/`, because the import wipes that folder: e.g. the Bash slides (`bashprog/*.pdf`) are summarised in `Introduction to Computing in Biology/Bash/` as `CTS 01–04` (tag `#cts`), indexed under `## Appunti` in [[Computational Tools and Scripting]].
 
 ### Updating after editing a docx

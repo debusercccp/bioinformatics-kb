@@ -61,6 +61,12 @@ Fonte: `MCB/Functional_Genetics/FunctionalGen_common.docx` — 21 note collegate
 20. [[FG 20 - Danio rerio · Modelling cancer in zebrafish|Danio rerio · Modelling cancer in zebrafish]]
 21. [[FG 21 - Danio rerio · Optogenetics|Danio rerio · Optogenetics]]
 
+Approfondimenti (note scritte a mano in `Approfondimenti/`, non generate dal docx):
+
+- [[FGx 01 - CRISPR-Cas9 – step by step|CRISPR-Cas9 – step by step]]
+- [[FGx 02 - Balancer chromosomes – step by step|Balancer chromosomes – step by step]]
+- [[FGx 03 - Breaking, switching on, switching off – step by step|Breaking, switching on, switching off – step by step]]
+
 ## Exam
 
 ⚠️ Modalità d'esame non ancora definita nella scheda ufficiale — verrà comunicata dai docenti all'inizio del corso ("The examination procedures will be discussed with the students at the beginning of the course"). Uso di IA: consentito solo in modo limitato, dichiarato e non sostanziale (es. riassumere/riformulare); non consentito per completare parti sostanziali della valutazione.

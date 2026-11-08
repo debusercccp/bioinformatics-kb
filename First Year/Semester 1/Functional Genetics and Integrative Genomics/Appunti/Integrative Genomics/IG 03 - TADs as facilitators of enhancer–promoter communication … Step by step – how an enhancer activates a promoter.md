@@ -8,6 +8,8 @@ tags: [note, ig]
 
 > [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|← Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 04 - Genomic imprinting + Enhancer RNAs (eRNAs)|Genomic imprinting + Enhancer RNAs (eRNAs) →]]
 
+*Approfondimento: [[IGx 01 - Selecting, Facilitating, Specifying|Selecting, Facilitating, Specifying]]*
+
 # TADs as facilitators of enhancer–promoter communication
 
 **TADs** (topologically associating domains), i.e. **submegabase domains** with preferential contacts inside themselves, impose a **spatial insulation**, so they **mediate** or **facilitate enhancer–promoter contacts** inside the domains and **prevent aberrant gene activation between adjacent TADs.**

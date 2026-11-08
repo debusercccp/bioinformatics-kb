@@ -25,6 +25,23 @@ REL = {
  'BFB 03': [('SATAUMV 09','FASTQ/SAM/VCF e tecnologie di sequenziamento')],
  'BFB 04': [('SATAUMV 09','read mapping e variant calling')],
 }
+# hand-written notes outside Appunti/: re-point links whose Appunti note was renumbered
+# (same title, different NN after a re-import)
+by_title={}
+for code,(p,n) in files.items():
+    by_title[(code.split()[0], n.split(' - ',1)[-1])]=n
+for p in glob.glob(V+'/**/*.md',recursive=True):
+    if '/Appunti/' in p.replace(os.sep,'/'): continue
+    t=open(p,encoding='utf-8').read()
+    def fix(m):
+        key,title=m.group(1),m.group(3)
+        full=f'{key} {m.group(2)} - {title}'
+        if full.split(' - ')[0] in files and files[full.split(' - ')[0]][1]==full: return m.group(0)
+        new=by_title.get((key,title))
+        return '[['+new if new else m.group(0)
+    t2=re.sub(r'\[\[([A-Z]+) (\d+) - ([^\]|#]+)', fix, t)
+    if t2!=t: open(p,'w',encoding='utf-8',newline='\n').write(t2)
+
 for p,_ in files.values():
     t=open(p,encoding='utf-8').read()
     t2=re.sub(r'\n## Collegamenti\n.*?(?=\n---\n)', '', t, flags=re.S)

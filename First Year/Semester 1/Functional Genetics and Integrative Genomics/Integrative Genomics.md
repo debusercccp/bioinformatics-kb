@@ -49,6 +49,10 @@ Fonte: `MCB/Functional_Genetics/IntegrativeGen_RS.docx` — 9 note collegate in 
 8. [[IG 08 - DNA methylation + Methods – from one locus to the whole epigenome|DNA methylation + Methods – from one locus to the whole epigenome]]
 9. [[IG 09 - ChIP-seq (chromatin immunoprecipitation followed by sequencing) … Next-generation sequencing (NGS) – the read-out of every -seq method|ChIP-seq (chromatin immunoprecipitation followed by sequencing) … Next-generation sequencing (NGS) – the read-out of every -seq method]]
 
+Approfondimenti (note scritte a mano in `Approfondimenti/`, non generate dal docx):
+
+- [[IGx 01 - Selecting, Facilitating, Specifying|Selecting, Facilitating, Specifying]]
+
 ## Exam
 
 ⚠️ Modalità d'esame non ancora definita nella scheda ufficiale — verrà comunicata dai docenti all'inizio del corso ("The examination procedures will be discussed with the students at the beginning of the course"). Uso di IA: consentito solo in modo limitato, dichiarato e non sostanziale (es. riassumere/riformulare); non consentito per completare parti sostanziali della valutazione.

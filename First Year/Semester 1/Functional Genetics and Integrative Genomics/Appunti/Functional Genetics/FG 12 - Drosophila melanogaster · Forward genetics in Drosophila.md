@@ -8,6 +8,8 @@ tags: [note, fg]
 
 > [[FG 11 - Drosophila melanogaster · The fly as a model organism|← Drosophila melanogaster · The fly as a model organism]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 13 - Drosophila melanogaster · Reverse genetics in Drosophila|Drosophila melanogaster · Reverse genetics in Drosophila →]]
 
+*Approfondimento: [[FGx 02 - Balancer chromosomes – step by step|Balancer chromosomes – step by step]] · [[FGx 03 - Breaking, switching on, switching off – step by step|Breaking, switching on, switching off – step by step]]*
+
 # Forward genetics in Drosophila
 
 Forward genetics goes **from phenotype to gene**: mutagenise at random, screen for a phenotype, then identify the gene responsible. In the fly the classic toolkit is **chemical mutagenesis with EMS**, **balancer chromosomes** to keep the new recessive mutations, and the **saturation screen** of Nüsslein-Volhard and Wieschaus; **insertional mutagenesis with the P element** adds a molecular tag that makes the mutated gene easy to clone, and **enhancer traps** use the same random insertions to find genes by their expression pattern.
