@@ -38,7 +38,8 @@ Forward genetics goes **from phenotype to gene**: the whole animal is mutagenise
 
 ### Chemical mutagenesis with EMS
 
-![[FG-image15.png|244]]**Chemical mutagenesis workflow (Forward genetics with EMS).** The entire organism ($P_{0}$ wild-type hermaphrodite, $+ / +$) is exposed to a mutagenic compound—**ethyl methanesulfonate (EMS)**—which **induces point mutations** in the germ cells (egg and sperm):
+![[FG-image15.png|244]]
+**Chemical mutagenesis workflow (Forward genetics with EMS).** The entire organism ($P_{0}$ wild-type hermaphrodite, $+ / +$) is exposed to a mutagenic compound—**ethyl methanesulfonate (EMS)**—which **induces point mutations** in the germ cells (egg and sperm):
 
 - $P_{0}$ **(**$+ / +$**)** $\rightarrow$ $F_{1}$ **(**$m/ +$**):** Self-fertilization of mutagenized $P_{0}$ adults generates heterozygous $F_{1}$ hermaphrodites.
 

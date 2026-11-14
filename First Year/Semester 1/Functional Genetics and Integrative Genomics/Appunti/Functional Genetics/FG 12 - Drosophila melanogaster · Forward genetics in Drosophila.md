@@ -72,14 +72,11 @@ The weak point of this scheme is step (F): a newly induced recessive mutation is
 
 **Identified by H. J. Muller in 1918.** A balancer is a chromosome engineered (or found) so that it can carry a mutagenized homologue through the generations **without ever recombining with it**.
 
-![[FG-image24.png|254]]**Properties:**
-
+![[FG-image24.png|254]]
+**Properties:**
 1.  **Multiple, overlapping inversions** (paracentric and pericentric) within the same chromosome. They **cannot pair normally with their homologue during meiosis**, and when recombination does occur it generates **lethal aneuploidy** — so no recombinant gametes survive. The practical effect is that the mutagenised chromosome is kept **intact**.
-
 2.  **One or more recessive lethal (or sterile) mutations**, which prevent the survival of balancer homozygotes, so the balancer cannot become fixed.
-
 3.  **One or more dominant visible markers** (e.g. **Curly**, *Cy*), which allow the researcher to follow the balancer in crosses by eye.
-
 4.  **Recessive visible mutations** that can be useful in crosses (e.g. eye-colour markers).
 
 **Why one inverted chromosome is enough.** Recombination is not a property of one chromosome but of the pair, because it requires base-by-base alignment. If only one homologue carries an inverted block, the synaptonemal complex can match the corresponding sequences only by forming an inversion loop: a single abnormal chromosome distorts the geometry of both, so the effect is **dominant** in a mechanical sense.
