@@ -80,14 +80,18 @@ SOURCES = {
 # hand fixes re-applied after every rebuild: (note name prefix, old text, new text)
 FIXES = [
     ('FG 09 -', '![[FG-image15.png|244]]**Chemical mutagenesis workflow', '![[FG-image15.png|244]]\n**Chemical mutagenesis workflow'),
-    ('FG 12 -', '![[FG-image24.png|254]]**Properties:**\n\n1.  **Multiple, overlapping inversions** (paracentric and pericentric) within the same chromosome. They **cannot pair normally with their homologue during meiosis**, and when recombination does occur it generates **lethal aneuploidy** — so no recombinant gametes survive. The practical effect is that the mutagenised chromosome is kept **intact**.\n\n2.  **One or more recessive lethal (or sterile) mutations**, which prevent the survival of balancer homozygotes, so the balancer cannot become fixed.\n\n3.  **One or more dominant visible markers** (e.g. **Curly**, *Cy*), which allow the researcher to follow the balancer in crosses by eye.\n\n', '![[FG-image24.png|254]]\n**Properties:**\n1.  **Multiple, overlapping inversions** (paracentric and pericentric) within the same chromosome. They **cannot pair normally with their homologue during meiosis**, and when recombination does occur it generates **lethal aneuploidy** — so no recombinant gametes survive. The practical effect is that the mutagenised chromosome is kept **intact**.\n2.  **One or more recessive lethal (or sterile) mutations**, which prevent the survival of balancer homozygotes, so the balancer cannot become fixed.\n3.  **One or more dominant visible markers** (e.g. **Curly**, *Cy*), which allow the researcher to follow the balancer in crosses by eye.\n'),
+    ('FG 12 -', '![[FG-image24.png|254]]**Properties:**\n\n', '![[FG-image24.png|254]]\n**Properties:**\n'),
+    ('FG 12 -', '\n\n2.  **One or more recessive lethal', '\n2.  **One or more recessive lethal'),
+    ('FG 12 -', '\n\n3.  **One or more dominant visible', '\n3.  **One or more dominant visible'),
+    ('FG 12 -', '\n\n4.  **Recessive visible mutations', '\n4.  **Recessive visible mutations'),
     ('FG 12 -', '![[FG-image32.png|303]]**How the flanking gene', '![[FG-image32.png|303]]\n\n**How the flanking gene'),
 ]
 
 # typos in the docx, fixed in the converted text (titles, links and body) before splitting
 SPELLING = {
     'AML': [('RECONGITION', 'RECOGNITION'), ('Recongition', 'Recognition'),
-            ('MATHERIAL', 'MATERIAL'), ('Matherial', 'Material'), ('Jupiter', 'Jupyter')],
+            ('MATHERIAL', 'MATERIAL'), ('Matherial', 'Material'), ('Jupiter', 'Jupyter'),
+            ('function shaped like a ball,', 'function shaped like a bowl,')],
 }
 
 BIG = 300      # lines: a chapter longer than this is split at its H2s

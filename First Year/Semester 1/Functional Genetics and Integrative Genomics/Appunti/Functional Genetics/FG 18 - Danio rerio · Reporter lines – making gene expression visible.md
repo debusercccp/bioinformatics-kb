@@ -46,19 +46,19 @@ The two **main factors** in any experiment with fluorescent reporters are **(1) 
 
 > **Focus — How GCaMP works. A Ca²⁺-sensitive GFP whose brightness reports neuronal activity.**
 
-### Anatomy and signalling-pathway reporters
+### Anatomy and signaling-pathway reporters
 
 - ![[FG-image58.png|192]]**Major anatomical systems are conserved** with humans (insulin-producing cells, heart and blood cells…), with some exceptions (e.g. **lungs**).
 
-- **Signalling pathway reporter lines**: multimerised binding sites for the transcription factor at the end of a pathway, a minimal promoter and a fluorescent protein. For Wnt the sites are those of **Pan** (*D. melanogaster*) / **Lef1** (all vertebrates) (Moro et al., 2013).
+- **Signaling pathway reporter lines**: multimerized binding sites for the transcription factor at the end of a pathway, a minimal promoter and a fluorescent protein. For Wnt the sites are those of **Pan** (*D. melanogaster*) / **Lef1** (all vertebrates) (Moro et al., 2013).
 
 - The binding sites used are responsive elements conserved across species, so the line reports where a pathway is active rather than where a tissue-specific promoter fires, and the intensity of the fluorescence gives a quantitative read-out of pathway activity.
 
-- **Signalling map** at 3 dpf: red, **Wnt**; green, **Notch**; cyan, **Shh**; magenta, **BMP** reporter.
+- **Signaling map** at 3 dpf: red, **Wnt**; green, **Notch**; cyan, **Shh**; magenta, **BMP** reporter.
 
-- **Brain signalling atlas** (ViBEZ), 3 dpf: Tgf-β, BMP, Stat3, FGF, Shh, glucocorticoid, Notch, Wnt, hypoxia, Yap/Taz, CREB.
+- **Brain signaling atlas** (ViBEZ), 3 dpf: Tgf-β, BMP, Stat3, FGF, Shh, glucocorticoid, Notch, Wnt, hypoxia, Yap/Taz, CREB.
 
-*Signalling map at 3 dpf: Wnt (red), Notch (green), Shh (cyan), BMP (magenta) reporter lines.*
+*Signaling map at 3 dpf: Wnt (red), Notch (green), Shh (cyan), BMP (magenta) reporter lines.*
 
 ---
 > [[FG 17 - Danio rerio · Transgenesis and gene targeting|← Danio rerio · Transgenesis and gene targeting]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 19 - Danio rerio · CRISPRCas9 – from gene to disease model|Danio rerio · CRISPRCas9 – from gene to disease model →]]

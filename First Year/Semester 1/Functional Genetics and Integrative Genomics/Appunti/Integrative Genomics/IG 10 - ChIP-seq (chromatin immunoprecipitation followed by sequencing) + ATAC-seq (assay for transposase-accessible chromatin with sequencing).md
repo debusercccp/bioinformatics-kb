@@ -69,7 +69,7 @@ ATAC-seq maps **open, nucleosome-free chromatin** (active promoters, enhancers, 
 - **Motif:** e.g. the E-box CACGTG for MYC/MAX; short motifs occur by chance millions of times, so most matches are unbound.
 - Methylation: the central CpG of CACGTG can be methylated, which blocks MYC/MAX (section 14).
 - **Accessibility:** motifs in nucleosomes or heterochromatin are usually unbound (except pioneer factors); ATAC-seq or DNase-seq shows open motifs.
-- **Direct proof:** ChIP-seq (or CUT&RUN) shows actual binding; de novo motif analysis of peak centres finds the motif. Most reliable: motif + unmethylated CpG + open chromatin + ChIP peak.
+- **Direct proof:** ChIP-seq (or CUT&RUN) shows actual binding; de novo motif analysis of peak centers finds the motif. Most reliable: motif + unmethylated CpG + open chromatin + ChIP peak.
 
 ---
 > [[IG 09 - Methods – from one locus to the whole epigenome + Catalytic-independent roles of chromatin modifiers VB25|← Methods – from one locus to the whole epigenome + Catalytic-independent roles of chromatin modifiers VB25]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 11 - Next-generation sequencing (NGS) – the read-out of every -seq method … Papers of the course|Next-generation sequencing (NGS) – the read-out of every -seq method … Papers of the course →]]

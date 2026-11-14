@@ -20,7 +20,7 @@ tags: [note, aml]
 >
 > In the brain:
 
-- The **cell body (soma)** is the computational centre.
+- The **cell body (soma)** is the computational center.
 
 - **Dendrites** are input channels.
 
@@ -38,7 +38,7 @@ tags: [note, aml]
 >
 > **Key advantages:**
 
-- **Non-linearity modelling**
+- **Non-linearity modeling**
 
 - **Flexibility**
 

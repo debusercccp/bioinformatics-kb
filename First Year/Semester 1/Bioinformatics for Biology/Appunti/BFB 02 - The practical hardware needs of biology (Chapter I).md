@@ -34,7 +34,7 @@ Any analysis is constrained by three distinct resources, and it is important not
 
 - **Disk space**: where raw and processed data are stored.
 - **RAM**: active memory, where data are kept while being processed.
-- **Processor (CPU)**: the better it is, the faster the data are analysed. Measured in FLOPs (FLoating point Operations Per Second), usually GFLOPs.
+- **Processor (CPU)**: the better it is, the faster the data are analyzed. Measured in FLOPs (FLoating point Operations Per Second), usually GFLOPs.
 
 Typical requirements for one human RNA + DNA sample via NGS: 10 GB of disk space for raw data, 32 GB of RAM as the minimum for processing and high-level analysis, ~1 hour of processing at 1,000 GFLOPs. Time to integrate with other data: it depends.
 
@@ -44,7 +44,7 @@ Dataset sizes scale badly: a small lab works with ~12 samples, a large consortiu
 
 | Class | Order of compute | Typical configuration | What it is good for |
 |:---|:---|:---|:---|
-| Laptop | ~100 GFLOPs | 16 GB RAM, 512 GB SSD, Intel i7 | Writing papers, analysing preprocessed data, accessing bigger machines |
+| Laptop | ~100 GFLOPs | 16 GB RAM, 512 GB SSD, Intel i7 | Writing papers, analyzing preprocessed data, accessing bigger machines |
 | Workstation | ~1,000 GFLOPs | 64 GB RAM, 2 + 2 TB NVMe + 8 TB HDD, AMD Ryzen 9 (12 c / 24 t), RTX 3070 Ti | One common large-scale NGS dataset (e.g. 100 human RNA-Seq samples) |
 | Lab server | ~40,000 GFLOPs | 512 GB RAM, AMD Epyc 24-core, 4× RTX A5000, NAS with ~100 TB | Heavy lifting (thousands of samples), plus a second server for web serving |
 | Supercomputer | ~11,150,000 GFLOPs | MareNostrum4: Linux, 11.15 PFLOPs, 384.75 TB RAM, 3,456 servers | National/European-scale computation |

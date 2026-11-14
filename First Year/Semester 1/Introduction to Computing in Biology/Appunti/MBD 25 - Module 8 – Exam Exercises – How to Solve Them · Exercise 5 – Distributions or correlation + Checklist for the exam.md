@@ -6,7 +6,7 @@ order: 25
 tags: [note, mbd]
 ---
 
-> [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|← Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]]
+> [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimization (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|← Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimization (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]]
 
 # Exercise 5 — Distributions or correlation
 
@@ -14,7 +14,7 @@ tags: [note, mbd]
 
 Typical questions: a) which distribution, $E\lbrack X\rbrack$ and $Var\lbrack X\rbrack$; b) $P(X = k)$; c) $P(X \geq k)$ or $P(X \leq k)$.
 
-**Recognise the distribution:**
+**Recognize the distribution:**
 
 - **Binomial** $X \sim Bin(n,p)$: a fixed number $n$ of independent trials, each “success” with probability $p$ (e.g. $n$ offspring of a cross $Aa \times Aa$, $p = 1/4$ for $aa$). $P(X = k) = \binom{n}{k}p^{k}(1 - p)^{n - k}$, $E\lbrack X\rbrack = np$, $Var\lbrack X\rbrack = np(1 - p)$ (§7.3).
 - **Poisson** $X \sim Poisson(\lambda)$: number of rare events with a given **average** $\lambda$ (mutations per exon, SNVs per exon). $P(X = k) = \frac{\lambda^{k}}{k!}e^{- \lambda}$, $E\lbrack X\rbrack = Var\lbrack X\rbrack = \lambda$ (§7.4).
@@ -90,4 +90,4 @@ $$
 - **Correlation:** divide by $n - 1$; the deviations must sum to 0; $r$ must be in $\lbrack - 1,1\rbrack$.
 
 ---
-> [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|← Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]]
+> [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimization (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|← Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimization (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]]

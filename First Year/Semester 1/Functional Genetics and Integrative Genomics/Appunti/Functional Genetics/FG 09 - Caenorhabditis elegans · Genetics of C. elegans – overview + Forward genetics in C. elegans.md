@@ -34,7 +34,7 @@ tags: [note, fg]
 
 ## Forward genetics in *C. elegans*
 
-Forward genetics goes **from phenotype to gene**: the whole animal is mutagenised at random (chemically with EMS, or by transposon insertion), the progeny are screened for a phenotype, and the affected gene is then identified by complementation, mapping and rescue.
+Forward genetics goes **from phenotype to gene**: the whole animal is mutagenized at random (chemically with EMS, or by transposon insertion), the progeny are screened for a phenotype, and the affected gene is then identified by complementation, mapping and rescue.
 
 ### Chemical mutagenesis with EMS
 
@@ -45,7 +45,7 @@ Forward genetics goes **from phenotype to gene**: the whole animal is mutagenise
 
 - $F_{1}$ **(**$m/ +$**)** $\rightarrow$ $F_{2}$**:** Self-fertilization of $F_{1}$ heterozygotes yields Mendelian segregation in the $F_{2}$ progeny: **25%** $+ / +$, **50%** $m/ +$, and **25% homozygous mutant (**$m/m$**)**, which are isolated for **phenotype analysis**.
 
-**Why it works.** New mutations are almost always **recessive**, so they are invisible in the F1 (m/+). The key is that a hermaphrodite produces both eggs and sperm from the same germline: an F1 m/+ worm makes ½ m and ½ + gametes of each kind, so when its own sperm fertilise its own eggs, ¼ of the F2 are m/m (½ × ½) and finally show the phenotype. Hermaphrodite self-fertilisation therefore makes the mutations **homozygous automatically in the F2**, with no crosses needed. In species with separate sexes (fly, fish, mouse), the m/+ F1 would need a partner carrying a mutation in the same gene, which is very unlikely because EMS hits are random; extra generations of sibling crosses (and, in Drosophila, balancer chromosomes) are required instead. Finally, an m/m F2 worm can only transmit m, so by selfing it gives a pure-breeding homozygous F3 line.
+**Why it works.** New mutations are almost always **recessive**, so they are invisible in the F1 (m/+). The key is that a hermaphrodite produces both eggs and sperm from the same germline: an F1 m/+ worm makes ½ m and ½ + gametes of each kind, so when its own sperm fertilize its own eggs, ¼ of the F2 are m/m (½ × ½) and finally show the phenotype. Hermaphrodite self-fertilization therefore makes the mutations **homozygous automatically in the F2**, with no crosses needed. In species with separate sexes (fly, fish, mouse), the m/+ F1 would need a partner carrying a mutation in the same gene, which is very unlikely because EMS hits are random; extra generations of sibling crosses (and, in Drosophila, balancer chromosomes) are required instead. Finally, an m/m F2 worm can only transmit m, so by selfing it gives a pure-breeding homozygous F3 line.
 
 **Step-by-step EMS mutagenesis protocol ("In detail..."):**
 

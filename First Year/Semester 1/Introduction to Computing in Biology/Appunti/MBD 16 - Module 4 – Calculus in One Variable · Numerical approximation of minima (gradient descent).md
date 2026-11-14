@@ -34,7 +34,7 @@ $$
 E = \frac{1}{2}\sum_{i = 1}^{M}\left( z\left( x^{i} \right) - d^{i} \right)^{2}
 $$
 
-*Training procedure:* find the $w$ that minimises $E$ by gradient descent:
+*Training procedure:* find the $w$ that minimizes $E$ by gradient descent:
 
 $$
 w^{0} \rightarrow w^{1} = w^{0} - \left. \ \frac{dE}{dw} \right|_{w^{0}} \cdot \eta,\quad\quad w^{2} = w^{1} - \left. \ \frac{dE}{dw} \right|_{w^{1}} \cdot \eta,\quad\ldots\quad\text{until}\ \left| \frac{dE}{dw} \right| < \varepsilon

@@ -12,7 +12,7 @@ tags: [note, fg]
 
 ### Definitions
 
-**What is an animal?** Eukaryotic, multicellular, mostly heterotrophic organisms, organised to a high degree of complexity and motile during at least part of their life cycle. *Note:* the slide says "autotroph"; in biology animals are normally **heterotrophs**, so check this point with the lecturer.
+**What is an animal?** Eukaryotic, multicellular, mostly heterotrophic organisms, organized to a high degree of complexity and motile during at least part of their life cycle. *Note:* the slide says "autotroph"; in biology animals are normally **heterotrophs**, so check this point with the lecturer.
 
 **What is an "animal model"?** According to the Merriam-Webster dictionary cited: *an animal sufficiently like humans in its anatomy, physiology, or response to a pathogen to be used in medical research in order to obtain results that can be extrapolated to human medicine*. The key words are **"sufficiently like"**: the similarity must concern the very characteristic of interest.
 
@@ -20,7 +20,7 @@ tags: [note, fg]
 
 Animal models are used for three purposes:
 
-1.  **Basic research:** to expand our knowledge of the structure, functioning and behaviour of living organisms and the environment.
+1.  **Basic research:** to expand our knowledge of the structure, functioning and behavior of living organisms and the environment.
 
 2.  **Applied research (translational/applied):** to address diseases through prevention and the development of treatments.
 
@@ -44,7 +44,7 @@ Good science and good animal care go hand in hand, because **sick, stressed or m
 
 - from **fear and distress**;
 
-- to **express normal behaviour**.
+- to **express normal behavior**.
 
 **The 3Rs** (Russell & Burch, 1959) are the operating principles of animal research:
 
@@ -52,11 +52,11 @@ Good science and good animal care go hand in hand, because **sick, stressed or m
 
 - **Reduction** of the number of animals used (better experimental design and data analysis, sharing of data);
 
-- **Refinement** of procedures to minimise pain (less invasive techniques, better care and housing).
+- **Refinement** of procedures to minimize pain (less invasive techniques, better care and housing).
 
 **Reproducibility** was later added as a fourth R. The **6Rs** add **Robustness** (rigorous design), **Registration** (protocol registered in advance) and **Reporting** (ARRIVE guidelines) — the three that guarantee the scientific value of the work.
 
-**Regulation.** In the EU, **Directive 2010/63/EU** (in Italy **D.Lgs. 26/2014**) makes the 3Rs **legally binding** and requires project authorisation, a **harm–benefit assessment**, a **severity classification**, certified personnel, an **animal-welfare body** and an **ethical review**.
+**Regulation.** In the EU, **Directive 2010/63/EU** (in Italy **D.Lgs. 26/2014**) makes the 3Rs **legally binding** and requires project authorization, a **harm–benefit assessment**, a **severity classification**, certified personnel, an **animal-welfare body** and an **ethical review**.
 
 ### Which animal model to choose?
 

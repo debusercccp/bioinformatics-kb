@@ -6,7 +6,7 @@ order: 21
 tags: [note, fg]
 ---
 
-> [[FG 20 - Danio rerio · Modelling cancer in zebrafish|← Danio rerio · Modelling cancer in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]]
+> [[FG 20 - Danio rerio · Modeling cancer in zebrafish|← Danio rerio · Modeling cancer in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]]
 
 # Optogenetics
 
@@ -18,7 +18,7 @@ tags: [note, fg]
 
 - Citation: *“for their discoveries concerning light-gated ion channels and optogenetics”*, announced on 5 October 2026 at the Karolinska Institutet.
 
-- **Hegemann and Nagel** discovered and characterised **channelrhodopsin** in a single-celled alga; **Deisseroth** turned it into a **light-controlled switch for nerve cells**.
+- **Hegemann and Nagel** discovered and characterized **channelrhodopsin** in a single-celled alga; **Deisseroth** turned it into a **light-controlled switch for nerve cells**.
 
 ### ![[FG-image64.png|292]]The logic: functional genetics needs to READ and to WRITE
 
@@ -51,7 +51,7 @@ The gain in **temporal and cellular precision** is the whole point — paid for 
 
 ### The molecule: channelrhodopsin — one gene, one protein, one function
 
-- ![[FG-image65.png|333]]**Seven-transmembrane** protein with **retinal** covalently bound as its chromophore. **Photon → retinal isomerisation → conformational change → a pore opens.**
+- ![[FG-image65.png|333]]**Seven-transmembrane** protein with **retinal** covalently bound as its chromophore. **Photon → retinal isomerization → conformational change → a pore opens.**
 
 - Ions then move **passively**, down their electrochemical gradient — **no ATP, no G protein, no accessory subunit**.
 
@@ -67,17 +67,17 @@ The gain in **temporal and cellular precision** is the whole point — paid for 
 
 - **Blue light pulses** evoked action potentials with **millisecond precision** — **one flash, one spike** — with no chemical added.
 
-- Within about two years the same gene was working in ***C. elegans*, *Drosophila*, mouse and zebrafish**, and in vivo through implanted optical fibres.
+- Within about two years the same gene was working in ***C. elegans*, *Drosophila*, mouse and zebrafish**, and in vivo through implanted optical fibers.
 
 - Because expression is **genetically targeted**, light acts **only on the cells that transcribe the construct**, even when they are intermingled with cells that do not.
 
 ### ![[FG-image67.png|214]]The toolbox: drive or silence
 
-- **Depolarise** — **cation channels** (ChR2 and relatives): Na⁺ and H⁺ flow in, the cell fires.
+- **Depolarize** — **cation channels** (ChR2 and relatives): Na⁺ and H⁺ flow in, the cell fires.
 
-- **Hyperpolarise** — three physical mechanisms: **inward Cl⁻ pumps** (**NpHR**, halorhodopsin from *Natronomonas pharaonis*); **outward H⁺ pumps** (**Arch**, archaerhodopsin-3); **anion channels** (**GtACR1/2** from *Guillardia theta*) — large currents, efficient silencing.
+- **Hyperpolarize** — three physical mechanisms: **inward Cl⁻ pumps** (**NpHR**, halorhodopsin from *Natronomonas pharaonis*); **outward H⁺ pumps** (**Arch**, archaerhodopsin-3); **anion channels** (**GtACR1/2** from *Guillardia theta*) — large currents, efficient silencing.
 
-- **Interpret with care**: silencing a projection is **not equivalent to deleting a gene**, and in **axon terminals** a chloride conductance can be **depolarising** rather than inhibitory.
+- **Interpret with care**: silencing a projection is **not equivalent to deleting a gene**, and in **axon terminals** a chloride conductance can be **depolarizing** rather than inhibitory.
 
 **Choosing an actuator** — pick by **which ion moves**, **on/off kinetics**, **single-channel conductance** and **peak wavelength**:
 
@@ -93,7 +93,7 @@ The gain in **temporal and cellular precision** is the whole point — paid for 
 | NpHR (eNpHR3.0) | 589 | Inward Cl⁻ pump — silences |
 | Jaws | 632 | Cl⁻ pump, deep tissue — silences |
 
-**Red-shifted** tools penetrate tissue better and can be separated spectrally from green indicators. **Two well-separated colours = independent control of two populations in the same animal.**
+**Red-shifted** tools penetrate tissue better and can be separated spectrally from green indicators. **Two well-separated colors = independent control of two populations in the same animal.**
 
 ### Worked example: read and write in the same zebrafish larva
 
@@ -134,4 +134,4 @@ The gain in **temporal and cellular precision** is the whole point — paid for 
 - Interpretation stands or falls on **controls**: **opsin-negative animals**, **verified expression**, **calibrated light**, and the distinction between **sufficiency and necessity**.
 
 ---
-> [[FG 20 - Danio rerio · Modelling cancer in zebrafish|← Danio rerio · Modelling cancer in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]]
+> [[FG 20 - Danio rerio · Modeling cancer in zebrafish|← Danio rerio · Modeling cancer in zebrafish]] · [[Functional Genetics|↑ Functional Genetics]]

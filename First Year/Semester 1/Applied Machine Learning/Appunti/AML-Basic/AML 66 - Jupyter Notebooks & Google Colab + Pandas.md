@@ -10,7 +10,7 @@ tags: [note, aml]
 
 # Jupyter Notebooks & Google Colab
 
-Jupyter Notebook is an interactive **web based environment** that allows you to **create and share documents** in **live code**, equations, visualizations and narratives text.
+Jupyter Notebook is an interactive **web based environment** that allows you to **create and share documents** in **live code**, equations, visualizations and narrative text.
 
 Jupyter contains code and markdown cells.
 
@@ -20,7 +20,7 @@ Markdown cells are useful to write texts with rich formatting and supports HTML.
 
 Jupyter is ideal for quick prototyping and sharing ideas but in particular it is **useful for data analysis and interactive visualization.**
 
-A similar resource to Jupyter is **Google Colab**. This is a **free cloud-based Jupyter notebook** produced by google, without setup required because **you can access easily through browser**. It allows also **free access to GPUs and TPUs**, and allows **easy collaboration to share and collab in real time.**
+A similar resource to Jupyter is **Google Colab**. This is a **free cloud-based Jupyter notebook** produced by google, without setup required because **you can access easily through browser**. It allows also **free access to GPUs and TPUs**, and allows **easy collaboration to share and collaborate in real time.**
 
 ## Pandas
 
@@ -30,9 +30,9 @@ Pandas is a powerful open source library for **data analysis & manipulation.** I
 
 In pandas we have two types of Data Structures:
 
-- ![[AML-image411.jpg|296]]**Series**: 1 dimension labelled array. **<u>Series can store numbers, strings and</u> <u>other data types</u>**. It is **<u>often used for</u> <u>time series, single-column data or</u> <u>intermediate calculations</u>.** Series are **<u>faster than lists and dicts</u>** for numerical operations.
+- ![[AML-image411.jpg|296]]**Series**: 1 dimension labeled array. **<u>Series can store numbers, strings and</u> <u>other data types</u>**. It is **<u>often used for</u> <u>time series, single-column data or</u> <u>intermediate calculations</u>.** Series are **<u>faster than lists and dicts</u>** for numerical operations.
 
-- **Dataframe**: 2 dimensions labelled structure ideal for tabular data (rows and
+- **Dataframe**: 2 dimensions labeled structure ideal for tabular data (rows and
 
 > columns)
 

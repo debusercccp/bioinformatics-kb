@@ -252,7 +252,7 @@ A ROC curve illustrates the relationship between True Positive Rate (TPR) and Fa
 
 ![[AML-image145.jpg|216]]Ideally, a **perfect classifier would have an ROC curve that passes through the top-left corner of the plot, where TPR is 1 and FPR is 0**. This scenario signifies high sensitivity and a low false positive rate across all thresholds. Conversely, a random classifier's ROC curve would closely align with the diagonal line (45-degree line), indicating no discrimination ability. Thus, the closer the ROC curve is to the top-left corner, the better the model's performance.
 
-![[AML-image146.png|167]]To construct an ROC curve, we typically evaluate a model with different classification thresholds. However, evaluating a model multiple times with varying thresholds can be inefficient. Thankfully, there's an efficient, sortingbased algorithm known as AUC (Area Under the Curve) that provides this information for us. AUC quantifies the overall performance of a classification model by measuring the area under the ROC curve, with higher values indicating better discrimination ability.
+![[AML-image146.png|167]]To construct an ROC curve, we typically evaluate a model with different classification thresholds. However, evaluating a model multiple times with varying thresholds can be inefficient. Thankfully, there's an efficient, sorting-based algorithm known as AUC (Area Under the Curve) that provides this information for us. AUC quantifies the overall performance of a classification model by measuring the area under the ROC curve, with higher values indicating better discrimination ability.
 
 AUC is a commonly used metric derived from the ROC curve.
 
@@ -266,7 +266,7 @@ It quantifies the overall performance of a classification model by measuring the
 
 - a model whose predictions are **50% correct and 50% wrong** (random guessing) has **AUC = 0.5**
 
-**AUC** can be **interpreted** as as the ***probability that the model ranks a randomly selected positive example “higher” than a randomly selected negative example***. Consider a scenario where examples are arranged in ascending order of logistic regression predictions from left to right.
+**AUC** can be **interpreted** as the ***probability that the model ranks a randomly selected positive example “higher” than a randomly selected negative example***. Consider a scenario where examples are arranged in ascending order of logistic regression predictions from left to right.
 
 AUC represents the likelihood that a randomly chosen positive (green) example is positioned to the right of a randomly chosen negative (red) example within this ranking.
 
@@ -292,7 +292,7 @@ AUC, however, does not directly address this optimization need, limiting its eff
 
 - While scale invariance is generally desirable, there are instances where well-calibrated probability outputs **are essential**. In situations where the **calibration of predicted probabilities is crucial for decision-making or risk assessment**, AUC may not provide sufficient information.
 
-Consequently, while AUC remains a popular metric for classification evaluation due to its classificationthreshold-invariant and scale-invariant properties, its application should be evaluated in conjunction with the specific requirements and nuances of the classification task to ensure meaningful insights are derived.
+Consequently, while AUC remains a popular metric for classification evaluation due to its classification-threshold-invariant and scale-invariant properties, its application should be evaluated in conjunction with the specific requirements and nuances of the classification task to ensure meaningful insights are derived.
 
 *"Well-calibrated probability outputs" refer to the accuracy of the probabilities assigned by a classification model. In some cases, it's not just enough for a model to predict whether an instance belongs to a certain class, but also for the predicted probabilities to be meaningful and reliable.*
 

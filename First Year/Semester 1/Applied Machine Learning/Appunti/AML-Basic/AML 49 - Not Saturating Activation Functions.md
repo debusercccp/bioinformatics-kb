@@ -96,7 +96,7 @@ tags: [note, aml]
 
 - Every hidden layer’s weights must be initialized with LeCun normal initialization
 
-- The network’s architecture must be sequential. Unfortunately, if you try to use SELU in nonsequential architectures, such as RNN or networks with skip connections, self-normalization will not be guaranteed, so SELU will not necessarily outperform other activation functions.
+- The network’s architecture must be sequential. Unfortunately, if you try to use SELU in non-sequential architectures, such as RNN or networks with skip connections, self-normalization will not be guaranteed, so SELU will not necessarily outperform other activation functions.
 
 > The approach only **guarantees self-normalization if all layers are dense**, but some researchers have noted that the SELU activation function can improve performance in CNN as well (see later).
 

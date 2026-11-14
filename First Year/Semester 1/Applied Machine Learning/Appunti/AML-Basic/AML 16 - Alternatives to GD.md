@@ -6,7 +6,7 @@ order: 16
 tags: [note, aml]
 ---
 
-> [[AML 15 - Multiclass Classification|← Multiclass Classification]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 17 - Regularisation|Regularisation →]]
+> [[AML 15 - Multiclass Classification|← Multiclass Classification]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 17 - Regularization|Regularization →]]
 
 # Alternatives to GD
 
@@ -62,7 +62,7 @@ To utilize these algorithms effectively, it is advisable to leverage existing so
 
 - **Availability in different tools =** Not all algorithms may be available in every programming language or tool. Therefore, it's essential to explore multiple libraries to find one that offers the desired algorithm implementations.
 
-- **Quality of algorithm implementation =** The effectiveness of the algorithms can vary based on the quality of their implementation in the library of choice. It's crucial to ensure that the selected library provides wellimplemented and efficient versions of the algorithms.
+- **Quality of algorithm implementation =** The effectiveness of the algorithms can vary based on the quality of their implementation in the library of choice. It's crucial to ensure that the selected library provides well-implemented and efficient versions of the algorithms.
 
 When selecting a library:
 
@@ -73,4 +73,4 @@ When selecting a library:
 In summary, the choice of tools significantly influences applied ML practices. While gradient descent and its variations suffice for many ML applications in the Python ecosystem, exploring and utilizing different libraries can provide access to advanced optimization algorithms when necessary.
 
 ---
-> [[AML 15 - Multiclass Classification|← Multiclass Classification]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 17 - Regularisation|Regularisation →]]
+> [[AML 15 - Multiclass Classification|← Multiclass Classification]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 17 - Regularization|Regularization →]]

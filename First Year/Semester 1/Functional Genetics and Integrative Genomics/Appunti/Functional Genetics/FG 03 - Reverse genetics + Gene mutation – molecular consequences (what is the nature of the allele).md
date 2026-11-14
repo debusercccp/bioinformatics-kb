@@ -18,7 +18,7 @@ tags: [note, fg]
 
 2.  **Target it for mutation.** Experimental design choices: transient vs stable; knock-down / knock-in / specific mutations; **RNAi**; **CRISPR/Cas9**.
 
-3.  **Analyse the mutant phenotype** and **infer the function** of the gene product.
+3.  **Analyze the mutant phenotype** and **infer the function** of the gene product.
 
 4.  **Understanding of the biological process.**
 

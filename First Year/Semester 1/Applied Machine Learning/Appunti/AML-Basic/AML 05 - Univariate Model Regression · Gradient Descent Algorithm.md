@@ -59,7 +59,7 @@ The logic of the algorithm revolves around a set of parameters θj (where j repr
 Failure to update them simultaneously can lead to convergence issues. For instance, if one parameter is updated based on the newly adjusted value of another parameter, convergence may not be achieved.
 
 ## Collegamenti
-- [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation]] — gradiente e ottimizzazione multivariata
+- [[MBD 19 - Module 5 – Calculus in More Variables and Optimization]] — gradiente e ottimizzazione multivariata
 - [[MBD 16 - Module 4 – Calculus in One Variable · Numerical approximation of minima (gradient descent)]] — gradient descent in una variabile
 
 ---

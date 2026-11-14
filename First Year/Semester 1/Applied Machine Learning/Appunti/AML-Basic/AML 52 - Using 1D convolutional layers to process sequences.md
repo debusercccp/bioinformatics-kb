@@ -101,7 +101,7 @@ tags: [note, aml]
 
 - then again, another identical group of 10 layers.
 
-> **Justification**: a single stack of 10 Conv layers with these dilation rates will act like a superefficient Conv layer with a kernel of size 1,024 (except way faster, more powerful, and using significantly fewer parameters), so they kept it and stacked 3 such blocks.
+> **Justification**: a single stack of 10 Conv layers with these dilation rates will act like a super-efficient Conv layer with a kernel of size 1,024 (except way faster, more powerful, and using significantly fewer parameters), so they kept it and stacked 3 such blocks.
 >
 > In the WaveNet paper, the authors achieved state-of-the-art performance on various audio tasks (hence the name of the architecture), including text-to-speech tasks, producing incredibly realistic voices across several languages.
 

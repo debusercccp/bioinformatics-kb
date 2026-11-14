@@ -51,7 +51,7 @@ $$
 
 *Example from the slides:* $y = x^{3} - 3x^{2} + 4 = (x + 1)(x - 2)^{2}$, roots at $x = - 1$ and $x = 2$. $y' = 3x^{2} - 6x = 3x(x - 2) = 0$ at $x = 0,2$. First-derivative test: $y'( - 1) = 9 > 0$, $y'(1) = - 3 < 0$, $y'(3) = 9 > 0$ ⇒ maximum at 0, minimum at 2. Second-derivative test: $y'' = 6x - 6$, $y''(0) = - 6 < 0$ ⇒ $(0,4)$ local max; $y''(2) = 6 > 0$ ⇒ $(2,0)$ local min. $y'' = 0$ at $x = 1$ and $y''$ changes sign there ⇒ inflection point at $(1,2)$.
 
-| $x$ | $y$ | $y'$ | $y''$ | behaviour                 |
+| $x$ | $y$ | $y'$ | $y''$ | behavior                  |
 |:------|:------|:-------|:--------|:--------------------------|
 | −1    | 0     | 9      | −12     | rising, concave down      |
 | 0     | 4     | 0      | −6      | local max                 |

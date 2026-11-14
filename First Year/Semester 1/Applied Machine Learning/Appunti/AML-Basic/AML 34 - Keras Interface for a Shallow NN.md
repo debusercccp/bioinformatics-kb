@@ -68,7 +68,7 @@ tags: [note, aml]
 
 > **Main Benefits:**
 
-- **Standardised evaluation** using cross-validation
+- **Standardized evaluation** using cross-validation
 
 - **Hyperparameter optimization** (like finding best number of epochs, batch size, layers)
 

@@ -36,7 +36,7 @@ If the text is small: *with open('your_file.txt', 'r') as f raw_text = f.read()*
 >
 > Removes most punctuation
 
-- Splits armour-like into \["armour", "like"\]
+- Splits armor-like into \["armor", "like"\]
 
 - Contractions like what’s become \["what", "s"\] — not ideal in all cases **Remove Punctuation After Split:**
 

@@ -24,13 +24,13 @@ The laboratory lecture follows the zebrafish embryo from fertilization to the la
 
 - **Large yolky egg**, surrounded by the **vitelline membrane** and the **chorion**.
 
-- **External fertilisation**. The sperm enters through the **micropyle** (*micropilum* on the slide), a channel in the chorion at the **animal pole**; the **cortical granule reaction** blocks polyspermy, and the chorion lifts away from the egg (egg diameter from **0.5 to 1 mm**).
+- **External fertilization**. The sperm enters through the **micropyle** (*micropilum* on the slide), a channel in the chorion at the **animal pole**; the **cortical granule reaction** blocks polyspermy, and the chorion lifts away from the egg (egg diameter from **0.5 to 1 mm**).
 
-- **Cytoplasmic reorganisation**: the non-yolky cytoplasm gathers at the animal pole to form the **blastodisc**.
+- **Cytoplasmic reorganization**: the non-yolky cytoplasm gathers at the animal pole to form the **blastodisc**.
 
 The periods that follow: **zygote → cleavage → blastula → gastrula → segmentation (somitogenesis) → pharyngula (organogenesis) → hatching → larval stage**.
 
-Time is counted in **hpf** (hours post fertilisation) and **dpf** (days post fertilisation): e.g. **48 hpf = 2 dpf**.
+Time is counted in **hpf** (hours post fertilization) and **dpf** (days post fertilization): e.g. **48 hpf = 2 dpf**.
 
 > **Focus — Why stages, not hours. Times refer to 28.5 °C; stage embryos by morphology, not by hpf.**
 
@@ -38,7 +38,7 @@ Time is counted in **hpf** (hours post fertilisation) and **dpf** (days post fer
 
 - **Chorion swelling** after activation of the egg.
 
-- **Cytoplasmic streaming** starts by about **10 min** after fertilisation: non-yolky cytoplasm moves towards the animal pole.
+- **Cytoplasmic streaming** starts by about **10 min** after fertilization: non-yolky cytoplasm moves towards the animal pole.
 
 - The **blastodisc** forms at the animal pole. This defines **two compartments**: the **animal pole**, where the blastodisc forms, and the **vegetal pole** (the yolk).
 
@@ -74,7 +74,7 @@ At this point the embryo has **three cell populations**: the **EVL** (outer prot
 
 - **Involution**: at the margin the deep cells fold under, forming the **germ ring**.
 
-- **Convergence** begins: cells move towards the future dorsal side and thicken into the **embryonic shield**, the zebrafish counterpart of the **dorsal lip of the blastopore** in amphibians (the **organiser**).
+- **Convergence** begins: cells move towards the future dorsal side and thicken into the **embryonic shield**, the zebrafish counterpart of the **dorsal lip of the blastopore** in amphibians (the **organizer**).
 
 - **Two layers** are formed:
 
@@ -84,7 +84,7 @@ At this point the embryo has **three cell populations**: the **EVL** (outer prot
 
 - **Convergence and extension**: the axial hypoblast elongates along the anterior–posterior axis. Gastrulation ends with the **tail bud** stage (**bud**, 10 h).
 
-> **Focus — Shield = organiser. A transplanted shield induces a secondary axis.**
+> **Focus — Shield = organizer. A transplanted shield induces a secondary axis.**
 
 ### Segmentation period / somitogenesis (10–24 h)
 
@@ -118,7 +118,7 @@ Organogenesis begins.
 
 - **Cardiocirculatory system**: the heart beats and blood circulates.
 
-- **Behavioural development**: the embryo is sensitive to touch (prim-6 stage, about 25 h). By **48 h** (long-pec stage) the pectoral fin buds are visible.
+- **Behavioral development**: the embryo is sensitive to touch (prim-6 stage, about 25 h). By **48 h** (long-pec stage) the pectoral fin buds are visible.
 
 - **Hatching**: the slide lists *24–48 h*, but in Kimmel’s series and in the figure on the same slide (Gilbert) the embryo **hatches between 48 and 72 h**, so check this point with the lecturer.
 
@@ -133,7 +133,7 @@ Organogenesis begins.
 | Zygote | 0–¾ | Chorion swelling, cytoplasmic streaming, blastodisc at the animal pole |
 | Cleavage | ¾–2¼ | Meroblastic cleavage; 6 synchronous divisions (15 min); deep cells and EVL |
 | Blastula | 2¼–5¼ | Asynchronous divisions from 512 cells (MBT); YSL; dome, epiboly starts |
-| Gastrula | 5¼–10 | Involution, germ ring, shield (organiser); epiblast/hypoblast; convergence-extension; bud stage |
+| Gastrula | 5¼–10 | Involution, germ ring, shield (organizer); epiblast/hypoblast; convergence-extension; bud stage |
 | Segmentation | 10–24 | Somites (1 every 30 min); neurulation (keel, rod, tube); neuromeres |
 | Pharyngula | 24–48 | Phylotypic stage; pigmentation; placodes; lateral line; heartbeat; fin buds |
 | Hatching | 48–72 | Exit from the chorion |

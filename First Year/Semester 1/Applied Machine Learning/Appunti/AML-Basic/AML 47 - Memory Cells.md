@@ -20,7 +20,7 @@ tags: [note, aml]
 >
 > Short = about 10 steps long, depending on the task.
 >
-> **Formalising Memory in RNNs**
+> **Formalizing Memory in RNNs**
 
 - ![[AML-image333.jpg|418]]h(t) = hidden state at
 
@@ -38,7 +38,7 @@ tags: [note, aml]
 >
 > ![[AML-image335.jpg|268]]**Seq-2-seq**
 >
-> **RNN** can **simultaneously** *take a sequence of inputs and produce a sequence of outputs* **(“sequence-tosequence” network**).
+> **RNN** can **simultaneously** *take a sequence of inputs and produce a sequence of outputs* **(“sequence-to-sequence” network**).
 >
 > **Seq-2-Vec**
 >

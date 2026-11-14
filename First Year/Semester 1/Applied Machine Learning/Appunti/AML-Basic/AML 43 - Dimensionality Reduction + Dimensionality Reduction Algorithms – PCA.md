@@ -6,13 +6,13 @@ order: 43
 tags: [note, aml]
 ---
 
-> [[AML 42 - Support Vector Machines (SVM)|← Support Vector Machines (SVM)]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 44 - Dimensionality Reduction Algorithms – LLE + Visualising Feature Maps, Filters and Class Outputs|Dimensionality Reduction Algorithms – LLE + Visualising Feature Maps, Filters and Class Outputs →]]
+> [[AML 42 - Support Vector Machines (SVM)|← Support Vector Machines (SVM)]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 44 - Dimensionality Reduction Algorithms – LLE + Visualizing Feature Maps, Filters and Class Outputs|Dimensionality Reduction Algorithms – LLE + Visualizing Feature Maps, Filters and Class Outputs →]]
 
 # Dimensionality Reduction
 
 > Real-world applications often face ML practitioners with thousands/ millions of features. The main problem in this case is that it becomes **extremely slow** to train the model, and convergence becomes problematic.
 >
-> Dimensionality issues are also a problem for **data visualisation**, reducing dimensions to 2 or 3 would allow to plot condensed view of high-dimensional training set, which in turn may allow to gain **insights** by **visually detecting patterns**.
+> Dimensionality issues are also a problem for **data visualization**, reducing dimensions to 2 or 3 would allow to plot condensed view of high-dimensional training set, which in turn may allow to gain **insights** by **visually detecting patterns**.
 >
 > Luckily in many real-world problems, it is possible to reduce the number of features considerably. It is always necessary anyway to consider that reducing dimensionality implies always **losing some information**, attacking the performance. The best idea is to try to train your system with original data before considering using **DR techniques** and consider doing it only if training is indeed too slow.
 >
@@ -20,7 +20,7 @@ tags: [note, aml]
 
 - **Projection**
 
-- **Mainfold Learning**
+- **Manifold Learning**
 
 > **Projection**
 
@@ -30,7 +30,7 @@ tags: [note, aml]
 
 - “**manifold assumption/hypothesis**”: most real-world high-D datasets lie close to a much lower-D manifold. Very often empirically observed, giving solidity to the approach
 
-- as a result, **manifold learning algos are DR algos that work by modelling the manifold on which the training instances lie**
+- as a result, **manifold learning algos are DR algos that work by modeling the manifold on which the training instances lie**
 
 - the task (classification or regression) **will be simpler if expressed in the lower D space of the manifold** the last assumption could be true but it might not always be the case
 
@@ -46,7 +46,7 @@ tags: [note, aml]
 
 ![[AML-image305.jpg|609]]
 
-> Axis a in this case, preserves the **max amount of variance**, so it will most likely loose less information. This identifies a **first axis** that accounts for the largest amount of variance in the training set. But it also inherently finds a second axis, orthogonal to the first one, that accounts for the largest amount of remaining variance.
+> Axis a in this case, preserves the **max amount of variance**, so it will most likely lose less information. This identifies a **first axis** that accounts for the largest amount of variance in the training set. But it also inherently finds a second axis, orthogonal to the first one, that accounts for the largest amount of remaining variance.
 >
 > 2D dataset → 1st axis is “a”, 2nd (orthogonal) axis is “c”. D=2 axes.
 >
@@ -56,9 +56,9 @@ tags: [note, aml]
 
 ![[AML-image306.jpg|642]]
 
-> **Appling PCA: Singlìular Value Decomposition (SVD)**
+> **Applying PCA: Singular Value Decomposition (SVD)**
 >
-> SVD is a standard matrix factorisation technique that decomposes the training set matrix (X) into the matrix multiplication of three matrices U Σ VT, where V contains all the PCs I need. compute Xd-projected = X Wd, i.e. the matrix multiplication of the training set matrix X by the matrix Wd, defined as the matrix containing the first d PCs (i.e. the matrix composed of the first d columns of V).
+> SVD is a standard matrix factorization technique that decomposes the training set matrix (X) into the matrix multiplication of three matrices U Σ VT, where V contains all the PCs I need. compute Xd-projected = X Wd, i.e. the matrix multiplication of the training set matrix X by the matrix Wd, defined as the matrix containing the first d PCs (i.e. the matrix composed of the first d columns of V).
 
 ![](media/media/image2580.jpg)
 
@@ -74,9 +74,9 @@ tags: [note, aml]
 
 ![[AML-image310.jpg|430]]
 
-> **Randomised PCA**
+> **Randomized PCA**
 >
-> Finding PCs via SVD can be slow when you need to go from D down to d\<\<D. Randomised PCA is a **stochastic algorithm** able to quickly find an approximation of the first d PCs, with a **reduced computational complexity** w.r.t to the “full SVD” approach. Sklearn’s PCA implementation has a hyper-parameter (*svd_solver*) that can be specifically set to “randomized" to use this also:
+> Finding PCs via SVD can be slow when you need to go from D down to d\<\<D. Randomized PCA is a **stochastic algorithm** able to quickly find an approximation of the first d PCs, with a **reduced computational complexity** w.r.t to the “full SVD” approach. Sklearn’s PCA implementation has a hyper-parameter (*svd_solver*) that can be specifically set to “randomized" to use this also:
 
 ![[AML-image311.jpg|642]]
 
@@ -92,8 +92,8 @@ tags: [note, aml]
 
 ## Collegamenti
 - [[MBD 10 - Module 3 · Eigenvalues and eigenvectors]] — autovalori e autovettori
-- [[MBD 11 - Module 3 · Diagonalisation]] — diagonalizzazione
+- [[MBD 11 - Module 3 · Diagonalization]] — diagonalizzazione
 - [[SATAUMV 13 - Population structure analyses – principal component analysis (PCA)]] — PCA per la struttura di popolazione
 
 ---
-> [[AML 42 - Support Vector Machines (SVM)|← Support Vector Machines (SVM)]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 44 - Dimensionality Reduction Algorithms – LLE + Visualising Feature Maps, Filters and Class Outputs|Dimensionality Reduction Algorithms – LLE + Visualising Feature Maps, Filters and Class Outputs →]]
+> [[AML 42 - Support Vector Machines (SVM)|← Support Vector Machines (SVM)]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 44 - Dimensionality Reduction Algorithms – LLE + Visualizing Feature Maps, Filters and Class Outputs|Dimensionality Reduction Algorithms – LLE + Visualizing Feature Maps, Filters and Class Outputs →]]

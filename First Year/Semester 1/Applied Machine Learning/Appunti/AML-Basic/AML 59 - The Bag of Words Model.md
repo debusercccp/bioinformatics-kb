@@ -12,7 +12,7 @@ tags: [note, aml]
 
 > **The Bag-of-Words model**
 >
-> It is a way of representing text data when modelling text with ML algos.
+> It is a way of representing text data when modeling text with ML algos.
 
 - simple to understand and implement
 
@@ -24,7 +24,7 @@ tags: [note, aml]
 
 - how to develop a BoW model for a collection of docs
 
-- how to use different techniques to prepare a vocabulary and score words Text is messy → modelling text is VERY hard. If you want to to use ML:
+- how to use different techniques to prepare a vocabulary and score words Text is messy → modeling text is VERY hard. If you want to use ML:
 
 - **you cannot work directly with raw text**: you need (vectors of) **numbers**.
 

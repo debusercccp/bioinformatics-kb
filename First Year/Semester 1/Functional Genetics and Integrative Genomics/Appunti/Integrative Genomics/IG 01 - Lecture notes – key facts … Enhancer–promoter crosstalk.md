@@ -61,7 +61,7 @@ Early in vitro experiments in the 1980s defined the stepwise assembly of the Pre
 
 ### The “sufficiency” paradox
 
-In the 1990s, in vitro experiments showed that a synthetic naked DNA template, RNA Polymerase II and all the general transcription factors (GTFs) are sufficient to assemble the pre-initiation complex, and that adding nucleotides (NTPs) gives a basal level of transcription. This is **not true in vivo**: inside the cell DNA is wrapped in repressive **chromatin**, so a stable and efficient transcript requires **specific combinations of activating TFs and coactivators**, which stabilise RNAPII, stimulate its firing rate and recruit chromatin remodelers.
+In the 1990s, in vitro experiments showed that a synthetic naked DNA template, RNA Polymerase II and all the general transcription factors (GTFs) are sufficient to assemble the pre-initiation complex, and that adding nucleotides (NTPs) gives a basal level of transcription. This is **not true in vivo**: inside the cell DNA is wrapped in repressive **chromatin**, so a stable and efficient transcript requires **specific combinations of activating TFs and coactivators**, which stabilize RNAPII, stimulate its firing rate and recruit chromatin remodelers.
 
 ### “Sometimes being weak means being strong”
 
@@ -73,7 +73,7 @@ in multicellular organisms the maximum is reached with 6–10 TFs bound ⇒ many
 
 This “weakness is a strength” paradigm allows high variability and precise fine-tuning: combining multiple weak, tissue-specific TFs with cofactors (e.g. p300, Mediator, BRG1) generates highly specific, combinatorial transcriptional responses. Apes together, strong lol.
 
-**Paper — Lambert et al., 2018** (Cell 172:650–665): the catalogue behind the number of human TFs — over 1,600 likely TFs, with binding motifs known for about two thirds of them. The major classes differ markedly in evolutionary trajectory and expression pattern, and the review stresses that it remains hard to say from the motif alone where a TF binds in the genome and how that binding relates to the regulation of transcription.
+**Paper — Lambert et al., 2018** (Cell 172:650–665): the catalog behind the number of human TFs — over 1,600 likely TFs, with binding motifs known for about two thirds of them. The major classes differ markedly in evolutionary trajectory and expression pattern, and the review stresses that it remains hard to say from the motif alone where a TF binds in the genome and how that binding relates to the regulation of transcription.
 
 ### Key facts: promoter vs enhancer
 

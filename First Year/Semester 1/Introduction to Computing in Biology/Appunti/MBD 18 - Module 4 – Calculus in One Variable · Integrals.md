@@ -6,7 +6,7 @@ order: 18
 tags: [note, mbd]
 ---
 
-> [[MBD 17 - Module 4 – Calculus in One Variable · Taylor series|← Module 4 – Calculus in One Variable · Taylor series]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation|Module 5 – Calculus in More Variables and Optimisation →]]
+> [[MBD 17 - Module 4 – Calculus in One Variable · Taylor series|← Module 4 – Calculus in One Variable · Taylor series]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 19 - Module 5 – Calculus in More Variables and Optimization|Module 5 – Calculus in More Variables and Optimization →]]
 
 # Integrals
 
@@ -73,4 +73,4 @@ $$
 **Rules for integrals:** $\int_{a}^{b}f\, dx = - \int_{b}^{a}f\, dx$ (reversing the limits changes the sign); $\int_{a}^{a}f\, dx = 0$; $\int_{a}^{b}kf\, dx = k\int_{a}^{b}f\, dx$; $\int_{a}^{b}(f + g)\, dx = \int_{a}^{b}f\, dx + \int_{a}^{b}g\, dx$; $\int_{a}^{b}f\, dx + \int_{b}^{c}f\, dx = \int_{a}^{c}f\, dx$.
 
 ---
-> [[MBD 17 - Module 4 – Calculus in One Variable · Taylor series|← Module 4 – Calculus in One Variable · Taylor series]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation|Module 5 – Calculus in More Variables and Optimisation →]]
+> [[MBD 17 - Module 4 – Calculus in One Variable · Taylor series|← Module 4 – Calculus in One Variable · Taylor series]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 19 - Module 5 – Calculus in More Variables and Optimization|Module 5 – Calculus in More Variables and Optimization →]]

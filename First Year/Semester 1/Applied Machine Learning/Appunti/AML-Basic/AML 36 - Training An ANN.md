@@ -159,9 +159,9 @@ tags: [note, aml]
 
 ![[AML-image250.jpg|622]]
 
-> I**nitialisation**
+> I**nitialization**
 >
-> It is important to **initialise** all the hidden layers’ connection weights randomly, or else training will fail. e.g. if all weights and biases stay **initialised** to **0**, then all neurons in each layer will be identical, thus **BP** will affect them in the same way, and they will remain identical → no actual training. You need to initialise, so you break the symmetry, and allow BP to train a diverse team of neurons. Symmetry must be break and let **BP** do it. If you are training different team of neurons, will be able to say some values are high, low witch ones must be high and which ones must be low.
+> It is important to **initialize** all the hidden layers’ connection weights randomly, or else training will fail. e.g. if all weights and biases stay **initialized** to **0**, then all neurons in each layer will be identical, thus **BP** will affect them in the same way, and they will remain identical → no actual training. You need to initialize, so you break the symmetry, and allow BP to train a diverse team of neurons. Symmetry must be break and let **BP** do it. If you are training different team of neurons, will be able to say some values are high, low witch ones must be high and which ones must be low.
 
 ---
 > [[AML 35 - MLP for Regression and MLP for Classification|← MLP for Regression and MLP for Classification]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 37 - NNs’ Building Blocks|NNs’ Building Blocks →]]

@@ -52,7 +52,7 @@ The core components of this library are:
 
 - lines, text, legends, markers, ticks, etc...
 
-- Example: ax.plot (x, y, labe=‘line plot’)
+- Example: ax.plot (x, y, label=‘line plot’)
 
 In general:
 

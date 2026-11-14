@@ -66,7 +66,7 @@ Math operations, efficient?
 
 → NumPy
 
-The right chose in variabile type can has effect into **speed & memory efficiency impacting machine learning performance** but also in **readability & ease of use** that matter in realworld coding.
+The right chose in variabile type can has effect into **speed & memory efficiency impacting machine learning performance** but also in **readability & ease of use** that matter in real-world coding.
 
 ---
 > [[AML 62 - General Overview … Python basics – operators|← General Overview … Python basics – operators]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 64 - Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data|Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data →]]

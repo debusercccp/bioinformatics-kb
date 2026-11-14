@@ -34,7 +34,7 @@ Cells in a dish (2D) grow attached to a rigid plastic surface.
 
 - Soluble factors diffuse uniformly into the medium: **no gradient forms**.
 
-- Cell organisation and polarity are "forced" by the flat support.
+- Cell organization and polarity are "forced" by the flat support.
 
 - Cells are exposed directly to the liquid interface.
 
@@ -54,7 +54,7 @@ Cells in a dish (2D) grow attached to a rigid plastic surface.
 
 - Matrix fibrils limit cell spreading, so cells take a morphology closer to the one found in vivo.
 
-*Further detail:* differences in morphology, signalling (integrins, mechanotransduction), gene expression and drug response between 2D and 3D are the reason a gene can look essential in 2D and not in 3D, or vice versa. A large 3D mass also has a hypoxic, nutrient-poor core, which 2D does not reproduce.
+*Further detail:* differences in morphology, signaling (integrins, mechanotransduction), gene expression and drug response between 2D and 3D are the reason a gene can look essential in 2D and not in 3D, or vice versa. A large 3D mass also has a hypoxic, nutrient-poor core, which 2D does not reproduce.
 
 ### 3D technology is evolving fast: how a 3D culture is made
 
@@ -74,13 +74,13 @@ There is also so-called **2.5D** culture, an intermediate (cells on a layer of m
 
     - *Synthetic hydrogels*: non-natural (**PEG** polyethylene glycol, **PLA** polylactic acid, **PGA** polyglycolic acid) or natural (**hyaluronic acid, peptides**).
 
-3.  **Specialised 3D platforms**: **microfluidic devices** and **micropatterned plates**, up to **3D bioprinted** tissues (3D printing of cells and biomaterials).
+3.  **Specialized 3D platforms**: **microfluidic devices** and **micropatterned plates**, up to **3D bioprinted** tissues (3D printing of cells and biomaterials).
 
-*Further detail:* synthetic materials have the advantage of being defined and reproducible (tunable stiffness), whereas biological ones such as Matrigel (extracted from a murine tumour) are more "bioactive" but vary from batch to batch.
+*Further detail:* synthetic materials have the advantage of being defined and reproducible (tunable stiffness), whereas biological ones such as Matrigel (extracted from a murine tumor) are more "bioactive" but vary from batch to batch.
 
 ### Organoids and organ-on-chip
 
-- **Organoids** are three-dimensional structures derived from stem cells that self-organise and partly reproduce the architecture and functions of an organ.
+- **Organoids** are three-dimensional structures derived from stem cells that self-organize and partly reproduce the architecture and functions of an organ.
 
 - **Organ-on-chip (OoC)** devices are **microfluidic**: small channels in which cells of a tissue grow, crossed by a flow of medium that simulates perfusion and mechanical stress. Several chips can be coupled:
 
@@ -110,9 +110,9 @@ The breakthrough is the **reprogramming of somatic cells into induced pluripoten
 
 - iPSCs show the morphology, markers, and **DNA and histone methylation** typical of ESCs.
 
-- Applications: **drug screening, disease modelling, regenerative medicine**.
+- Applications: **drug screening, disease modeling, regenerative medicine**.
 
-In 2012 the **Nobel Prize in Physiology or Medicine** went to **John B. Gurdon** (nuclear transfer, experiments in amphibians) and **Shinya Yamanaka**. The conceptual meaning is **nuclear equivalence**: *all the genes in the genome are retained in every specialised cell type, even if silent and not used by that cell*. Specialisation is therefore epigenetic and regulatory, not a loss of DNA.
+In 2012 the **Nobel Prize in Physiology or Medicine** went to **John B. Gurdon** (nuclear transfer, experiments in amphibians) and **Shinya Yamanaka**. The conceptual meaning is **nuclear equivalence**: *all the genes in the genome are retained in every specialized cell type, even if silent and not used by that cell*. Specialization is therefore epigenetic and regulatory, not a loss of DNA.
 
 > **Focus — the Yamanaka factors: OCT4 (OCT3/4), SOX2, KLF4, c-MYC (OSKM).** Pluripotency TFs; c-MYC is an oncogene and dispensable (OSK).
 >
@@ -122,7 +122,7 @@ In 2012 the **Nobel Prize in Physiology or Medicine** went to **John B. Gurdon**
 
 ### How many organs does a human have? The limit of in vitro models
 
-Anatomists estimate **70–80 organs**, grouped into about **ten systems**. The digestive system alone includes more than 12 organs (mouth with teeth and tongue, salivary glands, pharynx, oesophagus, stomach, segments of the small intestine, large intestine, liver, gallbladder, mesentery, pancreas, anal canal with anus). The point is that an organism is very complex and made of organs that talk to each other.
+Anatomists estimate **70–80 organs**, grouped into about **ten systems**. The digestive system alone includes more than 12 organs (mouth with teeth and tongue, salivary glands, pharynx, esophagus, stomach, segments of the small intestine, large intestine, liver, gallbladder, mesentery, pancreas, anal canal with anus). The point is that an organism is very complex and made of organs that talk to each other.
 
 This leads to the question: **can computer models and cell cultures (3D cultures and organoids) replace animal research?** The answer is no, at least for now:
 

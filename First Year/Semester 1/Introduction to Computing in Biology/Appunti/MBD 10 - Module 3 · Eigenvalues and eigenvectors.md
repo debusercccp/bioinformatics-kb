@@ -6,7 +6,7 @@ order: 10
 tags: [note, mbd]
 ---
 
-> [[MBD 09 - Module 3 · Null space|← Module 3 · Null space]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 11 - Module 3 · Diagonalisation|Module 3 · Diagonalisation →]]
+> [[MBD 09 - Module 3 · Null space|← Module 3 · Null space]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 11 - Module 3 · Diagonalization|Module 3 · Diagonalization →]]
 
 # Eigenvalues and eigenvectors
 
@@ -109,7 +109,7 @@ $$
 
 where $- 1$ is the eigenvalue and ${\overrightarrow{v}}^{(1)}$ the eigenvector.
 
-*Normalisation.* $\parallel {\overrightarrow{v}}^{(1)} \parallel = \sqrt{16c^{2} + c^{2}} = |c|\sqrt{17}$, so the eigenvector has norm 1 for $c = 1/\sqrt{17}$.
+*Normalization.* $\parallel {\overrightarrow{v}}^{(1)} \parallel = \sqrt{16c^{2} + c^{2}} = |c|\sqrt{17}$, so the eigenvector has norm 1 for $c = 1/\sqrt{17}$.
 
 *Second eigenvector,* $\lambda_{2} = - 2$:
 
@@ -153,4 +153,4 @@ $$
 - [[SATAUMV 13 - Population structure analyses – principal component analysis (PCA)]] — PCA in genetica di popolazione
 
 ---
-> [[MBD 09 - Module 3 · Null space|← Module 3 · Null space]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 11 - Module 3 · Diagonalisation|Module 3 · Diagonalisation →]]
+> [[MBD 09 - Module 3 · Null space|← Module 3 · Null space]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 11 - Module 3 · Diagonalization|Module 3 · Diagonalization →]]

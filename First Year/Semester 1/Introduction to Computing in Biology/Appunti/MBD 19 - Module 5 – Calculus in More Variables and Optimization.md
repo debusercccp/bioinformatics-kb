@@ -8,7 +8,7 @@ tags: [note, mbd]
 
 > [[MBD 18 - Module 4 – Calculus in One Variable · Integrals|← Module 4 – Calculus in One Variable · Integrals]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 20 - Module 6 – Probability|Module 6 – Probability →]]
 
-# Module 5 — Calculus in More Variables and Optimisation
+# Module 5 — Calculus in More Variables and Optimization
 
 ## 5.1 Functions of more variables, partial derivatives, gradient
 
@@ -88,9 +88,9 @@ On a contour plot of $f\left( x_{1},x_{2} \right)$ with several minima, gradient
 
 Steepest descent finds the **local** minimum of a function by always moving in the direction that leads downhill, $- \overrightarrow{\nabla}f$: $\overrightarrow{x}(t + 1) = \overrightarrow{x}(t) - \eta\overrightarrow{\nabla}f\left( \overrightarrow{x}(t) \right)$.
 
-## 5.4 Constrained optimisation: Lagrange multipliers
+## 5.4 Constrained optimization: Lagrange multipliers
 
-We want to maximise (or minimise) $z = f(x,y)$ subject to a constraint $g(x,y) = c$, a curve in the $(x,y)$ plane. A simple solution would be to solve the constraint, e.g. $y = h(x)$, substitute it and maximise $f\left( x,h(x) \right)$ in $x$; but solving the constraint analytically can be very difficult.
+We want to maximize (or minimize) $z = f(x,y)$ subject to a constraint $g(x,y) = c$, a curve in the $(x,y)$ plane. A simple solution would be to solve the constraint, e.g. $y = h(x)$, substitute it and maximize $f\left( x,h(x) \right)$ in $x$; but solving the constraint analytically can be very difficult.
 
 **Idea.** Walk along the constraint line $g(x,y) = c$: in general it crosses different contour lines of $f$, so $f$ increases or decreases. Only where the constraint touches a contour line of $f$ **tangentially** does $f$ stop changing: there $f$ is at its local max or min along the constraint. At that point the gradient of $f$ is perpendicular to the curve $g = c$ (otherwise we could increase or decrease $f$ by moving along the curve), and so is the gradient of $g$: the two gradients are parallel.
 
@@ -109,7 +109,7 @@ $$
 
 The auxiliary function $\mathcal{L}$ (the **Lagrangian**, for a constraint $g = c$: $\mathcal{L =}f - \lambda(g - c)$) puts both conditions into one equation, ${\overrightarrow{\nabla}}_{x,\lambda}\mathcal{L =}\overrightarrow{0}$. With several constraints $g_{i}\left( \overrightarrow{x} \right) = 0$, $i = 1,\ldots,m$, there is one Lagrange multiplier $\lambda_{i}$ for each constraint.
 
-*Example from the slides:* the box (rectangular parallelepiped) with the largest volume and total surface $64\ cm^{2}$. Maximise $f = xyz$ with $2xy + 2xz + 2yz = 64$: $\mathcal{L =}xyz - \lambda(xy + xz + yz - 32)$,
+*Example from the slides:* the box (rectangular parallelepiped) with the largest volume and total surface $64\ cm^{2}$. Maximize $f = xyz$ with $2xy + 2xz + 2yz = 64$: $\mathcal{L =}xyz - \lambda(xy + xz + yz - 32)$,
 
 $$
 \left\{ \begin{matrix}
@@ -173,7 +173,7 @@ In *E. coli* $a \approx 0.6$ (measured from proteomics data). The multiplier $\l
 
 ### 5.4.3 Example: closest and farthest point of a circle from the origin
 
-Circle $(x - 1)^{2} + (y - 2)^{2} = 4$; distance from the origin $d(x,y) = \sqrt{x^{2} + y^{2}}$. Maximising/minimising $d$ is the same as maximising/minimising $f(x,y) = x^{2} + y^{2}$.
+Circle $(x - 1)^{2} + (y - 2)^{2} = 4$; distance from the origin $d(x,y) = \sqrt{x^{2} + y^{2}}$. Maximizing/minimizing $d$ is the same as maximizing/minimizing $f(x,y) = x^{2} + y^{2}$.
 
 $$
 \mathcal{L}(x,y,\lambda) = x^{2} + y^{2} - \lambda\left\lbrack (x - 1)^{2} + (y - 2)^{2} - 4 \right\rbrack

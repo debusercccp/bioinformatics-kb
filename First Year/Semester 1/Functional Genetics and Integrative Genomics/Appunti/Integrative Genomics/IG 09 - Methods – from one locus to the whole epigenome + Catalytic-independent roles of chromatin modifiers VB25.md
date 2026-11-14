@@ -19,13 +19,13 @@ tags: [note, ig]
 - Output: the clones are drawn as lollipops, one row per clone, filled = methylated CpG.
 - Sequencing: Sanger with radioactive lanes (A, C, G, T) or four fluorescent dideoxy terminators in one capillary (96 capillaries in parallel, laser detection → chromatogram).
 
-> **MLH1:** Bisulfite sequencing of the MLH1 promoter CGI (each row = one clone, filled circle = methylated CpG): in normal lymphocytes (A) the CpGs are unmethylated, while in leukaemia/lymphoma cell lines (B) Kg1a is almost fully and Raji partly methylated (HL60 stays unmethylated); this hypermethylation silences the MMR gene MLH1, an epigenetic way for tumours to lose a tumour suppressor.
+> **MLH1:** Bisulfite sequencing of the MLH1 promoter CGI (each row = one clone, filled circle = methylated CpG): in normal lymphocytes (A) the CpGs are unmethylated, while in leukemia/lymphoma cell lines (B) Kg1a is almost fully and Raji partly methylated (HL60 stays unmethylated); this hypermethylation silences the MMR gene MLH1, an epigenetic way for tumors to lose a tumor suppressor.
 >
 > ![[IG-image28.jpeg|361]]![[IG-image29.png|279]]
 
 ### Genome-wide methods
 
-- **MeDIP** (methylated DNA immunoprecipitation): sonicate DNA, IP with **anti-5mC**, compare IP vs input on a two-colour microarray or by sequencing (MeDIP-seq). PCR check: unmethylated region only in input, methylated in both. Resolution set by fragment size and probe spacing (promoter vs tiling arrays at 205 or 100 bp).
+- **MeDIP** (methylated DNA immunoprecipitation): sonicate DNA, IP with **anti-5mC**, compare IP vs input on a two-color microarray or by sequencing (MeDIP-seq). PCR check: unmethylated region only in input, methylated in both. Resolution set by fragment size and probe spacing (promoter vs tiling arrays at 205 or 100 bp).
 - **Whole-genome bisulfite sequencing** = bisulfite + NGS; base resolution (\[S12\] used reduced representation).
 - **Chromatin-state tracks** (C. elegans chr IV): **Pol** II, **H3K4me3** (promoters), **H3K27ac** (active promoters/enhancers) and **H3K36me3** (transcribed gene bodies) mark active regions; **H3K27me3** and **H3K9me3** form broad domains over silent regions, anti-correlated with active marks.
 
@@ -48,7 +48,7 @@ Main message: the KO phenotype of a writer or eraser is **not** automatically th
 ### Implications for therapy
 
 - If disease is driven by a non-catalytic function, an enzymatic inhibitor will fail, but removing the whole protein can work: **PROTAC** degraders of **SMARCA2/4**, **EZH2** and **p300/CBP** are more effective than inhibitors of the enzymatic domain or the bromodomain (the bromodomain ligand alone does not stop proliferation; used as a PROTAC handle it does).
-- Conversely, when the enzymatic activity is the driver (e.g. some paediatric cancers), an inhibitor may be better, with fewer effects because the rest of the protein is kept.
+- Conversely, when the enzymatic activity is the driver (e.g. some pediatric cancers), an inhibitor may be better, with fewer effects because the rest of the protein is kept.
 - Whether a **mark** is causal can now be tested by tethering an enzyme, or its catalytic-dead mutant, with **dCas9** (same logic as the dCas9 looping experiments in section 3).
 
 ### How the paper connects to the lectures

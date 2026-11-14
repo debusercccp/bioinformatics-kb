@@ -40,7 +40,7 @@ Two logics, running in opposite directions between phenotype and genotype:
 
 5.  **Understanding of the biological process.**
 
-**What mutagenesis is.** Mutagenesis = exposing an organism to an agent (a **mutagen**) that raises the mutation rate far above the spontaneous one. Spontaneous mutations are too rare to find a mutant for a given process in reasonable time; with **EMS** in *C. elegans* you get roughly **one loss-of-function hit per gene every ~2,000 mutagenised genomes**, so screening a few thousand animals hits most genes at least once. Key rule: **the mutagen decides the type of lesion**, and therefore which kind of allele the screen can recover.
+**What mutagenesis is.** Mutagenesis = exposing an organism to an agent (a **mutagen**) that raises the mutation rate far above the spontaneous one. Spontaneous mutations are too rare to find a mutant for a given process in reasonable time; with **EMS** in *C. elegans* you get roughly **one loss-of-function hit per gene every ~2,000 mutagenized genomes**, so screening a few thousand animals hits most genes at least once. Key rule: **the mutagen decides the type of lesion**, and therefore which kind of allele the screen can recover.
 
 **Mutagens – the mutagen decides what the screen can recover**
 

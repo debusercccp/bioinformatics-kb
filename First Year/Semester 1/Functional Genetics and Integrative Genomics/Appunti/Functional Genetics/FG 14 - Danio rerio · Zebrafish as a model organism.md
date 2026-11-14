@@ -18,7 +18,7 @@ The lecture opens with a principle already met in the general part of the course
 
 - **Danionella (*Danionella translucida*)**: **natural transparency into adulthood**, which allows **live imaging of adult neural circuits**.
 
-- **Guppy (*Poecilia reticulata*)**: natural variation in behaviour; a model for **sexual selection and environmental adaptation**.
+- **Guppy (*Poecilia reticulata*)**: natural variation in behavior; a model for **sexual selection and environmental adaptation**.
 
 ### Why zebrafish? Advantages as a model organism
 
@@ -28,7 +28,7 @@ Zebrafish is a model for **vertebrate development and human diseases** (Sassen &
 
 - about **70% of zebrafish genes have human counterparts**;
 
-- **external fertilisation**;
+- **external fertilization**;
 
 - embryos are **transparent** and **develop rapidly**;
 
@@ -36,7 +36,7 @@ Zebrafish is a model for **vertebrate development and human diseases** (Sassen &
 
 - many **fluorescent reporter lines** available.
 
-> **Paper — Dooley & Zon, 2000** (Curr. Opin. Genet. Dev. 10:252–256): Zebrafish covers vertebrate-specific structures that invertebrates lack, and forward screens yielded many mutants resembling human diseases without knowing the gene in advance (e.g. *sauternes* → anaemia, *gridlock* → coarctation of the aorta).
+> **Paper — Dooley & Zon, 2000** (Curr. Opin. Genet. Dev. 10:252–256): Zebrafish covers vertebrate-specific structures that invertebrates lack, and forward screens yielded many mutants resembling human diseases without knowing the gene in advance (e.g. *sauternes* → anemia, *gridlock* → coarctation of the aorta).
 >
 > **Paper — Poss et al., 2002** (Science 298:2188–2190): After removal of ~20% of the ventricle, the adult zebrafish heart regenerates by cardiomyocyte proliferation with no scar within 60 days, whereas blocking proliferation (*mps1* mutants) leads to fibrotic scarring.
 
@@ -46,11 +46,11 @@ Zebrafish is a model for **vertebrate development and human diseases** (Sassen &
 
 - About **26,000 genes** over **1.4 billion bp** on **25 pairs of chromosomes** — roughly the **same number of protein-coding genes as the human genome in about half the size**, over a similar number of chromosomes.
 
-- **71.4% of human genes** have at least one zebrafish orthologue; **80% of human disease-related genes** have at least one zebrafish orthologue.
+- **71.4% of human genes** have at least one zebrafish ortholog; **80% of human disease-related genes** have at least one zebrafish ortholog.
 
-- Zebrafish genes underwent the **teleost-specific genome duplication (TSD)**. The fates of the duplicated copies are: **non-functionalisation** (one copy is lost), **subfunctionalisation** (the ancestral functions are split between the two), **neofunctionalisation** (one copy acquires a new function) and **dosage selection** (both kept because the extra dose is useful).
+- Zebrafish genes underwent the **teleost-specific genome duplication (TSD)**. The fates of the duplicated copies are: **non-functionalization** (one copy is lost), **subfunctionalization** (the ancestral functions are split between the two), **neofunctionalization** (one copy acquires a new function) and **dosage selection** (both kept because the extra dose is useful).
 
-> **Focus — Why the duplication matters at the bench. Many human genes have two zebrafish paralogues (a/b) that may compensate or subfunctionalise: check orthology first.**
+> **Focus — Why the duplication matters at the bench. Many human genes have two zebrafish paralogs (a/b) that may compensate or subfunctionalize: check orthology first.**
 
 ### Strains, life cycle and husbandry
 
@@ -62,13 +62,13 @@ Zebrafish is a model for **vertebrate development and human diseases** (Sassen &
 
 - ***lof*** (long fin): mutations resulting in **long, flowing fins**;
 
-- **casper**: **lacks all melanocytes and iridophores**, both during embryogenesis and in adulthood — a **transparent adult**, very useful for imaging (e.g. tumours, see Cancer below).
+- **casper**: **lacks all melanocytes and iridophores**, both during embryogenesis and in adulthood — a **transparent adult**, very useful for imaging (e.g. tumors, see Cancer below).
 
 > **Focus — What casper is. nacre × roy orbison double mutant: transparent adults.**
 
-- **Lifespan**: depends on strain and rearing, usually **3–4 years**; signs of ageing appear around **2 years**.
+- **Lifespan**: depends on strain and rearing, usually **3–4 years**; signs of aging appear around **2 years**.
 
-- **Sexual maturity**: typically **10–12 weeks post-fertilisation**.
+- **Sexual maturity**: typically **10–12 weeks post-fertilization**.
 
 - **Sexual dimorphism**: **females** acquire a **fuller, rounder belly** with **yellow** pigmentation; **males** have a **sleeker belly** and **orange shades** on belly and fins.
 

@@ -10,7 +10,7 @@ tags: [note, mbd]
 
 # Vectors
 
-A vector can be seen as a displacement: going from Bologna to Milano is described by the two components of the displacement, $\overrightarrow{S} = \left( S_{x},S_{y} \right)$, along the two axes. In general a vector in $n$ dimensions is a column of $n$ real numbers:
+A vector can be seen as a displacement: going from Bologna to Milan is described by the two components of the displacement, $\overrightarrow{S} = \left( S_{x},S_{y} \right)$, along the two axes. In general a vector in $n$ dimensions is a column of $n$ real numbers:
 
 $$
 \overrightarrow{v} = \begin{pmatrix}

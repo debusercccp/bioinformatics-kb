@@ -8,7 +8,7 @@ tags: [note, aml]
 
 > [[AML 21 - Model Diagnostics · Bias and Variance|← Model Diagnostics · Bias and Variance]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 23 - Model Diagnostics · Learning Curves|Model Diagnostics · Learning Curves →]]
 
-# Regularisation Bias and Variance
+# Regularization Bias and Variance
 
 **Regularization** serves as a crucial **tool** to **combat overfitting** in machine learning models. It achieves this by penalizing overly complex models, thereby promoting simpler models that generalize well to unseen data.
 

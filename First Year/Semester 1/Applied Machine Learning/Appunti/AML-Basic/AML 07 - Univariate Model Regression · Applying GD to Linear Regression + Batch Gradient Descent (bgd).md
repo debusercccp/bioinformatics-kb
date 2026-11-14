@@ -65,7 +65,7 @@ Depending on the initial parameter values, the algorithm may converge to differe
 
 - Convex Quadratic Cost Function for Linear Regression
 
-In the case of linear regression, the cost function is always a convex quadratic function, meaning it has "bowshaped" curve.
+In the case of linear regression, the cost function is always a convex quadratic function, meaning it has "bow-shaped" curve.
 
 This convexity ensures that the cost function has only one global optimum and no other local optima.
 
@@ -101,7 +101,7 @@ Each method offers a unique perspective on the optimization process and may be m
 
 An alternative to using Gradient Descent (GD) for finding the minimum of the cost function in linear regression is the **Normal Equation method.**
 
-The Normal Equation method provides a direct **analytical solution** for finding the optimal parameters that minimize the cost function Jin linear regression. Rather than iteratively updating parameters as in GD, the Normal Equation computes the optimal parameter values directly. Mathematically, the Normal Equation is given by: *θ* = (*X<sup>T</sup> X*)<sup>−1</sup>*X<sup>T</sup>y*
+The Normal Equation method provides a direct **analytical solution** for finding the optimal parameters that minimize the cost function J in linear regression. Rather than iteratively updating parameters as in GD, the Normal Equation computes the optimal parameter values directly. Mathematically, the Normal Equation is given by: *θ* = (*X<sup>T</sup> X*)<sup>−1</sup>*X<sup>T</sup>y*
 
 Where:
 
@@ -120,7 +120,7 @@ The Normal Equation method is particularly useful when:
 However, for very large datasets, the computational cost of matrix inversion can be prohibitive, and GD or its variants may be more practical.
 
 ## Collegamenti
-- [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation]] — gradiente di funzioni di più variabili
+- [[MBD 19 - Module 5 – Calculus in More Variables and Optimization]] — gradiente di funzioni di più variabili
 - [[MBD 06 - Module 2 – Matrices · Transpose matrix … Orthogonal matrices]] — matrice inversa (soluzione in forma chiusa)
 
 ---

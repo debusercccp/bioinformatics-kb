@@ -35,8 +35,8 @@ With a symmetric migration rate (***m***) between two populations A and B, the a
 | **Model** | **Key features** |
 |:---|:---|
 | **n**-island model | Discrete demes of size **N** exchange migrants at rate ***m*** with every other deme. |
-| Stepping-stone model | Each deme exchanges migrants (***m***/4 in each direction) only with its immediate neighbours on a grid. |
-| Isolation by distance | Migration within a continuous population: the probability that two individuals mate decreases with their distance. Genetic similarity develops in neighbourhoods as a function of dispersal distances, so close individuals tend to be more similar. When dispersal does not overcome the loss of alleles by drift, population differentiation results. |
+| Stepping-stone model | Each deme exchanges migrants (***m***/4 in each direction) only with its immediate neighbors on a grid. |
+| Isolation by distance | Migration within a continuous population: the probability that two individuals mate decreases with their distance. Genetic similarity develops in neighborhoods as a function of dispersal distances, so close individuals tend to be more similar. When dispersal does not overcome the loss of alleles by drift, population differentiation results. |
 
 ---
 > [[SATAUMV 06 - Eliminating diversity – genetic drift|← Eliminating diversity – genetic drift]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]] · [[SATAUMV 08 - Shaping diversity – natural selection|Shaping diversity – natural selection →]]

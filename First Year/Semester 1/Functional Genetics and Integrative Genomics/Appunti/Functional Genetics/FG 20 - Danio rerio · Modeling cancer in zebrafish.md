@@ -8,18 +8,18 @@ tags: [note, fg]
 
 > [[FG 19 - Danio rerio · CRISPRCas9 – from gene to disease model|← Danio rerio · CRISPRCas9 – from gene to disease model]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 21 - Danio rerio · Optogenetics|Danio rerio · Optogenetics →]]
 
-# Modelling cancer in zebrafish
+# Modeling cancer in zebrafish
 
 | **Positives** | **Negatives** |
 |----|----|
-| Transparent embryos, rapid development | Few spontaneous tumours |
+| Transparent embryos, rapid development | Few spontaneous tumors |
 | Shared vertebrate organs | Short lifespan |
 | Complex immune system | Simpler organs |
 | Efficient CRISPR and transgenesis | Missing organs (mammary gland, prostate) |
 | Transparent adults (casper) for imaging | Smaller genome (~50% of human) |
 | Fluorescent reporter lines | Genome duplication |
 | Conserved oncogenes (BRAF, NRAS) | Lower temperature (28 °C vs 37 °C) |
-| Tumours resemble human ones | Limited antibodies |
+| Tumors resemble human ones | Limited antibodies |
 | Chemical screens → clinical trials |  |
 
 (White, *Nature Reviews Cancer*.)
@@ -28,8 +28,8 @@ tags: [note, fg]
 
 | **Site** | **Used for** |
 |----|----|
-| Blastula | Early embryonic stage; orthotopic tumour models (e.g. glioblastoma), migration and differentiation |
-| Brain | Orthotopic brain tumours; invasion, angiogenesis, therapy response |
+| Blastula | Early embryonic stage; orthotopic tumor models (e.g. glioblastoma), migration and differentiation |
+| Brain | Orthotopic brain tumors; invasion, angiogenesis, therapy response |
 | Perivitelline space (PVS) | Angiogenesis, intravasation |
 | Yolk sac | Survival, proliferation, migration |
 | Duct of Cuvier | Circulation, invasion, metastasis |

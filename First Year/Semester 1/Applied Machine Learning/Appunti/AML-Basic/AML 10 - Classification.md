@@ -42,7 +42,7 @@ When attempting to use linear regression for classification, one must establish 
 
 However, determining an appropriate threshold value can be challenging, especially in cases where the output values are distributed continuously across the range. This ambiguity in prediction arises because linear regression does not explicitly define the decision boundaries between classes.
 
-Consequently, data points falling near the threshold may be classified differently depending on the chosen threshold, leading to uncertainty in predictions for these middle-range values.Linear regression lacks a clear mechanism for class prediction in the middle range of output values.
+Consequently, data points falling near the threshold may be classified differently depending on the chosen threshold, leading to uncertainty in predictions for these middle-range values. Linear regression lacks a clear mechanism for class prediction in the middle range of output values.
 
 - **Sensitivity to Outliers**
 

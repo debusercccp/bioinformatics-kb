@@ -42,7 +42,7 @@ $$
 P(x) = x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4}
 $$
 
-and near zero the two functions match very well. The series around 0 is the **Maclaurin series**; centred at another point it is the **Taylor series**.
+and near zero the two functions match very well. The series around 0 is the **Maclaurin series**; centered at another point it is the **Taylor series**.
 
 Around a point $x_{0}$:
 

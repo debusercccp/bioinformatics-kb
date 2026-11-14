@@ -75,7 +75,7 @@ Graphically, under linkage equilibrium the area of each haplotype square equals 
 
 ![[SATAUMV-image9.png|585]]
 
-| **Recombination fraction** | **Behaviour of LD (graph with D₀ = 0.25)** |
+| **Recombination fraction** | **Behavior of LD (graph with D₀ = 0.25)** |
 |:---|:---|
 | **r** = 0 | No recombination: **D** stays constant at 0.25 (complete linkage). |
 | **r** = 0.01 | Very slow decay, **D** is still close to 0.2 after 25 generations. |

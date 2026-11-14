@@ -6,7 +6,7 @@ order: 12
 tags: [note, mbd]
 ---
 
-> [[MBD 11 - Module 3 · Diagonalisation|← Module 3 · Diagonalisation]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 13 - Module 4 – Calculus in One Variable · Functions … Elementary functions|Module 4 – Calculus in One Variable · Functions … Elementary functions →]]
+> [[MBD 11 - Module 3 · Diagonalization|← Module 3 · Diagonalization]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 13 - Module 4 – Calculus in One Variable · Functions … Elementary functions|Module 4 – Calculus in One Variable · Functions … Elementary functions →]]
 
 # Complex numbers
 
@@ -66,4 +66,4 @@ $$
 with $\Delta = \left( Tr(A) \right)^{2} - 4\det(A)$.
 
 ---
-> [[MBD 11 - Module 3 · Diagonalisation|← Module 3 · Diagonalisation]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 13 - Module 4 – Calculus in One Variable · Functions … Elementary functions|Module 4 – Calculus in One Variable · Functions … Elementary functions →]]
+> [[MBD 11 - Module 3 · Diagonalization|← Module 3 · Diagonalization]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 13 - Module 4 – Calculus in One Variable · Functions … Elementary functions|Module 4 – Calculus in One Variable · Functions … Elementary functions →]]

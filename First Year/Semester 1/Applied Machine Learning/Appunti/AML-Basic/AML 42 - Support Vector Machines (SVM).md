@@ -14,7 +14,7 @@ tags: [note, aml]
 
 - capable of performing **linear/nonlinear classification**, regression, even outlier detection
 
-- in particular, well suited for classification of complex but small- or mediumsized datasets
+- in particular, well suited for classification of complex but small- or medium-sized datasets
 
 > SVM can be explained as a classifier that fit the widest possible space between the instances of the classes. SVM is a large margin classification that tries to **find the best boundary (hyperplane)** that separates data points of different classes **with the maximum margin**.
 
@@ -40,7 +40,7 @@ tags: [note, aml]
 >
 > **Regularize SVMs in sklearn**
 >
-> The sklearn implementation of the SVM class deals with hard vs soft margin classification via the **C hyperparameter**: a small C value leads to a wider street but more margin violations. Generally: if your SVM model shows symptoms of overfitting, you can try regularising it by reducing C.
+> The sklearn implementation of the SVM class deals with hard vs soft margin classification via the **C hyperparameter**: a small C value leads to a wider street but more margin violations. Generally: if your SVM model shows symptoms of overfitting, you can try regularizing it by reducing C.
 >
 > **SVM choices:**
 
@@ -48,7 +48,7 @@ tags: [note, aml]
 
 - **SGDClassifier class:** applies regular Stochastic Gradient Descent (SGD) to train a linear SVM classifier. It does not converge as fast as the LinearSVC class, but it can be useful to handle huge datasets that do not fit in memory (or even to handle online classification tasks).
 
-- **LinearSVC: t**he LinearSVC class regularises the bias term, so you should centre the training set first by subtracting its mean. This is automatic if you scale the data using the StandardScaler. Make sure you set the loss hyperparameter to “hinge", if you want to run as shown before, as it is not the default value and for better performance you should set the dual hyperparameter to False, unless there are more features than training instances.
+- **LinearSVC: t**he LinearSVC class regularizes the bias term, so you should center the training set first by subtracting its mean. This is automatic if you scale the data using the StandardScaler. Make sure you set the loss hyperparameter to “hinge", if you want to run as shown before, as it is not the default value and for better performance you should set the dual hyperparameter to False, unless there are more features than training instances.
 
 ![](media/media/image287.jpeg)
 
@@ -58,13 +58,13 @@ tags: [note, aml]
 
 - a too **low polynomial** degree may not deal with very complex datasets
 
-- a too **high polynomial** degree creates a huge nb features, i.e. model training too slow **Kernel Trick** allows to get same result as if you added many polynomial features, even with very highdegree polynomials, without actually having to add them. A kernel is a function capable of computing the dot product ɸ(a)Tɸ(b), based only on the original vectors a and b, without having to compute (or even to know about) the transformation ϕ
+- a too **high polynomial** degree creates a huge nb features, i.e. model training too slow **Kernel Trick** allows to get same result as if you added many polynomial features, even with very high-degree polynomials, without actually having to add them. A kernel is a function capable of computing the dot product ɸ(a)Tɸ(b), based only on the original vectors a and b, without having to compute (or even to know about) the transformation ϕ
 
 > Assume you would need to apply a d=2 polynomial transformation (ɸ) to a 2D training set:
 >
 > ![](media/media/image2450.jpg)
 >
-> Kernel functions have a special property that makes it particularly useful in training support vector models, and the use of this property in **optimising non-linear support** vector classifiers → the **kernel trick**.
+> Kernel functions have a special property that makes it particularly useful in training support vector models, and the use of this property in **optimizing non-linear support** vector classifiers → the **kernel trick**.
 
 ![[AML-image290.jpg|642]]
 

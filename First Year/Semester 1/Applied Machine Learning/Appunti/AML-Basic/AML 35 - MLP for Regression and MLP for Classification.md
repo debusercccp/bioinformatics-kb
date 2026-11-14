@@ -50,7 +50,7 @@ tags: [note, aml]
 
 > **Classification MLP**
 >
-> MLPs can be used for classification tasks: **oal**: Predict one **exclusive binary** label per instance. 1 vs many output neurons depending on single-label vs multi-label binary classification, all using the logistic activation function. It is necessary to dedicate one output neuron for each positive class: the output(s) will be a number between 0 and 1, which you can interpret as the **estimated probability P** of the positive class, with the estimated probability of the negative class being 1-P.
+> MLPs can be used for classification tasks: **Goal**: Predict one **exclusive binary** label per instance. 1 vs many output neurons depending on single-label vs multi-label binary classification, all using the logistic activation function. It is necessary to dedicate one output neuron for each positive class: the output(s) will be a number between 0 and 1, which you can interpret as the **estimated probability P** of the positive class, with the estimated probability of the negative class being 1-P.
 
 - **1 neuron**
 

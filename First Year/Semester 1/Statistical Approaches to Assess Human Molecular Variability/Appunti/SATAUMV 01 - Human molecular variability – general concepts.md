@@ -109,7 +109,7 @@ Approximate dates on the migration map:
 **Other factors shaping current variation.** Current patterns of variability reflect **demographic** processes, **adaptive** processes and **cultural** factors:
 
 - **Demographic:** expansions or contractions, migrations and admixture (for example the Bantu expansion within Africa about 5 kya, and the trans-Atlantic slave trade about 400 years ago).
-- **Adaptive:** occupation of a wide range of very different environments, which exposed populations to diverse selective pressures: arctic environments, high altitude (Andes, Tibet, Ethiopian highlands), skin colour at different latitudes, pathogens (malaria and trypanosome resistance in Africa), and body-size traits.
+- **Adaptive:** occupation of a wide range of very different environments, which exposed populations to diverse selective pressures: arctic environments, high altitude (Andes, Tibet, Ethiopian highlands), skin color at different latitudes, pathogens (malaria and trypanosome resistance in Africa), and body-size traits.
 - **Cultural and dietary:** dietary shifts, such as fat-rich diets in the Arctic, **lactase persistence** associated with milk consumption (Europe and East Africa), and starch-rich diets (e.g. rice-based in Asia). The map also links high BMI to Polynesia.
 
 ---

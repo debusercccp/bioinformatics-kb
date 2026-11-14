@@ -17,7 +17,7 @@ tags: [note, sataumv]
 - **Principal Component Analysis (PCA)**: the original high-dimensional data are transformed into a smaller set of uncorrelated variables, the principal components, which capture the variation, reduce noise and remove redundancy (section 13.3);
 - **Linear Discriminant Analysis (LDA)**: the retained PCs are then subjected to a **discriminant analysis**. Unlike PCA, which summarizes the overall variance of the dataset, LDA **maximizes the separation between pre-defined or inferred groups while minimizing the variation within those groups**.
 
-![[SATAUMV-image71.jpeg|393]]The **linear discriminants** therefore describe the **largest between-group variance and the smallest within-group variance**, not the entire variance as in PCA. In the figure, individuals (dots) are positioned on a plane using the values of two variables: PCA searches for the **direction** showing the largest total variance (dotted arrow), whereas DA (plain arrow) maximizes the separation between the clusters (coloured groups) while minimizing the variation within each group.
+![[SATAUMV-image71.jpeg|393]]The **linear discriminants** therefore describe the **largest between-group variance and the smallest within-group variance**, not the entire variance as in PCA. In the figure, individuals (dots) are positioned on a plane using the values of two variables: PCA searches for the **direction** showing the largest total variance (dotted arrow), whereas DA (plain arrow) maximizes the separation between the clusters (colored groups) while minimizing the variation within each group.
 
 DAPC can be used in two ways:
 
@@ -39,7 +39,7 @@ DAPC provides two main outputs:
 
 When populations meet, two different processes can take place:
 
-- **Gene flow**: ongoing, **bidirectional** exchange of individuals between neighbouring populations (chapter 7);
+- **Gene flow**: ongoing, **bidirectional** exchange of individuals between neighboring populations (chapter 7);
 - **Admixture**: **formation of a hybrid population from the mixing of ancestral populations that previously had been relatively isolated from one another** (section 13.6).
 
 ![[SATAUMV-image76.png|212]]Admixture can be detected, and ancestry profiles inferred, with several approaches. In a **PCA** the admixed population lies between the parental clusters (section 13.6), while **model-based methods** such as **STRUCTURE** and **ADMIXTURE** estimate for each individual the proportion of ancestry derived from each parental population. In the example, European (CEU), West African (YRI), Mexican (MEX) and Brazilian (BRZ) samples are shown (a) in a triangle plot of African, European and Native American ancestry and (b) as an ancestry bar plot: CEU and YRI form homogeneous clusters, while MEX and BRZ individuals carry variable mixtures of the ancestral components.
@@ -72,7 +72,7 @@ Note — AIMs (ancestry-informative markers) are markers with large allele-frequ
 
 **Cluster analyses** group individuals into **K different clusters based on genetic similarity**, i.e. individuals within a cluster are more similar to each other than to individuals in other clusters (section 13.8). There is **no a priori hypothesis**: the algorithm is run several times with different K, and each run gives a **fit of the clusters to the data**.
 
-Each individual is given a **membership coefficient** (probability) for every cluster; the coefficients can also be interpreted as the **fractions of the genome** having membership in those clusters. In the example (populations from Pakistan: Balochi, Brahui, Makrani, Sindhi, Pathan, Burusho, Hazara, Uygur and Kalash) each individual is a vertical bar divided into K = 5 coloured segments; the zoom on the Uygur sample (10 individuals) shows how the bar of each individual is split among the five clusters in proportion to its membership coefficients.
+Each individual is given a **membership coefficient** (probability) for every cluster; the coefficients can also be interpreted as the **fractions of the genome** having membership in those clusters. In the example (populations from Pakistan: Balochi, Brahui, Makrani, Sindhi, Pathan, Burusho, Hazara, Uygur and Kalash) each individual is a vertical bar divided into K = 5 colored segments; the zoom on the Uygur sample (10 individuals) shows how the bar of each individual is split among the five clusters in proportion to its membership coefficients.
 
 ![[SATAUMV-image78.png|624]]
 
@@ -95,11 +95,11 @@ Note — in practice ADMIXTURE is run on a PLINK binary dataset (.bed/.bim/.fam,
 
 ## 14.6 Individual-level resolution of analysis
 
-With genome-wide data, ancestry is estimated **for each individual**. In the example, Native American, Hispanic/Latino, European and African individuals are analyzed from K = 2 to K = 6: at each K every individual is a vertical bar coloured in proportion to its estimated ancestry in each cluster.
+With genome-wide data, ancestry is estimated **for each individual**. In the example, Native American, Hispanic/Latino, European and African individuals are analyzed from K = 2 to K = 6: at each K every individual is a vertical bar colored in proportion to its estimated ancestry in each cluster.
 
 **The .Q output file.** An ADMIXTURE **.Q file** is a space-delimited text matrix in which **each row corresponds to an individual** and **each column represents the ancestry fraction inherited from a theoretical ancestral population** (K columns). The values in each row **sum to exactly 1**. In the example (K = 3, 5 individuals) the first row, 0.9500 0.0400 0.0100, is drawn as a single bar divided into segments of 95%, 4% and 1%.
 
-In this **structure-like clustering plot** individuals are shown as vertical bars coloured in proportion to their estimated ancestry within each cluster. At **K = 3** the populations are clustered by **Native American, African and European** genetic ancestry, with individuals and populations (e.g. Hispanic/Latinos) showing a **mixture of these ancestral components in different proportions**.
+In this **structure-like clustering plot** individuals are shown as vertical bars colored in proportion to their estimated ancestry within each cluster. At **K = 3** the populations are clustered by **Native American, African and European** genetic ancestry, with individuals and populations (e.g. Hispanic/Latinos) showing a **mixture of these ancestral components in different proportions**.
 
 ![[SATAUMV-image79.jpg|566]]
 

@@ -8,7 +8,7 @@ tags: [note, aml]
 
 > [[AML 16 - Alternatives to GD|← Alternatives to GD]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 18 - Model Diagnostics|Model Diagnostics →]]
 
-# Regularisation
+# Regularization
 
 ## 10.1 OVERFITTING FOR LINEAR REGRESSION
 
@@ -60,7 +60,7 @@ In an underfitted model, the algorithm fails to learn the patterns present in th
 
 - Underfitting often occurs when the model is too simple relative to the complexity of the underlying data, such as using a linear model for non-linear data.
 
-**Optimization vs Generalisation**
+**Optimization vs Generalization**
 
 Optimization focuses on improving performance on the training data, while generalization focuses on ensuring that the model performs well on unseen data, thereby demonstrating its ability to capture underlying patterns in the data. Balancing optimization and generalization is essential for building effective machine learning models.
 
@@ -80,7 +80,7 @@ A third attempt could be made to further refine the fit to the data. However, it
 
 Naively, one might think, "Why should I worry? I'll just plot hypotheses and use common sense." However, the reality is more complex. In scenarios:
 
-- with a **large number of features,** the simplicity of visualizing data in one or two dimensions becomes impractical. Even with advanced data visualization techniques, such as 3D plots, the sheer volume of features can overwhelm the visualization process. Housing example with size, \# bedrooms, \# floors, age of house, average income in neighbourhood, size of the kitchen, presence of garage or not, etc
+- with a **large number of features,** the simplicity of visualizing data in one or two dimensions becomes impractical. Even with advanced data visualization techniques, such as 3D plots, the sheer volume of features can overwhelm the visualization process. Housing example with size, \# bedrooms, \# floors, age of house, average income in neighborhood, size of the kitchen, presence of garage or not, etc
 
 - with **small training datasets containing only a few examples**, overfitting becomes a serious concern. When we have many features and relatively little training data, the risk of overfitting increases significantly, potentially undermining the performance and reliability of the model.
 
@@ -100,7 +100,7 @@ These discarded features might have contained rich information that could have c
 
 Another approach to address overfitting is to tune the importance of features, a process commonly referred to as "regularization". Instead of discarding features, we retain all of them but **adjust the magnitude of the parameters associated with each feature**. This method is particularly useful when dealing with **datasets containing numerous features**, where each feature contributes to predicting the value of the target variable to some extent. By fine-tuning the parameters, we can effectively **<u>control the influence of each feature on</u> <u>the model's predictions</u>**. The advantage of this approach is that it allows us to **retain all features** without the need for discarding any of them, thereby preserving potentially valuable information contained within the dataset.
 
-## 10.4 REGULARISED COST FUNCTION
+## 10.4 REGULARIZED COST FUNCTION
 
 We want to mitigate overfitting observed in the pink curve by adjusting the parameters to obtain the blue curve, which strikes a balance between the orange and pink curves.
 
@@ -122,9 +122,9 @@ Lambda is not learned from the training data but is set manually or through tech
 
 ![](media/media/image850.jpg)
 
-## 10.5 REGULARISED LINEAR REGRESSION
+## 10.5 REGULARIZED LINEAR REGRESSION
 
-In our exploration of linear regression, we previously examined two fundamental learning algorithms: one based on gradient descent (GD) and another on the normal equation. Now, our focus shifts to the realm of regularised linear regression, where we extend these algorithms to accommodate the incorporation of regularization.
+In our exploration of linear regression, we previously examined two fundamental learning algorithms: one based on gradient descent (GD) and another on the normal equation. Now, our focus shifts to the realm of regularized linear regression, where we extend these algorithms to accommodate the incorporation of regularization.
 
 *Admittedly: we will be brief for GD, and even more brief for the normal equation. Namely, just a glance (and no summary of concepts at the end of this section)*
 
@@ -136,7 +136,7 @@ The core principles underlying linear regression remain intact. We continue to s
 
 **What changes**
 
-Regularisation introduces a penalty term that discourages overly complex models, effectively mitigating the risk of overfitting. This adjustment is encapsulated in the updated cost function:
+Regularization introduces a penalty term that discourages overly complex models, effectively mitigating the risk of overfitting. This adjustment is encapsulated in the updated cost function:
 
 ![[AML-image94.png|278]] *i*=1 *j*=1
 
@@ -152,11 +152,11 @@ In this formula:
 
 - *n* is the number of features (excluding the bias term).
 
-- *θj*is the parameter associated with the *j*-th feature.
+- *θj* is the parameter associated with the *j*-th feature.
 
 ![[AML-image95.jpg|700]]
 
-To implement regularization in **normal gradient descent**, the update rule for the parameter *θj*will change to include the regularization term. Instead of the original update rule, which only considers the gradient of the cost function, the new update rule will also include the derivative of the regularization term with respect to *θj* This modified update rule ensures that the parameters are updated in a way that penalizes large values of *θj*, thus preventing overfitting.
+To implement regularization in **normal gradient descent**, the update rule for the parameter *θj* will change to include the regularization term. Instead of the original update rule, which only considers the gradient of the cost function, the new update rule will also include the derivative of the regularization term with respect to *θj* This modified update rule ensures that the parameters are updated in a way that penalizes large values of *θj*, thus preventing overfitting.
 
 To implement regularization with the **normal equation**, you would adjust the calculation of the parameter vector *θ* by incorporating the regularization term.
 
@@ -178,11 +178,11 @@ By adding *λI* to the matrix *X<sup>T</sup> X*, you ensure that the inverse exi
 
 ![[AML-image98.jpg|530]]
 
-## 10.6 REGULARISED LOGISTIC REGRESSION
+## 10.6 REGULARIZED LOGISTIC REGRESSION
 
 For **logistic regression**, we previously talked mostly about one algorithm: Gradient Descent.
 
-We can adapt any technique above and make them work for **regularised logistic regression**
+We can adapt any technique above and make them work for **regularized logistic regression**
 
 > ![](media/media/image910.jpg)
 

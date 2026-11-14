@@ -24,7 +24,7 @@ tags: [note, aml]
 
 2.  **ARIMA: ARMA + Differencing**
 
-> ARIMA improves upon ARMA by adding the **"Integrated" (I)** component, which involves differencing the data (e.g., subtracting a value from its previous value) to make it **stationary** — a key assumption for accurate modelling.
+> ARIMA improves upon ARMA by adding the **"Integrated" (I)** component, which involves differencing the data (e.g., subtracting a value from its previous value) to make it **stationary** — a key assumption for accurate modeling.
 
 - Notation: **ARIMA(p, d, q)** o p: number of autoregressive terms o d: number of differences o q: number of moving average terms
 
@@ -102,7 +102,7 @@ tags: [note, aml]
 
 > How do we address **model evaluation**? • we will **evaluate a model configuration multiple times via walk-forward validation and report the error as the average error across each evaluation.**
 >
-> From the multiple repeats, we will summarise the performance by using summary statistics (mean and std deviation) and/or plotting.
+> From the multiple repeats, we will summarize the performance by using summary statistics (mean and std deviation) and/or plotting.
 
 ---
 > [[AML 56 - Interpretability and Explainability in AI|← Interpretability and Explainability in AI]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 58 - Introduction to Natural Language Processing (NLP)|Introduction to Natural Language Processing (NLP) →]]

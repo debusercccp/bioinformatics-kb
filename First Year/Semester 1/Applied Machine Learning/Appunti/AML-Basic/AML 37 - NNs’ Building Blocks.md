@@ -34,7 +34,7 @@ tags: [note, aml]
 
 1.  **A** **dataset of people,** where we consider e.g. each person’s age, ZIP code, and income.
 
-> Each person can be characterised as a **vector** of **3** **values** (3 attributes), and thus an entire dataset of 100k people can be stored in a **2D tensor of shape** (100’000, 3).
+> Each person can be characterized as a **vector** of **3** **values** (3 attributes), and thus an entire dataset of 100k people can be stored in a **2D tensor of shape** (100’000, 3).
 
 2.  **A dataset of text documents**, where we represent each document by the counts of how many times each word appears in it (out of a dictionary of e.g. 20k common words).
 
@@ -66,19 +66,19 @@ tags: [note, aml]
 
 - **the channels-last convention** (e.g. used by TensorFlow). it places the color-depth axis at the end: (samples, height, width, color_depth)
 
-- **the channels-first convention** (e.g. used by Theano). it places the colour depth axis right after the batch axis: (samples, color_depth, height, width).
+- **the channels-first convention** (e.g. used by Theano). it places the color depth axis right after the batch axis: (samples, color_depth, height, width).
 
 - And the Keras framework? Needless to say, it provides support for both formats.
 
 > **Video data**
 >
-> A video can be interpreted as a sequence of frames, each frame being a colour image → a vector of 4D image data tensors → 5D video data tensors
+> A video can be interpreted as a sequence of frames, each frame being a color image → a vector of 4D image data tensors → 5D video data tensors
 
 ![[AML-image252.jpg|468]]
 
 > **Tensor Operations**
 >
-> Any computer program does what it does, if reduced to its core actions, via a combination of a relatively small set of binary operations on binary inputs. For example, take bits and perform combinations of ANDs, Ors, NORs. Every operation in a neural network is a **tensor operation** (like dot product, addition, activation). These operations have a **geometric interpretation**:
+> Any computer program does what it does, if reduced to its core actions, via a combination of a relatively small set of binary operations on binary inputs. For example, take bits and perform combinations of ANDs, ORs, NORs. Every operation in a neural network is a **tensor operation** (like dot product, addition, activation). These operations have a **geometric interpretation**:
 
 - **Tensors** are multi-dimensional arrays, representing data.
 
@@ -106,7 +106,7 @@ tags: [note, aml]
 
 > **From a geometric interpretation of tensor operations**
 >
-> We are considering a **combination** of **tensor** **operation**, in a very **high dimensional complex space**, that is a long series of operation. Output inside data, visually we can thigh this as a process that is trying to find from the **input** the **output** that is a bit clear. Steb by step going from a paper bowl, then many operations to try to unnoble it ad extract many paper layers, applying them **one** **after** **the** **others**, sequentially going from one to the others. If I change the operations, I can go to the right and wrong direction.
+> We are considering a **combination** of **tensor** **operation**, in a very **high dimensional complex space**, that is a long series of operation. Output inside data, visually we can thigh this as a process that is trying to find from the **input** the **output** that is a bit clear. Step by step going from a paper ball, then many operations to try to uncrumple it and extract many paper layers, applying them **one** **after** **the** **others**, sequentially going from one to the others. If I change the operations, I can go to the right and wrong direction.
 >
 > The tensors’ content can be interpreted as **point coordinates in some geometric space** → tensor operations have a geometric interpretation
 

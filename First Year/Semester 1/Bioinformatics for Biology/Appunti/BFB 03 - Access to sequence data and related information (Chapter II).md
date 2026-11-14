@@ -12,7 +12,7 @@ tags: [note, bfb]
 
 ## 3.1 A global and redundant technostructure
 
-Sequence databases are organised as an international, deliberately redundant infrastructure: the **International Nucleotide Sequence Database Collaboration (INSDC)**, formed by three partners that mirror each other’s content.
+Sequence databases are organized as an international, deliberately redundant infrastructure: the **International Nucleotide Sequence Database Collaboration (INSDC)**, formed by three partners that mirror each other’s content.
 
 | Institution | Location | Main resources |
 |:---|:---|:---|
@@ -24,19 +24,19 @@ Redundancy here is a feature, not a defect: each node holds a copy of the nucleo
 
 ## 3.2 The NCBI sequence database: nr and RefSeq
 
-The NCBI sequence database, formerly known as **Entrez**, is organised in two main collections that differ in *how* the sequences got in. This distinction is the central concept of the chapter.
+The NCBI sequence database, formerly known as **Entrez**, is organized in two main collections that differ in *how* the sequences got in. This distinction is the central concept of the chapter.
 
 |  | **nr** | **RefSeq** |
 |:---|:---|:---|
 | Name | non-redundant sequences | reference sequences |
-| Content criterion | Anything submitted by recognised institutions | Manually curated records |
+| Content criterion | Anything submitted by recognized institutions | Manually curated records |
 | Proteins | ~1,100,000,000 | 495,290,394 |
 | Nucleotides | ~130,000,000 | 86,067,871 |
 | Organisms | ~580,000 | 184,752 |
 
 ### 3.2.1 nr — non-redundant sequences
 
-- **What it is**: the archival, submission-driven collection. Any sequence submitted by a recognised institution ends up here, with no curation of its biological content.
+- **What it is**: the archival, submission-driven collection. Any sequence submitted by a recognized institution ends up here, with no curation of its biological content.
 - **Why “non-redundant”**: identical sequences submitted multiple times are collapsed into a single entry (so the *sequence* is not duplicated), but this is a technical de-duplication only. It does **not** mean that one gene has one record: the same gene can be represented by many different, partially overlapping, differently annotated submissions.
 - **Consequences**: nr is much larger than RefSeq (an order of magnitude more proteins), it is far more heterogeneous in quality, and it includes record types that are intrinsically fragmentary, such as **ESTs** (Expressed Sequence Tags — snapshots of many short, \< 1000 nt, mRNA/cDNA sequences).
 - **Who submits**: individual labs, sequencing projects, and third-party databases whose identifiers appear inside nr (e.g. SwissProt IDs such as `O14896`).
@@ -47,7 +47,7 @@ The NCBI sequence database, formerly known as **Entrez**, is organised in two ma
 - **What it is**: an expertly curated collection that provides, for a given gene/transcript/protein/genome, *the* stable, agreed-upon “reference” version of the sequence, with its own accession number.
 - **Curation**: records are manually reviewed, which is why RefSeq contains roughly a third fewer organisms than nr and far fewer records: curation does not scale the way submission does.
 - **Properties that matter in practice**: one reference record per biological entity (non-redundant in the *biological* sense, not merely at the level of identical strings); consistent annotation across species; stable identifiers that can be cited in a paper and resolved years later; explicit links between the nucleotide record and the protein it encodes (`NM_` ↔ `NP_`).
-- **When to use it**: whenever you need a defined, citable, unambiguous sequence — designing primers, choosing a canonical transcript, comparing orthologues across species, reporting a variant’s coordinates, building a reproducible pipeline.
+- **When to use it**: whenever you need a defined, citable, unambiguous sequence — designing primers, choosing a canonical transcript, comparing orthologs across species, reporting a variant’s coordinates, building a reproducible pipeline.
 
 ### 3.2.3 RefSeq accession number formats
 
@@ -82,7 +82,7 @@ Two rules to retain:
 | `O14896`       | nr         | Protein, SwissProt identifier      |
 | `1KT7`         | PDB        | Protein Data Bank structure record |
 
-The practical heuristic: a two-letter prefix followed by an underscore (`NC_`, `NM_`, `NP_`, `XM_`…) means RefSeq; anything else — letter-digit combinations without the underscore — comes from the archival submission flow (nr) or from a specialised external database (PDB, SwissProt).
+The practical heuristic: a two-letter prefix followed by an underscore (`NC_`, `NM_`, `NP_`, `XM_`…) means RefSeq; anything else — letter-digit combinations without the underscore — comes from the archival submission flow (nr) or from a specialized external database (PDB, SwissProt).
 
 ## 3.3 Hands-on: querying the NCBI databases
 
@@ -109,7 +109,7 @@ Effect of the operators, with platypus as the example: `Platypus AND membrane` �
 
 Rules for building queries:
 
-- `AND`, `OR`, `NOT` **must be capitalised**.
+- `AND`, `OR`, `NOT` **must be capitalized**.
 - Quotation marks search an exact phrase.
 - Boolean operators are processed left to right; parentheses group terms so they are processed as a unit. `globin AND promoter OR enhancer` → ~31,000 results, while `globin AND (promoter OR enhancer)` → just 66.
 - An asterisk truncates a query: `globin` → 6,777 results in NCBI Nucleotide, `glob*` → 490,358 (including *Chaetomium globosum* and the word “global”).
@@ -121,7 +121,7 @@ Rules for building queries:
 
 - Find chicken ACE2 in NCBI Protein using a filter on the organism, then restrict by molecular weight (`2000:10000[molwt]`) or by sequence length (`30000:50000[Sequence Length]`).
 - Titin (`NP_596869.4`) is the longest human protein, 34,423 amino acids, against an average of ~500.
-- Human beta hemoglobin protein is `NP_000509`. To find the chimpanzee orthologue, either query `chimpanzee[Organism] AND hemoglobin[Title]`, or BLAST the chimpanzee proteome using the human protein ID as query — a good illustration that database querying and sequence similarity search are two complementary routes to the same answer.
+- Human beta hemoglobin protein is `NP_000509`. To find the chimpanzee ortholog, either query `chimpanzee[Organism] AND hemoglobin[Title]`, or BLAST the chimpanzee proteome using the human protein ID as query — a good illustration that database querying and sequence similarity search are two complementary routes to the same answer.
 
 ## Collegamenti
 - [[SATAUMV 09 - Technologies for genomic data generation and data formats]] — FASTQ/SAM/VCF e tecnologie di sequenziamento

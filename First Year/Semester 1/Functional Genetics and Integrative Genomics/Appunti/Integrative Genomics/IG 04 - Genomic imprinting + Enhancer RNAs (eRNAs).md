@@ -6,7 +6,7 @@ order: 4
 tags: [note, ig]
 ---
 
-> [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|← TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 05 - Chromatin and remodelling|Chromatin and remodelling →]]
+> [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|← TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 05 - Chromatin and remodeling|Chromatin and remodeling →]]
 
 # Genomic imprinting
 
@@ -30,7 +30,7 @@ Enhancer elements are **transcribed**. Enhancers:
 - Are marked by **high chromatin accessibility** (DNase hypersensitive sites);
 - Have a high H3K4me1:H3K4me3 ratio together with H3K27ac (H3K4me3 alone is typical of promoters);
 - Show the presence of **RNA Pol II** (assembly of the transcriptional machinery complex);
-- Favour the **pause release of RNA Pol II** through **enhancer–promoter looping**.
+- Favor the **pause release of RNA Pol II** through **enhancer–promoter looping**.
 
 Enhancers can give rise to **non-coding RNAs** (**eRNAs**), a **novel layer** of the enhancer function. eRNAs are not universally necessary, but they do **contribute to maintaining enhancer activity (the degree of necessity differs by locus)**; they are **bidirectionally transcribed**, and their expression **positively correlates** with the **mRNAs encoded by nearby genes** (so the eRNA level marks the **activation of the enhancer**, even if this correlation does not prove causality). According to the professor, most eRNAs derive from **lncRNAs** \[note: more precisely, the definitions of eRNA and lncRNA (\> 200 nt) overlap, and the review treats the enhancer-derived lncRNAs together with the eRNAs\], and they are **very poorly conserved** between species. eRNAs have a **low abundance** and are **unstable**, **nuclear**, **chromatin-bound** and very **tissue-specific**.
 
@@ -68,12 +68,12 @@ We already must figure out why lncRNAs are in the cytoplasm: most of the time, w
 
 ### Step by step: eRNA biogenesis and fate
 
-- **Initiation.** TFs bind accessible enhancer DNA (sometimes after nucleosome remodelling) and recruit cofactors and Pol II; the cap-binding complex adds the m7G cap at the 5′ end.
-- **Chromatin permission.** p300/CBP acetylate histones (H3K27ac); KDM6A/B remove H3K27me2/3; PRC1 can increase accessibility with ERα/BRD4. MLL and HDACs suppress eRNA transcription; enhancer DNA hypomethylation favours it.
+- **Initiation.** TFs bind accessible enhancer DNA (sometimes after nucleosome remodeling) and recruit cofactors and Pol II; the cap-binding complex adds the m7G cap at the 5′ end.
+- **Chromatin permission.** p300/CBP acetylate histones (H3K27ac); KDM6A/B remove H3K27me2/3; PRC1 can increase accessibility with ERα/BRD4. MLL and HDACs suppress eRNA transcription; enhancer DNA hypomethylation favors it.
 - **Elongation.** BRD4 reads acetylated histones and helps Pol II elongate; a signal-dependent checkpoint is released when DNA-PKcs phosphorylates KAP1, freeing P-TEFb (CDK9) from 7SK snRNP.
 - **Termination.** The **Integrator** complex (endonuclease INTS11) cleaves the nascent transcript at the 3′ end; WDR82 with CPF also releases eRNA from Pol II. Loss of either causes unprocessed eRNAs.
 - **Decay.** The nuclear exosome targeting complex (NEXT) degrades the 3′ end; short 2D-eRNAs lack a poly(A) signal near the TSS, so they are degraded fast.
-- **Modification.** m6A is added co-transcriptionally by **METTL3–METTL14–WTAP** (and removed by **ALKBH5**); m5C by PGC-1α/**NSUN7** stabilises eRNAs. p300 acetylates METTL3 to spatially limit m6A deposition.
+- **Modification.** m6A is added co-transcriptionally by **METTL3–METTL14–WTAP** (and removed by **ALKBH5**); m5C by PGC-1α/**NSUN7** stabilizes eRNAs. p300 acetylates METTL3 to spatially limit m6A deposition.
 
 ---
-> [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|← TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 05 - Chromatin and remodelling|Chromatin and remodelling →]]
+> [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|← TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter]] · [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 05 - Chromatin and remodeling|Chromatin and remodeling →]]

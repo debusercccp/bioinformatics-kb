@@ -14,7 +14,7 @@ tags: [note, aml]
 >
 > ![[AML-image269.jpg|320]]
 >
-> The training set is **splitted into subsets**: the first one is used to **train** the **first layer**, the second one is used to create the training set used to **train** the **second layer** ( using predictions made by the predictors of the first layer), the third one is used to create the training set to train the **third layer** (using predictions made by the predictors of the second layer).
+> The training set is **split into subsets**: the first one is used to **train** the **first layer**, the second one is used to create the training set used to **train** the **second layer** ( using predictions made by the predictors of the first layer), the third one is used to create the training set to train the **third layer** (using predictions made by the predictors of the second layer).
 
 ![[AML-image270.jpg|642]]
 
@@ -44,7 +44,7 @@ tags: [note, aml]
 
 - “**some neurons work on larger visual areas**”: they have larger receptive fields, and they react to more complex patterns that are combinations of the lower-level patterns.
 
-> These observations led a classification of **higher-level** and **lower-level neurons**, and to the idea that higher-level ones are based on the outputs of neighbouring lower- level ones (see Figure). This powerful architecture is able to detect all sorts of complex patterns in any area of the visual field.
+> These observations led a classification of **higher-level** and **lower-level neurons**, and to the idea that higher-level ones are based on the outputs of neighboring lower- level ones (see Figure). This powerful architecture is able to detect all sorts of complex patterns in any area of the visual field.
 >
 > Summary:
 >
@@ -56,7 +56,7 @@ tags: [note, aml]
 
 > These studies of the visual cortex inspired the **neocognitron**, introduced in 1980 \[RefFukushima\], which gradually evolved into what we now call a **convolutional neural networ**k. Were later introduced two new building blocks: **convolutional layers** and **pooling layers**.
 >
-> N.B. : since for larger imagers a huge number of parameters is required, a deep neural network with fully connected layers wouldn’t be enough. **MNIST** has 28x28 images. A 100×100 image has 10,000 pixels, so with aNN with 1,000 neurons in the first layer and beyond, one easily get to millions of connections, and that’s just the first layer.
+> N.B. : since for larger images a huge number of parameters is required, a deep neural network with fully connected layers wouldn’t be enough. **MNIST** has 28x28 images. A 100×100 image has 10,000 pixels, so with aNN with 1,000 neurons in the first layer and beyond, one easily get to millions of connections, and that’s just the first layer.
 >
 > **Convolution**
 >
@@ -305,7 +305,7 @@ tags: [note, aml]
 <li><p>Overfitting happens when a model performs well on training data but fails to generalize to new, unseen data. One core reason is too little training data.</p></li>
 <li><p>In theory, with infinite diverse training data, a model wouldn't overfit. But in practice, it's hard and expensive to collect more real data.</p></li>
 </ul>
-<p>Data augmentation is a strategy to artificially increase the size and diversity of your training dataset — using your existing data.You create realistic variations of your training data through transformations that don’t change the class label. The idea: a slightly rotated image of a cat is still a cat. These new samples are meant to help the model learn robustness to natural variations.</p>
+<p>Data augmentation is a strategy to artificially increase the size and diversity of your training dataset — using your existing data. You create realistic variations of your training data through transformations that don’t change the class label. The idea: a slightly rotated image of a cat is still a cat. These new samples are meant to help the model learn robustness to natural variations.</p>
 <table style="width:85%;">
 <colgroup>
 <col style="width: 35%" />

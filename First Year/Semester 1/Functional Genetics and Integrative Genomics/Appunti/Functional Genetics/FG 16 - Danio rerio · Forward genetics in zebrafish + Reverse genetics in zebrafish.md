@@ -26,11 +26,11 @@ The forward-genetics approach in zebrafish is almost the same as in *Drosophila*
 
 ### TILLING – Targeting Induced Local Lesions IN Genomes
 
-- **First step**: creation of a **mutagenised population** (ENU).
+- **First step**: creation of a **mutagenized population** (ENU).
 
 - **Aim**: reduce the time and cost of mutation detection using DNA sequencing.
 
-- A **high-throughput** approach to identify **SNPs and/or indels** in a gene (or genes) of interest within a mutagenised population.
+- A **high-throughput** approach to identify **SNPs and/or indels** in a gene (or genes) of interest within a mutagenized population.
 
 - Large libraries have to be screened, but they give **several allelic series with random mutations** → a very good **genotype–phenotype correlation** (from hypomorphs to amorphs, cf. Müller’s classification).
 
@@ -38,7 +38,7 @@ The forward-genetics approach in zebrafish is almost the same as in *Drosophila*
 
 - **Disadvantage**: the mutations are **introduced randomly**.
 
-**Which regions are analysed.** Lesions in the library are identified by analysing **PCR amplicons** spanning the genomic regions of interest — typically **early exons**, or exons coding **critical functional domains**, where a nonsense mutation would very likely be inactivating.
+**Which regions are analyzed.** Lesions in the library are identified by analyzing **PCR amplicons** spanning the genomic regions of interest — typically **early exons**, or exons coding **critical functional domains**, where a nonsense mutation would very likely be inactivating.
 
 ![[FG-image53.png|576]]
 
@@ -46,7 +46,7 @@ The forward-genetics approach in zebrafish is almost the same as in *Drosophila*
 
 **The procedure:**
 
-- ENU-mutagenised males are crossed to wild-type females; from each **F1** fish **DNA is isolated** (fin biopsy) and sperm is usually cryopreserved.
+- ENU-mutagenized males are crossed to wild-type females; from each **F1** fish **DNA is isolated** (fin biopsy) and sperm is usually cryopreserved.
 
 - **1. PCR** of the gene of interest → **2. denaturation** → **3. re-annealing**: if the fish is heterozygous, wild-type and mutant strands pair into **heteroduplexes** with a mismatch.
 

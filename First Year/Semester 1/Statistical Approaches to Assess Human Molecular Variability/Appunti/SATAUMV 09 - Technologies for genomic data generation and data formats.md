@@ -26,13 +26,13 @@ The classes of variation described in Section 1.2 cannot all be typed with the s
 
 ## 9.2 Sanger sequencing: first generation
 
-**Chain-termination sequencing:** fluorescently labelled **dideoxynucleotides (ddNTPs)** are incorporated into the growing DNA strand and act as chain terminators. A ddNTP lacks the oxygen (OH group) on the 3′ carbon, so no further nucleotide can be attached and synthesis terminates right after its incorporation. The method has five steps:
+**Chain-termination sequencing:** fluorescently labeled **dideoxynucleotides (ddNTPs)** are incorporated into the growing DNA strand and act as chain terminators. A ddNTP lacks the oxygen (OH group) on the 3′ carbon, so no further nucleotide can be attached and synthesis terminates right after its incorporation. The method has five steps:
 
 - **Primer annealing and chain extension:** a primer anneals to the template and the polymerase extends the new strand.
 - **ddNTP binding and chain termination:** whenever a ddNTP is incorporated instead of a normal dNTP, extension stops.
-- **Fluorescently labelled DNA sample:** the result is a set of fragments of every length, each ending with a labelled ddNTP (one colour per base: G, A, T, C).
-- **Capillary electrophoresis and fluorescence detection:** fragments are separated by size, a laser excites the label and a detector reads the colour.
-- **Sequencing analysis and reconstruction:** the sequence of colours (chromatogram peaks, e.g. G A C T A G) is read as the base sequence.
+- **Fluorescently labeled DNA sample:** the result is a set of fragments of every length, each ending with a labeled ddNTP (one color per base: G, A, T, C).
+- **Capillary electrophoresis and fluorescence detection:** fragments are separated by size, a laser excites the label and a detector reads the color.
+- **Sequencing analysis and reconstruction:** the sequence of colors (chromatogram peaks, e.g. G A C T A G) is read as the base sequence.
 
 Typical performance: **96- or 384-well plates**, reads of **up to 1 kb** of DNA, **accuracy greater than 99%**.
 
@@ -45,8 +45,8 @@ Typical performance: **96- or 384-well plates**, reads of **up to 1 kb** of DNA,
 ![[SATAUMV-image22.png|179]]A **SNP-chip microarray** uses DNA probes fixed on a solid matrix to genotype millions of SNPs/SNVs across the genome simultaneously.
 
 - The array contains **beads** on which **allele-specific oligonucleotide probes** are immobilized (50-nt SNV-specific primers; 3 µm beads sit in wells of a silicon wafer, built by photolithography: photoresist, plasma etching, cleaning).
-- **Fragmented DNA** (whole-genome amplified) binds by complementarity to the probes; a **single-base extension reaction** then incorporates **fluorescent-labelled ddNTPs**.
-- A **detection system** records the **hybridization signals**; the intensity of the signal conveys the genotype at each analysed locus. In the slide figure, one dominant colour indicates a homozygote for that allele and both colours indicate a heterozygote.
+- **Fragmented DNA** (whole-genome amplified) binds by complementarity to the probes; a **single-base extension reaction** then incorporates **fluorescent-labeled ddNTPs**.
+- A **detection system** records the **hybridization signals**; the intensity of the signal conveys the genotype at each analyzed locus. In the slide figure, one dominant color indicates a homozygote for that allele and both colors indicate a heterozygote.
 
 ![[SATAUMV-image23.png|624]]
 
@@ -55,7 +55,7 @@ Typical performance: **96- or 384-well plates**, reads of **up to 1 kb** of DNA,
 | **Pros** | **Cons** |
 |:---|:---|
 | **High-throughput, cost-effective:** hundreds of thousands to millions of markers across the genome | **Only known SNVs:** not all variability is captured and no new variants can be discovered |
-| **Large-scale population studies:** large numbers of samples can be analysed | **Ascertainment bias** (non-random choice of SNPs): SNPs detected mainly in some populations; SNPs at moderate to high frequencies; tag SNPs with reduced LD |
+| **Large-scale population studies:** large numbers of samples can be analyzed | **Ascertainment bias** (non-random choice of SNPs): SNPs detected mainly in some populations; SNPs at moderate to high frequencies; tag SNPs with reduced LD |
 | **Versatile:** flexibility with custom content | **Only common variants:** rare variants are not detected |
 
 ## 9.4 PLINK data format
@@ -96,10 +96,10 @@ Binary files are much more compact and faster to read; conversion in both direct
 
 - **DNA fragmentation and library preparation:** genomic DNA is fragmented into short pieces of specific size (150–200 bp); the ends are repaired, an A overhang is added and "forward" and "reverse read" **adapters** are ligated at both ends of each fragment. Adapters allow binding to the flow cell and provide the binding sites for the **primers** needed during amplification and sequencing.
 - **Bridge amplification and cluster generation:** fragments attached to the flow-cell surface are amplified locally through **bridge amplification**, producing **clusters of identical DNA molecules** with hundreds of copies of each original fragment (about 1000 molecules per cluster, millions of clusters, each ≤ 1 µm). A sequencing primer is then annealed.
-- **Sequencing:** in each cluster a DNA polymerase incorporates **fluorescently labelled terminating nucleotides** into the growing strand. The fluorescent signal is recorded by imaging the clusters and its **colour identifies which base was added**; the terminator is then removed (deblock) and the cycle repeats to extend the strand. The process continues for all the copies of each cluster, so **multiple sequencing reads** are obtained for each single DNA fragment.
+- **Sequencing:** in each cluster a DNA polymerase incorporates **fluorescently labeled terminating nucleotides** into the growing strand. The fluorescent signal is recorded by imaging the clusters and its **color identifies which base was added**; the terminator is then removed (deblock) and the cycle repeats to extend the strand. The process continues for all the copies of each cluster, so **multiple sequencing reads** are obtained for each single DNA fragment.
 - ![[SATAUMV-image27.png|247]]**Alignment and data analysis:** the sequencing reads are **mapped and aligned** to a **reference genome** and **variant calling** is then performed. The slide figure shows reads carrying a *known SNV* and an *unknown SNV* relative to the reference sequence.
 
-The chemistry is therefore related to Sanger sequencing (labelled terminating nucleotides), but it is run in cycles and in millions of clusters in parallel on the same flow cell.
+The chemistry is therefore related to Sanger sequencing (labeled terminating nucleotides), but it is run in cycles and in millions of clusters in parallel on the same flow cell.
 
 ## 9.7 From reads to variants: the NGS workflow
 
@@ -218,7 +218,7 @@ Second example, from the alignment-section slide: FLAG = 113, POS = 497, MAPQ = 
 
 ## 9.11 Variant calling and the VCF format
 
-**Variant calling** identifies genetic variants, i.e. the differences in DNA sequence between the reference genome and the analysed samples, based on the aligned reads (SAM/BAM/CRAM files in; VCF, or its binary version BCF, out). For each identified polymorphism a **genotype** is assigned to each individual from the combination of reference and/or alternative alleles observed, according to ploidy (diploid, **n** = 2: Ref/Ref, Ref/Alt, Alt/Alt).
+**Variant calling** identifies genetic variants, i.e. the differences in DNA sequence between the reference genome and the analyzed samples, based on the aligned reads (SAM/BAM/CRAM files in; VCF, or its binary version BCF, out). For each identified polymorphism a **genotype** is assigned to each individual from the combination of reference and/or alternative alleles observed, according to ploidy (diploid, **n** = 2: Ref/Ref, Ref/Alt, Alt/Alt).
 
 ![[SATAUMV-image32.png|624]]
 
@@ -227,7 +227,7 @@ Second example, from the alignment-section slide: FLAG = 113, POS = 497, MAPQ = 
 
 Note: REF/ALT are defined only with respect to the reference genome and **do not necessarily correspond to ANC/DER**. The reference base can be the derived allele, and polarizing alleles into ancestral and derived requires additional information (see Section 4.3).
 
-**VCF** (Variant Call Format) files are tab-delimited text files that store the **genotype and variant information for all the analysed samples**. They have two parts: a **header section** with the metadata and the **body**, with actual information on the detected variants.
+**VCF** (Variant Call Format) files are tab-delimited text files that store the **genotype and variant information for all the analyzed samples**. They have two parts: a **header section** with the metadata and the **body**, with actual information on the detected variants.
 
 - **Header:** lines starting with `##`. They include the mandatory format line (`##fileformat=VCFv4.2`), the `##contig` lines (chromosomes and lengths) and the `##INFO` and `##FORMAT` lines, which describe (ID, Number, Type, Description) the annotations used in the body. The last header line starts with `#CHROM` and gives the names of the columns of the body.
 - **Body:** one row per variant, with **9 mandatory columns** followed by one column per sample.

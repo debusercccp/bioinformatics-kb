@@ -116,7 +116,7 @@ How does GD converge with a fixed step size α? The derivative approaches 0 as w
 
 ## Collegamenti
 - [[MBD 15 - Module 4 – Calculus in One Variable · Extreme points]] — punti estremi, derivata nulla
-- [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation]] — Hessiana e natura dei punti critici
+- [[MBD 19 - Module 5 – Calculus in More Variables and Optimization]] — Hessiana e natura dei punti critici
 
 ---
 > [[AML 05 - Univariate Model Regression · Gradient Descent Algorithm|← Univariate Model Regression · Gradient Descent Algorithm]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 07 - Univariate Model Regression · Applying GD to Linear Regression + Batch Gradient Descent (bgd)|Univariate Model Regression · Applying GD to Linear Regression + Batch Gradient Descent (bgd) →]]

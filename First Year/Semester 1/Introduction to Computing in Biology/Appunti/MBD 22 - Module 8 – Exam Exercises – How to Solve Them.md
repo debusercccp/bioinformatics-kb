@@ -6,7 +6,7 @@ order: 22
 tags: [note, mbd]
 ---
 
-> [[MBD 21 - Module 7 – Distributions|← Module 7 – Distributions]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation|Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation →]]
+> [[MBD 21 - Module 7 – Distributions|← Module 7 – Distributions]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimization|Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimization →]]
 
 # Module 8 — Exam Exercises: How to Solve Them
 
@@ -15,8 +15,8 @@ The practice exams (Practice 1–5) all have the same structure: **90 minutes, 5
 | Exercise | Topic | Notes sections |
 |:---|:---|:---|
 | 1 | $2 \times 2$ matrix: determinant, inverse, eigenvalues, eigenvectors | §2.6, §3.4–3.5, §3.8 |
-| 2 | Derivatives and optimisation: $f(x)$ in one variable **or** $g(x,y)$ in two variables | §4.4–4.5, §5.1–5.2 |
-| 3 | Constrained optimisation with Lagrange multipliers | §5.4 |
+| 2 | Derivatives and optimization: $f(x)$ in one variable **or** $g(x,y)$ in two variables | §4.4–4.5, §5.1–5.2 |
+| 3 | Constrained optimization with Lagrange multipliers | §5.4 |
 | 4 | Probability: diagnostic test, Bayes’ theorem | §6.5, §8.4 |
 | 5 | Distributions (binomial, Poisson) **or** covariance and correlation of two genes | §7.3–7.4, §8.5 |
 
@@ -89,4 +89,4 @@ c & d
 *Note:* for a singular matrix the eigenvector of $\lambda = 0$ is a non-trivial element of the **null space** (§3.4): e.g. for P4 it is the vector found on the whiteboard, $c( - 2,1)^{T}$.
 
 ---
-> [[MBD 21 - Module 7 – Distributions|← Module 7 – Distributions]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation|Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation →]]
+> [[MBD 21 - Module 7 – Distributions|← Module 7 – Distributions]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimization|Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimization →]]

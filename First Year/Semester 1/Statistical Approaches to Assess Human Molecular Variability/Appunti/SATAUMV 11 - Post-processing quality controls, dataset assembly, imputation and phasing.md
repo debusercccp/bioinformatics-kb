@@ -45,7 +45,7 @@ Heterozygosity and missingness are best examined **jointly** (heterozygosity on 
 | Half-siblings (**HS**) | 0.25 | 0.5 | 0.5 | 0 |
 | Unrelated (U) | 0 | 1 | 0 | 0 |
 
-A histogram of **π̂** across all pairs shows clear modes: unrelated pairs cluster near 0, third-degree relatives near ~0.125–0.25, second-degree near ~0.25, first-degree near 0.5 and duplicates near 1. In population-genetic analyses unrelated individuals are usually kept (one of each duplicate pair is removed); in association studies one member of each related pair is typically removed, or relatedness is modelled explicitly.
+A histogram of **π̂** across all pairs shows clear modes: unrelated pairs cluster near 0, third-degree relatives near ~0.125–0.25, second-degree near ~0.25, first-degree near 0.5 and duplicates near 1. In population-genetic analyses unrelated individuals are usually kept (one of each duplicate pair is removed); in association studies one member of each related pair is typically removed, or relatedness is modeled explicitly.
 
 *\[Not in the updated slides, deck 7 NEW\]* **Assigned-sex check.** The homozygosity score on chromosome X is compared with the reported sex: males (XY) are expected to be homozygous at nearly all X-chromosome markers, whereas females (XX) show heterozygosity. Discordant samples are flagged and usually removed (they may indicate sample swaps or contamination).
 

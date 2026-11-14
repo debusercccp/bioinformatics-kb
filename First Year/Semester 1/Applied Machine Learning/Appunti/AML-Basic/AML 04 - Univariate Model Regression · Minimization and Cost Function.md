@@ -138,7 +138,7 @@ Previously, with only one parameter θ1, the cost function was represented as a 
 
 With both θ0 and θ1, each point in the cost function's space corresponds to a line in the hypothesis space (X-Y space).
 
-![[AML-image19.jpg|342]]This is because the combination of θ0 and θ1 defines the equation of the line. The objective is to find the combination of θ0 and θ1 that minimizes the cost function, leading to the best-fit line for the data. The contour plot represents the cost function J in the parameter space defined by θ0 (x-axis) and θ1 (yaxis). The contours on the plot indicate regions of equal cost (J), forming oval shapes.
+![[AML-image19.jpg|342]]This is because the combination of θ0 and θ1 defines the equation of the line. The objective is to find the combination of θ0 and θ1 that minimizes the cost function, leading to the best-fit line for the data. The contour plot represents the cost function J in the parameter space defined by θ0 (x-axis) and θ1 (y-axis). The contours on the plot indicate regions of equal cost (J), forming oval shapes.
 
 In the first example, we assume that smaller houses are priced higher than larger houses, which contradicts common sense. When examining the contour plot of the cost function J, where oval shapes represent regions of equal cost, we observe that the hypothesis line associated with certain θ0 and θ1 values does not fit the data well. This suggests that the parameters are not optimized effectively, resulting in a poor fit of the hypothesis line to the data and a relatively high cost function J.
 

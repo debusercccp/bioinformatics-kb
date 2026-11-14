@@ -6,7 +6,7 @@ order: 21
 tags: [note, aml]
 ---
 
-> [[AML 20 - Model Diagnostics · Model Selections & Tvt Sets|← Model Diagnostics · Model Selections & Tvt Sets]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 22 - Model Diagnostics · Regularisation Bias and Variance|Model Diagnostics · Regularisation Bias and Variance →]]
+> [[AML 20 - Model Diagnostics · Model Selections & Tvt Sets|← Model Diagnostics · Model Selections & Tvt Sets]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 22 - Model Diagnostics · Regularization Bias and Variance|Model Diagnostics · Regularization Bias and Variance →]]
 
 # Bias and Variance
 
@@ -61,4 +61,4 @@ It occurs when both the **training error** and the **validation error** **remain
 > ![[AML-image117.jpg|491]]
 
 ---
-> [[AML 20 - Model Diagnostics · Model Selections & Tvt Sets|← Model Diagnostics · Model Selections & Tvt Sets]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 22 - Model Diagnostics · Regularisation Bias and Variance|Model Diagnostics · Regularisation Bias and Variance →]]
+> [[AML 20 - Model Diagnostics · Model Selections & Tvt Sets|← Model Diagnostics · Model Selections & Tvt Sets]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 22 - Model Diagnostics · Regularization Bias and Variance|Model Diagnostics · Regularization Bias and Variance →]]

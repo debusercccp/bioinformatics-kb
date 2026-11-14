@@ -28,7 +28,7 @@ tags: [note, aml]
 
 **Advanced Layouts & Subplots**
 
-- **Multiple plots in one figure** *plt.subplots(ntows, ncols)*
+- **Multiple plots in one figure** *plt.subplots(nrows, ncols)*
 
 - **Adjust spacing** *fig.tight_layout()*
 
@@ -92,7 +92,7 @@ Once we have a general understanding of our data content, the next step is to in
 
 An important step in the initial stage is to check if there are **missing values**.
 
-**Note:** sometimes this is not enough, and spotting missings is more tricky.
+**Note:** sometimes this is not enough, and spotting missing values is more tricky.
 
 For example, some data have missing values encoded as *weird* values. This means they use values that are out of scale with respect to normal feature values, e.g.:
 
@@ -104,7 +104,7 @@ For example, some data have missing values encoded as *weird* values. This means
 
 - carefully inspect data
 
-- ...if you are sharing data: please provide comprehensive documentation to maximise re-use!
+- ...if you are sharing data: please provide comprehensive documentation to maximize re-use!
 
 Another aspect you may want to check are **unique values**. This is helpful to check data consistency and uncover unexpected patterns.
 
@@ -267,7 +267,7 @@ The *scikit-learn* library provides two standard idioms for transforming data. E
 
 - Combined Fit-And-Transform
 
-After importing the datas, procedure continues with:
+After importing the data, procedure continues with:
 
 1.  Rescale data: You can rescale your data using scikit-learn using the MinMaxScaler class
 
@@ -383,7 +383,7 @@ Common steps include:
 
 > Scegli un'alternativa:
 
-1.  Jupyter requires network to be be used
+1.  Jupyter requires network to be used
 
 2.  Jupyter allows to create and share code, plots, documents
 
@@ -459,7 +459,7 @@ Common steps include:
 
 3.  It may cause underfitting
 
-4.  The training may become very quick but displaying an erratic behaviour
+4.  The training may become very quick but displaying an erratic behavior
 
 <!-- -->
 
@@ -495,7 +495,7 @@ Common steps include:
 
 > Scegli un'alternativa:
 
-1.  Not so many packages are available, the only choise would be Matplotlib
+1.  Not so many packages are available, the only choice would be Matplotlib
 
 2.  Many python packages are available, an example is Matplotlib
 

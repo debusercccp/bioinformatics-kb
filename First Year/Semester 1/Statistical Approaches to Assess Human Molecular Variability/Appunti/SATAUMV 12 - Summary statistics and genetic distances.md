@@ -45,7 +45,7 @@ The two simplest statistics are:
 
 ![[SATAUMV-image47.png|415]]
 
-In the example, six sequences of 16 nucleotides differ at three positions (4, 12 and 15), so **S = 3**. The alleles at these sites form three distinct combinations — AGT (2 sequences), GTA (3 sequences) and AGA (1 sequence) — so **k = 3**. Both **S** and **k** are **highly dependent on sample and sequence size**: the more (and the longer) the sequences analysed, the more segregating sites and haplotypes are found, so they cannot be compared directly between samples of different size.
+In the example, six sequences of 16 nucleotides differ at three positions (4, 12 and 15), so **S = 3**. The alleles at these sites form three distinct combinations — AGT (2 sequences), GTA (3 sequences) and AGA (1 sequence) — so **k = 3**. Both **S** and **k** are **highly dependent on sample and sequence size**: the more (and the longer) the sequences analyzed, the more segregating sites and haplotypes are found, so they cannot be compared directly between samples of different size.
 
 ## 12.3 Nucleotide diversity and gene (haplotype) diversity
 

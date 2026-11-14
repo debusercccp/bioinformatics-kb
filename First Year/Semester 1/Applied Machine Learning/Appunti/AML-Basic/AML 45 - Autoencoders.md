@@ -6,7 +6,7 @@ order: 45
 tags: [note, aml]
 ---
 
-> [[AML 44 - Dimensionality Reduction Algorithms – LLE + Visualising Feature Maps, Filters and Class Outputs|← Dimensionality Reduction Algorithms – LLE + Visualising Feature Maps, Filters and Class Outputs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 46 - AE architectural choice + Recurrent Neural Network (RNNs)|AE architectural choice + Recurrent Neural Network (RNNs) →]]
+> [[AML 44 - Dimensionality Reduction Algorithms – LLE + Visualizing Feature Maps, Filters and Class Outputs|← Dimensionality Reduction Algorithms – LLE + Visualizing Feature Maps, Filters and Class Outputs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 46 - AE architectural choice + Recurrent Neural Network (RNNs)|AE architectural choice + Recurrent Neural Network (RNNs) →]]
 
 # Autoencoders
 
@@ -24,7 +24,7 @@ tags: [note, aml]
 
 > The encoder and decoder do not talk to each other, the encoder compresses the input and reproduces the code, the decoder uses the code and reconstructs the input, yielding the output. To build an AE we need an **encoding method**, a decoding method, a loss function to compare the output with the target.
 >
-> AE is not gzip, so it is not only a dimensionality reduction algorithm we have specific peculiar properties. Ato think of it as a compression we must consider:
+> AE is not gzip, so it is not only a dimensionality reduction algorithm we have specific peculiar properties. To think of it as a compression we must consider:
 
 - **data-specific**: w.r.t. standard data compression algorithms, AEs learn features specific for the given training data, so they are only able to meaningfully compress data like what they have been trained on. of course, the zipping procedure or compression procedures is a compression that learns. It’s like a degraded representation of the input. So, we don’t get exactly the first thing.
 
@@ -84,11 +84,11 @@ tags: [note, aml]
 >
 > Every time you have a layer, these layers are callable at the very end of the first layer.
 >
-> Model fil: there are no labels, this is self-supervised. The target of the autoencoders would be the same of the inputs.
+> Model fit: there are no labels, this is self-supervised. The target of the autoencoders would be the same of the inputs.
 
 ![[AML-image323.jpg|642]]
 
 > You can see the output here. At most we have 209968 parameters. This is drawn horizontally usually. You can do the summary not vertically but horizontally. There are ways to make your autoencoders deeper, to get a higher quality for your code.
 
 ---
-> [[AML 44 - Dimensionality Reduction Algorithms – LLE + Visualising Feature Maps, Filters and Class Outputs|← Dimensionality Reduction Algorithms – LLE + Visualising Feature Maps, Filters and Class Outputs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 46 - AE architectural choice + Recurrent Neural Network (RNNs)|AE architectural choice + Recurrent Neural Network (RNNs) →]]
+> [[AML 44 - Dimensionality Reduction Algorithms – LLE + Visualizing Feature Maps, Filters and Class Outputs|← Dimensionality Reduction Algorithms – LLE + Visualizing Feature Maps, Filters and Class Outputs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 46 - AE architectural choice + Recurrent Neural Network (RNNs)|AE architectural choice + Recurrent Neural Network (RNNs) →]]

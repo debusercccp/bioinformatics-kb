@@ -10,7 +10,7 @@ tags: [note, aml]
 
 # Handling Long Sequences: Part 2
 
-> **Batch normalisation**
+> **Batch normalization**
 >
 > BN is typically applied:
 
@@ -20,11 +20,11 @@ tags: [note, aml]
 
 > it consists of adding an operation in the model just before or after the activation function of each hidden layer
 
-- this operation simply **zero-centres** and **normalizes** each input, then it scales and shifts the result **using two new parameter vectors** per layer: one for scaling, the other for shifting ( in other words, this operation lets the model learn the optimal scale and mean of each of the layer’s inputs)
+- this operation simply **zero-centers** and **normalizes** each input, then it scales and shifts the result **using two new parameter vectors** per layer: one for scaling, the other for shifting ( in other words, this operation lets the model learn the optimal scale and mean of each of the layer’s inputs)
 
-- In many cases, if you add a **BN** **layer** as the very first layer of your NN, you do not need to standardise your training set (e.g. using a StandardScaler in sklearn), as the BN layer will do it for you.
+- In many cases, if you add a **BN** **layer** as the very first layer of your NN, you do not need to standardize your training set (e.g. using a StandardScaler in sklearn), as the BN layer will do it for you.
 
-> In order to zero-centre and normalize the inputs, the BN algo needs to estimate each input’s mean and standard deviation: It does so by evaluating mean and standard deviation of each input over the current mini-batch (hence the name “Batch” Normalization).
+> In order to zero-center and normalize the inputs, the BN algo needs to estimate each input’s mean and standard deviation: It does so by evaluating mean and standard deviation of each input over the current mini-batch (hence the name “Batch” Normalization).
 
 ![](media/media/image3020.jpg)
 
@@ -40,13 +40,13 @@ tags: [note, aml]
 
 - For **convolutional layers**, BN is typically applied across each **channel**, not per-pixel
 
-> You may find that **training is rather slow**, because each epoch takes much more time **when you use Batch Normalisation**. This is usually counterbalanced by the fact that convergence is much faster with BN, so it will take fewer epochs to reach the same performance.
+> You may find that **training is rather slow**, because each epoch takes much more time **when you use Batch Normalization**. This is usually counterbalanced by the fact that convergence is much faster with BN, so it will take fewer epochs to reach the same performance.
 
 ## ALLEVIATING THE UNSTABLE GRADIENT PROBLEM FOR RNNs
 
 > Many of the tricks used in Deep NNs to alleviate the unstable gradients problem can also be used for RNNs:
 
-- good parameter initialisation
+- good parameter initialization
 
 - faster optimizers
 
@@ -146,7 +146,7 @@ tags: [note, aml]
 
 - In practice, **this does not yield good results.**
 
-> **Layer Normalisation**
+> **Layer Normalization**
 >
 > Instead of normalizing across the **batch dimension**, it normalizes across the **features** **dimension**. One advantage is that it can compute the required statistics on the fly, at each time step, independently for each instance.
 

@@ -10,7 +10,7 @@ tags: [note, sataumv]
 
 # Summary of the main points
 
-- Humans are 99.9% identical at the DNA level; most variation (about 85%) lies within populations, and SNPs are the most abunda variant type.
+- Humans are 99.9% identical at the DNA level; most variation (about 85%) lies within populations, and SNPs are the most abundant variant type.
 - Four genomic compartments follow different inheritance rules: autosomes (recombine), X (recombines in women only), Y (paternal, non-recombining) and mtDNA (maternal, non-recombining).
 - Out-of-Africa expansion with serial founder effects, together with demography, adaptation and culture, explains much of current variation.
 - HWE is the null model: **p²**, **2pq**, **q²**. Departures from it reveal drift, non-random mating, mutation, gene flow or selection.
@@ -26,7 +26,7 @@ tags: [note, sataumv]
 - **Quality control** is performed per individual (missingness with --mind, heterozygosity with --het, relatedness with --genome via **PI_HAT** = **Z2** + 0.5·**Z1**, sex check) and per marker (missingness with --geno, HWE with --hwe, MAF with --maf); heterozygosity and missingness are best inspected jointly to detect contamination (high heterozygosity), inbreeding (low heterozygosity) and poor-quality samples (high missingness).
 - **Dataset assembly** merges multiple QCed datasets with PLINK --merge/--bmerge (union by default; intersection via --extract); key issues are batch effects (detected by PCA or hierarchical clustering and removed), non-overlapping variant sets, and reference-genome inconsistencies (resolved by LiftOver and harmonization of rsIDs, chromosome coding and positions).
 - **LD pruning** (--indep-pairwise window step **r²**) removes markers in high LD to leave approximately independent sites, producing plink.prune.in and plink.prune.out lists.
-- **Phasing** reconstructs haplotypes from genotypes: trio-based phasing is accurate but requires family data; in unrelateds, Clark's parsimony and EM work for small numbers of tightly linked SNPs, while HMM-based methods using a reference panel are the standard for genome-wide data.
+- **Phasing** reconstructs haplotypes from genotypes: trio-based phasing is accurate but requires family data; in unrelated individuals, Clark's parsimony and EM work for small numbers of tightly linked SNPs, while HMM-based methods using a reference panel are the standard for genome-wide data.
 - *\[Not in the updated slides, deck 7 NEW\]* **Imputation** predicts untyped variants by matching phased haplotypes to a dense reference panel, increasing marker density and power, but its accuracy depends on the representativeness of the panel and is lower for rare variants and underrepresented populations; phasing errors propagate into imputation.
 - **Summary statistics** describe within-population variability: segregating sites (**S**) and number of haplotypes (**k**) depend strongly on sample size, while nucleotide diversity **π** = **n**/(**n** − 1) Σ **xᵢxⱼdᵢⱼ** and gene/haplotype diversity **h** = **n**/(**n** − 1)(1 − Σ **pᵢ²**) are corrected for it; computed in sliding windows they provide a genome-wide baseline for spotting unusually low or high diversity.
 - **Distance matrices** (square, zero diagonal, symmetric, hence shown in triangular form) summarize pairwise differences; **FST** = (**HT** − **HS**)/**HT** = Var(**p**)/\[p̄(1 − p̄)\] is the most used **genetic distance** (Wright: \< 0.05 little, 0.05–0.15 moderate, 0.15–0.25 great, \> 0.25 very great differentiation).

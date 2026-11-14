@@ -6,7 +6,7 @@ order: 23
 tags: [note, aml]
 ---
 
-> [[AML 22 - Model Diagnostics · Regularisation Bias and Variance|← Model Diagnostics · Regularisation Bias and Variance]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 24 - Error Metrics for Skewed Classes|Error Metrics for Skewed Classes →]]
+> [[AML 22 - Model Diagnostics · Regularization Bias and Variance|← Model Diagnostics · Regularization Bias and Variance]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 24 - Error Metrics for Skewed Classes|Error Metrics for Skewed Classes →]]
 
 # Learning Curves
 
@@ -91,4 +91,4 @@ Imagine you've implemented regularized linear regression to forecast housing pri
 - Good to **fix high bias** problems —\> decreasing lambda allows the model to capture more complexity, addressing underfitting.
 
 ---
-> [[AML 22 - Model Diagnostics · Regularisation Bias and Variance|← Model Diagnostics · Regularisation Bias and Variance]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 24 - Error Metrics for Skewed Classes|Error Metrics for Skewed Classes →]]
+> [[AML 22 - Model Diagnostics · Regularization Bias and Variance|← Model Diagnostics · Regularization Bias and Variance]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 24 - Error Metrics for Skewed Classes|Error Metrics for Skewed Classes →]]

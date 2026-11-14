@@ -140,7 +140,7 @@ tags: [note, aml]
 
 - Easy deployment on cloud platforms (AWS SageMaker, GCP Vertex AI, Azure ML)
 
-> Architectural patterns like **microservices** allow models to be served independently. **Eventdriven** systems can trigger retraining when new data arrives. **Serverless** solutions let you pay per inference and scale automatically.
+> Architectural patterns like **microservices** allow models to be served independently. **Event-driven** systems can trigger retraining when new data arrives. **Serverless** solutions let you pay per inference and scale automatically.
 >
 > **Deployment Strategies**
 >

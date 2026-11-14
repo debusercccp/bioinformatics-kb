@@ -28,7 +28,7 @@ The NIH definition is “research, development or application of computational t
 The operational definition used in the course is narrower and more practical:
 
 - Doing biological research with computational tools.
-- Making sense of the huge vastity of biological data.
+- Making sense of the huge vastness of biological data.
 - Problem solving.
 
 A useful framing given in the lecture: bioinformatics *serves* biology, but the bioinformatician does not serve the biologist. The discipline is hands-on and in constant movement (new algorithms, new tools, new data-generating technologies), so the distinction between lesson and lab, theory and practice, is deliberately blurred.

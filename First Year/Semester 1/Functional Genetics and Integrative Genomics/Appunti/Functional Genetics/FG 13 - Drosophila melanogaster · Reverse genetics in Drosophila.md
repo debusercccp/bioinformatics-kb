@@ -32,7 +32,7 @@ Reverse genetics goes **from gene to phenotype**: start from a known gene, chang
 
 **Limit:** insertion is **random**, so each line has the transgene in a different chromatin context (**position effects**) and two constructs cannot be compared directly. This is the problem **ΦC31** solves.
 
-> **Paper — Rubin & Spradling, 1982** (Science 218:348–353): The founding paper of fly transgenesis: *rosy*⁺ cloned in a P element and injected with a transposase source into *rosy* embryos gave stable transformants with fully restored eye colour (20–50% of injected embryos). The helper was then a complete P element (or dysgenic embryos), which could itself jump; the wings-clipped helper came later.
+> **Paper — Rubin & Spradling, 1982** (Science 218:348–353): The founding paper of fly transgenesis: *rosy*⁺ cloned in a P element and injected with a transposase source into *rosy* embryos gave stable transformants with fully restored eye color (20–50% of injected embryos). The helper was then a complete P element (or dysgenic embryos), which could itself jump; the wings-clipped helper came later.
 
 ![[FG-image35.png|394]]
 
@@ -40,7 +40,7 @@ Reverse genetics goes **from gene to phenotype**: start from a known gene, chang
 
 - **Screening:**
 
-  - **rescue of a visible mutant phenotype** that minimally affects viability — adult **eye-colour markers** (*white*, *rosy*, *rough*) and the adult **body-colour marker** *yellow*. All of these **require the corresponding mutant lines** as a background.
+  - **rescue of a visible mutant phenotype** that minimally affects viability — adult **eye-color markers** (*white*, *rosy*, *rough*) and the adult **body-color marker** *yellow*. All of these **require the corresponding mutant lines** as a background.
 
   - **fluorescent-protein-based markers**, e.g. **3xP3-EGFP**, driven by an artificial eye promoter — these do not require a mutant background.
 
@@ -64,7 +64,7 @@ P-element insertion is **random**, so two transgenic lines are never strictly co
 >
 > **Why it is irreversible, and how it differs from Cre and FLP.** Recombination produces the hybrid sites **attL** and **attR**, chimeras of the two parental ones, which the integrase alone does not recognize as substrates: catalyzing the reverse reaction requires a separate phage cofactor, the **RDF** (recombination directionality factor, gp3), which is absent from the system. This is the opposite of **Cre/loxP** and **FLP/FRT**, where the two sites are **identical** and the product is still a substrate: the reaction is at equilibrium and, for reasons of local concentration, excision dominates over integration. Hence Cre and FLP are used to **remove** DNA and ΦC31 to **insert** it.
 >
-> **A detail on the landing site.** 3xP3 is an artificial promoter (three Pax6 sites upstream of a minimal TATA) driving RFP in the eyes; being floxed, the marker can be removed with Cre after integration, which matters because two fluorescent markers in the same animal are hard to tell apart. Supplying the integrase as **injected mRNA** has the advantage of being transient: the enzyme disappears and cannot catalyse anything else.
+> **A detail on the landing site.** 3xP3 is an artificial promoter (three Pax6 sites upstream of a minimal TATA) driving RFP in the eyes; being floxed, the marker can be removed with Cre after integration, which matters because two fluorescent markers in the same animal are hard to tell apart. Supplying the integrase as **injected mRNA** has the advantage of being transient: the enzyme disappears and cannot catalyze anything else.
 
 **The widely used system (Bischof et al., PNAS 2007).** The donor is **pUASTattB**, carrying the *white* marker, a loxP site, the UAS–MCS–SV40 cassette and *attB*. The host stock carries a **loxP–3xP3-RFP–loxP–*attP*** landing site, where the **artificial 3xP3 promoter** drives strong RFP expression in the eyes and is **flanked by loxP sites**, so the marker can be removed later by **Cre-mediated excision**. The integrase itself is supplied by a transgenic stock expressing **ΦC31 integrase in the germ cells** from the ***nanos*** (or ***vasa***) promoter.
 
@@ -78,7 +78,7 @@ P-element insertion is **random**, so two transgenic lines are never strictly co
 
 - **Chromosome mapping is not required.**
 
-- A **large collection of lines with precisely mapped *attP* sites** on the four major chromosomes is available, already tested for accessibility and expression behaviour.
+- A **large collection of lines with precisely mapped *attP* sites** on the four major chromosomes is available, already tested for accessibility and expression behavior.
 
 > **Focus — ΦC31 and the silencing problem. Random P insertions can be silenced by heterochromatin; ΦC31 attP sites (attP2, attP40) lie in open chromatin and give reliable, comparable expression.**
 
@@ -92,13 +92,13 @@ P-element insertion is **random**, so two transgenic lines are never strictly co
 
 ![[FG-image36.png|354]]
 
-**The GAL4 protein.** GAL4 (881 aa) is the yeast activator of the galactose-induced genes. It binds DNA as a **dimer** on a **17 bp site** (the UAS, found between *GAL10* and *GAL1*) through a **zinc-finger DNA-binding domain** (residues 1–65), with a dimerisation domain (65–94) and two activation regions (148–196 and 768–881; GAL80 binds residues 851–881). Variants used in flies include optimized UAS sequences and **GAL4-VP16**, a stronger hybrid activator (GAL4 DNA-binding domain fused to the acidic activation domain of herpes simplex VP16).
+**The GAL4 protein.** GAL4 (881 aa) is the yeast activator of the galactose-induced genes. It binds DNA as a **dimer** on a **17 bp site** (the UAS, found between *GAL10* and *GAL1*) through a **zinc-finger DNA-binding domain** (residues 1–65), with a dimerization domain (65–94) and two activation regions (148–196 and 768–881; GAL80 binds residues 851–881). Variants used in flies include optimized UAS sequences and **GAL4-VP16**, a stronger hybrid activator (GAL4 DNA-binding domain fused to the acidic activation domain of herpes simplex VP16).
 
-> **Focus — Domain map in detail. DBD 1–65 (Zn₂Cys₆), dimerisation 65–94, activation 148–196 and 768–881, GAL80 site 851–881.**
+> **Focus — Domain map in detail. DBD 1–65 (Zn₂Cys₆), dimerization 65–94, activation 148–196 and 768–881, GAL80 site 851–881.**
 >
 > **The UAS itself.** It is a **17 bp palindromic site** (consensus CGG-N₁₁-CCG): each CGG half-site is contacted by one monomer, and the 11 central bp act as a spacer fixing the geometry of the dimer.
 >
-> **Why the system is orthogonal.** Neither GAL4 nor UAS exists in **Drosophila**. GAL4 on its own has no endogenous targets in the fly, so the driver line is phenotypically neutral; and UAS on its own is not recognised by any fly factor, so the responder line is silent. This is precisely what allows **lethal or toxic constructs** to be kept as stocks: they exist, but they are off until you cross them.
+> **Why the system is orthogonal.** Neither GAL4 nor UAS exists in **Drosophila**. GAL4 on its own has no endogenous targets in the fly, so the driver line is phenotypically neutral; and UAS on its own is not recognized by any fly factor, so the responder line is silent. This is precisely what allows **lethal or toxic constructs** to be kept as stocks: they exist, but they are off until you cross them.
 >
 > **A stronger variant.** GAL4-VP16 fuses the GAL4 DNA-binding domain to the acidic activation domain of herpes simplex VP16, giving a much stronger activator — at the cost of greater toxicity.
 
@@ -134,13 +134,13 @@ P-element insertion is **random**, so two transgenic lines are never strictly co
 
 **How to obtain GAL4 driver lines.** Two approaches:
 
-1.  **Link a cloned, characterised promoter upstream of GAL4** and introduce the construct into flies by P-element-mediated germline transformation — cloning the desired promoter fragment into the **pPTGAL4** vector (11 kb; *mini-white* marker, MCS, *hsp70* TATA box, *gal4*, *hsp70* polyA). **Use it when** a characterised promoter is already available and you want expression in its known pattern.
+1.  **Link a cloned, characterized promoter upstream of GAL4** and introduce the construct into flies by P-element-mediated germline transformation — cloning the desired promoter fragment into the **pPTGAL4** vector (11 kb; *mini-white* marker, MCS, *hsp70* TATA box, *gal4*, *hsp70* polyA). **Use it when** a characterized promoter is already available and you want expression in its known pattern.
 
-2.  **Enhancer trapping**, with the **pGAWB** vector, an enhancer-trap GAL4 P-element transformation vector. Here *gal4* transcription is directed by the **weak promoter of the P-transposase gene**, and GAL4 is expressed from **its own AUG**, since its N-terminus directs both nuclear localisation and DNA binding. The element lands at random and reports whichever enhancer it falls near — exactly the enhancer-trap logic, but with GAL4 instead of *lacZ*, so the trapped pattern becomes **usable** rather than merely visible. **Use it when** you want to **discover new expression patterns** (new enhancers): a single screen yields many driver lines, each with a different pattern.
+2.  **Enhancer trapping**, with the **pGAWB** vector, an enhancer-trap GAL4 P-element transformation vector. Here *gal4* transcription is directed by the **weak promoter of the P-transposase gene**, and GAL4 is expressed from **its own AUG**, since its N-terminus directs both nuclear localization and DNA binding. The element lands at random and reports whichever enhancer it falls near — exactly the enhancer-trap logic, but with GAL4 instead of *lacZ*, so the trapped pattern becomes **usable** rather than merely visible. **Use it when** you want to **discover new expression patterns** (new enhancers): a single screen yields many driver lines, each with a different pattern.
 
 **How to obtain UAS responder lines.** By subcloning the gene of interest into the **pUAST** vector:
 
-- **UAS:** 5 tandemly arrayed, optimised GAL4 binding sites — the UAS is **multimerised** so that several GAL4 dimers bind and expression is stronger;
+- **UAS:** 5 tandemly arrayed, optimized GAL4 binding sites — the UAS is **multimerized** so that several GAL4 dimers bind and expression is stronger;
 
 - the ***hsp70* TATA box** and transcriptional start;
 
@@ -236,23 +236,23 @@ The standard construct is **AyGAL4** ("Actin \> y⁺ \> GAL4"):
 
 - **(A) Initial state:** transcription from the ubiquitous **Actin promoter** is **terminated at the *hsp70* transcriptional termination signal**, which sits between the two FRTs together with the marker gene *yellow*. GAL4 is therefore **not** made.
 
-- **(B) Upon heat shock:** the *hsp70* promoter drives the ***flp*** gene; **Flippase catalyses recombination at the two FRT sequences** and removes the termination signal and the *yellow* marker.
+- **(B) Upon heat shock:** the *hsp70* promoter drives the ***flp*** gene; **Flippase catalyzes recombination at the two FRT sequences** and removes the termination signal and the *yellow* marker.
 
-- **(C) In clones:** the rearranged **Act5C promoter–GAL4** fusion now expresses GAL4, which activates the **UAS-*tau*** reporter. Only the cells that experienced recombination **and their progeny** express bovine Tau, revealed with an anti-Tau monoclonal antibody. Because **Tau is a microtubule-associated protein** distributed throughout the cytoplasm by slow transport, **the whole cellular structure and the innervation pattern of the labelled cells can be resolved**.
+- **(C) In clones:** the rearranged **Act5C promoter–GAL4** fusion now expresses GAL4, which activates the **UAS-*tau*** reporter. Only the cells that experienced recombination **and their progeny** express bovine Tau, revealed with an anti-Tau monoclonal antibody. Because **Tau is a microtubule-associated protein** distributed throughout the cytoplasm by slow transport, **the whole cellular structure and the innervation pattern of the labeled cells can be resolved**.
 
 ![[FG-image50.png|500]]
 
-By tuning the **length of the heat shock** one controls how many clones are induced, so single labelled cells can be followed in an otherwise wild-type animal — the fly equivalent of the genetic mosaics mentioned in Module 1.
+By tuning the **length of the heat shock** one controls how many clones are induced, so single labeled cells can be followed in an otherwise wild-type animal — the fly equivalent of the genetic mosaics mentioned in Module 1.
 
-**In short:** heat shock → **FLP** → excision of the STOP between the **FRTs** → **GAL4 permanently on** in that cell and all its descendants → a **mosaic**: labelled (or mutant) clones inside an otherwise normal animal.
+**In short:** heat shock → **FLP** → excision of the STOP between the **FRTs** → **GAL4 permanently on** in that cell and all its descendants → a **mosaic**: labeled (or mutant) clones inside an otherwise normal animal.
 
-> **Focus — The most powerful use: FRT-mediated mitotic recombination. Homozygous mutant clones in a heterozygous animal; in MARCM only the mutant clone loses GAL80 and is labelled.**
+> **Focus — The most powerful use: FRT-mediated mitotic recombination. Homozygous mutant clones in a heterozygous animal; in MARCM only the mutant clone loses GAL80 and is labeled.**
 >
-> **Why UAS-tau as a reporter.** Tau is a microtubule-associated protein distributed by slow transport throughout the cytoplasm and along axons, so it fills the entire cellular morphology, arborisation included — unlike a soluble nuclear reporter, which only marks the cell body.
+> **Why UAS-tau as a reporter.** Tau is a microtubule-associated protein distributed by slow transport throughout the cytoplasm and along axons, so it fills the entire cellular morphology, arborization included — unlike a soluble nuclear reporter, which only marks the cell body.
 >
-> **Paper — Pagliarini & Xu, 2003** (Science 302:1227–1231): Mosaic analysis applied to cancer: GFP-labelled *eyeless*-FLP clones expressing **RasV12** (benign on its own) became metastatic only when combined with loss of polarity genes (*scribble*, *lgl*, *dlg*).
+> **Paper — Pagliarini & Xu, 2003** (Science 302:1227–1231): Mosaic analysis applied to cancer: GFP-labeled *eyeless*-FLP clones expressing **RasV12** (benign on its own) became metastatic only when combined with loss of polarity genes (*scribble*, *lgl*, *dlg*).
 >
-> **Paper — Yamamura et al., 2021** (Cancer Sci. 112:505–514): The fly as a cancer model: from the first tumour suppressor (*lgl*) and cell competition to flies carrying patients’ mutation combinations for drug screens (dRet flies helped validate **vandetanib**).
+> **Paper — Yamamura et al., 2021** (Cancer Sci. 112:505–514): The fly as a cancer model: from the first tumor suppressor (*lgl*) and cell competition to flies carrying patients’ mutation combinations for drug screens (dRet flies helped validate **vandetanib**).
 
 ### What makes a good expression system
 

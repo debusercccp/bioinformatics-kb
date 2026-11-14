@@ -10,7 +10,7 @@ tags: [note, aml]
 
 # AE architectural choice
 
-> Sometimes is needed, the one with increased number of layers. Ant the very end you need to think about choices, an overcomplete autoencoder doesn’t learn any meaningful representation of the data. If your contract the training data **perfectly** you haven’t learned nothing, **memorizing** **overfitting**, there is no reason to have something larger, you are wasting resources for your neural network. **Undercomplete AE**: code layer with lower dimensionality than the input data: it won’t be able to directly copy tis inputs to the outputs, will be forced to learn intelligent features.
+> Sometimes is needed, the one with increased number of layers. Ant the very end you need to think about choices, an overcomplete autoencoder doesn’t learn any meaningful representation of the data. If your contract the training data **perfectly** you haven’t learned nothing, **memorizing** **overfitting**, there is no reason to have something larger, you are wasting resources for your neural network. **Undercomplete AE**: code layer with lower dimensionality than the input data: it won’t be able to directly copy its inputs to the outputs, will be forced to learn intelligent features.
 >
 > The key is hence to force the AE to learn useful features:
 
@@ -26,9 +26,9 @@ tags: [note, aml]
 >
 > **Sparse AE**
 >
-> Basically, a way to avoid overfitting, regularising through a **sparsity constraint**. This simple trick forces the AE to represent each input using a combination of a smaller \# of nodes (not all of them), but still demands it to discover interesting structure in the data **AE use cases:**
+> Basically, a way to avoid overfitting, regularizing through a **sparsity constraint**. This simple trick forces the AE to represent each input using a combination of a smaller \# of nodes (not all of them), but still demands it to discover interesting structure in the data **AE use cases:**
 
-- As compression method don’t perform better than its alternatives, their dataspecific makes them practical as general technique, the most common use cases:
+- As compression method don’t perform better than its alternatives, their data-specific makes them practical as general technique, the most common use cases:
 
 - Data denoising, dimensionality reduction when you have high dimensional data. The idea is clever.
 

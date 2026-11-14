@@ -14,7 +14,7 @@ tags: [note, aml]
 
 - in sklearn, does this mean to build a **BaggingClassifier** and pass it a **DecisionTreeClassifier**? Yes but.
 
-- .. one can instead use the **RandomForestClassifier** class (similarly: **RandomForestRegressor**), which is more convenient and optimised for DTs Random Forest algo introduces extra randomness when growing trees:
+- .. one can instead use the **RandomForestClassifier** class (similarly: **RandomForestRegressor**), which is more convenient and optimized for DTs Random Forest algo introduces extra randomness when growing trees:
 
 - When splitting a node, a Random Forest **doesn’t look for the best feature** overall.
 
@@ -28,7 +28,7 @@ tags: [note, aml]
 
 - **Lower variance**, which generally improves generalization.
 
-> additional randomness → Extremely Randomised Trees ensembles. Another quality of Random Forests is that they make it easy to measure the relative importance of each feature.
+> additional randomness → Extremely Randomized Trees ensembles. Another quality of Random Forests is that they make it easy to measure the relative importance of each feature.
 >
 > **Boosting**
 >
@@ -54,7 +54,7 @@ tags: [note, aml]
 >
 > **Gradient Boosting tuning**
 >
-> Change the **learning_rate hyperparameter**: it scales the contribution of each tree. If you set it to a low value (such as 0.1 in this example), you will need more trees (*n_estimators*) in the ensemble to fit the training set, but the predictions will usually generalise better.
+> Change the **learning_rate hyperparameter**: it scales the contribution of each tree. If you set it to a low value (such as 0.1 in this example), you will need more trees (*n_estimators*) in the ensemble to fit the training set, but the predictions will usually generalize better.
 
 ![[AML-image267.jpg|642]]
 
@@ -62,7 +62,7 @@ tags: [note, aml]
 >
 > An optimized implementation of Gradient Boosting is available in the popular python library XGBoost, i.e. **Extreme Gradient Boosting**. XGBoost is one of the **fastest** **implementations** of gradient boosted trees. How does it work?
 >
-> It directly **attacks** one of their **major inefficiencies**. It considers the **potential loss** for all possible splits to create a new branch (especially useful in case of thousands of features, therefore thousands of possible splits), and tackles this inefficiency by looking at the **distribution** **of** **features** across all data points in a leaf and using this information to reduce the search space of possible feature splits. Yes, it uses a few regularisation tricks, but the achievable speed up is by far the **most useful aspect** of the XGBoost library: it allows many hyperparameter settings to be investigated quickly.
+> It directly **attacks** one of their **major inefficiencies**. It considers the **potential loss** for all possible splits to create a new branch (especially useful in case of thousands of features, therefore thousands of possible splits), and tackles this inefficiency by looking at the **distribution** **of** **features** across all data points in a leaf and using this information to reduce the search space of possible feature splits. Yes, it uses a few regularization tricks, but the achievable speed up is by far the **most useful aspect** of the XGBoost library: it allows many hyperparameter settings to be investigated quickly.
 >
 > ![[AML-image268.jpg|525]]
 

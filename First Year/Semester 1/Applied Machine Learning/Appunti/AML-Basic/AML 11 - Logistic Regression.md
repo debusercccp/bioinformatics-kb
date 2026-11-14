@@ -56,7 +56,7 @@ When **we apply the sigmoid function to the <u>hypothesis of linear regression</
 
 This transformation marks the essence of logistic regression.
 
-Interpreting the new hypothesis*g*(*θ<sup>T </sup>*⋅ *x*) is crucial, especially in classification tasks.
+Interpreting the new hypothesis *g*(*θ<sup>T </sup>*⋅ *x*) is crucial, especially in classification tasks.
 
 For instance, in a binary classification scenario where the output is either 0 or 1, the output of *g*(*θ<sup>T </sup>*⋅ *x*) can be interpreted as the predicted probability that the given input belongs to the positive class.
 

@@ -6,7 +6,7 @@ order: 19
 tags: [note, fg]
 ---
 
-> [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|← Danio rerio · Reporter lines – making gene expression visible]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 20 - Danio rerio · Modelling cancer in zebrafish|Danio rerio · Modelling cancer in zebrafish →]]
+> [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|← Danio rerio · Reporter lines – making gene expression visible]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 20 - Danio rerio · Modeling cancer in zebrafish|Danio rerio · Modeling cancer in zebrafish →]]
 
 *Approfondimento: [[FGx 01 - CRISPR-Cas9 – step by step|CRISPR-Cas9 – step by step]]*
 
@@ -28,7 +28,7 @@ Before genome editing the options were **random gene disruption** (ENU), **knock
 
 - An **in vitro complex of guide RNA and Cas9 protein** (RNP) is **microinjected into one-cell-stage embryos**.
 
-- CRISPR knockout zebrafish are **extremely popular** and model many diseases. Since 2004, about **28,000 articles** on CRISPR/Cas, **\>1000 in zebrafish**. History: **Francis Mojica** proposed CRISPR arrays as part of a **bacterial immune defence**; **Doudna & Charpentier** proposed gene-editing applications (**Nobel Prize 2020**).
+- CRISPR knockout zebrafish are **extremely popular** and model many diseases. Since 2004, about **28,000 articles** on CRISPR/Cas, **\>1000 in zebrafish**. History: **Francis Mojica** proposed CRISPR arrays as part of a **bacterial immune defense**; **Doudna & Charpentier** proposed gene-editing applications (**Nobel Prize 2020**).
 
 - Timeline: with CRISPR/Cas9 a homozygous mutant line (F2) can be obtained in about nine months.
 
@@ -48,7 +48,7 @@ In bacteria CRISPR is an adaptive immune system: it stores a memory of the phage
 
 4.  **Complex with tracrRNA and Cas9.** The crRNA together with the tracrRNA forms a complex with Cas9.
 
-5.  **Second infection: cleavage.** Cas9 recognises the matching foreign DNA and cuts it. The bacterium is resistant to that virus.
+5.  **Second infection: cleavage.** Cas9 recognizes the matching foreign DNA and cuts it. The bacterium is resistant to that virus.
 
 #### Finding the target: Cas9 searches for the PAM, not for the guide
 
@@ -58,7 +58,7 @@ Cas9 does not scan the genome looking for the guide sequence. It looks for the P
 
 2.  **PAM docking.** It stops at 5′-NGG-3′, read in the major groove by Arg1333 and Arg1335, which hydrogen-bond the two guanines.
 
-3.  **Unwinding and seed.** Only after the PAM does Cas9 destabilise the duplex immediately upstream and attempt pairing with the guide, from PAM-proximal to PAM-distal. The first ~10–12 nt are the seed.
+3.  **Unwinding and seed.** Only after the PAM does Cas9 destabilize the duplex immediately upstream and attempt pairing with the guide, from PAM-proximal to PAM-distal. The first ~10–12 nt are the seed.
 
 4.  **R-loop.** If the seed pairs, pairing propagates to a complete R-loop: guide paired to the target strand, the other strand displaced.
 
@@ -161,7 +161,7 @@ The guide stays the same across all of these tools: what changes is what is atta
 
 - **reduced regenerative ability** of progenitors;
 
-- **impaired VEGF signalling** or aberrant activation of the **TGF-β** pathway;
+- **impaired VEGF signaling** or aberrant activation of the **TGF-β** pathway;
 
 - **impaired autophagy** via Atg7;
 
@@ -191,7 +191,7 @@ The guide stays the same across all of these tools: what changes is what is atta
 
 > F0 animals are mosaics: Cas9 cuts and NHEJ repairs independently in each cell, so the same guide leaves different indels (in-frame or frameshift, mono- or biallelic) next to unmodified cells. The phenotype is immediate but varies between individuals and between tissues.
 
-- Experiments completed **before independent feeding** (typically **\<5 dpf**) generally **do not require an animal-experimentation project authorisation** under EU legislation.
+- Experiments completed **before independent feeding** (typically **\<5 dpf**) generally **do not require an animal-experimentation project authorization** under EU legislation.
 
 > **Focus — Why several guides. Three guides per gene make an F0 crispant behave almost like a null.**
 
@@ -214,4 +214,4 @@ The guide stays the same across all of these tools: what changes is what is atta
 - F0 crispants are mosaics, not homozygous nulls.
 
 ---
-> [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|← Danio rerio · Reporter lines – making gene expression visible]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 20 - Danio rerio · Modelling cancer in zebrafish|Danio rerio · Modelling cancer in zebrafish →]]
+> [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|← Danio rerio · Reporter lines – making gene expression visible]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 20 - Danio rerio · Modeling cancer in zebrafish|Danio rerio · Modeling cancer in zebrafish →]]

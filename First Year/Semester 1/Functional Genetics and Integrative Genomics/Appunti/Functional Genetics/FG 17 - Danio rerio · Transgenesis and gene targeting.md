@@ -14,13 +14,13 @@ tags: [note, fg]
 
 - An **additional gene** (e.g. a reporter) driven by **regulatory elements**.
 
-- The regulatory elements can be **tissue-specific promoters**, **enhancers**, or elements **sensitive to specific signalling pathways**.
+- The regulatory elements can be **tissue-specific promoters**, **enhancers**, or elements **sensitive to specific signaling pathways**.
 
 - Possibility of **spatially restricted and time-controlled** strategies (conditional systems).
 
 ### Transgenesis, gene trap and enhancer trap: the use of transposons
 
-- **Pseudotyped retroviruses** (genome of Moloney murine leukaemia virus + envelope glycoprotein of vesicular stomatitis virus) were used in zebrafish. **Problem**: handling viruses in the laboratory.
+- **Pseudotyped retroviruses** (genome of Moloney murine leukemia virus + envelope glycoprotein of vesicular stomatitis virus) were used in zebrafish. **Problem**: handling viruses in the laboratory.
 
 - **Transposons** were known and active in *Drosophila* (P element), but not in vertebrates.
 
@@ -44,7 +44,7 @@ tags: [note, fg]
 
 - the cloned Tol2 cDNA is **transcribed in vitro** → **transposase mRNA**;
 
-- it is **co-injected into fertilised eggs** with a **plasmid carrying the transposon vector** (e.g. with GFP);
+- it is **co-injected into fertilized eggs** with a **plasmid carrying the transposon vector** (e.g. with GFP);
 
 - the transposase **excises** the transposon from the plasmid (detectable by PCR only when transposase mRNA is co-injected) and **integrates** it into the genome;
 

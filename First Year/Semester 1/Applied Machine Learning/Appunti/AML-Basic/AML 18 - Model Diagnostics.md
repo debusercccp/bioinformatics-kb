@@ -6,7 +6,7 @@ order: 18
 tags: [note, aml]
 ---
 
-> [[AML 17 - Regularisation|← Regularisation]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 19 - Model Diagnostics · Trainingtesting Procedure + 01 Misclassification Error|Model Diagnostics · Trainingtesting Procedure + 01 Misclassification Error →]]
+> [[AML 17 - Regularization|← Regularization]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 19 - Model Diagnostics · Trainingtesting Procedure + 01 Misclassification Error|Model Diagnostics · Trainingtesting Procedure + 01 Misclassification Error →]]
 
 # Model Diagnostics
 
@@ -50,7 +50,7 @@ What should you then try in order to improve the learning algo?
 
 So, everything at the beginning has been trained with our dataset, but somebody gives us additional data. We have a model with previous data, can we predict the price with the new data? What can we do if this doesn’t work. To **enhance** the **performance** of a learning algorithm, several strategies can be considered:
 
-- **<u>Increase training examples</u>**: **Obtaining more training dat**a may improve the model's predictive ability, especially if the current dataset is insufficient. However, acquiring additional data can be costly and timeconsuming, and there's no guarantee of success.
+- **<u>Increase training examples</u>**: **Obtaining more training dat**a may improve the model's predictive ability, especially if the current dataset is insufficient. However, acquiring additional data can be costly and time-consuming, and there's no guarantee of success.
 
 > It's essential to assess the likelihood of improvement before investing resources in collecting more data.
 
@@ -65,4 +65,4 @@ So, everything at the beginning has been trained with our dataset, but somebody 
 - **<u>Tuning Regularization Parameter (λ)</u>**
 
 ---
-> [[AML 17 - Regularisation|← Regularisation]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 19 - Model Diagnostics · Trainingtesting Procedure + 01 Misclassification Error|Model Diagnostics · Trainingtesting Procedure + 01 Misclassification Error →]]
+> [[AML 17 - Regularization|← Regularization]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 19 - Model Diagnostics · Trainingtesting Procedure + 01 Misclassification Error|Model Diagnostics · Trainingtesting Procedure + 01 Misclassification Error →]]

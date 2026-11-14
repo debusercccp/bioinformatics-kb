@@ -36,7 +36,7 @@ tags: [note, aml]
 
 > I can **naively** think of freezing all weights in the **NN**, except the one scalar coefficient being considered → then, try different values for that coefficient.
 >
-> • e.g. assume that the initial value (of one single coefficient) is 0.3. I do a first forward pass on a batch of data → loss of the NN on that batch is 0.9. If I change the coefficient to 0.35 (0.25) and rerun the forward pass, the loss increases (decreases) to 1.0 (0.8) → you update it e.g. by 0.05 to contribute to minimising the loss. And you need to repeat this for all coefficients in the NN. This approach is terribly inefficient → 2 (expensive) forward passes needed per each coefficient (and they are many).
+> • e.g. assume that the initial value (of one single coefficient) is 0.3. I do a first forward pass on a batch of data → loss of the NN on that batch is 0.9. If I change the coefficient to 0.35 (0.25) and rerun the forward pass, the loss increases (decreases) to 1.0 (0.8) → you update it e.g. by 0.05 to contribute to minimizing the loss. And you need to repeat this for all coefficients in the NN. This approach is terribly inefficient → 2 (expensive) forward passes needed per each coefficient (and they are many).
 >
 > A much better approach is to take advantage of the fact that all **ops** used in the NN are **differentiable**, hence compute the gradient of the loss regarding the NN’s coefficients → you can then move the coefficients in the opposite direction from the gradient, thus decreasing the loss
 >
@@ -52,7 +52,7 @@ tags: [note, aml]
 >
 > **Optimizers: improving SGD**
 >
-> Multiple variants of SGD exists, and they are known as **optimisers** or **optimisation methods**. e.g. SGD with momentum, as well as Adagrad, RMSProp, and others.
+> Multiple variants of SGD exists, and they are known as **optimizers** or **optimization methods**. e.g. SGD with momentum, as well as Adagrad, RMSProp, and others.
 
 - they differ by taking into account **previous weight updates** when the concept of **momentum** (derived from physics) .
 

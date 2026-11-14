@@ -55,9 +55,9 @@ Hi-C, ChIP-seq, ATAC-seq, bisulfite sequencing and RNA-seq all end with **massiv
 
 ## Papers of the course
 
-The papers in the course folder (**paper/integrative**), in alphabetical order, with the section of these notes where each one is discussed. In the text, the papers that are not the subject of a section of their own are summarised in one or two sentences in a paragraph starting with **Paper —**.
+The papers in the course folder (**paper/integrative**), in alphabetical order, with the section of these notes where each one is discussed. In the text, the papers that are not the subject of a section of their own are summarized in one or two sentences in a paragraph starting with **Paper —**.
 
-- Côté J, Quinn J, Workman JL, Peterson CL (1994). *Stimulation of GAL4 derivative binding to nucleosomal DNA by the yeast SWI/SNF complex.* Science 265:53–60. → **11. Chromatin and remodelling** (How it was shown biochemically) \[**C94**\]
+- Côté J, Quinn J, Workman JL, Peterson CL (1994). *Stimulation of GAL4 derivative binding to nucleosomal DNA by the yeast SWI/SNF complex.* Science 265:53–60. → **11. Chromatin and remodeling** (How it was shown biochemically) \[**C94**\]
 - Lambert SA, Jolma A, Campitelli LF, Das PK, Yin Y, Albu M, Chen X, Taipale J, Hughes TR, Weirauch MT (2018). *The human transcription factors.* Cell 172:650–665. → **2. Enhancer–promoter crosstalk** (“Sometimes being weak means being strong”) \[**L18**\]
 - Schoenfelder S, Fraser P (2019). *Long-range enhancer–promoter contacts in gene expression control.* Nat Rev Genet 20:437–455. → **sections 2–8** (the backbone of the whole first part) \[**SF19**\]
 - Tupler R, Perini G, Green MR (2001). *Expressing the human genome.* Nature 409:832–833. → **2. Enhancer–promoter crosstalk** (the pre-initiation complex) \[**T01**\]

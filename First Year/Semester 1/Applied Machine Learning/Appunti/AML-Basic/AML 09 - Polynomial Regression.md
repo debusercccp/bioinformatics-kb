@@ -36,7 +36,7 @@ Although these higher-order features may not exhibit linear relationships indivi
 
 It's essential to note that feature scaling becomes crucial in polynomial regression to ensure that the optimization process converges efficiently. Moreover, polynomial regression allows us to explore a broader range of functions beyond linear ones, with the training process guiding us to identify the best model for our dataset. Essentially, we can employ any function, and the training process will determine which model best fits the data.
 
-Polynomial regression is a technique used to fit polynomial functions, such as quadratic, cubic, or higherdegree polynomials, to data points. Unlike linear regression, which fits a straight line to the data, polynomial regression **allows** for **<u>more flexible curve fitting by incorporating polynomial terms</u>**.
+Polynomial regression is a technique used to fit polynomial functions, such as quadratic, cubic, or higher-degree polynomials, to data points. Unlike linear regression, which fits a straight line to the data, polynomial regression **allows** for **<u>more flexible curve fitting by incorporating polynomial terms</u>**.
 
 In polynomial regression, the choice of features refers to the input variables or predictors used to build the model. These features can be manipulated or transformed in various ways to create new features. For example, instead of using a single feature as-is, we can create new features by multiplying two features together, taking the square or cube of a feature, or applying other mathematical transformations like square roots or logarithms.
 
@@ -50,7 +50,7 @@ This process of feature engineering enables us to extract more meaningful inform
 
 The normal equation provides an alternative method for computing the optimal parameters in some linear regression scenarios.
 
-The normal equation gives you the values of 𝜃s that minimises the cost function.
+The normal equation gives you the values of 𝜃s that minimizes the cost function.
 
 Unlike Gradient Descent (GD), which iteratively minimizes the cost function J(θ) to converge towards the optimal parameter values, the normal equation offers an **analytical solution,** solving for the parameters directly in a **single step**. This distinction highlights the difference between an iterative approach (GD) and an analytical approach (normal equation).
 

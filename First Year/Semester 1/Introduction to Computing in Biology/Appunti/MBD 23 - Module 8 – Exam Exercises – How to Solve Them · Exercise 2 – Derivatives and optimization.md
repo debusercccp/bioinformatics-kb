@@ -6,9 +6,9 @@ order: 23
 tags: [note, mbd]
 ---
 
-> [[MBD 22 - Module 8 – Exam Exercises – How to Solve Them|← Module 8 – Exam Exercises – How to Solve Them]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem →]]
+> [[MBD 22 - Module 8 – Exam Exercises – How to Solve Them|← Module 8 – Exam Exercises – How to Solve Them]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimization (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimization (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem →]]
 
-# Exercise 2 — Derivatives and optimisation
+# Exercise 2 — Derivatives and optimization
 
 Two variants: a function of **one** variable (P1, P3, P5) or of **two** variables (P2, P4).
 
@@ -69,4 +69,4 @@ Typical questions: a) $\partial g/\partial x$, $\partial g/\partial y$; b) criti
 \end{pmatrix}$, $\lambda^{2} - 6\lambda + 4 = 0 \Rightarrow \lambda = 3 \pm \sqrt{5}$, both positive $\Rightarrow$ minimum, $g(0,0) = 0$. *Note:* the solution key writes the eigenvalues as $\left( 6 \pm \sqrt{10} \right)/2$; the correct value is $\left( 6 \pm \sqrt{20} \right)/2 = 3 \pm \sqrt{5}$ (the conclusion does not change).
 
 ---
-> [[MBD 22 - Module 8 – Exam Exercises – How to Solve Them|← Module 8 – Exam Exercises – How to Solve Them]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem →]]
+> [[MBD 22 - Module 8 – Exam Exercises – How to Solve Them|← Module 8 – Exam Exercises – How to Solve Them]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimization (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimization (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem →]]

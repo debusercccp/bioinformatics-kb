@@ -26,7 +26,7 @@ To **<u>select the most effective algorithm from a range of hypotheses,</u>** we
 
 For instance, if the fifth model has the lowest test error, suggesting that a polynomial of degree 5 fits the data well, we consider it for deployment.
 
-It's crucial to acknowledge that using the test set for model selection means that the **test data has been 'used up'.** In other words, the **test set** has **served** its purpose in evaluating and **selecting** t**he best-performing model.** Therefore, to ensure that the selected model can generalize effectively to new, unseen data in realworld scenarios, it's necessary to obtain additional data beyond the training and test sets, therefore this additional data enables the model to generalize more robustly and accurately to unseen situations or inputs.
+It's crucial to acknowledge that using the test set for model selection means that the **test data has been 'used up'.** In other words, the **test set** has **served** its purpose in evaluating and **selecting** t**he best-performing model.** Therefore, to ensure that the selected model can generalize effectively to new, unseen data in real-world scenarios, it's necessary to obtain additional data beyond the training and test sets, therefore this additional data enables the model to generalize more robustly and accurately to unseen situations or inputs.
 
 > ![[AML-image110.jpg|502]]
 

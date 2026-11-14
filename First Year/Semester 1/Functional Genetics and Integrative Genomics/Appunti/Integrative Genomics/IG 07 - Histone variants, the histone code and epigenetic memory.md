@@ -14,10 +14,10 @@ tags: [note, ig]
 
 Canonical histones are replication-dependent; variants are deposited by specific chaperones and change the properties of the nucleosome.
 
-- **H2A:** **H2A.X** (accumulates at DNA damage, recruits repair proteins after phosphorylation = γH2A.X); **H2A.Z** (transcription initiation, heterochromatin organisation, genome stability); **macroH2A** (vertebrates; silenced regions, blocks recruitment of transcription machinery and remodellers, **related to X chromosome**); **H2A.J** (senescent cells, inflammatory genes); **H2A.Bbd** (testis, brain; less compaction); **H2A.L.2** (histone-to-protamine transition); **TH2A/TH2B** (gametes; help reprogramming to pluripotency).
+- **H2A:** **H2A.X** (accumulates at DNA damage, recruits repair proteins after phosphorylation = γH2A.X); **H2A.Z** (transcription initiation, heterochromatin organization, genome stability); **macroH2A** (vertebrates; silenced regions, blocks recruitment of transcription machinery and remodelers, **related to X chromosome**); **H2A.J** (senescent cells, inflammatory genes); **H2A.Bbd** (testis, brain; less compaction); **H2A.L.2** (histone-to-protamine transition); **TH2A/TH2B** (gametes; help reprogramming to pluripotency).
 - **H3:** **H3.3** (replication-independent; deposited where nucleosomes are lost by transcription: active genes, promoters, but also telomeres, imprinted genes, heterochromatin); **H3T/H3.4** (testis, entry into meiosis); **CENP-A/CenH3** (marks the **centromere**, needed for the kinetochore); **H3.X/H3.Y** (primate-specific, active TSSs).
 - **H4:** H4.7/H4.G (nucleolus, less compact rDNA chromatin). **H1:** H1.0 (terminally differentiated cells), H1.1–H1.5 (replication-dependent, peak in S phase), H1.6/H1.7/H1.9 (testis), **H1.8 = H1oo** (oocytes), H1.10 (nucleolus).
-- Beyond Ac/Me/P/Ub, tails also carry SUMOylation, citrullination, ADP-ribosylation, biotinylation, proline isomerisation and acylations linked to metabolism (propionylation, butyrylation, crotonylation, **lactylation**).
+- Beyond Ac/Me/P/Ub, tails also carry SUMOylation, citrullination, ADP-ribosylation, biotinylation, proline isomerization and acylations linked to metabolism (propionylation, butyrylation, crotonylation, **lactylation**).
 
 ### Seeing modifications in the cell
 
@@ -25,7 +25,7 @@ Canonical histones are replication-dependent; variants are deposited by specific
 
 > ![[IG-image22.png|539]]
 
-- **Co-immunolocalisation:** double immunofluorescence with DAPI. H3K4me3 overlaps with H3K9ac and RNA Pol II (active, euchromatic); H4K20me3 overlaps with H3K9me3 in DAPI-dense heterochromatic foci; H3K4me3 and H3K9me3 do not overlap.
+- **Co-immunolocalization:** double immunofluorescence with DAPI. H3K4me3 overlaps with H3K9ac and RNA Pol II (active, euchromatic); H4K20me3 overlaps with H3K9me3 in DAPI-dense heterochromatic foci; H3K4me3 and H3K9me3 do not overlap.
 
 > **Sonication** = high-frequency ultrasound (~20 kHz) delivered by a probe or water-bath sonicator (e.g. Bioruptor, Covaris); the sound waves create **cavitation bubbles** in the liquid that collapse and generate shear forces, **breaking chromatin into random fragments**. Fragment size is tuned by power, number of cycles and duration; samples are kept cold (on/off pulses on ice) because heat can reverse crosslinks and damage epitopes. Unlike MNase, which cuts preferentially in linker DNA, sonication shears largely sequence-independently, but **open chromatin breaks more easily than compact heterochromatin.**
 
@@ -58,7 +58,7 @@ Combinations of tail modifications, read by specific modules, specify distinct d
 - Unmodified H3 → Sir3/Sir4/Tup1 → silencing. Acetylated H3 → bromodomain → transcription.
 - H3 S10/S28 phosphorylation → condensins? → mitosis/meiosis. S10ph + K14ac → transcription. H3 methylation → transcription or silencing depending on the site.
 - H4 K8/K16 acetylation → transcription; H4 K5/K12 acetylation (on new histones) → histone deposition. CENP-A phosphorylation → mitosis.
-- **The “sun” picture:** the histone-code diagram puts the nucleosome at the centre with the histone tails radiating out like rays, each labelled with its modified residues and the enzymes that write them.
+- **The “sun” picture:** the histone-code diagram puts the nucleosome at the center with the histone tails radiating out like rays, each labeled with its modified residues and the enzymes that write them.
 - **Still a lot to do:** most histone modifications have an unknown function, and the same enzymes also modify TFs and cofactors, so the code is far from being deciphered.
 - Code at work in the fly eye: PEV is the genetic read-out of the code — SUV39 writes H3K9me and HP1 reads it, and the dose of the two sets how far heterochromatin spreads (section 12).
 - H3K27me3 is the Polycomb repression mark; PRC2 both writes it (EZH2) and reads it (EED), which is the basis of the read–write loop described under epigenetic memory below.

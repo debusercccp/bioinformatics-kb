@@ -43,7 +43,7 @@ Fonte: `MCB/FGIG/IG/IntegrativeGen_RS.docx` — 11 note collegate in ordine.
 2. [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family]]
 3. [[IG 03 - TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter|TADs as facilitators of enhancer–promoter communication … Step by step – how an enhancer activates a promoter]]
 4. [[IG 04 - Genomic imprinting + Enhancer RNAs (eRNAs)|Genomic imprinting + Enhancer RNAs (eRNAs)]]
-5. [[IG 05 - Chromatin and remodelling|Chromatin and remodelling]]
+5. [[IG 05 - Chromatin and remodeling|Chromatin and remodeling]]
 6. [[IG 06 - Histone acetylation and methylation|Histone acetylation and methylation]]
 7. [[IG 07 - Histone variants, the histone code and epigenetic memory|Histone variants, the histone code and epigenetic memory]]
 8. [[IG 08 - DNA methylation|DNA methylation]]

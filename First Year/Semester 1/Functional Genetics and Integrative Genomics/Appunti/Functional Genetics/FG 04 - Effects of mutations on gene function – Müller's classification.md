@@ -114,11 +114,11 @@ tags: [note, fg]
 
 - **Pasting (gain of function):** injection of mRNA encoding the **Frizzled 3 receptor** into an 8-cell *Xenopus* embryo → formation of an **ectopic eye**.
 
-- **Painting (readout):** immunolocalisation of **Pax6** (ganglion and amacrine cells) and **rhodopsin** (photoreceptors) shows that the ectopic eye has the layered retinal organisation of a normal eye (L = lens).
+- **Painting (readout):** immunolocalization of **Pax6** (ganglion and amacrine cells) and **rhodopsin** (photoreceptors) shows that the ectopic eye has the layered retinal organization of a normal eye (L = lens).
 
 - **Cutting (loss of function):** injection of RNA encoding a **dominant-negative Frizzled 3** (receptor blockade) → the eye does **not** develop.
 
-**Type of intervention:** **microinjection of in vitro-synthesised mRNA** into blastomeres = **transient** gain (Frizzled 3) or loss (dominant negative) of function. The RNA is translated and then degraded; **nothing is integrated into the genome**, so it is **not transgenesis** and is not inherited. Painting is only a **readout** (immunostaining), not a perturbation.
+**Type of intervention:** **microinjection of in vitro-synthesized mRNA** into blastomeres = **transient** gain (Frizzled 3) or loss (dominant negative) of function. The RNA is translated and then degraded; **nothing is integrated into the genome**, so it is **not transgenesis** and is not inherited. Painting is only a **readout** (immunostaining), not a perturbation.
 
 - Logic: sufficient (gain) *and* necessary (loss) → strong evidence for function.
 
@@ -132,17 +132,17 @@ tags: [note, fg]
 
 - Message: cell fate depends on **signal identity and concentration**, not only on the cell's intrinsic genome.
 
-**Type of intervention:** **microsurgery + in vitro culture**, with or without added signalling molecules (Activin, retinoic acid, cytokines). **No genetic modification**: only the environment of the cells is changed.
+**Type of intervention:** **microsurgery + in vitro culture**, with or without added signaling molecules (Activin, retinoic acid, cytokines). **No genetic modification**: only the environment of the cells is changed.
 
 ### Transplants
 
-- They show the **fate of a group of cells and their influence on neighbouring cells**.
+- They show the **fate of a group of cells and their influence on neighboring cells**.
 
 - Types: **homospecific** (same species), **heterospecific** (different species), **heterochronic** (different age), **heterotopic** (different region of the same embryo).
 
-- Classic example: transplanting the **dorsal lip of the blastopore** of a non-pigmented *T. cristatus* embryo into the ventral side of a pigmented *T. taeniatus* gastrula induces a **secondary axis and a second embryo** (the organiser). The pigment difference lets you see which tissues come from the donor and which from the host.
+- Classic example: transplanting the **dorsal lip of the blastopore** of a non-pigmented *T. cristatus* embryo into the ventral side of a pigmented *T. taeniatus* gastrula induces a **secondary axis and a second embryo** (the organizer). The pigment difference lets you see which tissues come from the donor and which from the host.
 
-- Molecular version: injecting RNA for **chordin** (an organiser-secreted factor) is sufficient to induce a secondary axis.
+- Molecular version: injecting RNA for **chordin** (an organizer-secreted factor) is sufficient to induce a secondary axis.
 
 **Type of intervention:** **microsurgical grafting** between embryos, producing a **chimera** (cells of two individuals/species, told apart by pigment). **No genetic modification**. The molecular version is **RNA microinjection**: transient, as in the eye example.
 
@@ -152,7 +152,7 @@ tags: [note, fg]
 
 - Procedure: targeted ES cells are **injected into blastocysts** → implanted in foster **mothers** → **chimeric mice** → mated with normal mice → if the targeted cells contributed to the germline, offspring carry the modification (**gene-targeted mice**).
 
-**Why ES cells.** **Homologous recombination is rare**, so it is done in cultured cells, where the few correctly targeted clones can be selected. ES cells are **pluripotent**: injected into a blastocyst they can colonise the **germline of the chimera**, which then transmits the modification to its offspring. HR works well in yeast and mouse ES cells, poorly in worm and fly, which is why those organisms rely on **CRISPR** and **transposons**.
+**Why ES cells.** **Homologous recombination is rare**, so it is done in cultured cells, where the few correctly targeted clones can be selected. ES cells are **pluripotent**: injected into a blastocyst they can colonize the **germline of the chimera**, which then transmits the modification to its offspring. HR works well in yeast and mouse ES cells, poorly in worm and fly, which is why those organisms rely on **CRISPR** and **transposons**.
 
 - Example: **VDR (vitamin D3 receptor) KO mice** show a progressive visible phenotype (hair loss) at 8.5 months compared with wild type.
 

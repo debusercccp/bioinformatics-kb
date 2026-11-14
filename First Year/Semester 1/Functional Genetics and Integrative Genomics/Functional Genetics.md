@@ -58,7 +58,7 @@ Fonte: `MCB/FGIG/FG/FunctionalGen_common.docx` — 21 note collegate in ordine.
 17. [[FG 17 - Danio rerio · Transgenesis and gene targeting|Danio rerio · Transgenesis and gene targeting]]
 18. [[FG 18 - Danio rerio · Reporter lines – making gene expression visible|Danio rerio · Reporter lines – making gene expression visible]]
 19. [[FG 19 - Danio rerio · CRISPRCas9 – from gene to disease model|Danio rerio · CRISPRCas9 – from gene to disease model]]
-20. [[FG 20 - Danio rerio · Modelling cancer in zebrafish|Danio rerio · Modelling cancer in zebrafish]]
+20. [[FG 20 - Danio rerio · Modeling cancer in zebrafish|Danio rerio · Modeling cancer in zebrafish]]
 21. [[FG 21 - Danio rerio · Optogenetics|Danio rerio · Optogenetics]]
 
 Approfondimenti (note scritte a mano in `Approfondimenti/`, non generate dal docx):

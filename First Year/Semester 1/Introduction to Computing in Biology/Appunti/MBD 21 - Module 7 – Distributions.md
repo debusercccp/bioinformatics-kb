@@ -257,7 +257,7 @@ $$
 \widetilde{\mu} = \frac{\sum_{i}^{}x^{i}}{N},\quad\quad\widetilde{\sigma} = \sqrt{\frac{\sum_{i}^{}\left( x^{i} - \widetilde{\mu} \right)^{2}}{N - 1}}\quad\text{(unbiased evaluation of the s.d.)}
 $$
 
-*Why* $N - 1$ *(from the slides).* The maximum-likelihood estimates (the parameters that maximise the probability of the sampled values) are $\mu_{ML} = \frac{1}{N}\sum_{i}^{}x^{i}$ and $\sigma_{ML}^{2} = \frac{1}{N}\sum_{i}^{}\left( x^{i} - \mu_{ML} \right)^{2}$. $\mu_{ML}$ is unbiased ($E\left\lbrack \mu_{ML} \right\rbrack = \mu$), but $\sigma_{ML}^{2}$ is biased, $E\left\lbrack \sigma_{ML}^{2} \right\rbrack = \frac{N - 1}{N}\sigma^{2}$: it underestimates $\sigma^{2}$, because the deviations are measured from the sample mean instead of the true mean. Dividing by $N - 1$ instead of $N$ corrects the bias.
+*Why* $N - 1$ *(from the slides).* The maximum-likelihood estimates (the parameters that maximize the probability of the sampled values) are $\mu_{ML} = \frac{1}{N}\sum_{i}^{}x^{i}$ and $\sigma_{ML}^{2} = \frac{1}{N}\sum_{i}^{}\left( x^{i} - \mu_{ML} \right)^{2}$. $\mu_{ML}$ is unbiased ($E\left\lbrack \mu_{ML} \right\rbrack = \mu$), but $\sigma_{ML}^{2}$ is biased, $E\left\lbrack \sigma_{ML}^{2} \right\rbrack = \frac{N - 1}{N}\sigma^{2}$: it underestimates $\sigma^{2}$, because the deviations are measured from the sample mean instead of the true mean. Dividing by $N - 1$ instead of $N$ corrects the bias.
 
 ### 7.8.1 Distribution of the sample mean: error on the mean
 

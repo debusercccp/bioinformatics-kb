@@ -130,7 +130,7 @@ An unsupervised ML algorithm may **discern that the data naturally segregates in
 
 For instance, consider the aggregation of news articles into cohesive story categories online, as seen in platforms like Google News. These categories are generated automatically by clustering algorithms, which identify common themes or topics within the articles and group them accordingly, even in the absence of explicit labels or instructions.
 
-We are not given any label here, by construction (“**unlabelled data**”).
+We are not given any label here, by construction (“**unlabeled data**”).
 
 We know nothing about these people ( age, gender, ethnic group, pre-existing conditions).
 
@@ -146,11 +146,11 @@ For example, in an image of a cat, labeling it as a cat requires human input. If
 
 Everything is decided by just data and algos. This is **unsupervised ML**, some examples:
 
-- **Organize large computer clusters:** trying to figure out which machines tend to “work together”: if set-up takes this into account, the data centre works more efficiently.
+- **Organize large computer clusters:** trying to figure out which machines tend to “work together”: if set-up takes this into account, the data center works more efficiently.
 
 - **Social network clustering:** Given knowledge about which friends you message the most, or given your \<pick-your-social\> connections, try to automatically identify which are cohesive groups of people who know each other (or may want to connect).
 
-- **Market segmentation:** Analyse huge DBs of customers’ info and try to automatically group customers into different market segments, to target advertisement, offers, etc.
+- **Market segmentation:** Analyze huge DBs of customers’ info and try to automatically group customers into different market segments, to target advertisement, offers, etc.
 
 - **Physics/Astronomy data analysis**: Clustering algos might give insight into possible logical grouping of previously disconnected data.
 

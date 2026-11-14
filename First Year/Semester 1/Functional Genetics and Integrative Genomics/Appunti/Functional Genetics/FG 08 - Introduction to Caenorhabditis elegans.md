@@ -36,7 +36,7 @@ tags: [note, fg]
 
 - **Nutrition and environment:** Eats bacteria, can be grown easily on agar plates or in liquid media, and requires controlled humidity, temperature, and oxygen.
 
-- Cholesterol is an essential nutrient for C. elegans and has to be supplied in the medium, because the worm cannot synthesise sterols de novo.
+- Cholesterol is an essential nutrient for C. elegans and has to be supplied in the medium, because the worm cannot synthesize sterols de novo.
 
 ### Why is *C. elegans* a good model organism?
 

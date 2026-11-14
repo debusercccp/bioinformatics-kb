@@ -30,7 +30,7 @@ It looks at the processes that turn genomic information into biology: **transcri
 
 ## Genomic equivalence: the premise of the discipline
 
-**Principle.** Every somatic cell carries essentially the same genome, the one established in the fertilised egg. Therefore **cell types cannot differ in gene content, only in gene expression**.
+**Principle.** Every somatic cell carries essentially the same genome, the one established in the fertilized egg. Therefore **cell types cannot differ in gene content, only in gene expression**.
 
 - Well-known exception: **T and B cells**, whose antigen-receptor loci are rearranged during maturation.
 
@@ -40,7 +40,7 @@ This was a **claim that had to be demonstrated**. It was demonstrated by **nucle
 
 ### Spemann, 1938 – the "nuclear transfer theory" (newt)
 
-- Spemann tied a fine ligature (a hair loop) around a newt zygote, so that the constriction plane coincided with the **first cleavage plane** (the grey crescent is cut in half).
+- Spemann tied a fine ligature (a hair loop) around a newt zygote, so that the constriction plane coincided with the **first cleavage plane** (the gray crescent is cut in half).
 
 - The nucleus divides on one side only. After a few cleavages (8→16 blastomeres) one nucleus can slip through the constriction into the previously nucleus-free half, which then develops into a complete embryo.
 
@@ -50,7 +50,7 @@ This was a **claim that had to be demonstrated**. It was demonstrated by **nucle
 
 ### Briggs and King, 1952 (frog)
 
-- The nucleus of an unfertilised egg is inactivated/removed.
+- The nucleus of an unfertilized egg is inactivated/removed.
 
 - A nucleus from an **embryonic cell** is transplanted into this enucleated oocyte.
 
@@ -78,7 +78,7 @@ This was a **claim that had to be demonstrated**. It was demonstrated by **nucle
 
 - **Somatic Cell Nuclear Transfer (SCNT)**: the nucleus of an oocyte is removed and replaced by the nucleus of a somatic cell (here a mammary gland cell of a Finn Dorset ewe); the oocyte donor and the surrogate mother were Scottish Blackface sheep.
 
-- Donor cells were **synchronised** (serum starvation, arrested in **G1**), which makes the nucleus more compatible with the oocyte cytoplasm.
+- Donor cells were **synchronized** (serum starvation, arrested in **G1**), which makes the nucleus more compatible with the oocyte cytoplasm.
 
 - The reconstructed egg is activated by **electrical pulses**, cultured to morula/blastocyst, then implanted in a surrogate mother → lamb **Dolly**.
 
@@ -104,7 +104,7 @@ Different differentiation pathways switch different genes on (or off) in differe
 
 2.  **RNA processing control** (pre-mRNA → mature mRNA)
 
-3.  **mRNA transport and localisation control** (nucleus → cytosol)
+3.  **mRNA transport and localization control** (nucleus → cytosol)
 
 4.  **mRNA degradation control** (functional vs non-functional transcript)
 

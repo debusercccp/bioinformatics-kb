@@ -12,7 +12,7 @@ tags: [note, fg]
 
 # Forward genetics in Drosophila
 
-Forward genetics goes **from phenotype to gene**: mutagenise at random, screen for a phenotype, then identify the gene responsible. In the fly the classic toolkit is **chemical mutagenesis with EMS**, **balancer chromosomes** to keep the new recessive mutations, and the **saturation screen** of Nüsslein-Volhard and Wieschaus; **insertional mutagenesis with the P element** adds a molecular tag that makes the mutated gene easy to clone, and **enhancer traps** use the same random insertions to find genes by their expression pattern.
+Forward genetics goes **from phenotype to gene**: mutagenize at random, screen for a phenotype, then identify the gene responsible. In the fly the classic toolkit is **chemical mutagenesis with EMS**, **balancer chromosomes** to keep the new recessive mutations, and the **saturation screen** of Nüsslein-Volhard and Wieschaus; **insertional mutagenesis with the P element** adds a molecular tag that makes the mutated gene easy to clone, and **enhancer traps** use the same random insertions to find genes by their expression pattern.
 
 ### The mutagens
 
@@ -70,20 +70,20 @@ The weak point of this scheme is step (F): a newly induced recessive mutation is
 
 ### Balancer chromosomes
 
-**Identified by H. J. Muller in 1918.** A balancer is a chromosome engineered (or found) so that it can carry a mutagenized homologue through the generations **without ever recombining with it**.
+**Identified by H. J. Muller in 1918.** A balancer is a chromosome engineered (or found) so that it can carry a mutagenized homolog through the generations **without ever recombining with it**.
 
 ![[FG-image24.png|254]]
 **Properties:**
-1.  **Multiple, overlapping inversions** (paracentric and pericentric) within the same chromosome. They **cannot pair normally with their homologue during meiosis**, and when recombination does occur it generates **lethal aneuploidy** — so no recombinant gametes survive. The practical effect is that the mutagenised chromosome is kept **intact**.
+1.  **Multiple, overlapping inversions** (paracentric and pericentric) within the same chromosome. They **cannot pair normally with their homolog during meiosis**, and when recombination does occur it generates **lethal aneuploidy** — so no recombinant gametes survive. The practical effect is that the mutagenized chromosome is kept **intact**.
 2.  **One or more recessive lethal (or sterile) mutations**, which prevent the survival of balancer homozygotes, so the balancer cannot become fixed.
 3.  **One or more dominant visible markers** (e.g. **Curly**, *Cy*), which allow the researcher to follow the balancer in crosses by eye.
-4.  **Recessive visible mutations** that can be useful in crosses (e.g. eye-colour markers).
+4.  **Recessive visible mutations** that can be useful in crosses (e.g. eye-color markers).
 
-**Why one inverted chromosome is enough.** Recombination is not a property of one chromosome but of the pair, because it requires base-by-base alignment. If only one homologue carries an inverted block, the synaptonemal complex can match the corresponding sequences only by forming an inversion loop: a single abnormal chromosome distorts the geometry of both, so the effect is **dominant** in a mechanical sense.
+**Why one inverted chromosome is enough.** Recombination is not a property of one chromosome but of the pair, because it requires base-by-base alignment. If only one homolog carries an inverted block, the synaptonemal complex can match the corresponding sequences only by forming an inversion loop: a single abnormal chromosome distorts the geometry of both, so the effect is **dominant** in a mechanical sense.
 
-**What happens to the recombinants.** Recombination is not prevented: the recombinant gametes simply never become flies. A crossover inside the loop does happen, and its products depend on where the centromere lies. In a **paracentric** inversion (centromere outside the inverted block) it gives one **dicentric chromatid**, which is stretched into an anaphase bridge and breaks, and one **acentric fragment**, which is not segregated and is lost. In a **pericentric** inversion (centromere inside the block) it gives chromatids carrying **a duplication of one segment and a deletion of another**. Either way the recombinants are aneuploid and lethal, so the only viable gametes are the parental ones: the intact balancer or the intact mutagenised chromosome.
+**What happens to the recombinants.** Recombination is not prevented: the recombinant gametes simply never become flies. A crossover inside the loop does happen, and its products depend on where the centromere lies. In a **paracentric** inversion (centromere outside the inverted block) it gives one **dicentric chromatid**, which is stretched into an anaphase bridge and breaks, and one **acentric fragment**, which is not segregated and is lost. In a **pericentric** inversion (centromere inside the block) it gives chromatids carrying **a duplication of one segment and a deletion of another**. Either way the recombinants are aneuploid and lethal, so the only viable gametes are the parental ones: the intact balancer or the intact mutagenized chromosome.
 
-**Why the marker must be dominant.** It is a necessity, not a convenience. The balancer is homozygous lethal by construction, so the only genotype in which it is ever seen alive is the balancer/homologue heterozygote. A recessive marker would be masked by the wild-type allele on the other chromosome and would show only in the (dead) homozygote. Hence dominant markers: in Müller's terms, gain-of-function alleles (hypermorphs or neomorphs) or antimorphs.
+**Why the marker must be dominant.** It is a necessity, not a convenience. The balancer is homozygous lethal by construction, so the only genotype in which it is ever seen alive is the balancer/homolog heterozygote. A recessive marker would be masked by the wild-type allele on the other chromosome and would show only in the (dead) homozygote. Hence dominant markers: in Müller's terms, gain-of-function alleles (hypermorphs or neomorphs) or antimorphs.
 
 Additional points from the lecture:
 
@@ -101,7 +101,7 @@ Additional points from the lecture:
 
 **Side effects of the breakpoints.** The physical construction of a balancer and its dominant marking are not entirely independent: **inversion breakpoints can generate dominant phenotypes on their own**. If a breakpoint falls inside a gene, that gene becomes haploinsufficient; if it moves a euchromatic gene next to heterochromatin, the gene is silenced by position effect in a patchy, clonal way — position-effect variegation (PEV), e.g. a mottled eye.
 
-**In short:** inversions → no viable recombinants, so the mutagenised chromosome stays intact; recessive lethal → balancer homozygotes die; dominant marker → you can tell by eye who carries it.
+**In short:** inversions → no viable recombinants, so the mutagenized chromosome stays intact; recessive lethal → balancer homozygotes die; dominant marker → you can tell by eye who carries it.
 
 ### The Nüsslein-Volhard and Wieschaus screen (1979–1980, EMBL Heidelberg)
 
@@ -129,7 +129,7 @@ Additional points from the lecture:
 
 ![[FG-image26.png|402]]
 
-**How to distinguish the classes in F2?** Two devices: (1) **additional visible phenotypic markers**, mainly eye colours; (2) **DTS (Dominant Temperature Sensitive) lethal mutations**, which kill the unwanted class at the restrictive temperature.
+**How to distinguish the classes in F2?** Two devices: (1) **additional visible phenotypic markers**, mainly eye colors; (2) **DTS (Dominant Temperature Sensitive) lethal mutations**, which kill the unwanted class at the restrictive temperature.
 
 **The numbers** (from the three 1984 papers in *Wilhelm Roux's Archives*):
 
@@ -154,9 +154,9 @@ Together with the **maternal-effect genes** recovered separately, these three zy
 
 **The conceptual conclusion drawn in the paper:** for a given line, certain regions of the embryo are affected while other regions are normal; mutants usually affect **areas of the embryo rather than specific cell types**; and since the affected region ultimately gives rise to a variety of different cell types, these genes **define positions or spatial coordinates rather than tissues or organs**. This is the birth of the idea of a hierarchy of positional information.
 
-> **Paper — Nüsslein-Volhard & Wieschaus, 1980** (Nature 287:795–801): 15 loci that alter the larval segment pattern, read as three levels of organisation: **gap** (3: *Krüppel*, *knirps*, *hunchback*), **pair-rule** (6, including *even-skipped*; *engrailed* was then placed here) and **segment polarity** (6, e.g. *wingless*, *hedgehog*, *patch*).
+> **Paper — Nüsslein-Volhard & Wieschaus, 1980** (Nature 287:795–801): 15 loci that alter the larval segment pattern, read as three levels of organization: **gap** (3: *Krüppel*, *knirps*, *hunchback*), **pair-rule** (6, including *even-skipped*; *engrailed* was then placed here) and **segment polarity** (6, e.g. *wingless*, *hedgehog*, *patch*).
 >
-> **Paper — Wieschaus & Nüsslein-Volhard, 2016** (Annu. Rev. Cell Dev. Biol. 32:1–46): A personal account (~600 mutants in 120 genes) of why the undirected screen worked despite the fear of too many genes and messy phenotypes. A zygotic screen misses genes masked by **redundant** paralogues, **haplolethal** genes and genes with a **maternal contribution**.
+> **Paper — Wieschaus & Nüsslein-Volhard, 2016** (Annu. Rev. Cell Dev. Biol. 32:1–46): A personal account (~600 mutants in 120 genes) of why the undirected screen worked despite the fear of too many genes and messy phenotypes. A zygotic screen misses genes masked by **redundant** paralogs, **haplolethal** genes and genes with a **maternal contribution**.
 
 ### Complementation testing
 
@@ -172,9 +172,9 @@ Once a collection of recessive lethal mutations has been isolated, the first que
 
 **The maternal genome controls early embryonic development in metazoans.**
 
-- **Maternal products** (mRNAs and proteins) loaded into the egg during oogenesis control embryonic development after fertilisation.
+- **Maternal products** (mRNAs and proteins) loaded into the egg during oogenesis control embryonic development after fertilization.
 
-- Gene regulation in the early embryo is **post-transcriptional rather than transcriptional**, and involves the spatial and temporal control of subcellular transcript localisation, transcript stability and translation.
+- Gene regulation in the early embryo is **post-transcriptional rather than transcriptional**, and involves the spatial and temporal control of subcellular transcript localization, transcript stability and translation.
 
 - **The zygotic genome is transcriptionally inactive** at first.
 
@@ -224,7 +224,7 @@ The four classes set the number and polarity of the segments, not what each one 
 
 - "**Triple collinearity**" (Module 1): chromosomal order = temporal order = body order, conserved from fly to vertebrates.
 
-**Two points worth keeping.** The cascade **flows one way**, from a continuous maternal gradient to a discrete 14-stripe pattern, each level narrower but more precise. The first three levels act in a syncytium, where transcription factors diffuse; the fourth acts in a cellularised embryo and needs cell–cell signalling — which is why the segment-polarity genes became the conserved signalling pathways of all animals.
+**Two points worth keeping.** The cascade **flows one way**, from a continuous maternal gradient to a discrete 14-stripe pattern, each level narrower but more precise. The first three levels act in a syncytium, where transcription factors diffuse; the fourth acts in a cellularized embryo and needs cell–cell signaling — which is why the segment-polarity genes became the conserved signaling pathways of all animals.
 
 ### Insertional mutagenesis: the P element
 
@@ -232,7 +232,7 @@ The P element is the transposon that turned *Drosophila* from an organism you co
 
 ![[FG-image30.png|619]]
 
-**Structure of the active (autonomous) P element.** It consists of **two 31 bp inverted repeats (IR)** surrounding an open reading frame — organised in exons 0, 1, 2 and 3 — encoding a **transposase**; internal 11 bp inverted repeats are also present, and the whole element is flanked by an **8 bp duplication of the genomic insertion site** generated on insertion.
+**Structure of the active (autonomous) P element.** It consists of **two 31 bp inverted repeats (IR)** surrounding an open reading frame — organized in exons 0, 1, 2 and 3 — encoding a **transposase**; internal 11 bp inverted repeats are also present, and the whole element is flanked by an **8 bp duplication of the genomic insertion site** generated on insertion.
 
 > **Focus — In numbers. 2907 bp; the 31 bp terminal repeats are cut, the 11 bp internal repeats bind the transposase; 8 bp TSD.**
 >
@@ -286,9 +286,9 @@ The result is that **new mutations are induced by transposition of the single P 
 
 **How the flanking gene is identified.** Two classic methods:
 
-- **Plasmid rescue.** The P construct is built to contain a **bacterial origin of replication (*ori*)** and a **resistance gene (*kan*ʳ)**. Genomic DNA is extracted and **digested with XbaI**; the fragments are **circularised with DNA ligase**; competent *E. coli* are transformed, so that only the fragments carrying *ori* and *kan*ʳ — that is, the element **plus its genomic flanks** — produce colonies; the plasmid DNA is recovered and characterised by **restriction digestion and sequencing**.
+- **Plasmid rescue.** The P construct is built to contain a **bacterial origin of replication (*ori*)** and a **resistance gene (*kan*ʳ)**. Genomic DNA is extracted and **digested with XbaI**; the fragments are **circularized with DNA ligase**; competent *E. coli* are transformed, so that only the fragments carrying *ori* and *kan*ʳ — that is, the element **plus its genomic flanks** — produce colonies; the plasmid DNA is recovered and characterized by **restriction digestion and sequencing**.
 
-- ![[FG-image33.png|227]]**IPCR (inverse PCR).** Genomic DNA is digested, the fragments are **circularised**, and PCR is run with primers pointing **outwards** from the known P-element sequence; 30 cycles amplify across the circle, so the product contains the **unknown flanking genomic region**.
+- ![[FG-image33.png|227]]**IPCR (inverse PCR).** Genomic DNA is digested, the fragments are **circularized**, and PCR is run with primers pointing **outwards** from the known P-element sequence; 30 cycles amplify across the circle, so the product contains the **unknown flanking genomic region**.
 
 **Common logic:** both methods exploit the fact that the **P-element sequence is known**; it is used as a handle to recover the **unknown genomic DNA next to the insertion**.
 
@@ -306,7 +306,7 @@ The **enhancer trap** turns this round: instead of choosing the promoter, the el
 
 - the **P element promoter** is a **weak** promoter (the main transcription start site is 87 bp from the 5′ end of the element), too weak to drive expression on its own;
 
-- the second exon of the P element is fused **in frame** to the 5′ end of the ***lacZ*** gene (a transposase–β-galactosidase fusion carrying a nuclear localisation signal);
+- the second exon of the P element is fused **in frame** to the 5′ end of the ***lacZ*** gene (a transposase–β-galactosidase fusion carrying a nuclear localization signal);
 
 - the element also carries the **trailer sequence and polyadenylation site of *hsp70***, *kan*ʳ and *ori* for plasmid rescue, and ***rosy⁺*** as a transformation marker.
 

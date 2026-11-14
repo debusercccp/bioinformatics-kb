@@ -12,7 +12,7 @@ tags: [note, aml]
 
 > Due to the transformations that the data goes through when traversing an RNN, some information is **lost** at each time step. After a while, the RNN’s state contains virtually no trace of the very first inputs.
 
-- e.g. Dory in “Finding nemo”: trying to translate a long sentence. By the time she’s finished reading it, she has no clue how it started!
+- e.g. Dory in “Finding Nemo”: trying to translate a long sentence. By the time she’s finished reading it, she has no clue how it started!
 
 > To tackle this problem, **various types of cells with long-term memory** have been introduced. They have proven so successful that in many cases the basic cells are not used so much anymore. Let’s first (and briefly!) look at the most popular of these long-term memory cells: the **LSTM** cell.
 >
@@ -58,7 +58,7 @@ tags: [note, aml]
 
 > **Peephole connections**
 >
-> In a regular LSTM cell, the gate controllers can look only at the input **x(t)** and the previous short-term state **h(t–1). It can be given a bit more context by letting them peek at the longterm state as well** A variant of a LSTM emerged, with extra connections called **peephole connections**:
+> In a regular LSTM cell, the gate controllers can look only at the input **x(t)** and the previous short-term state **h(t–1). It can be given a bit more context by letting them peek at the long-term state as well** A variant of a LSTM emerged, with extra connections called **peephole connections**:
 
 - the previous long-term state **c(t–1)** is added as an input to the controllers of the forget gate and the input gate, and the current long-term state **c(t)** is added as input to the controller of the output gate.
 

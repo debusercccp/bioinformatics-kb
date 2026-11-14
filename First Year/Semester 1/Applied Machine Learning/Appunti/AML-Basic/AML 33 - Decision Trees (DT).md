@@ -58,7 +58,7 @@ tags: [note, aml]
 
 1.  Traverse the tree to reach the corresponding **leaf node**
 
-2.  Compute the **ratio** of training samples of class kkk in that node
+2.  Compute the **ratio** of training samples of class k in that node
 
 > ![[AML-image210.jpg|301]]In scikit-learn, this is done via the predict_proba() method, which returns an array of probabilities for each class.
 >
@@ -150,9 +150,9 @@ tags: [note, aml]
 
 > **CART for classification/ regression:**
 >
-> The CART algo for regression (classification) tries to split the training set in a way that minimises impurity (MSE), it produces only binary trees (non-leaf nodes always have 2 children, i.e. questions only have yes/no answers).
+> The CART algo for regression (classification) tries to split the training set in a way that minimizes impurity (MSE), it produces only binary trees (non-leaf nodes always have 2 children, i.e. questions only have yes/no answers).
 
-- The cost function that the CART algo tries to **minimise** for classification was:
+- The cost function that the CART algo tries to **minimize** for classification was:
 
 > ![[AML-image214.jpg|510]] then, it splits the **2 sub-sets** in 2 again using the same logic, and so on, **recursively**, until indicated by the max_depth hyperparameter (or if it cannot find a split that will reduce impurity).
 >

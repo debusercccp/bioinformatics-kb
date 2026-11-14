@@ -10,7 +10,7 @@ tags: [note, aml]
 
 # Non-linear Classification
 
-> How a NN can compute a complex non-linear function of the input? We are analysing a simple **feedforward neural network (NN)** where the output hypothesis h is computed using a **sigmoid activation function** over a linear combination of inputs and weights
+> How a NN can compute a complex non-linear function of the input? We are analyzing a simple **feedforward neural network (NN)** where the output hypothesis h is computed using a **sigmoid activation function** over a linear combination of inputs and weights
 
 ![](media/media/image192.jpeg)
 
@@ -40,7 +40,7 @@ tags: [note, aml]
 
 - **0** in all other cases
 
-> This replicates the behaviour of the logical **AND:** Try this with specific weights (e.g., θ=\[−30,20,20\]) and verify that the output behaves like an AND gate.
+> This replicates the behavior of the logical **AND:** Try this with specific weights (e.g., θ=\[−30,20,20\]) and verify that the output behaves like an AND gate.
 >
 > ![[AML-image196.jpg|281]]
 >
@@ -66,7 +66,7 @@ tags: [note, aml]
 
 - If x=1x = 1x=1, output close to **0**
 
-> Again, by selecting the appropriate weights (e.g., θ=\[10,−20\]) this behaviour can be modelled with a **single sigmoid unit**. However, note that the **architecture** for negation is different — it’s a one-input neuron rather than two.
+> Again, by selecting the appropriate weights (e.g., θ=\[10,−20\]) this behavior can be modeled with a **single sigmoid unit**. However, note that the **architecture** for negation is different — it’s a one-input neuron rather than two.
 
 ![[AML-image199.jpg|567]]
 

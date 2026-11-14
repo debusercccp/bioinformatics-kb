@@ -17,7 +17,7 @@ BLAST allows rapid comparison of a query sequence against another sequence or ag
 - Fast, accurate, accessible (web and Linux command line).
 - **Heuristic**: it uses shortcuts to reach a solution, and is therefore *not* guaranteed to find the best solution, unlike Smith–Waterman. In practice it almost always does.
 - An alternative fast heuristic is the FASTA algorithm.
-- It became the most optimised tool in existence largely because it is backed by NCBI.
+- It became the most optimized tool in existence largely because it is backed by NCBI.
 
 ## 5.2 The heuristics
 
@@ -68,7 +68,7 @@ The combinatorics come from the genetic code. DNA/RNA can be translated in **six
 Four output tabs:
 
 - **Descriptions** — the list of sequences matching the query, with links to the NCBI entries, bit score, E value and download options.
-- **Graphic Summary** — cartoon-style summary where colour codes the alignment score and the length of the horizontal bar codes the length of the alignment.
+- **Graphic Summary** — cartoon-style summary where color codes the alignment score and the length of the horizontal bar codes the length of the alignment.
 - **Alignments** — the text-based alignments themselves.
 - **Taxonomy** — which taxonomic groups are represented among the matches.
 
@@ -85,7 +85,7 @@ Questions from the book (Ch. 3, pp. 114–115), with the reasoning rather than j
 - *Orthologs are defined as* homologous sequences in different species that share an ancestral gene (option c describes paralogs; option b describes analogy/structural similarity).
 - *Which BLOSUM or PAM matrix suits two distantly related proteins?* BLOSUM45 or PAM250 — low BLOSUM number and high PAM number both mean “tolerant of divergence”.
 - *A global algorithm such as Needleman–Wunsch* finds the optimal alignment by finding the optimal subpath that defines the best alignment — i.e. dynamic programming, not exhaustive search.
-- Single-letter amino acid codes worth memorising from the exercise: N asparagine, Q glutamine, W tryptophan, C cysteine, F phenylalanine, A alanine.
+- Single-letter amino acid codes worth memorizing from the exercise: N asparagine, Q glutamine, W tryptophan, C cysteine, F phenylalanine, A alanine.
 
 ---
 > [[BFB 04 - Pairwise sequence alignment (Chapter III)|← Pairwise sequence alignment (Chapter III)]] · [[Bioinformatics for Biology|↑ Bioinformatics for Biology]]

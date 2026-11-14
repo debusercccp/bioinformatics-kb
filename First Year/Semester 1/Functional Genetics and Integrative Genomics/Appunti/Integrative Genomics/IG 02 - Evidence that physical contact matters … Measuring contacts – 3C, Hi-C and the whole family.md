@@ -79,7 +79,7 @@ Hi-C maps all the **contacts of the genome**, and the results are shown as conta
 
 ![[IG-image6.png|283]]🡺 https://github.com/debusercccp/clew-hic
 
-In the **Hi-C protocol**, the crosslinked DNA is **digested** with an enzyme, the **ends are filled in with biotin and ligated**, and then the DNA is **fragmented**, and the **biotinylated junctions are pulled down** and **amplified** for **sequencing**. The junctions are pulled down with **streptavidin**, which removes the huge amount of non-chimeric DNA, and with **paired-end sequencing** each read pair corresponds to **one contact**, with one end from each of the two pieces of DNA. The Hi-C **reads** (FASTQ) are then **analysed** with the Distiller pipeline (mapping, filtering, balancing), which produces:
+In the **Hi-C protocol**, the crosslinked DNA is **digested** with an enzyme, the **ends are filled in with biotin and ligated**, and then the DNA is **fragmented**, and the **biotinylated junctions are pulled down** and **amplified** for **sequencing**. The junctions are pulled down with **streptavidin**, which removes the huge amount of non-chimeric DNA, and with **paired-end sequencing** each read pair corresponds to **one contact**, with one end from each of the two pieces of DNA. The Hi-C **reads** (FASTQ) are then **analyzed** with the Distiller pipeline (mapping, filtering, balancing), which produces:
 
 - **Stats**, i.e. mapping statistics and the cis/trans ratio;
 - **Pairs** (Sample.nodups.pairs.gz), used for scaling plots;

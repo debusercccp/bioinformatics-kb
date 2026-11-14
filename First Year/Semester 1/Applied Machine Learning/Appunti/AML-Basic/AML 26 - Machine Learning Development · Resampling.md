@@ -28,7 +28,7 @@ The algorithm is trained on k-1 folds (with 1 held back) and then tested on the 
 
 This is repeated k times so that *each* fold of the dataset is used as the held-back test set once.
 
-The resulting k different performance scores can be summarized using a mean and a standard deviation, giving a more reliable estimate of the performance. iteration= k times and trainign= k-1 times for each iteration.
+The resulting k different performance scores can be summarized using a mean and a standard deviation, giving a more reliable estimate of the performance. iteration= k times and training= k-1 times for each iteration.
 
 - **<u>Leave-One-Out Cross-Validation</u>**
 

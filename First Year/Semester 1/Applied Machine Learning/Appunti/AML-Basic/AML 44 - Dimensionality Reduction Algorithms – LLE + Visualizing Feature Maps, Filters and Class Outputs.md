@@ -10,7 +10,7 @@ tags: [note, aml]
 
 # Dimensionality Reduction Algorithms: LLE
 
-> **LLE: Locally linear embedding** a Manifold Learning technique, it does not rely on projections like the previous (PCA) algos. LLE works by first **measuring how each training instance** linearly relates to its closest neighbours and then looking for a low-dimensional representation of the training set where these local relationships are best preserved.
+> **LLE: Locally linear embedding** a Manifold Learning technique, it does not rely on projections like the previous (PCA) algos. LLE works by first **measuring how each training instance** linearly relates to its closest neighbors and then looking for a low-dimensional representation of the training set where these local relationships are best preserved.
 
 - **Pros**: particularly good at unrolling twisted manifolds, especially when not too much noise
 
@@ -18,7 +18,7 @@ tags: [note, aml]
 
 > ![](media/media/image2630.jpg)
 
-## VISUALISING FEATURE MAPS, FILTERS AND CLASS OUTPUTS
+## VISUALIZING FEATURE MAPS, FILTERS AND CLASS OUTPUTS
 
 > ![[AML-image314.jpg|387]]VGG is a classical CNN from 2014. VGG has 16 layers.
 >
@@ -42,7 +42,7 @@ tags: [note, aml]
 
 - **Depth (Channels)** → each filter’s output (i.e., feature map) These depth channels are also called **intermediate activations**.
 
-> Let’s see inside the network. Let’s start visualising the feature map. Remember the output of a conv layer is a 3D volume and every **feature map** is the outcome of a specific filter. **Visualizing Feature Maps**
+> Let’s see inside the network. Let’s start visualizing the feature map. Remember the output of a conv layer is a 3D volume and every **feature map** is the outcome of a specific filter. **Visualizing Feature Maps**
 
 - Each filter produces one **feature map**
 
@@ -56,9 +56,9 @@ tags: [note, aml]
 
 ![[AML-image315.jpg|476]]
 
-> We can check some block and convolutional layer, **BlockX-convY** gives us the block number and conv layer number. The more the number block is high the more you ultimate convolutional layer in that specific block. Regions activate in the intermediate activation are those where the **filter is detecting some pattern**: highlighted area are the one reacted positively to the filter used. It looks like the filter is trying to **encode** **something** to be visually recognise as eye and nose.
+> We can check some block and convolutional layer, **BlockX-convY** gives us the block number and conv layer number. The more the number block is high the more you ultimate convolutional layer in that specific block. Regions activate in the intermediate activation are those where the **filter is detecting some pattern**: highlighted area are the one reacted positively to the filter used. It looks like the filter is trying to **encode** **something** to be visually recognized as eye and nose.
 >
-> I can check more feature map. So I can number these thing and select them more. The first thing is to check some convolution per block. As we discussed last time is evident that on average what is noticeable is the overall vision of thigs. You can be focusing in different details. You still see a cat in the first images, but the more you go on the less of a cat you can recognize.
+> I can check more feature map. So I can number these thing and select them more. The first thing is to check some convolution per block. As we discussed last time is evident that on average what is noticeable is the overall vision of things. You can be focusing in different details. You still see a cat in the first images, but the more you go on the less of a cat you can recognize.
 >
 > ![[AML-image316.jpg|411]]
 
@@ -72,7 +72,7 @@ tags: [note, aml]
 
 > **Visualizing filters**
 >
-> Filters are the main structure used in the Conv operation. The filter is the main structure used in the conv operation. Visualising **CNN filters is not reasonable**, the idea is to visualize the pattern each filter maximally respond to, where each filter is activated the most.
+> Filters are the main structure used in the Conv operation. The filter is the main structure used in the conv operation. Visualizing **CNN filters is not reasonable**, the idea is to visualize the pattern each filter maximally respond to, where each filter is activated the most.
 
 - **Filters** are not directly interpretable like images
 
@@ -80,15 +80,15 @@ tags: [note, aml]
 
 > **(**also known as ***feature visualization*)**
 >
-> There are tricks nowadays to do it. An artificial way not to show the filter but **images activating specific filters.** So enhanced images where the filter is very active. We take the last layer of every convolutional block. You can see images that **maximise specific filters**. From the very beginning we will look for pattern pretty easy. Images at the end layers are very specific. I’m looking form patter way more complicated than a horizontal line.
+> There are tricks nowadays to do it. An artificial way not to show the filter but **images activating specific filters.** So enhanced images where the filter is very active. We take the last layer of every convolutional block. You can see images that **maximize specific filters**. From the very beginning we will look for pattern pretty easy. Images at the end layers are very specific. I’m looking form patter way more complicated than a horizontal line.
 >
-> So, some pictures activate the layer and thus are corrected. colour here don’t make particular sense here: at the very beginning might be **looking** **for** **colours**.
+> So, some pictures activate the layer and thus are corrected. color here don’t make particular sense here: at the very beginning might be **looking** **for** **colors**.
 >
 > If in every position of the picture there is a bird, the function will be activate: **translational invariance** of a CNN. So, for feature maps: lower-layers encode/detect simple structures and as we go further the layer build on top of each other and learn to encode more complex patterns.
 >
-> ![[AML-image317.jpg|325]]**Visualising class outputs**
+> ![[AML-image317.jpg|325]]**Visualizing class outputs**
 >
-> What comes out from **multi-class classification**. We want to visualize the very final **SoftMax layer** in output. You can choose a category of object and you ask the CNN to generate an image to represent **maximally** **that** **image**. The method to do this is a trick, is a similar method to the one used to visualize the filter, from blank, you generate the image to maximise probability
+> What comes out from **multi-class classification**. We want to visualize the very final **SoftMax layer** in output. You can choose a category of object and you ask the CNN to generate an image to represent **maximally** **that** **image**. The method to do this is a trick, is a similar method to the one used to visualize the filter, from blank, you generate the image to maximize probability
 >
 > to be generated in a certain category. The results show how the CNN sees the elements of a specific category.
 

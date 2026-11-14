@@ -6,9 +6,9 @@ order: 24
 tags: [note, mbd]
 ---
 
-> [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation|← Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 25 - Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam|Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam →]]
+> [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimization|← Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimization]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 25 - Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam|Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam →]]
 
-# Exercise 3 — Constrained optimisation (Lagrange)
+# Exercise 3 — Constrained optimization (Lagrange)
 
 Typical questions: a) write the constraint as $g(x,y) = 0$; b) Lagrange conditions and $x^{*},y^{*}$; c) the optimal value $f\left( x^{*},y^{*} \right)$. The quantities are amounts or concentrations, so **only positive solutions are accepted**.
 
@@ -20,7 +20,7 @@ Typical questions: a) write the constraint as $g(x,y) = 0$; b) Lagrange conditio
 4.  **Substitute** the relation in the constraint and solve; keep the positive solution.
 5.  **Value:** compute $f\left( x^{*},y^{*} \right)$.
 
-**Worked example (Practice 3).** Maximise $f(x,y) = xy$ with $x^{2} + 4y^{2} = 8$.
+**Worked example (Practice 3).** Maximize $f(x,y) = xy$ with $x^{2} + 4y^{2} = 8$.
 
 1)  $g(x,y) = x^{2} + 4y^{2} - 8 = 0$.
 
@@ -95,4 +95,4 @@ $$
 **Other practice exams:** P2: $P( + ) = 0.95 \cdot 0.005 + 0.03 \cdot 0.995 = 0.0346$, $P(D \mid + ) = 0.00475/0.0346 \approx 13.7\%$. P3: $P( + ) = \frac{4}{5} \cdot \frac{1}{2} + \frac{1}{5} \cdot \frac{1}{2} = \frac{1}{2}$, $P(I \mid + ) = \frac{2/5}{1/2} = \frac{4}{5} = 80\%$ (prevalence 50%: the test discriminates well).
 
 ---
-> [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation|← Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 25 - Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam|Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam →]]
+> [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimization|← Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimization]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 25 - Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam|Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam →]]

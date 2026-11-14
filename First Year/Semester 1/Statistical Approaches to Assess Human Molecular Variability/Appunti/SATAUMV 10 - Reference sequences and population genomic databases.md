@@ -118,7 +118,7 @@ Despite their differences, **HapMap, HGDP, SGDP and 1KGP** had many similarities
 
 ## 10.10 From one genome to a tapestry of ancestry
 
-The *Nature* feature "From one human genome to a complex tapestry of ancestry" summarizes how, in the 20 years since the first drafts of the human genome were made public, the explosion in genome sequencing has revealed how our **evolutionary history and health** can be understood by analysing the diversity of our genomes.
+The *Nature* feature "From one human genome to a complex tapestry of ancestry" summarizes how, in the 20 years since the first drafts of the human genome were made public, the explosion in genome sequencing has revealed how our **evolutionary history and health** can be understood by analyzing the diversity of our genomes.
 
 - **Milestones:** HGP (1 reference genome); HapMap (692 people, 11 populations); 1000 Genomes (2,504 people, 26 populations).
 - **Ongoing national and large-scale projects:** Estonian Genome Project, deCODE genetics (whole genomes), H3Africa, Genome Denmark, Genomics England, TOPMed, All of Us, Qatar Genome, Australian Genomics and Genome Asia.

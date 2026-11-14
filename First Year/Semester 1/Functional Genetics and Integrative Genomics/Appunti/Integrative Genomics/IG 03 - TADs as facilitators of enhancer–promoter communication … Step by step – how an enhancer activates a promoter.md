@@ -16,10 +16,10 @@ TADs (topologically associating domains), i.e. submegabase domains with **prefer
 
 ### The chain of evidence
 
-- **Reporter integrations.** Random integrations of a **single-copy reporter** in the genome (hundreds of “regulatory sensors”, Symmons et al.): reporters integrated inside the same TAD display the **same tissue-specific expression**, while **reporters in neighbouring TADs behave differently**. Interpretation: an enhancer can reach everything inside its TAD, and **TADs may favour enhancer–promoter contacts** that otherwise could occur **too infrequently**. Caveat: the same result could also reflect a **permissive chromatin environment** shared by the whole domain.
+- **Reporter integrations.** Random integrations of a **single-copy reporter** in the genome (hundreds of “regulatory sensors”, Symmons et al.): reporters integrated inside the same TAD display the **same tissue-specific expression**, while **reporters in neighboring TADs behave differently**. Interpretation: an enhancer can reach everything inside its TAD, and **TADs may favor enhancer–promoter contacts** that otherwise could occur **too infrequently**. Caveat: the same result could also reflect a **permissive chromatin environment** shared by the whole domain.
 - **Rearranging the *Shh* TAD.** Mouse lines carrying inversions, deletions and duplications of the locus: **changing the distances inside the TAD has little effect on Shh**, while **inversions that break the TAD prevent the ZRS from reaching Shh**, which gives **loss of Shh and monodactyly**; so the **boundaries**, not the distance, matter.
 - **Human disease.** Structural variants that remove a boundary at the WNT6–IHH–EPHA4–PAX3 locus let *Ihh*, *Wnt6* and *Pax3* contact the **EPHA4 enhancers**, causing **limb malformations**; a duplication exposes *Kcnj2* to the *Sox9* enhancers.
-- **Cancer.** The deletion or the methylation of CTCF sites at the boundaries of insulated neighbourhoods activates nearby **proto-oncogenes** through new enhancer contacts (e.g. PDGFRA in IDH-mutant gliomas).
+- **Cancer.** The deletion or the methylation of CTCF sites at the boundaries of insulated neighborhoods activates nearby **proto-oncogenes** through new enhancer contacts (e.g. PDGFRA in IDH-mutant gliomas).
 - **Removing the architects.** The insulation is **not absolute**: about **one third** of the contacts between promoters and distal elements **cross the TAD boundaries**, and after an **acute degradation of CTCF or cohesin** (auxin-inducible degron) loops and TADs disappear within hours (while compartments remain, or even get stronger), but **only a few genes change their expression**.
 - **Single cells.** **Single-cell (super-resolution) chromatin tracing** shows TAD-like domains in single cells even without cohesin, so TADs are not just an averaging artefact of Hi-C.
 
@@ -54,7 +54,7 @@ Cell-type-specific TFs bind the accessible DNA and **recruit coactivators** (Med
 
 ### 3. Facilitating (Phase 2): The search space shrinks
 
-3D genome structure **shrinks the search space** from the whole nucleus: compartment A (active) **segregates** from B, sub-megabase TADs **favour internal contacts**, CTCF–cohesin loops form, and genes relocate to transcription factories/condensates (BRD4 and MED1 at super-enhancers).
+3D genome structure **shrinks the search space** from the whole nucleus: compartment A (active) **segregates** from B, sub-megabase TADs **favor internal contacts**, CTCF–cohesin loops form, and genes relocate to transcription factories/condensates (BRD4 and MED1 at super-enhancers).
 
 **Key points**: TAD insulation is **preferential** and not absolute, the enhancer–gene assignment needs 3D contact maps rather than the linear distance, and at the Shh locus the boundaries matter while the internal distance matters little (section 6).
 
@@ -66,9 +66,9 @@ Cell-type-specific TFs bind the accessible DNA and **recruit coactivators** (Med
 
 ### 5. Specifying (Phase 3): A random encounter becomes stable
 
-Proteins bound at both elements turn brief chance encounters into **preferential contacts**: Mediator bridges them, YY1 dimerises, LDB1 stabilises. No “postcode” is needed: specificity = encounter probability + stabilisation.
+Proteins bound at both elements turn brief chance encounters into **preferential contacts**: Mediator bridges them, YY1 dimerizes, LDB1 stabilizes. No “postcode” is needed: specificity = encounter probability + stabilization.
 
-**Key points**: the promoter in the neighbouring TAD is reached rarely, not never, and removing a boundary reassigns enhancers to the wrong genes (section 6).
+**Key points**: the promoter in the neighboring TAD is reached rarely, not never, and removing a boundary reassigns enhancers to the wrong genes (section 6).
 
 ### 6. Output (result): Contact switches on transcription
 
@@ -84,7 +84,7 @@ Chromatin folding brings distant regulatory elements together:
 
 - **Complementary roles**: the **promoter** positions the **initiation machinery**, while **enhancers increase** the **transcription** of target genes;
 - **Physical communication**: **DNA looping** brings enhancer-bound factors close to the promoter and its transcription machinery;
-- **Target specificity**: **TADs** favour **contacts** within a **domain** (preferential, not absolute), and their boundaries help limit the activation of genes in neighbouring domains;
+- **Target specificity**: **TADs** favor **contacts** within a **domain** (preferential, not absolute), and their boundaries help limit the activation of genes in neighboring domains;
 - **Experimental evidence**: **3C** and **Hi-C map contacts**, and forced looping at the **Hbb locus** supports a **functional role for proximity**.
 
 Mediator and **cohesin** can support **regulatory contacts**. So, **enhancer targeting** depends on both **regulatory activity** and **3D genome organization**.
