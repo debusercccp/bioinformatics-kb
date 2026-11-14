@@ -8,7 +8,7 @@ tags: [note, aml]
 
 > [[AML 65 - Sets – Unique & Unordered + NumPy – Fast & Efficient Arrays|← Sets – Unique & Unordered + NumPy – Fast & Efficient Arrays]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 67 - Data visualization|Data visualization →]]
 
-# Jupiter Notebooks & Google Colab
+# Jupyter Notebooks & Google Colab
 
 Jupyter Notebook is an interactive **web based environment** that allows you to **create and share documents** in **live code**, equations, visualizations and narratives text.
 
@@ -20,7 +20,7 @@ Markdown cells are useful to write texts with rich formatting and supports HTML.
 
 Jupyter is ideal for quick prototyping and sharing ideas but in particular it is **useful for data analysis and interactive visualization.**
 
-A similar resource to Jupiter is **Google Colab**. This is a **free cloud-based Jupyter notebook** produced by google, without setup required because **you can access easily through browser**. It allows also **free access to GPUs and TPUs**, and allows **easy collaboration to share and collab in real time.**
+A similar resource to Jupyter is **Google Colab**. This is a **free cloud-based Jupyter notebook** produced by google, without setup required because **you can access easily through browser**. It allows also **free access to GPUs and TPUs**, and allows **easy collaboration to share and collab in real time.**
 
 ## Pandas
 

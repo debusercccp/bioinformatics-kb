@@ -6,7 +6,7 @@ order: 56
 tags: [note, aml]
 ---
 
-> [[AML 55 - Deep Dive – MLOps|← Deep Dive – MLOps]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 57 - Bonus Matherial + Time Series exercises|Bonus Matherial + Time Series exercises →]]
+> [[AML 55 - Deep Dive – MLOps|← Deep Dive – MLOps]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 57 - Bonus Material + Time Series exercises|Bonus Material + Time Series exercises →]]
 
 # Interpretability and Explainability in AI
 
@@ -183,4 +183,4 @@ tags: [note, aml]
 ![[AML-image392.jpg|642]]
 
 ---
-> [[AML 55 - Deep Dive – MLOps|← Deep Dive – MLOps]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 57 - Bonus Matherial + Time Series exercises|Bonus Matherial + Time Series exercises →]]
+> [[AML 55 - Deep Dive – MLOps|← Deep Dive – MLOps]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 57 - Bonus Material + Time Series exercises|Bonus Material + Time Series exercises →]]

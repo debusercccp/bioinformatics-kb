@@ -6,7 +6,7 @@ order: 67
 tags: [note, aml]
 ---
 
-> [[AML 66 - Jupiter Notebooks & Google Colab + Pandas|← Jupiter Notebooks & Google Colab + Pandas]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 68 - Matplotlib - Customization & Advanced Features|Matplotlib - Customization & Advanced Features →]]
+> [[AML 66 - Jupyter Notebooks & Google Colab + Pandas|← Jupyter Notebooks & Google Colab + Pandas]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 68 - Matplotlib - Customization & Advanced Features|Matplotlib - Customization & Advanced Features →]]
 
 # Data visualization
 
@@ -63,4 +63,4 @@ In general:
 - **Artists** define how data is visually represented
 
 ---
-> [[AML 66 - Jupiter Notebooks & Google Colab + Pandas|← Jupiter Notebooks & Google Colab + Pandas]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 68 - Matplotlib - Customization & Advanced Features|Matplotlib - Customization & Advanced Features →]]
+> [[AML 66 - Jupyter Notebooks & Google Colab + Pandas|← Jupyter Notebooks & Google Colab + Pandas]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 68 - Matplotlib - Customization & Advanced Features|Matplotlib - Customization & Advanced Features →]]

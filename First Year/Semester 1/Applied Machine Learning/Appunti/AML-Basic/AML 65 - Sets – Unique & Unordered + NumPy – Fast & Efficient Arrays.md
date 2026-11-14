@@ -6,7 +6,7 @@ order: 65
 tags: [note, aml]
 ---
 
-> [[AML 64 - Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data|← Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 66 - Jupiter Notebooks & Google Colab + Pandas|Jupiter Notebooks & Google Colab + Pandas →]]
+> [[AML 64 - Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data|← Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 66 - Jupyter Notebooks & Google Colab + Pandas|Jupyter Notebooks & Google Colab + Pandas →]]
 
 # Sets – Unique & Unordered
 
@@ -65,4 +65,4 @@ A powerful numerical computing library that provides **fast, memory-efficient ar
 **Cons** ⅹ **Fixed-type elements →** all elements of same type ⅹ **Less flexible than lists →** all components of same size/length ⅹ **Steeper learning curve**
 
 ---
-> [[AML 64 - Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data|← Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 66 - Jupiter Notebooks & Google Colab + Pandas|Jupiter Notebooks & Google Colab + Pandas →]]
+> [[AML 64 - Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data|← Lists – Flexible & Intuitive + Dictionaries – Fast & Structured Data]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 66 - Jupyter Notebooks & Google Colab + Pandas|Jupyter Notebooks & Google Colab + Pandas →]]

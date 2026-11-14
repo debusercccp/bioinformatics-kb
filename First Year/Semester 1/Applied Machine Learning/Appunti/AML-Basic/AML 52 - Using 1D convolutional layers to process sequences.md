@@ -6,7 +6,7 @@ order: 52
 tags: [note, aml]
 ---
 
-> [[AML 51 - Alleviating the Short Memory Problem in RNNs|← Alleviating the Short Memory Problem in RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 53 - Deep Dive – Object Recongition and Counting|Deep Dive – Object Recongition and Counting →]]
+> [[AML 51 - Alleviating the Short Memory Problem in RNNs|← Alleviating the Short Memory Problem in RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 53 - Deep Dive – Object Recognition and Counting|Deep Dive – Object Recognition and Counting →]]
 
 # Using 1D convolutional layers to process sequences
 
@@ -106,4 +106,4 @@ tags: [note, aml]
 > In the WaveNet paper, the authors achieved state-of-the-art performance on various audio tasks (hence the name of the architecture), including text-to-speech tasks, producing incredibly realistic voices across several languages.
 
 ---
-> [[AML 51 - Alleviating the Short Memory Problem in RNNs|← Alleviating the Short Memory Problem in RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 53 - Deep Dive – Object Recongition and Counting|Deep Dive – Object Recongition and Counting →]]
+> [[AML 51 - Alleviating the Short Memory Problem in RNNs|← Alleviating the Short Memory Problem in RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 53 - Deep Dive – Object Recognition and Counting|Deep Dive – Object Recognition and Counting →]]

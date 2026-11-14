@@ -8,7 +8,7 @@ tags: [note, aml]
 
 > [[AML 52 - Using 1D convolutional layers to process sequences|← Using 1D convolutional layers to process sequences]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 54 - Deep Dive – Semantic Segmentation|Deep Dive – Semantic Segmentation →]]
 
-# Deep Dive: Object Recongition and Counting
+# Deep Dive: Object Recognition and Counting
 
 > **Problem: Object Counting**
 >

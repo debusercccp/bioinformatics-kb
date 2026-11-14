@@ -6,7 +6,7 @@ order: 58
 tags: [note, aml]
 ---
 
-> [[AML 57 - Bonus Matherial + Time Series exercises|← Bonus Matherial + Time Series exercises]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 59 - The Bag of Words Model|The Bag of Words Model →]]
+> [[AML 57 - Bonus Material + Time Series exercises|← Bonus Material + Time Series exercises]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 59 - The Bag of Words Model|The Bag of Words Model →]]
 
 # Introduction to Natural Language Processing (NLP)
 
@@ -131,4 +131,4 @@ If the text is small: *with open('your_file.txt', 'r') as f raw_text = f.read()*
 > In summary, Keras provides a clean and flexible way to preprocess text, starting from simple tokenization and cleaning with text_to_word_sequence, moving through hashing-based quick encodings with one_hot() and hashing_trick(), and offering robust and scalable tokenization and vectorization with the Tokenizer class. For serious NLP tasks, the Tokenizer is the preferred approach, as it gives you full control over how your text is processed and encoded.
 
 ---
-> [[AML 57 - Bonus Matherial + Time Series exercises|← Bonus Matherial + Time Series exercises]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 59 - The Bag of Words Model|The Bag of Words Model →]]
+> [[AML 57 - Bonus Material + Time Series exercises|← Bonus Material + Time Series exercises]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 59 - The Bag of Words Model|The Bag of Words Model →]]

@@ -8,7 +8,7 @@ tags: [note, aml]
 
 > [[AML 56 - Interpretability and Explainability in AI|← Interpretability and Explainability in AI]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 58 - Introduction to Natural Language Processing (NLP)|Introduction to Natural Language Processing (NLP) →]]
 
-# Bonus Matherial
+# Bonus Material
 
 ## Time Series exercises
 

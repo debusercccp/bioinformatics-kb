@@ -82,6 +82,12 @@ FIXES = [
     ('FG 12 -', '![[FG-image32.png|303]]**How the flanking gene', '![[FG-image32.png|303]]\n\n**How the flanking gene'),
 ]
 
+# typos in the docx, fixed in the converted text (titles, links and body) before splitting
+SPELLING = {
+    'AML': [('RECONGITION', 'RECOGNITION'), ('Recongition', 'Recognition'),
+            ('MATHERIAL', 'MATERIAL'), ('Matherial', 'Material'), ('Jupiter', 'Jupyter')],
+}
+
 BIG = 300      # lines: a chapter longer than this is split at its H2s
 MIN = 40       # lines: smaller H2 chunks are merged forward
 
@@ -258,6 +264,8 @@ def convert_media(key):
 def build(key):
     cfg = SOURCES[key]
     text = (CONV / key / f'{key}.md').read_text(encoding='utf-8')
+    for bad, good in SPELLING.get(key, []):
+        text = text.replace(bad, good)
     media_map = convert_media(key)
     secs = parse_sections(text, key)
 

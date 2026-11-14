@@ -6,7 +6,7 @@ order: 54
 tags: [note, aml]
 ---
 
-> [[AML 53 - Deep Dive – Object Recongition and Counting|← Deep Dive – Object Recongition and Counting]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 55 - Deep Dive – MLOps|Deep Dive – MLOps →]]
+> [[AML 53 - Deep Dive – Object Recognition and Counting|← Deep Dive – Object Recognition and Counting]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 55 - Deep Dive – MLOps|Deep Dive – MLOps →]]
 
 # Deep Dive: Semantic Segmentation
 
@@ -147,4 +147,4 @@ tags: [note, aml]
 ![[AML-image382.jpg|642]]
 
 ---
-> [[AML 53 - Deep Dive – Object Recongition and Counting|← Deep Dive – Object Recongition and Counting]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 55 - Deep Dive – MLOps|Deep Dive – MLOps →]]
+> [[AML 53 - Deep Dive – Object Recognition and Counting|← Deep Dive – Object Recognition and Counting]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 55 - Deep Dive – MLOps|Deep Dive – MLOps →]]

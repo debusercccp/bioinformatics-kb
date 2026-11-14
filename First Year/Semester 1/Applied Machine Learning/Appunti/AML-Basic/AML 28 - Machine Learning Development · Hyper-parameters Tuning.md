@@ -102,7 +102,7 @@ ALLEVIATING THE SHORT MEMORY PROBLEM IN RNNs 113
 
 Using 1D convolutional layers to process sequences 116
 
-**DEEP DIVE: OBJECT RECONGITION AND COUNTING 119**
+**DEEP DIVE: OBJECT RECOGNITION AND COUNTING 119**
 
 **DEEP DIVE: SEMANTIC SEGMENTATION 121**
 
@@ -112,7 +112,7 @@ Using 1D convolutional layers to process sequences 116
 
 Time Series exercises 138
 
-**BONUS MATHERIAL 138**
+**BONUS MATERIAL 138**
 
 Introduction to Natural Language Processing (NLP) 141
 
