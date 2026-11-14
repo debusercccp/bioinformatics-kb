@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 18
 tags: [note, aml]
 ---
@@ -22,12 +22,12 @@ Additionally, some machine learning problems may lend themselves more favorably 
 <thead>
 <tr>
 <th style="text-align: left;">Than others.</th>
-<th></th>
+<th style="text-align: center;"></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td colspan="2"><h2 id="evaluate-a-learning-model">11.1 EVALUATE A LEARNING MODEL </h2></td>
+<td colspan="2" style="text-align: center;"><strong>11.1 EVALUATE A LEARNING MODEL</strong></td>
 </tr>
 </tbody>
 </table>

@@ -1,12 +1,12 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 20
 tags: [note, mbd]
 ---
 
-> [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation|← Module 5 – Calculus in More Variables and Optimisation]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]]
+> [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation|← Module 5 – Calculus in More Variables and Optimisation]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 21 - Module 7 – Distributions|Module 7 – Distributions →]]
 
 # Module 6 — Probability
 
@@ -133,4 +133,4 @@ both hold: knowing that one happened does not change the probability of the othe
 - [[SATAUMV 03 - Hardy-Weinberg equilibrium (HWE)]] — Hardy-Weinberg: probabilità applicata alle popolazioni
 
 ---
-> [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation|← Module 5 – Calculus in More Variables and Optimisation]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]]
+> [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation|← Module 5 – Calculus in More Variables and Optimisation]] · [[Introduction to Modeling of Biological Data|↑ Modeling of Biological Data]] · [[MBD 21 - Module 7 – Distributions|Module 7 – Distributions →]]

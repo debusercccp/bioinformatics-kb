@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 16
 tags: [note, aml]
 ---
@@ -30,7 +30,7 @@ The BFGS algorithm, which stands for Broyden–Fletcher–Goldfarb–Shanno, is 
 
 In such situations, the BFGS algorithm provides an effective alternative. It is an iterative optimization technique that does not rely on explicit computation of the Jacobian or Hessian matrices. Instead, it updates an approximation of the inverse Hessian matrix as it iterates towards the optimal solution. This makes it suitable for a wide range of non-linear optimization problems where traditional methods may not be practical.
 
-### L-BFGS 
+#### L-BFGS 
 
 The L-BFGS algorithm, where "L" stands for "limited-memory," is a variant of the BFGS (Broyden–Fletcher– Goldfarb–Shanno) algorithm.
 

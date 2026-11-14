@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 33
 tags: [note, aml]
 ---
@@ -40,7 +40,7 @@ tags: [note, aml]
 
 > This continues recursively until a **leaf node** is reached.
 
-![[AML-image188.jpg|639]]
+![[AML-image209.jpg|639]]
 
 > **Example: Iris Dataset**
 >
@@ -60,11 +60,11 @@ tags: [note, aml]
 
 2.  Compute the **ratio** of training samples of class kkk in that node
 
-> ![[AML-image189.jpg|301]]In scikit-learn, this is done via the predict_proba() method, which returns an array of probabilities for each class.
+> ![[AML-image210.jpg|301]]In scikit-learn, this is done via the predict_proba() method, which returns an array of probabilities for each class.
 >
 > This script tells you the probability that will be split out will be in a python array with the probabilities.
 
-![[AML-image190.jpg|559]]
+![[AML-image211.jpg|559]]
 
 > This is how the points look like; I’ve drawn identifying the region having point given kind of flower. Setosa in very far away from the others.
 >
@@ -108,7 +108,7 @@ tags: [note, aml]
 >
 > ❖ The cost function that the CART algo
 >
-> ![[AML-image191.jpg|483]]
+> ![[AML-image212.jpg|483]]
 >
 > tries to minimize for classification is:
 
@@ -130,7 +130,7 @@ tags: [note, aml]
 
 > Suppose you have a regression tree trained on 200 data points. A new input x1=0.6x_1 = 0.6x1 =0.6 is evaluated by traversing the tree. It ends up in a leaf node where: 110 training samples are grouped, the predicted value is the **average target value** of these 110 points (e.g., 0.111),
 
-![[AML-image192.jpg|504]]
+![[AML-image213.jpg|504]]
 
 > The MSE in that leaf is 0.015.
 >
@@ -154,17 +154,17 @@ tags: [note, aml]
 
 - The cost function that the CART algo tries to **minimise** for classification was:
 
-> ![[AML-image193.jpg|510]] then, it splits the **2 sub-sets** in 2 again using the same logic, and so on, **recursively**, until indicated by the max_depth hyperparameter (or if it cannot find a split that will reduce impurity).
+> ![[AML-image214.jpg|510]] then, it splits the **2 sub-sets** in 2 again using the same logic, and so on, **recursively**, until indicated by the max_depth hyperparameter (or if it cannot find a split that will reduce impurity).
 >
 > **DTS prone to overfitting**
 >
 > Just like for classification tasks - DTs are prone to overfitting also when dealing with **regression** **tasks**. Using the default hyper-parameters, i.e. without any regularization, you get the predictions of type \[A\]. Just setting min_samples_leaf=10 in sklearn results in a much more reasonable model as in \[B\] below.
 
-![[AML-image194.jpg|642]]
+![[AML-image215.jpg|642]]
 
 > Prediction with overfitting: applying depths limits you would like to have your hands on another hyperparameter. When you get to the limit you need STOP, otherwise you will get overfitting.
 
-![[AML-image195.jpg|642]]
+![[AML-image216.jpg|642]]
 
 > E.g. *DecisionTreeClassifier(max_leaf_node=N)* specifies N leaves at maximum, so - unless the tree builder has some other reasons to stop - it will **hit** **the** **max**. Suppose I run it with N=10, it might happen that some (e.g. 4) of the N leaves would have a very small amount of samples (e.g. ≲3) compared to the others 6 leaves (e.g. ≳50), this being a possible sign of over-fitting. One could “**prune**” the tree a-posteriori (after training). Or another viable option is to specify either *min_samples_leaf* (or *min_samples_split*) to better guide the training: it will likely get rid of the problematic leaves. e.g. set the value 0.03 if you want at least 3% of examples.
 >

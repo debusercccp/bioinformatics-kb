@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 55
 tags: [note, aml]
 ---
@@ -16,7 +16,7 @@ tags: [note, aml]
 >
 > **The ML Project Pipeline**
 
-![[AML-image338.jpg|269]]
+![[AML-image383.jpg|269]]
 
 > Machine learning projects follow a structured pipeline that typically includes:
 
@@ -44,7 +44,7 @@ tags: [note, aml]
 >
 > **The Importance of Data-Centric AI**
 
-![[AML-image339.jpg|492]]
+![[AML-image384.jpg|492]]
 
 > A key shift in recent years has been the move from a **model-centric** to a **data-centric** approach. Instead of endlessly refining model architecture, more emphasis is now placed on improving the **quality, balance, and consistency of the data**.
 >

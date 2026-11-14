@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 27
 tags: [note, aml]
 ---
@@ -125,7 +125,7 @@ So, when a model has low uncertainty or entropy, it means it's more certain and 
 
 While accuracy focuses on counting correct predictions, logloss delves deeper into the quality of these predictions. **Logloss prefers models that can confidently differentiate between different categories** or classes. Essentially, if a model is proficient at distinguishing between various categories, it tends to have a lower logloss.
 
-### CONFUSION MATRIX ~~A~~ND SKLEARN
+#### CONFUSION MATRIX ~~A~~ND SKLEARN
 
 If the question is “***can I use confusion matrix as a scoring metric in a CV-based approach, using sklearn***?", the answer basically is **NO**.
 

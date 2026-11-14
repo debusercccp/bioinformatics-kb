@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 12
 tags: [note, aml]
 ---
@@ -30,7 +30,7 @@ Imagine you have a 2D space where each axis represents a different feature. In t
 
 Visually, you can see that these two classes can be separated by a line. When we mention "putting a line between the 2 groups of data", it means drawing a line (the decision boundary) that effectively separates the instances belonging to class 0 from those belonging to class 1 in our dataset. This process is essentially what logistic regression aims to achieve: creating a model that accurately distinguishes between different classes based on the input features.
 
-![[AML-image68.jpg|697]]
+![[AML-image71.jpg|697]]
 
 1.  **Hypothesis Formation**
 
@@ -80,11 +80,11 @@ Recap
 
 In essence, the relationship between the hypothesis, parameters, and decision boundary highlights the internal logic and consistency of logistic regression. This understanding allows us to generalize the model's classification behavior beyond the training data, ensuring its applicability to new datasets.
 
-> ![[AML-image69.jpg|565]]
+> ![[AML-image72.jpg|565]]
 
-### NON LINEAR DECISION BOUNDARY
+#### NON LINEAR DECISION BOUNDARY
 
-![[AML-image70.jpg|183]]In scenarios where a linear decision boundary is insufficient to separate the data effectively, we turn to non linear decision boundaries. One approach is to leverage polynomial regression techniques within logistic regression to create more complex decision boundaries.
+![[AML-image73.jpg|183]]In scenarios where a linear decision boundary is insufficient to separate the data effectively, we turn to non linear decision boundaries. One approach is to leverage polynomial regression techniques within logistic regression to create more complex decision boundaries.
 
 Consider a two-dimensional feature space with features *x*1and *x*2, where the data distribution doesn't neatly align with a linear boundary. Attempting to separate the data with a linear boundary would likely lead to poor classification results.
 
@@ -108,7 +108,7 @@ This implies that our decision boundary equation would be:
 
 −1 + *x*<sub>1</sub><sup>2</sup> + *x*<sub>2</sub><sup>2</sup> \< 0 to predict class 0
 
-> ![[AML-image71.jpg|493]]
+> ![[AML-image74.jpg|493]]
 
 Graphically, this decision boundary forms a **circular boundary** in the feature space rather than a straight line. Despite its nonlinear nature, this circular boundary effectively separates the classes, as evidenced by the green line in the illustration.
 
@@ -120,9 +120,9 @@ Interestingly, the decision boundaries, whether linear or nonlinear, are primari
 
 Therefore, we can consider these hypotheses independently of the data points, focusing instead on how they define the decision boundary. The choice of algorithm and the complexity of the hypothesis significantly impact our ability to construct a decision boundary that effectively separates the data points based on their classes. As we increase the complexity of our approach during training, we gain more flexibility in designing decision boundaries that align better with the underlying data distribution.
 
-> ![[AML-image72.jpg|439]]
+> ![[AML-image75.jpg|439]]
 
-![[AML-image73.jpg|446]]
+![[AML-image76.jpg|446]]
 
 ## Collegamenti
 - [[MBD 03 - Module 1 – Vectors and Hyperplanes · Hyperplanes and linear classification]] — iperpiani e decision boundary lineare

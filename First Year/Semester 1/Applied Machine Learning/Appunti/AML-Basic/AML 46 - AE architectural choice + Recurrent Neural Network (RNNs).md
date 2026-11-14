@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 46
 tags: [note, aml]
 ---
@@ -14,13 +14,13 @@ tags: [note, aml]
 >
 > The key is hence to force the AE to learn useful features:
 
-![[AML-image286.jpg|426]]
+![[AML-image324.jpg|426]]
 
 > **Denoising AEs**
 >
 > AE can learn useful features by adding **random noise** to the input and making it recover the original noise-free data. In this case, a straight copy input to output will not work, and the AE is forced to **identify the noise and subtract it**, thus exposing the underlying meaningful data. The thing to do is for the main action point is not to train with itself but the noisy sample with the labels that are the clean samples. In this way you can also try for **different** noise factor, that can be used for any possible image. **Expectedly** the output will be very clean, but there is not the same exact shape.
 
-![[AML-image287.jpg|361]]
+![[AML-image325.jpg|361]]
 
 > Higher noisy factor will results in a not so well reconstructed image. But that would be expected.
 >
@@ -38,7 +38,7 @@ tags: [note, aml]
 >
 > This technique to put together convnet and autoencoders.
 
-![[AML-image288.jpg|642]]
+![[AML-image326.jpg|642]]
 
 ## RECURRENT NEURAL NETWORK (RNNs)
 
@@ -60,7 +60,7 @@ tags: [note, aml]
 >
 > **Recurrent Neurons and layers**
 >
-> ![[AML-image289.jpg|280]]Up to now we have focused on **feedforward NNs**, where the activations flow only in one direction, from the input layer to the output layer. A RNN looks very much like a feedforward NN, expect it also has **connections pointing backward**. The simplest possible RNN is composed of one neuron receiving inputs, producing an output, and sending that output back to itself.
+> ![[AML-image327.jpg|280]]Up to now we have focused on **feedforward NNs**, where the activations flow only in one direction, from the input layer to the output layer. A RNN looks very much like a feedforward NN, expect it also has **connections pointing backward**. The simplest possible RNN is composed of one neuron receiving inputs, producing an output, and sending that output back to itself.
 >
 > At each time step t (also called a frame), this recurrent neuron receives:
 
@@ -72,23 +72,23 @@ tags: [note, aml]
 >
 > you have the y of the t-1 coming as input, and of course it goes back.
 
-![[AML-image290.jpg|642]]
+![[AML-image328.jpg|642]]
 
 > The interesting thing is that you can represent the network like this: you can have like a **time** **axes**. You have something coming at the beginning. A single recurrent neuron on the left, the other one is a single neuron unrolled! It is not an architecture of four neurons.
 >
 > **Input** and **output** are just **scalar numbers**. You can create a layer of this neurons. Of course, the connections go back not to just one but consider the number of neurons unrolled through time.
 
-![[AML-image291.jpg|642]]
+![[AML-image329.jpg|642]]
 
 > The layer in this case, at every time steps, gets as input some vectors: the **input vector** **Xt** at the **time t** and the output vector at the previous time frame: the layer, at each time step t, receives both the **input vector** (not scalar) x(t) and the **output vector** (not scalar) from the **previous time step** y(t–1). If you want to remember a sequence you need to pass it as an input. So, you need to remember like a letter before another. The logic Is complicated in terms of **notations**: you **need to deal with weights**.
 >
 > Every neuron in this case has **two sets of weights**: one set of weights for x as function of t(wx)and then another input that is the output of the previous time step, that are called the **Ws**. If you consider not only a single recurrent layer, but the weight vector can also be put to the weight matrix, Wx and Wy. Of course, if you need to write down how the W would be you must consider activation function of both.
 >
-> ![[AML-image292.jpg|457]]Output of a recurrent layer for a single instance
+> ![[AML-image330.jpg|457]]Output of a recurrent layer for a single instance
 >
 > Just as with feedforward neural networks, we can compute a recurrent layer’s output in one shot for a whole mini-batch by placing all the inputs at time step t in an input matrix X(t):
 >
-> ![[AML-image293.jpg|502]]Outputs of a layer of recurrent neurons for all instances in a mini batch.
+> ![[AML-image331.jpg|502]]Outputs of a layer of recurrent neurons for all instances in a mini batch.
 >
 > Y(t) is a function of all the inputs since time t = 0 (that is, X(0), X(1), ...X(t)).
 >

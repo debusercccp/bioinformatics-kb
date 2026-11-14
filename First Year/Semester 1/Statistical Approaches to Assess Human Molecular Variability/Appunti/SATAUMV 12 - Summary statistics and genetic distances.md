@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
+source: "MCB/SATAUMV/Statistical_approaches.docx"
 order: 12
 tags: [note, sataumv]
 ---
@@ -25,7 +25,7 @@ There are two main goals: the **description of the distribution of present diver
 These two goals correspond to two complementary families of methods, descriptive and inferential, which differ in what they aim to achieve and in how they treat the data:
 
 - **Descriptive methods summarize** the genetic variation observed in the sample without assuming an explicit model of how it was generated. They answer the question "what does the variation look like?" and include **summary statistics** of intra-population diversity (e.g. heterozygosity, nucleotide diversity, haplotype diversity), measures of inter-population differentiation such as **FST** and **genetic distance matrices**, and exploratory representations such as **trees** (UPGMA, NJ) and **MDS** plots. Their results are direct and largely model-free, but they do not by themselves explain the causes of the observed patterns;
-- **Inferential methods** use the observed data to draw conclusions about unobserved processes and parameters, such as past population sizes, divergence times, migration rates, admixture events or the action of natural selection. They rely on an **explicit population-genetic model** (e.g. Wright-Fisher, coalescent), estimate its parameters and test hypotheses by **comparing the observed data with the expectations under the model**, usually with a measure of uncertainty (confidence intervals, **p**-values, likelihoods). They answer the question "how and why did the variation arise?".
+- **Inferential methods** use the observed data to **draw conclusions** about unobserved processes and parameters, such as past population sizes, divergence times, migration rates, admixture events or the action of natural selection. They rely on an **explicit population-genetic model** (e.g. Wright-Fisher, coalescent), estimate its parameters and test hypotheses by **comparing the observed data with the expectations under the model**, usually with a measure of uncertainty (confidence intervals, **p**-values, likelihoods). They answer the question "how and why did the variation arise?".
 
 In practice, the two approaches are used in sequence: descriptive analyses **reveal patterns** and **generate hypotheses**, which inferential methods then formally **test** against models of demographic and selective history.
 
@@ -82,7 +82,7 @@ Summary statistics can be estimated at the **genomic level** using a **sliding w
 
 In the example, a genome-wide scan of nucleotide diversity (windows of 100 kbp, step of 10 kbp) is shown for **two sub-populations** (red and green); horizontal dashed lines are the **mean** pairwise nucleotide diversity of each sub-population, and vertical dashed lines are chromosome **boundaries**.
 
-The **genome-wide distributions** of these statistics serve as an **empirical baseline** against which to evaluate regions with **reduced or higher levels of diversity**: for example, windows with unusually low diversity may point to a selective sweep, and windows with unusually high diversity to balancing selection (chapter 8).
+The **genome-wide distributions** of these statistics serve as an **empirical baseline** against which to evaluate regions with **reduced or higher levels of diversity**: for example, windows with **unusually low diversity may point to a selective sweep**, and windows with unusually **high diversity to balancing selection** (chapter 8).
 
 ## 12.5 Measures of inter-population differences: distance matrices
 

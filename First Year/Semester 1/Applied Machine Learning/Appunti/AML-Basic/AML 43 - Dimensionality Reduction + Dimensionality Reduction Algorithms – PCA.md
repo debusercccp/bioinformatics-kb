@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 43
 tags: [note, aml]
 ---
@@ -24,7 +24,7 @@ tags: [note, aml]
 
 > **Projection**
 
-![[AML-image264.jpg|642]]
+![[AML-image300.jpg|642]]
 
 > In most real-world problems suffering from high dimensionality, training instances are not spread out uniformly across all dimensions. all training instances actually lie within (or close to) **a much lower-dimensional subspace of the high-dimensional space.** **Manifold Learning** a d-dimensional manifold is a part of an n-dimensional space (d \< n) that locally resembles a d-dimensional hyperplane. The roll: d = 2, n = 3: it locally resembles a 2D plane, but it is rolled in the 3rd dimension.
 
@@ -44,7 +44,7 @@ tags: [note, aml]
 >
 > It first identifies **the hyperplane that lies closest to the data**, then it projects the data onto it. It is the most popular DR algorithm, it identifies hyperplane closest to the data and project onto it.
 
-![[AML-image267.jpg|609]]
+![[AML-image305.jpg|609]]
 
 > Axis a in this case, preserves the **max amount of variance**, so it will most likely loose less information. This identifies a **first axis** that accounts for the largest amount of variance in the training set. But it also inherently finds a second axis, orthogonal to the first one, that accounts for the largest amount of remaining variance.
 >
@@ -54,7 +54,7 @@ tags: [note, aml]
 >
 > The versor that defines the -ith axis is called the -ith principal component (PC). 2D dataset → the 1st PC is c1, the 2nd PC is c2.
 
-![[AML-image268.jpg|642]]
+![[AML-image306.jpg|642]]
 
 > **Appling PCA: Singlìular Value Decomposition (SVD)**
 >
@@ -64,7 +64,7 @@ tags: [note, aml]
 
 > **PCA implementation in sklearn**
 >
-> ![[AML-image271.jpg|361]]Sklearn’s PCA class implements PCA using **SVD decomposition**. After fitting the PCA transformer to the dataset, you can access the **principal components** using the *components\_*
+> ![[AML-image309.jpg|361]]Sklearn’s PCA class implements PCA using **SVD decomposition**. After fitting the PCA transformer to the dataset, you can access the **principal components** using the *components\_*
 >
 > *variable* (PCs are horizontal vectors): Sklearn also offers the explained variance ratio of each PC, via the *explained_variance_ratio\_* variable.
 >
@@ -72,13 +72,13 @@ tags: [note, aml]
 >
 > Plot explained variance as a function of number dimensions: the elbow is where the explained variance stops growing fast as nb dimensions increases. This can be thought of as the “**intrinsic**” dimensionality of the dataset: reducing dimensionality down to that would not lose too much explained variance.
 
-![[AML-image272.jpg|430]]
+![[AML-image310.jpg|430]]
 
 > **Randomised PCA**
 >
 > Finding PCs via SVD can be slow when you need to go from D down to d\<\<D. Randomised PCA is a **stochastic algorithm** able to quickly find an approximation of the first d PCs, with a **reduced computational complexity** w.r.t to the “full SVD” approach. Sklearn’s PCA implementation has a hyper-parameter (*svd_solver*) that can be specifically set to “randomized" to use this also:
 
-![[AML-image273.jpg|642]]
+![[AML-image311.jpg|642]]
 
 > **Incremental PCA**
 >

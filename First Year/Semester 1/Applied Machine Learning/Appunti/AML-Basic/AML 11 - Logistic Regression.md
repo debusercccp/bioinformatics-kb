@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 11
 tags: [note, aml]
 ---
@@ -42,7 +42,7 @@ $$
 g(z) = \frac{1}{1 + e^{- z}}
 $$
 
-> ![[AML-image63.jpg|500]]
+> ![[AML-image66.jpg|500]]
 
 - Starting Point: The curve starts at 0 when z tends towards negative infinity.
 
@@ -60,19 +60,19 @@ Interpreting the new hypothesis*g*(*θ<sup>T </sup>*⋅ *x*) is crucial, especia
 
 For instance, in a binary classification scenario where the output is either 0 or 1, the output of *g*(*θ<sup>T </sup>*⋅ *x*) can be interpreted as the predicted probability that the given input belongs to the positive class.
 
-### Example 
+#### *Example* 
 
 Imagine our hypothesis in logistic regression as estimating the probability that a new input example x belongs to the positive class y=1. In practical terms, consider a patient undergoing an examination, where the features x represent various medical indicators.
 
 If our hypothesis h outputs 0.7, it suggests a 70% likelihood that the patient has malignant cancer (corresponding to y = 1). Here, x serves as a basic feature vector encapsulating relevant patient data.
 
-![[AML-image64.jpg|348]]
+![[AML-image67.jpg|348]]
 
 Formally, we interpret our **<u>hypothesis as the probability of an input belonging to the positive class</u>**, given its features x and parameterized by *θ*. Essentially, our hypothesis embodies the likelihood that y=1 given the specific input features x, with the parameter vector *θ* influencing this estimation.
 
 Now, let's delve into understanding the parameter *θ*.
 
-![[AML-image65.jpg|287]]In this scenario, we're dealing with a binary condition, meaning that the sum of conditional probabilities to have 0 and to have 1 must be 1. Thus, the probability to belong to the other class is 1 - the previous probability.
+![[AML-image68.jpg|287]]In this scenario, we're dealing with a binary condition, meaning that the sum of conditional probabilities to have 0 and to have 1 must be 1. Thus, the probability to belong to the other class is 1 - the previous probability.
 
 At this juncture, we're not only shaping the way we think but also influencing the way we interpret our data. Therefore, h represents the probability of belonging to either the positive or negative class. When we apply the sigmoid function to our original hypothesis g, denoted as *g*(*h*), the output predicts:
 
@@ -88,7 +88,7 @@ However, when we apply *g*(*z*), our new hypothesis, it follows the green line o
 
 By setting the threshold at 0.5, any values above it tend to predict *y* = 1 while those below it predict 0. This distinction helps us categorize outcomes more effectively. In essence, while the original hypothesis h may vary, the transformed hypothesis *g*(*h*)ensures a clearer delineation between the two classes.
 
-> ![](media/media/image620.jpg)
+> ![](media/media/image62.jpg)
 
 ## Collegamenti
 - [[MBD 03 - Module 1 – Vectors and Hyperplanes · Hyperplanes and linear classification]] — iperpiani come classificatori lineari

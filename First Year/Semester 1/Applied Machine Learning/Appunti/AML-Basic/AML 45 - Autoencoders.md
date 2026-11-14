@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 45
 tags: [note, aml]
 ---
@@ -20,7 +20,7 @@ tags: [note, aml]
 >
 > An AE consists of three components: **encoder**, **code**, **decoder**.
 
-![[AML-image280.jpg|642]]
+![[AML-image318.jpg|642]]
 
 > The encoder and decoder do not talk to each other, the encoder compresses the input and reproduces the code, the decoder uses the code and reconstructs the input, yielding the output. To build an AE we need an **encoding method**, a decoding method, a loss function to compare the output with the target.
 >
@@ -32,7 +32,7 @@ tags: [note, aml]
 
 - **{un-,self-}supervised**: we can throw data to an AE and train it w/o any prior action. No need for labels → un-supervised, but imprecise: self-supervised, because they generate their own labels from the training dataset
 
-![[AML-image281.jpg|328]]
+![[AML-image319.jpg|328]]
 
 > **Input and output are in blue**. Both encoder and decoders are **FC** and **FF ANN**.
 >
@@ -42,7 +42,7 @@ tags: [note, aml]
 >
 > Pretty easy in terms of managing hyperparameters.
 
-![[AML-image282.jpg|496]]
+![[AML-image320.jpg|496]]
 
 > For a **sandwich-like structure**, the typical thing is that since you have a smaller thing inside, you usually decrease for each subsequent layer of encoder and increase for the decoder. Once you have coded the stuff with something like this you have a normal neural network, using backpropagation and **Gradient Descent**.
 >
@@ -50,7 +50,7 @@ tags: [note, aml]
 >
 > A four form mnist can run it through a network that cans squeeze into something with lower dimensionality and reconstruct it to the input.
 
-![[AML-image283.jpg|642]]
+![[AML-image321.jpg|642]]
 
 > **Creating autoencoder:** taking input and output, with binary cross entropy and an optimizer and that’s it. The differences we have seen so far with keras are: For of all syntax is not the same we saw normally. This is not a sequentially interface.
 >
@@ -78,7 +78,7 @@ tags: [note, aml]
 >
 > You specify the input this is sort of design as a **DAG** (**Direct Acyclic Graph**) that describes a sequence of layer as a graph of layers.
 
-![[AML-image284.jpg|642]]
+![[AML-image322.jpg|642]]
 
 > **Functional API is non sequential**; you can use different input. Might be more verbose, but it is more flexible. For complex model, you don’t use it.
 >
@@ -86,7 +86,7 @@ tags: [note, aml]
 >
 > Model fil: there are no labels, this is self-supervised. The target of the autoencoders would be the same of the inputs.
 
-![[AML-image285.jpg|642]]
+![[AML-image323.jpg|642]]
 
 > You can see the output here. At most we have 209968 parameters. This is drawn horizontally usually. You can do the summary not vertically but horizontally. There are ways to make your autoencoders deeper, to get a higher quality for your code.
 

@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
+source: "MCB/SATAUMV/Statistical_approaches.docx"
 order: 5
 tags: [note, sataumv]
 ---
@@ -73,7 +73,7 @@ Graphically, under linkage equilibrium the area of each haplotype square equals 
 
 *(**r** = recombination fraction between the loci, **t** = generations)*
 
-![[SATAUMV-image9.png|624]]
+![[SATAUMV-image9.png|585]]
 
 | **Recombination fraction** | **Behaviour of LD (graph with D₀ = 0.25)** |
 |:---|:---|

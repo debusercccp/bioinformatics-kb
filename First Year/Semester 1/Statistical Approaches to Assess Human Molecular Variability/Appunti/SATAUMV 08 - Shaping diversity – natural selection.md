@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
+source: "MCB/SATAUMV/Statistical_approaches.docx"
 order: 8
 tags: [note, sataumv]
 ---
@@ -51,22 +51,7 @@ Number of SNPs by class and minor allele frequency (MAF) bin, from the chart on 
 
 ## 8.4 Positive selection
 
-**Positive selection** favors the **increase in frequency of advantageous alleles**. The slide map links candidate genes to the selective pressures met during the dispersal of modern humans:
-
-| **Trait / pressure** | **Genes on the map** | **Region on the map** |
-|:---|:---|:---|
-| Skin pigmentation | *SLC24A5*, *SLC45A2*, *TYR*, *MC1R* | Europe |
-| Lactase persistence | *MCM6* | Northern Europe; East Africa and Arabian peninsula |
-| Arctic environment | *CPT1A*, *LRP5*, *THADA*, *PRKG1* | Siberia |
-| High-fat diet | *FADS* loci | Greenland |
-| High altitude | *EGLN1*, *EPAS1*; *VAV3*, *ARNT2*, *THRB*; *EGLN1* | Tibet and Central Asia; Ethiopian highlands; Andes |
-| Starchy food | *AMY1* | East Asia |
-| Thick hair | *EDAR1* | East Asia |
-| Trypanosome resistance | *APOL1* | West Africa |
-| Malaria | *G6PD*, *HBB*, *GYPA*, *GYPB*, *GYPC* | Africa |
-| Height | *CISH*, *DOCK3*, *STAT5*, *HESX1*, *POU1F1*; polygenic signal | Central Africa; Europe |
-| Increased BMI | *CREBRF* | Polynesia |
-| Toxic arsenic-rich environments | *AS3MT* | Andes (South America) |
+**Positive selection** favors the **increase in frequency of advantageous alleles**.
 
 ## 8.5 Selective sweep
 

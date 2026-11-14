@@ -55,25 +55,25 @@ SOURCES = {
         course='Statistical Approaches to Assess Human Molecular Variability',
         module_note='Statistical Approaches to Assess Human Molecular Variability',
         dir=S1 / 'Statistical Approaches to Assess Human Molecular Variability',
-        src='MCB/Statistical_Approaches/Statistical_approaches.docx', label='Statistical Approaches'),
+        src='MCB/SATAUMV/Statistical_approaches.docx', label='Statistical Approaches'),
     'FG': dict(
         course=FGIG, module_note='Functional Genetics', dir=S1 / FGIG,
-        src='MCB/Functional_Genetics/FunctionalGen_common.docx', label='Functional Genetics', sub='Functional Genetics'),
+        src='MCB/FGIG/FG/FunctionalGen_common.docx', label='Functional Genetics', sub='Functional Genetics'),
     'IG': dict(
         course=FGIG, module_note='Integrative Genomics', dir=S1 / FGIG,
-        src='MCB/Functional_Genetics/IntegrativeGen_RS.docx', label='Integrative Genomics', sub='Integrative Genomics'),
+        src='MCB/FGIG/IG/IntegrativeGen_RS.docx', label='Integrative Genomics', sub='Integrative Genomics'),
     'AML': dict(
         course='Applied Machine Learning', module_note='Applied Machine Learning (AML-Basic)',
-        dir=S1 / 'Applied Machine Learning', src='MCB/Applied_ML/MLFULL.docx',
+        dir=S1 / 'Applied Machine Learning', src='MCB/AML/MLFULL.docx',
         label='AML-Basic', sub='AML-Basic'),
     'MBD': dict(
         course='Introduction to Computing in Biology',
         module_note='Introduction to Modeling of Biological Data',
-        dir=S1 / 'Introduction to Computing in Biology', src='MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx',
+        dir=S1 / 'Introduction to Computing in Biology', src='MCB/MBD/ModelingBioData.docx',
         label='Modeling of Biological Data'),
     'BFB': dict(
         course='Bioinformatics for Biology', module_note='Bioinformatics for Biology',
-        dir=S1 / 'Bioinformatics for Biology', src='MCB/Bioinformatics_For_Biology/Bioinformatics_For_Biology.docx',
+        dir=S1 / 'Bioinformatics for Biology', src='MCB/BFB/Bioinformatics_For_Biology.docx',
         label='Bioinformatics for Biology'),
 }
 

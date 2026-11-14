@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 47
 tags: [note, aml]
 ---
@@ -16,13 +16,13 @@ tags: [note, aml]
 
 • Updates its state using:
 
-> ![[AML-image294.jpg|274]]o Current input **x(t)** o Previous state **h(t−1)**
+> ![[AML-image332.jpg|274]]o Current input **x(t)** o Previous state **h(t−1)**
 >
 > Short = about 10 steps long, depending on the task.
 >
 > **Formalising Memory in RNNs**
 
-- ![[AML-image295.jpg|418]]h(t) = hidden state at
+- ![[AML-image333.jpg|418]]h(t) = hidden state at
 
 > time t
 
@@ -30,19 +30,19 @@ tags: [note, aml]
 
 - y(t) = output at time t
 
-> ![[AML-image296.jpg|362]]The RNN computes:
+> ![[AML-image334.jpg|362]]The RNN computes:
 >
 > A cell’s state at time step t denoted h(t) is a function of some inputs at that time step, and its state at the previous time step.
 >
 > **Input and Output Sequences**
 >
-> ![[AML-image297.jpg|268]]**Seq-2-seq**
+> ![[AML-image335.jpg|268]]**Seq-2-seq**
 >
 > **RNN** can **simultaneously** *take a sequence of inputs and produce a sequence of outputs* **(“sequence-tosequence” network**).
 >
 > **Seq-2-Vec**
 >
-> ![[AML-image298.jpg|205]]Used when you want to extract a **single value** from a sequence.
+> ![[AML-image336.jpg|205]]Used when you want to extract a **single value** from a sequence.
 
 5.  **g., sentiment analysis:**
 
@@ -52,7 +52,7 @@ tags: [note, aml]
 >
 > **Vec-2-seq**
 >
-> ![[AML-image299.jpg|193]]Conversely, you could feed the network the same input vector over and over again at each time step and let it output a sequence **(“vector-to-sequence” network).**
+> ![[AML-image337.jpg|193]]Conversely, you could feed the network the same input vector over and over again at each time step and let it output a sequence **(“vector-to-sequence” network).**
 >
 > E.g. the input could be an image (or the output of a CNN), and the output could be a caption for that image
 >
@@ -60,7 +60,7 @@ tags: [note, aml]
 >
 > This is an improvement over basic Seq2Seq.
 
-- ![[AML-image300.jpg|315]]**Encoder** reads the input sequence → compresses it into a context vector (a single vector c)
+- ![[AML-image338.jpg|315]]**Encoder** reads the input sequence → compresses it into a context vector (a single vector c)
 
 - **Decoder** uses this vector to generate a completely new sequence
 
@@ -74,7 +74,7 @@ tags: [note, aml]
 
 > **How do you train a RNN**
 >
-> ![[AML-image301.jpg|273]]Standard backpropagation doesn’t work directly due to the time-unfolded structure of RNNs. **Backpropagation Through Time (BPTT)**
+> ![[AML-image339.jpg|273]]Standard backpropagation doesn’t work directly due to the time-unfolded structure of RNNs. **Backpropagation Through Time (BPTT)**
 
 1.  **Unroll the RNN over time steps**
 

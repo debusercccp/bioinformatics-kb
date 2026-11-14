@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 10
 tags: [note, aml]
 ---
@@ -30,7 +30,7 @@ When faced with a classification problem, it might seem natural to consider usin
 
 If we plot tumor size against malignancy status and attempt to fit a straight line using linear regression, we would encounter several issues. In the case of a person with an exceptionally large tumor size, when fitting a linear regression line to the data, th**is outlier point significantly influences the slope and position of the line.** As a result, the line may be skewed towards this outlier, impacting the classification boundary and potentially leading to misclassification.
 
-![[AML-image61.jpg|700]]
+![[AML-image64.jpg|700]]
 
 - **Assumption of Continuous Output**
 
@@ -48,7 +48,7 @@ Consequently, data points falling near the threshold may be classified different
 
 Linear regression is highly sensitive to outliers, which are data points that deviate significantly from the majority of the data. Outliers can exert a disproportionate influence on the fitted regression line, causing it to deviate from the true relationship between the variables. In classification tasks, outliers may lead to misclassification and inaccuracies in the model's predictions.
 
-> ![[AML-image62.jpg|521]]
+> ![[AML-image65.jpg|521]]
 
 ---
 > [[AML 09 - Polynomial Regression|← Polynomial Regression]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 11 - Logistic Regression|Logistic Regression →]]

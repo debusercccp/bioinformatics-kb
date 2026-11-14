@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 24
 tags: [note, aml]
 ---
@@ -28,7 +28,7 @@ For instance, in cancer classification, a non-learning algorithm might determine
 
 Non-learning algorithms are suitable for well-understood problems where decision-making criteria are explicitly defined. However, they **lack the adaptability and flexibility** of machine learning algorithms, which limits their performance in dynamic or complex environments.
 
-![[AML-image127.jpg|420]]In scenarios where there's a significant class imbalance, meaning that one class is heavily outnumbered by the other, such as when only 0.5% of cases are positive for cancer and the remaining 99.5% are negative, we refer to this as having skewed classes. In such cases, non-learning algorithms, which are simple and don't involve learning from data, might perform better than learning algorithms.
+![[AML-image130.jpg|420]]In scenarios where there's a significant class imbalance, meaning that one class is heavily outnumbered by the other, such as when only 0.5% of cases are positive for cancer and the remaining 99.5% are negative, we refer to this as having skewed classes. In such cases, non-learning algorithms, which are simple and don't involve learning from data, might perform better than learning algorithms.
 
 For example, in the context of cancer classification, if we have a vast majority of patients who do not have cancer, a **non-learning algorithm might simply predict that all patients do not have cancer** (**assigning y = 0 to all patients**). Surprisingly, this approach might yield lower error rates than using a learning algorithm that tries to learn patterns from the data.
 
@@ -36,7 +36,7 @@ In scenarios like cancer classification, where obtaining balanced data is imprac
 
 ## 12.1 CONFUSION MATRIX
 
-![[AML-image128.png|219]]A confusion matrix is a fundamental tool in binary classification, providing a structured representation of model performance. It consists of rows and columns, where:
+![[AML-image131.png|219]]A confusion matrix is a fundamental tool in binary classification, providing a structured representation of model performance. It consists of rows and columns, where:
 
 - **Columns** represent the **actual values** (positives and negatives)
 
@@ -108,6 +108,7 @@ It answers the question: *"Out of all the samples that actually have the conditi
 
 Recall is calculated as the number of true positives divided by the total number of actual positives (true positives + false negatives):
 
+#### 
 $$
 \text{Recall}\mathbf{=}\frac{\text{True~Positives}}{\text{True~Positives}\mathbf{+}\text{False~Negatives}}
 $$
@@ -118,7 +119,7 @@ A **<u>high recall</u>** score indicates that the classifier is **<u>effective a
 
 Intuitively = Recall is the ability of the classifier to **<u>find all the positive samples.</u>**
 
-> ![[AML-image129.jpg|462]]
+> ![[AML-image132.jpg|462]]
 
 In precision and recall calculations, we typically **set the condition of interest**, which is often the **rarer class**, as the positive class, represented by **y = 1.**
 
@@ -134,35 +135,35 @@ Your algorithm has a performance on the test set given by this matrix. Precision
 
 Recall = 0.5
 
-![[AML-image130.jpg|424]]![[AML-image132.jpg|164]]
+![[AML-image133.jpg|424]]![[AML-image134.jpg|164]]
 
-![[AML-image133.jpg|697]]
+![[AML-image135.jpg|697]]
 
-### TRADE OFF PRECISION VS RECALL 
+#### TRADE OFF PRECISION VS RECALL 
 
 We discussed precision and recall as vital evaluation metrics for classification problems, particularly those with imbalanced classes. In many scenarios, we aim to strike a balance between precision and recall. The objective is to configure the system to reliably predict instances where y = 1.
 
 For example, let's consider a decision threshold of 0.5. In this scenario, if the model predicts a cancer probability exceeding 0.5, it will classify the patient as positive for cancer. Otherwise, it will classify them as negative. **Adjusting this threshold allows us to control the model's sensitivity in identifying positive cases**, thereby influencing the balance between precision and recall.
 
-![[AML-image134.jpg|329]]In essence, we want the system to be highly confident when predicting the positive class.
+![[AML-image136.jpg|329]]In essence, we want the system to be highly confident when predicting the positive class.
 
 We aim for a high level of certainty in our predictions, ensuring that when the model identifies something as positive, it's indeed true. To achieve this, we often set a threshold, such as 0.7, to determine when to classify an instance as positive.
 
 By setting a **higher threshold 0.7**, for classifying instances as positive, we prioritize precision over recall. This means that **when the model predicts a positive case**, **it's more likely to be correct** (higher precision), **but it may miss some actual positive cases** (lower recall). In other words, the model becomes more selective in labeling instances as positive, leading to fewer false positives but potentially more false negatives.
 
-#### Example 1 
+##### Example 1 
 
 We have 10 patients represented by crosses, using a threshold of 0.5 we classify them into two classes: positive (cancer) and negative (no cancer) and we mark patients classified as positive with a blue circle. Precision measures the accuracy of positive predictions. In our case, we selected 6 patients as positive (blue circles), but only 3 of them actually have cancer (true positives).
 
 Recall measures the ability of the model to identify all positive instances. Out of all patients who have cancer (represented by crosses), the model identified 3 of them correctly as positive (TP). However, 1 patient who actually has cancer was classified as negative (FN)
 
-- ![[AML-image135.jpg|394]]Precision of 0.5 means that out of all patients classified as positive by the model, only 50% of them actually have cancer.
+- ![[AML-image137.jpg|394]]Precision of 0.5 means that out of all patients classified as positive by the model, only 50% of them actually have cancer.
 
 - Recall of 0.75 means that the model identified 75% of all patients who have cancer correctly.
 
-#### Example 2 
+##### Example 2 
 
-![[AML-image136.jpg|332]]When we increase the decision threshold to 0.7, the model becomes more selective in classifying patients as positive for cancer. This adjustment results in 2 true positives (TP), 0 false positives (FP), 2 false negatives (FN), and 6 true negatives (TN). With these values, we calculate the precision and recall metrics.
+![[AML-image138.jpg|332]]When we increase the decision threshold to 0.7, the model becomes more selective in classifying patients as positive for cancer. This adjustment results in 2 true positives (TP), 0 false positives (FP), 2 false negatives (FN), and 6 true negatives (TN). With these values, we calculate the precision and recall metrics.
 
 - Precision = 1, as all of the patients classified as positive by the model actually have cancer, resulting in a precision score of 100%
 
@@ -176,25 +177,25 @@ The choice of decision threshold depends on the specific needs of the problem an
 
 In the first case, where we used a threshold of 0.5, the model was less selective and identified a higher proportion of patients as positive for cancer. This scenario might be suitable for selecting patients who need further examination or diagnostic testing to confirm whether they have cancer. The higher recall value indicates that the model is effective at capturing a significant portion of all cancer cases, ensuring that fewer cases are missed.
 
-![[AML-image137.jpg|183]]In the second case, where we increased the threshold to 0.7, the model became more selective and classified fewer patients as positive for cancer. This scenario might be appropriate for recommending surgery or invasive procedures, where it is crucial to be highly confident that the patient indeed has cancer before proceeding with treatment. The higher precision value ensures that a larger proportion of patients classified as positive by the model actually have cancer, reducing the likelihood of unnecessary procedures on patients who do not have the condition.
+![[AML-image139.jpg|183]]In the second case, where we increased the threshold to 0.7, the model became more selective and classified fewer patients as positive for cancer. This scenario might be appropriate for recommending surgery or invasive procedures, where it is crucial to be highly confident that the patient indeed has cancer before proceeding with treatment. The higher precision value ensures that a larger proportion of patients classified as positive by the model actually have cancer, reducing the likelihood of unnecessary procedures on patients who do not have the condition.
 
-#### Example 3 
+##### Example 3 
 
-![[AML-image138.jpg|348]]Suppose we set the threshold at 0.9. We predict only if we are 90% certain it is cancer. In this case, we want to identify and be really sure.
+![[AML-image140.jpg|348]]Suppose we set the threshold at 0.9. We predict only if we are 90% certain it is cancer. In this case, we want to identify and be really sure.
 
 With such a threshold, the model becomes very selective and conservative in its predictions. It will classify fewer patients as positive for cancer, but those predictions are expected to be highly accurate. This approach is suitable for scenarios where the consequences of a false positive diagnosis are severe, such as recommending invasive procedures or initiating aggressive treatments like chemotherapy.
 
-#### Example 4 
+##### Example 4 
 
-![[AML-image139.jpg|348]]Setting the threshold at 0.3 means we're being less strict about identifying cancer. The model will say more people have cancer, even if it's not certain. This might catch more cases of cancer, which is good, but it might also say someone has cancer when they don't, which is not so good.
+![[AML-image141.jpg|348]]Setting the threshold at 0.3 means we're being less strict about identifying cancer. The model will say more people have cancer, even if it's not certain. This might catch more cases of cancer, which is good, but it might also say someone has cancer when they don't, which is not so good.
 
 This approach could be useful for spotting possible cases that need further checking. But it might also mean more people have to undergo tests or treatments they don't really need. So, deciding on a threshold like 0.3 involves thinking about how many real cases we want to catch versus how many false alarms we're willing to accept.
 
 Choosing the right threshold for classification can significantly impact the performance of a model. Whether we set it above or below 0.5 depends on the specific needs of the problem we're solving.
 
-> ![[AML-image140.jpg|588]]
+> ![[AML-image142.jpg|588]]
 
-## 12.4 F1 SCORE
+## 12.2 F1 SCORE
 
 **How do we decide on the best threshold** and how do we compare models that have different precision and recall values?
 
@@ -227,9 +228,9 @@ Precision measures the proportion of true positive predictions among all positiv
 
 Recognizing the need for a unified metric that balances precision and recall, we introduced the F1-score. The F1-score is the harmonic mean of precision and recall, providing a single value that considers both metrics. It is particularly useful when there is an uneven class distribution or when false positives and false negatives have different consequences.
 
-> ![[AML-image141.jpg|593]]
+> ![[AML-image143.jpg|593]]
 
-## 12.5 ROC AND AUC
+## 12.3 ROC AND AUC
 
 A **Receiver Operating Characteristic (ROC)** is a **graphical representation** of the **performance** of a **classification model across all possible classification thresholds**.
 
@@ -241,7 +242,7 @@ It is calculated as the ratio of true positives to the sum of true positives and
 
 **FALSE POSITIVE RATE (FPR)** measures the **<u>proportion of actual negative</u>** samples that are **<u>incorrectly</u> <u>classified as positive</u>** by the model. It is calculated as the ratio of false positives to the sum of false positives and true negatives.
 
-> ![[AML-image142.png|329]]
+> ![[AML-image144.png|329]]
 
 A ROC curve illustrates the relationship between True Positive Rate (TPR) and False Positive Rate (FPR) across various classification thresholds.
 
@@ -249,9 +250,9 @@ A ROC curve illustrates the relationship between True Positive Rate (TPR) and Fa
 
 - Lowering the classification threshold increases both True Positives and False Positives, influencing the TPR and FPR accordingly.
 
-![[AML-image143.jpg|216]]Ideally, a **perfect classifier would have an ROC curve that passes through the top-left corner of the plot, where TPR is 1 and FPR is 0**. This scenario signifies high sensitivity and a low false positive rate across all thresholds. Conversely, a random classifier's ROC curve would closely align with the diagonal line (45-degree line), indicating no discrimination ability. Thus, the closer the ROC curve is to the top-left corner, the better the model's performance.
+![[AML-image145.jpg|216]]Ideally, a **perfect classifier would have an ROC curve that passes through the top-left corner of the plot, where TPR is 1 and FPR is 0**. This scenario signifies high sensitivity and a low false positive rate across all thresholds. Conversely, a random classifier's ROC curve would closely align with the diagonal line (45-degree line), indicating no discrimination ability. Thus, the closer the ROC curve is to the top-left corner, the better the model's performance.
 
-![[AML-image144.png|167]]To construct an ROC curve, we typically evaluate a model with different classification thresholds. However, evaluating a model multiple times with varying thresholds can be inefficient. Thankfully, there's an efficient, sortingbased algorithm known as AUC (Area Under the Curve) that provides this information for us. AUC quantifies the overall performance of a classification model by measuring the area under the ROC curve, with higher values indicating better discrimination ability.
+![[AML-image146.png|167]]To construct an ROC curve, we typically evaluate a model with different classification thresholds. However, evaluating a model multiple times with varying thresholds can be inefficient. Thankfully, there's an efficient, sortingbased algorithm known as AUC (Area Under the Curve) that provides this information for us. AUC quantifies the overall performance of a classification model by measuring the area under the ROC curve, with higher values indicating better discrimination ability.
 
 AUC is a commonly used metric derived from the ROC curve.
 
@@ -269,7 +270,7 @@ It quantifies the overall performance of a classification model by measuring the
 
 AUC represents the likelihood that a randomly chosen positive (green) example is positioned to the right of a randomly chosen negative (red) example within this ranking.
 
-> ![[AML-image145.jpg|528]]
+> ![[AML-image147.jpg|528]]
 >
 > AUC (Area Under the Curve) is often favored in classification model evaluation due to several key reasons.
 

@@ -1,7 +1,7 @@
 ---
 course: "[[Bioinformatics for Biology]]"
 module: "[[Bioinformatics for Biology]]"
-source: "MCB/Bioinformatics_For_Biology/Bioinformatics_For_Biology.docx"
+source: "MCB/BFB/Bioinformatics_For_Biology.docx"
 order: 5
 tags: [note, bfb]
 ---

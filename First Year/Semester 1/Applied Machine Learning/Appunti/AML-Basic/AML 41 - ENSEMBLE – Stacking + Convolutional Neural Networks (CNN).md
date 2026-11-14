@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 41
 tags: [note, aml]
 ---
@@ -12,11 +12,11 @@ tags: [note, aml]
 
 > Stacking is another Ensemble method that aggregate predictions form predictors in the ensemble **not using trivial functions** (such as hard voting) but by training a model to perform such aggregation. The additional intelligence lies in a **final** **predictor** (blender, or metalearner) whose task is to take intermediate predictions as inputs and to make the final prediction.
 >
-> ![[AML-image238.jpg|320]]
+> ![[AML-image269.jpg|320]]
 >
 > The training set is **splitted into subsets**: the first one is used to **train** the **first layer**, the second one is used to create the training set used to **train** the **second layer** ( using predictions made by the predictors of the first layer), the third one is used to create the training set to train the **third layer** (using predictions made by the predictors of the second layer).
 
-![[AML-image239.jpg|642]]
+![[AML-image270.jpg|642]]
 
 ## CONVOLUTIONAL NEURAL NETWORKS (CNN)
 
@@ -52,7 +52,7 @@ tags: [note, aml]
 
 - as the visual signal makes its way through consecutive brain modules, neurons respond to more complex patterns in larger receptive fields.
 
-![[AML-image240.jpg|642]]
+![[AML-image271.jpg|642]]
 
 > These studies of the visual cortex inspired the **neocognitron**, introduced in 1980 \[RefFukushima\], which gradually evolved into what we now call a **convolutional neural networ**k. Were later introduced two new building blocks: **convolutional layers** and **pooling layers**.
 >
@@ -66,7 +66,7 @@ tags: [note, aml]
 
 - **Function g**: the *filter* or *kernel* — a small matrix used to detect specific features
 
-![[AML-image241.jpg|642]]
+![[AML-image272.jpg|642]]
 
 - The filter g is **reversed** and **shifted**, then **multiplied pointwise** with f and **integrated** (summed) over.
 
@@ -74,13 +74,13 @@ tags: [note, aml]
 
 > In practice, signals like images or audio are **finite** and **discrete**, so the sums are over finite ranges.
 >
-> ![[AML-image242.jpg|642]] basically the integral of their product after one is reversed and shifted.
+> ![[AML-image273.jpg|642]] basically the integral of their product after one is reversed and shifted.
 >
 > Functions are not considered over all **R**, but we take f as one signal (data) of finite length (like a 1D array whose elements are only in part not equals to zero) and another function g as a filter (or kernel).
 
 - signal → an image (simple or a 3D MRI image), a sound wave, a time series, • filter → a discrete Laplacian
 
-> ![](media/media/image2320.jpg)
+> ![](media/media/image232.jpg)
 
 - The **convolution operation** is applied
 
@@ -96,15 +96,15 @@ tags: [note, aml]
 
 > **Convolution 2D**
 
-![[AML-image245.jpg|510]]
+![[AML-image276.jpg|510]]
 
 > The **convolution** **operation** is performed **sliding** the filter over the input, and at every location, an element-wise matrix **multiplication** is **performed**. The results are summed and the feature map is filled.
 
-![[AML-image246.jpg|491]]
+![[AML-image277.jpg|491]]
 
 > Real image convolutions are performed in 3D as a single image is represented as a 3D matrix with dimensions of height, width and depth.
 
-![[AML-image247.jpg|642]]
+![[AML-image278.jpg|642]]
 
 > Apply more filters (say, 10 in total). You get **10 32x32x1 feature maps**. Stacking them along the depth dimension give us the **final output** of the convolution layer: a volume of size 32x32x10, shown as the large blue box on the right. Note that the convolution operation for each filter is performed independently and the resulting feature maps are disjoint.
 >
@@ -132,7 +132,7 @@ tags: [note, aml]
 
 - **Valid**: no padding. Outcome restricted to only those parts of the convolution that are computed w/o the zero-padded edges.
 
-![[AML-image248.jpg|588]]
+![[AML-image279.jpg|588]]
 
 > **Pooling layers**
 >
@@ -140,7 +140,7 @@ tags: [note, aml]
 >
 > The goal is to **reduce the number of parameters**, as it shortens the training time and fights overfitting. This is done by adding a **pooling layer**.
 
-![[AML-image249.jpg|642]]
+![[AML-image280.jpg|642]]
 
 > Deep Learning is all about “**clever compression**”, i.e. find low dimensional representations of the input that **disentangle** the **distinguishing** **variation** **factors** in your data). Pooling layer down samples each feature map independently, reducing the height and width, keeping the depth intact.
 >
@@ -170,7 +170,7 @@ tags: [note, aml]
 >
 > Basic CNN architecture
 
-![[AML-image252.jpg|642]]
+![[AML-image283.jpg|642]]
 
 > Feature extraction via **Conv layers**: it is not easy to automatic detect meaningful features in an image given only image+label. Conv layers can learn such complex features by building on top of each other.
 >

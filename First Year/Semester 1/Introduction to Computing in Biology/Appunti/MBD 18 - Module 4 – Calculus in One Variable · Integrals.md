@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 18
 tags: [note, mbd]
 ---
@@ -53,13 +53,13 @@ $$
 $$
 
 $$
-\int sin(x)\, dx = - cos(x) + C,\quad\quad\int cos(x)\, dx = sin(x) + C,\quad\quad\int e^{x}dx = e^{x} + C
+\int\sin(x)\, dx = - \cos(x) + C,\quad\quad\int\cos(x)\, dx = \sin(x) + C,\quad\quad\int e^{x}dx = e^{x} + C
 $$
 
 *Example.*
 
 $$
-\int_{0}^{\pi}cos\, x\, dx = F(\pi) - F(0),\quad F(x) = sin\, x + C\quad \Rightarrow \quad\int_{0}^{\pi}cos\, x\, dx = sin(\pi) - sin(0) = 0 - 0 = 0
+\int_{0}^{\pi}cos\, x\, dx = F(\pi) - F(0),\quad F(x) = sin\, x + C\quad \Rightarrow \quad\int_{0}^{\pi}cos\, x\, dx = \sin(\pi) - \sin(0) = 0 - 0 = 0
 $$
 
 The positive area of $cos\, x$ between $0$ and $\pi/2$ cancels the negative area between $\pi/2$ and $\pi$.
@@ -67,7 +67,7 @@ The positive area of $cos\, x$ between $0$ and $\pi/2$ cancels the negative area
 To get the **geometric area** between the curve and the axis, the negative parts must be taken with a minus sign. *Slide example:* area between the $x$ axis and $y = cos\, x$ from 0 to $3\pi/2$:
 
 $$
-\int_{0}^{\pi/2}cos\, x\, dx - \int_{\pi/2}^{3\pi/2}cos\, x\, dx = \left( sin\frac{\pi}{2} - sin\, 0 \right) - \left( sin\frac{3\pi}{2} - sin\frac{\pi}{2} \right) = 1 - ( - 2) = 3
+\int_{0}^{\pi/2}cos\, x\, dx - \int_{\pi/2}^{3\pi/2}cos\, x\, dx = \left( \sin\frac{\pi}{2} - sin\, 0 \right) - \left( \sin\frac{3\pi}{2} - \sin\frac{\pi}{2} \right) = 1 - ( - 2) = 3
 $$
 
 **Rules for integrals:** $\int_{a}^{b}f\, dx = - \int_{b}^{a}f\, dx$ (reversing the limits changes the sign); $\int_{a}^{a}f\, dx = 0$; $\int_{a}^{b}kf\, dx = k\int_{a}^{b}f\, dx$; $\int_{a}^{b}(f + g)\, dx = \int_{a}^{b}f\, dx + \int_{a}^{b}g\, dx$; $\int_{a}^{b}f\, dx + \int_{b}^{c}f\, dx = \int_{a}^{c}f\, dx$.

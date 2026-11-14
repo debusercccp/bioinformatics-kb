@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 40
 tags: [note, aml]
 ---
@@ -48,15 +48,15 @@ tags: [note, aml]
 >
 > Instead of updating instance weights, each new model is trained to **predict the residual errors** (i.e., what's left to correct) from the previous model.
 
-![[AML-image234.jpg|642]]
+![[AML-image265.jpg|642]]
 
-> Now we have an ensemble containing 3 trees. It can make predictions on a new instance simply by adding up the predictions of all the trees. ![[AML-image235.jpg|642]]
+> Now we have an ensemble containing 3 trees. It can make predictions on a new instance simply by adding up the predictions of all the trees. ![[AML-image266.jpg|642]]
 >
 > **Gradient Boosting tuning**
 >
 > Change the **learning_rate hyperparameter**: it scales the contribution of each tree. If you set it to a low value (such as 0.1 in this example), you will need more trees (*n_estimators*) in the ensemble to fit the training set, but the predictions will usually generalise better.
 
-![[AML-image236.jpg|642]]
+![[AML-image267.jpg|642]]
 
 > **XGBoost (Extreme Gradient Boosting)**
 >
@@ -64,7 +64,7 @@ tags: [note, aml]
 >
 > It directly **attacks** one of their **major inefficiencies**. It considers the **potential loss** for all possible splits to create a new branch (especially useful in case of thousands of features, therefore thousands of possible splits), and tackles this inefficiency by looking at the **distribution** **of** **features** across all data points in a leaf and using this information to reduce the search space of possible feature splits. Yes, it uses a few regularisation tricks, but the achievable speed up is by far the **most useful aspect** of the XGBoost library: it allows many hyperparameter settings to be investigated quickly.
 >
-> ![[AML-image237.jpg|525]]
+> ![[AML-image268.jpg|525]]
 
 ---
 > [[AML 39 - Ensemble Learning + ENSEMBLE – Voting (hard voting – soft voting)|← Ensemble Learning + ENSEMBLE – Voting (hard voting – soft voting)]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 41 - ENSEMBLE – Stacking + Convolutional Neural Networks (CNN)|ENSEMBLE – Stacking + Convolutional Neural Networks (CNN) →]]

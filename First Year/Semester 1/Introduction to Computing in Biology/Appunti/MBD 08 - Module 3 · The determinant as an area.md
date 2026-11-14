@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 8
 tags: [note, mbd]
 ---
@@ -40,7 +40,7 @@ $$
 The unit square becomes the parallelogram with vertices $0$, $(a,c)$, $(b,d)$, $(a + b,c + d)$. Its area is the area of the enclosing rectangle minus two pairs of triangles (1: $\frac{1}{2}ac$, 2: $\frac{1}{2}bd$) and two rectangles (3: $bc$):
 
 $$
-A = (a + b)(c + d) - 2 \cdot \frac{1}{2}ac - 2 \cdot \frac{1}{2}bd - 2bc = ac + ad + bc + bd - ac - bd - 2bc = ad - bc = \det(A)
+A = (a + b)(c + d) - 2 \cdot \frac{1}{2}ac - 2 \cdot \frac{1}{2}bd - 2bc = ac + ad + bc + bd - ac - bd - 2bc = ad - bc = det(A)
 $$
 
 The area of the square defined by the basis vectors ($= 1$) is rescaled by the transformation $A$ to an area $= |A|$. In 3D, $|T|$ is the volume of the parallelepiped identified by the transformed basis vectors.

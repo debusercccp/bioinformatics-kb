@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 48
 tags: [note, aml]
 ---
@@ -40,7 +40,7 @@ tags: [note, aml]
 
     - This is due to the **recursive update of the hidden state**:
 
-> ![[AML-image302.jpg|379]]
+> ![[AML-image340.jpg|379]]
 
 - Over many steps, h(t-1) becomes **less influenced by earlier x values**
 

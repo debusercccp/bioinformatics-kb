@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 19
 tags: [note, aml]
 ---
@@ -18,7 +18,7 @@ One crucial step is to partition the dataset into a **TRAINING SET** and a **TES
 
 The majority of the data, around **70%**, is used for **training**, while the remaining portion is reserved for testing.
 
-![[AML-image101.jpg|329]]It's vital to avoid any peeking at the test data during model development to ensure an unbiased evaluation. Therefore, all **examples** should be **<u>shuffled</u>** and **<u>divided</u> <u>randomly into training and test sets.</u>**
+![[AML-image104.jpg|329]]It's vital to avoid any peeking at the test data during model development to ensure an unbiased evaluation. Therefore, all **examples** should be **<u>shuffled</u>** and **<u>divided</u> <u>randomly into training and test sets.</u>**
 
 Let *m* represent the **index for the training set**, while the remaining examples are allocated to the test set. This random partitioning ensures that both sets hold the same statistical significance, enabling the model to be constructed using the training data without any prior knowledge of the test set.
 
@@ -40,7 +40,7 @@ It's important to highlight that the test error *J*<sub>test</sub> may differ fr
 
 By comparing these two error metrics, we can assess the model's generalization capability and understand how effectively it performs in real-world scenarios beyond the training data.
 
-![[AML-image102.jpg|697]]
+![[AML-image105.jpg|697]]
 
 ## 11.3 0/1 MISCLASSIFICATION ERROR
 
@@ -62,9 +62,9 @@ To calculate the misclassification error, we first train the model on the traini
 
 The resulting misclassification error provides a clear indication of the model's accuracy in classifying unseen data.
 
-![[AML-image103.jpg|391]]
+![[AML-image106.jpg|391]]
 
-> ![[AML-image104.jpg|448]]
+> ![[AML-image107.jpg|448]]
 
 ---
 > [[AML 18 - Model Diagnostics|← Model Diagnostics]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 20 - Model Diagnostics · Model Selections & Tvt Sets|Model Diagnostics · Model Selections & Tvt Sets →]]

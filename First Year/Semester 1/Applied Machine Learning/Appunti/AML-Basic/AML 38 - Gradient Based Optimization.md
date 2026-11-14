@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 38
 tags: [note, aml]
 ---
@@ -32,7 +32,7 @@ tags: [note, aml]
 >
 > When you eventually end up with a NN that has a very low loss on its training data, and you call it done, you judge that the NN has “learned” to map its inputs to correct targets.
 
-![[AML-image225.jpg|477]]
+![[AML-image256.jpg|477]]
 
 > I can **naively** think of freezing all weights in the **NN**, except the one scalar coefficient being considered → then, try different values for that coefficient.
 >
@@ -40,7 +40,7 @@ tags: [note, aml]
 >
 > A much better approach is to take advantage of the fact that all **ops** used in the NN are **differentiable**, hence compute the gradient of the loss regarding the NN’s coefficients → you can then move the coefficients in the opposite direction from the gradient, thus decreasing the loss
 >
-> ![[AML-image226.jpg|287]]The strategy is simple:
+> ![[AML-image257.jpg|287]]The strategy is simple:
 
 - we modify the parameters little by little based on the **current loss value** on a random batch of data.
 
@@ -48,7 +48,7 @@ tags: [note, aml]
 
 - the gradient gives us an **efficien**t way to **implement** the difficult step 4 as per our training loop → we just need to update the weights in the opposite direction from the gradient, and the loss will be a little less every time.
 
-> ![[AML-image227.jpg|642]]
+> ![[AML-image258.jpg|642]]
 >
 > **Optimizers: improving SGD**
 >
@@ -58,7 +58,7 @@ tags: [note, aml]
 
 - it addresses two **SGD issues:** convergence speed and local minima.
 
-![[AML-image228.jpg|661]]
+![[AML-image259.jpg|661]]
 
 > In the training loop discussed so far, we can casually think of a “**NN function**” that is **differentiable** → we can compute its **derivatives**. In practice, a NN function consists of **many tensor operations** chained together, each of which has a simple, known derivative.
 
@@ -74,7 +74,7 @@ tags: [note, aml]
 >
 > Backpropagation (or reverse-mode automatic differentiation) lets us compute all the required gradients efficiently, by applying the chain rule through the network:
 >
-> ![[AML-image229.jpg|427]]Each layer computes:
+> ![[AML-image260.jpg|427]]Each layer computes:
 
 - The gradient of its output w.r.t. its input
 
@@ -82,7 +82,7 @@ tags: [note, aml]
 
 > This lets us **update all parameters at once** with only **one forward pass + one backward pass**.
 
-![[AML-image230.jpg|642]]
+![[AML-image261.jpg|642]]
 
 ---
 > [[AML 37 - NNs’ Building Blocks|← NNs’ Building Blocks]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 39 - Ensemble Learning + ENSEMBLE – Voting (hard voting – soft voting)|Ensemble Learning + ENSEMBLE – Voting (hard voting – soft voting) →]]

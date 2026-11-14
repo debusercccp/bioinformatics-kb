@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 8
 tags: [note, aml]
 ---
@@ -86,7 +86,7 @@ When computing the partial derivative of J, the expression varies based on the n
 >
 > ![[AML-image45.png|373]]
 
-## 4.3 FEATURE SCALING & MEAN NORMALIZATION
+**4.3 FEATURE SCALING & MEAN NORMALIZATION**
 
 FEATURE SCALING
 
@@ -132,11 +132,11 @@ MEAN NORMALIZATION
 
 ## 4.4 LEARNING RATE
 
-![[AML-image50.png|310]]The learning rate α is a crucial hyper-parameter in the iterative process of Gradient Descent (GD) which determines the size of the steps taken towards the minimum of the cost function J(θ).
+![[AML-image51.png|310]]The learning rate α is a crucial hyper-parameter in the iterative process of Gradient Descent (GD) which determines the size of the steps taken towards the minimum of the cost function J(θ).
 
 The update rule for GD involves simultaneously updating all parameters θ from θ0 to θn using the formula specified. When implementing GD in code, choosing an appropriate learning rate is essential for ensuring the algorithm converges effectively.
 
-![[AML-image51.png|337]]Observing the behavior of the cost function J(θ) over iterations is a common method to verify the correctness of GD. **Plotting J(θ) against the number of iterations** offers valuable insights into the algorithm's progress. Ideally, J(θ) should exhibit a decreasing trend as GD iterates, indicating movement towards the optimal solution. Convergence behavior may vary across applications, and the stabilization time can differ significantly. The rate at which J(θ) decreases after each iteration depends on the learning rate α. In
+![[AML-image52.png|337]]Observing the behavior of the cost function J(θ) over iterations is a common method to verify the correctness of GD. **Plotting J(θ) against the number of iterations** offers valuable insights into the algorithm's progress. Ideally, J(θ) should exhibit a decreasing trend as GD iterates, indicating movement towards the optimal solution. Convergence behavior may vary across applications, and the stabilization time can differ significantly. The rate at which J(θ) decreases after each iteration depends on the learning rate α. In
 
 scenarios like linear regression, a small α ensures consistent reduction in J(θ) with each iteration, as mathematically proven under specific assumptions about the cost function J.
 

@@ -1,12 +1,12 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
+source: "MCB/SATAUMV/Statistical_approaches.docx"
 order: 13
 tags: [note, sataumv]
 ---
 
-> [[SATAUMV 12 - Summary statistics and genetic distances|← Summary statistics and genetic distances]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]] · [[SATAUMV 14 - Summary of the main points|Summary of the main points →]]
+> [[SATAUMV 12 - Summary statistics and genetic distances|← Summary statistics and genetic distances]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]] · [[SATAUMV 14 - Clustering and inference of admixture|Clustering and inference of admixture →]]
 
 # Population structure analyses: principal component analysis (PCA)
 
@@ -14,14 +14,14 @@ tags: [note, sataumv]
 
 **Population structure analyses** describe how genetic variation is organized among individuals and populations. The main approaches, often used together on the same genome-wide dataset, are:
 
-- **ADMIXTURE** (model-based clustering): estimates for each individual the **membership coefficients (Q)** to K ancestral components (K = 3 in the example), shown as a bar plot in which each vertical bar is one individual;
+- **ADMIXTURE** (model-based clustering): estimates for each individual the **membership coefficients (Q)** to K ancestral components (K = 3 in the example);
 - **PCA**: summarizes genotype variation into a few principal components and plots the individuals in a low-dimensional space;
-- **Fine-scale clustering**: groups individuals according to their genetic similarity (shared haplotypes), producing trees of genetically homogeneous clusters;
+- **Fine-scale clustering**: groups individuals according to their **genetic similarity** (shared haplotypes), producing trees of genetically homogeneous clusters;
 - **LD decay**: describes how r² between pairs of markers decreases with physical distance (kb) in each population (section 5.6), reflecting its demographic history.
 
 With genome-wide data, as the **number of loci rises** the variation we can observe among individuals (e.g. the combinations of possible genotypes) **increases**, particularly if the loci are independent (no LD). With enough loci each **individual can be identified as genetically unique**, so we can compare **each individual against every other individual** for all SNPs and measure the **degree of similarity** between two individuals as summarized by all SNPs: the analysis moves **from populations to individual-based comparisons**.
 
-The other side of the coin is that, as the number of variables increases, so does the **complexity** of the statistical approaches required to analyze the data, as well as the **difficulty of summarizing, describing and interpreting** such large quantities of information in a clear and comprehensible way.
+The other side of the coin is that, as the **number of variables increases**, so does the **complexity** of the statistical approaches required to analyze the data, as well as the **difficulty of summarizing, describing and interpreting** such large quantities of information in a clear and comprehensible way.
 
 ## 13.2 Multivariate methods: dimensionality reduction
 
@@ -48,18 +48,18 @@ Geometrically, by a linear transformation of the original variables PCA identifi
 
 The second component is the direction orthogonal to the first that captures the largest part of the remaining variance, and so on. In this way PCA **encapsulates as much variability as possible** while **minimizing the loss of information**.
 
-Note — how PCA is applied to genotype data: genotypes are arranged in a matrix of individuals × SNPs, coded as 0, 1 or 2 copies of an allele (as in section 11.7); each SNP is centered on its mean (and usually normalized). The **eigenvectors** of the covariance matrix between individuals give the coordinates of each individual on the PCs, and the corresponding **eigenvalues** give the variance explained by each PC. Because PCA assumes that the variables are independent, it is usually run on an LD-pruned set of SNPs (section 11.5).
+Note — how PCA is applied to genotype data: genotypes are arranged in a matrix of individuals × SNPs, coded as 0, 1 or 2 copies of an allele (as in section 11.7); each SNP is centered on its mean (and usually normalized). The **eigenvectors** of the covariance matrix between individuals give the **coordinates** of each individual on the PCs, and the corresponding **eigenvalues** give the **variance explained** by each PC. Because PCA assumes that the variables are independent, it is usually run on an LD-pruned set of SNPs (section 11.5).
 
 ## 13.4 Properties of the principal components, input and output files
 
 The new components capture and organize the variance with two main advantages:
 
 - **Variance-based ordering**: PCs are **ranked according to the variance** they explain, so subsequent components account for progressively smaller proportions of the total variance;
-- **Orthogonality and reduced redundancy**: PCs are mutually **orthogonal and uncorrelated**, so PCA reorganizes the information contained in the original, potentially correlated variables into a set of independent linear combinations that maximize the variance.
+- **Orthogonality and reduced redundancy**: PCs are mutually **orthogonal and uncorrelated**, so PCA reorganizes the information contained in the original, potentially correlated variables into a set of **independent linear combinations that maximize the variance**.
 
-![[SATAUMV-image61.jpeg|356]]Each PC (eigenvector) is independent and encapsulates as much of the remaining variation as possible, and we can compute the **proportion of the total variance** summarized within the reduced dimensions. In the example, the top five PCs explain 38.3%, 24.2%, 15.6%, 9.9% and 7.0% of the variance (95% in total), and a plot of PC1 vs. PC2 represents 38.3 + 24.2 = 62.5% of the variance.
+Each PC (eigenvector) is independent and encapsulates as much of the remaining variation as possible, and we can compute the **proportion of the total variance** summarized within the reduced dimensions. In the example, the top five PCs explain 38.3%, 24.2%, 15.6%, 9.9% and 7.0% of the variance (95% in total), and a plot of PC1 vs. PC2 represents 38.3 + 24.2 = 62.5% of the variance.
 
-**Pros**: reduces the dimensionality of complex multivariate datasets; captures the main patterns of variation.
+![[SATAUMV-image61.jpeg|356]]**Pros**: reduces the dimensionality of complex multivariate datasets; captures the main patterns of variation.
 
 **Cons**: may lose specific details (the variance not captured by the plotted PCs); interpretation issues (PCs are mathematical axes, not necessarily distinct biological processes).
 
@@ -75,14 +75,14 @@ The new components capture and organize the variance with two main advantages:
 | ⋮          | ⋮              | ⋮      | ⋮      |       | ⋮      |
 | Sn         | Pn             | AA     | TT     | …     | GG     |
 
-In practice the genotypes come from the formats seen in section 9.4 (PLINK PED/MAP or BED/BIM/FAM, or the EIGENSOFT formats) and are recoded as allele counts (0, 1, 2) before computing the PCs.
+In practice the genotypes come from the formats seen in section 9.4 (PLINK PED/MAP or BED/BIM/FAM, or the EIGENSOFT formats) and are **recoded as allele counts** (0, 1, 2) before computing the PCs.
 
 **Output files.** The output of a PCA on genotype data (e.g. with EIGENSOFT smartpca; PLINK --pca writes the equivalent .eigenvec and .eigenval files) consists of two files:
 
 - **Eigenvectors file** (.evec or .pca.evec): the projection of each individual onto the PCs, one row per sample with its ID, its coordinates on PC1, PC2, …, PCn and its population label. These are the values plotted to show population structure;
 - **Eigenvalues file** (.eval or .pca.eval): the ordered eigenvalues (one per line) corresponding to the eigenvectors; each eigenvalue represents the amount of genetic variance explained by that PC.
 
-The percentage of variance explained by a specific PC is its eigenvalue divided by the sum of all eigenvalues:
+The percentage of variance explained by a specific PC is **its eigenvalue divided by the sum of all eigenvalues**:
 
 ***Variance explained (PCₖ)*** *= λₖ / Σ λ*
 
@@ -151,11 +151,11 @@ In genomics PCA is used to:
 
 **Clustering methods** are a set of techniques to **identify and describe groups of observations** within a dataset: they **partition the units of data into different groups (clusters) based on similarity**, so that units in the same cluster are more similar to each other than to units in other clusters. In population genetics the units are usually individuals and similarity is measured on their genotypes (see also UPGMA and NJ, sections 12.8–12.9, and ADMIXTURE and fine-scale clustering, section 13.1).
 
-Note — DAPC (**Discriminant Analysis of Principal Components**; Jombart et al. 2010, BMC Genetics) combines the two families: the genotypes are first transformed with PCA, and a discriminant analysis is then run on the retained PCs. While PCA maximizes the **total variance**, DAPC looks for the combinations of variables that **maximize the variance between groups while minimizing the variance within groups**, so it describes clusters more clearly. The groups can be predefined (e.g. sampling locations) or inferred from the data with **k-means clustering**, choosing the number of clusters K by BIC.
+**DAPC** (**Discriminant Analysis of Principal Components**; Jombart et al. 2010, BMC Genetics) combines the two families, running a discriminant analysis on the retained PCs: it is described in section 14.1.
 
 ## Collegamenti
 - [[AML 43 - Dimensionality Reduction + Dimensionality Reduction Algorithms – PCA]] — PCA nel corso di ML
 - [[MBD 10 - Module 3 · Eigenvalues and eigenvectors]] — autovalori e autovettori
 
 ---
-> [[SATAUMV 12 - Summary statistics and genetic distances|← Summary statistics and genetic distances]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]] · [[SATAUMV 14 - Summary of the main points|Summary of the main points →]]
+> [[SATAUMV 12 - Summary statistics and genetic distances|← Summary statistics and genetic distances]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]] · [[SATAUMV 14 - Clustering and inference of admixture|Clustering and inference of admixture →]]

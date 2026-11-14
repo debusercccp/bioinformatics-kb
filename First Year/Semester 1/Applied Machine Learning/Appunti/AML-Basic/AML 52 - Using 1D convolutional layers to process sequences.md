@@ -1,12 +1,12 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 52
 tags: [note, aml]
 ---
 
-> [[AML 51 - Alleviating the Short Memory Problem in RNNs|← Alleviating the Short Memory Problem in RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 53 - Deep Dive – Object Recognition and Counting|Deep Dive – Object Recognition and Counting →]]
+> [[AML 51 - Alleviating the Short Memory Problem in RNNs|← Alleviating the Short Memory Problem in RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 53 - Deep Dive – Object Recongition and Counting|Deep Dive – Object Recongition and Counting →]]
 
 # Using 1D convolutional layers to process sequences
 
@@ -22,7 +22,7 @@ tags: [note, aml]
 
 > You can also replace RNNs entirely with stacked Conv1D layers
 >
-> ![[AML-image325.jpg|529]]
+> ![[AML-image370.jpg|529]]
 >
 > Multiple convolutional layers can detect **increasingly long patterns:**
 
@@ -91,7 +91,7 @@ tags: [note, aml]
 
 > In this way, the lower layers will learn short-term patterns, while the higher layers will learn long-term patterns. Thanks to the doubling dilation rate, **Wavenet can process extremely large sequences very efficiently.**
 
-![[AML-image326.jpg|413]]
+![[AML-image371.jpg|413]]
 
 > That was the idea. In the paper, this is what the authors did:
 
@@ -106,4 +106,4 @@ tags: [note, aml]
 > In the WaveNet paper, the authors achieved state-of-the-art performance on various audio tasks (hence the name of the architecture), including text-to-speech tasks, producing incredibly realistic voices across several languages.
 
 ---
-> [[AML 51 - Alleviating the Short Memory Problem in RNNs|← Alleviating the Short Memory Problem in RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 53 - Deep Dive – Object Recognition and Counting|Deep Dive – Object Recognition and Counting →]]
+> [[AML 51 - Alleviating the Short Memory Problem in RNNs|← Alleviating the Short Memory Problem in RNNs]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 53 - Deep Dive – Object Recongition and Counting|Deep Dive – Object Recongition and Counting →]]

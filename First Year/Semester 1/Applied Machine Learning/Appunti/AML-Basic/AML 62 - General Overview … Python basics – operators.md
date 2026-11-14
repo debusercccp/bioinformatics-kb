@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 62
 tags: [note, aml]
 ---
@@ -30,7 +30,7 @@ tags: [note, aml]
 
 > Simple & Readable Syntax:
 
-- ![[AML-image357.jpg|311]]No semicolons, **indentation matters** Interpreted Language:
+- ![[AML-image403.jpg|311]]No semicolons, **indentation matters** Interpreted Language:
 
 - Runs line by line, **no compilation required**.
 

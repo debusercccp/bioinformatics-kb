@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 12
 tags: [note, mbd]
 ---
@@ -18,10 +18,10 @@ tags: [note, mbd]
 In $\mathbb{R}$, $\sqrt{- 1}$ is not defined $\rightarrow$ $i$, the **imaginary unit**, with $(i)^{2} = - 1$.
 
 $$
-z \in \mathbb{C},\quad\quad z = a + ib,\quad a,b \in \mathbb{R},\quad\quad a = Re(z),\quad b = Im(z)
+z\mathbb{\in C,}\quad\quad z = a + ib,\quad a,b\mathbb{\in R,}\quad\quad a = Re(z),\quad b = Im(z)
 $$
 
-For $z_{1},z_{2} \in \mathbb{C}$, $z_{1} = a + bi$, $z_{2} = c + di$:
+For $z_{1},z_{2}\mathbb{\in C}$, $z_{1} = a + bi$, $z_{2} = c + di$:
 
 $$
 z_{1} + z_{2} = (a + c) + (b + d)i

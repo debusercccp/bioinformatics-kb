@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 20
 tags: [note, aml]
 ---
@@ -28,7 +28,7 @@ For instance, if the fifth model has the lowest test error, suggesting that a po
 
 It's crucial to acknowledge that using the test set for model selection means that the **test data has been 'used up'.** In other words, the **test set** has **served** its purpose in evaluating and **selecting** t**he best-performing model.** Therefore, to ensure that the selected model can generalize effectively to new, unseen data in realworld scenarios, it's necessary to obtain additional data beyond the training and test sets, therefore this additional data enables the model to generalize more robustly and accurately to unseen situations or inputs.
 
-> ![[AML-image107.jpg|502]]
+> ![[AML-image110.jpg|502]]
 
 We can divide our dataset into three distinct subsets: the training set, validation set, and test set.
 
@@ -60,7 +60,7 @@ By defining clear boundaries between the training, validation, and test sets, we
 
 - Cross-validation error *Jcv*
 
-- ![[AML-image108.jpg|286]]Test error *Jtest*
+- ![[AML-image111.jpg|286]]Test error *Jtest*
 
 These metrics provide valuable insights into the model's performance across different stages of development, ensuring robust evaluation and reliable conclusions.
 
@@ -84,7 +84,7 @@ Additionally, **hyperparameters can be fine-tuned** based on the validation resu
 
 In the final phase, the model's performance is assessed using the test set, which serves as an independent dataset that hasn't been used for training or validation. The test set allows us to obtain an unbiased estimate of the model's performance in real-world scenarios, as it **simulates how the model would perform when deployed.** By evaluating the model on unseen data, we can verify its ability to generalize and make accurate predictions outside the training and validation datasets. This step is crucial for validating the effectiveness of the trained model and ensuring its reliability in practical applications.
 
-![](media/media/image1020.jpg)
+![](media/media/image102.jpg)
 
 *Kaggle is a popular online platform that hosts datasets, tutorials, and forums where users can collaborate, share knowledge, and learn from each other. It also provides tools and resources for data exploration, visualization, and machine learning model development [(http://kaggle.com)](http://kaggle.com/)*
 

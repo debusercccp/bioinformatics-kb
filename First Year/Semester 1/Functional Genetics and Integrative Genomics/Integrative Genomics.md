@@ -37,7 +37,7 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/it/studiare
 
 ## Appunti (MCB)
 
-Fonte: `MCB/Functional_Genetics/IntegrativeGen_RS.docx` — 9 note collegate in ordine.
+Fonte: `MCB/FGIG/IG/IntegrativeGen_RS.docx` — 11 note collegate in ordine.
 
 1. [[IG 01 - Lecture notes – key facts … Enhancer–promoter crosstalk|Lecture notes – key facts … Enhancer–promoter crosstalk]]
 2. [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family]]
@@ -46,8 +46,10 @@ Fonte: `MCB/Functional_Genetics/IntegrativeGen_RS.docx` — 9 note collegate in 
 5. [[IG 05 - Chromatin and remodelling|Chromatin and remodelling]]
 6. [[IG 06 - Histone acetylation and methylation|Histone acetylation and methylation]]
 7. [[IG 07 - Histone variants, the histone code and epigenetic memory|Histone variants, the histone code and epigenetic memory]]
-8. [[IG 08 - DNA methylation + Methods – from one locus to the whole epigenome|DNA methylation + Methods – from one locus to the whole epigenome]]
-9. [[IG 09 - ChIP-seq (chromatin immunoprecipitation followed by sequencing) … Next-generation sequencing (NGS) – the read-out of every -seq method|ChIP-seq (chromatin immunoprecipitation followed by sequencing) … Next-generation sequencing (NGS) – the read-out of every -seq method]]
+8. [[IG 08 - DNA methylation|DNA methylation]]
+9. [[IG 09 - Methods – from one locus to the whole epigenome + Catalytic-independent roles of chromatin modifiers VB25|Methods – from one locus to the whole epigenome + Catalytic-independent roles of chromatin modifiers VB25]]
+10. [[IG 10 - ChIP-seq (chromatin immunoprecipitation followed by sequencing) + ATAC-seq (assay for transposase-accessible chromatin with sequencing)|ChIP-seq (chromatin immunoprecipitation followed by sequencing) + ATAC-seq (assay for transposase-accessible chromatin with sequencing)]]
+11. [[IG 11 - Next-generation sequencing (NGS) – the read-out of every -seq method … Papers of the course|Next-generation sequencing (NGS) – the read-out of every -seq method … Papers of the course]]
 
 Approfondimenti (note scritte a mano in `Approfondimenti/`, non generate dal docx):
 

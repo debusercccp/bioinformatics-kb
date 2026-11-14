@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
+source: "MCB/SATAUMV/Statistical_approaches.docx"
 order: 1
 tags: [note, sataumv]
 ---

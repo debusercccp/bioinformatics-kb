@@ -38,7 +38,7 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/en/study/co
 
 ## Appunti (MCB)
 
-Fonte: `MCB/Bioinformatics_For_Biology/Bioinformatics_For_Biology.docx` — 5 note collegate in ordine.
+Fonte: `MCB/BFB/Bioinformatics_For_Biology.docx` — 5 note collegate in ordine.
 
 1. [[BFB 01 - Introduction to bioinformatics|Introduction to bioinformatics]]
 2. [[BFB 02 - The practical hardware needs of biology (Chapter I)|The practical hardware needs of biology (Chapter I)]]

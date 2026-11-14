@@ -1,12 +1,12 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 58
 tags: [note, aml]
 ---
 
-> [[AML 57 - Bonus Material + Time Series exercises|← Bonus Material + Time Series exercises]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 59 - The Bag of Words Model|The Bag of Words Model →]]
+> [[AML 57 - Bonus Matherial + Time Series exercises|← Bonus Matherial + Time Series exercises]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 59 - The Bag of Words Model|The Bag of Words Model →]]
 
 # Introduction to Natural Language Processing (NLP)
 
@@ -32,7 +32,7 @@ If the text is small: *with open('your_file.txt', 'r') as f raw_text = f.read()*
 
 - **Keeps punctuation** attached (e.g., "thought." remains) **Regex-Based Tokenization:**
 
-> ![[AML-image349.jpg|595]]
+> ![[AML-image393.jpg|595]]
 >
 > Removes most punctuation
 
@@ -42,13 +42,13 @@ If the text is small: *with open('your_file.txt', 'r') as f raw_text = f.read()*
 
 > If you’re okay losing punctuation entirely:
 
-![[AML-image350.jpg|622]]
+![[AML-image394.jpg|622]]
 
 > **3. Normalize Case**
 >
 > Convert all text to lowercase to reduce vocabulary size:
 
-*t* ![[AML-image351.jpg|550]]
+*t* ![[AML-image395.jpg|550]]
 
 **Tradeoff**: Lose distinction between Apple the company and apple the fruit. **Using Libraries (Recommended): NLTK for Robust Preprocessing** *import nltk from nltk.tokenize import word_tokenize, sent_tokenize nltk.download('punkt') \# Only needed once* **Tokenize Words:**
 
@@ -131,4 +131,4 @@ If the text is small: *with open('your_file.txt', 'r') as f raw_text = f.read()*
 > In summary, Keras provides a clean and flexible way to preprocess text, starting from simple tokenization and cleaning with text_to_word_sequence, moving through hashing-based quick encodings with one_hot() and hashing_trick(), and offering robust and scalable tokenization and vectorization with the Tokenizer class. For serious NLP tasks, the Tokenizer is the preferred approach, as it gives you full control over how your text is processed and encoded.
 
 ---
-> [[AML 57 - Bonus Material + Time Series exercises|← Bonus Material + Time Series exercises]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 59 - The Bag of Words Model|The Bag of Words Model →]]
+> [[AML 57 - Bonus Matherial + Time Series exercises|← Bonus Matherial + Time Series exercises]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 59 - The Bag of Words Model|The Bag of Words Model →]]

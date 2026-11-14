@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 6
 tags: [note, mbd]
 ---
@@ -68,7 +68,7 @@ A = \begin{pmatrix}
 \end{pmatrix} = I
 $$
 
-### 2.6.1 Determinant of a $2 \times 2$ matrix
+### 2.6.1 Determinant of a $\mathbf{2}\mathbf{\times}\mathbf{2}$ matrix
 
 For $A \in \mathbb{R}^{n \times n}$ with $n = 2$, the determinant (written $\det(A)$ or $|A|$) is the product of the main diagonal minus the product of the other diagonal:
 
@@ -88,7 +88,7 @@ The determinant is a **number**. Example: $\begin{vmatrix}
 
 Properties (true for square matrices of any order): if every element of a row (column) is zero, $|A| = 0$; $\left| A^{t} \right| = |A|$; $|AB| = |A||B|$.
 
-### 2.6.2 Inverse of a $2 \times 2$ matrix
+### 2.6.2 Inverse of a $\mathbf{2}\mathbf{\times}\mathbf{2}$ matrix
 
 $$
 A^{- 1} = \frac{1}{\det(A)}\begin{pmatrix}

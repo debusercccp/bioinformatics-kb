@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 13
 tags: [note, mbd]
 ---
@@ -10,7 +10,7 @@ tags: [note, mbd]
 
 # Functions
 
-A function associates to each element of the **domain** ($\subset \mathbb{R}$) one element of the **codomain** ($\subset \mathbb{R}$). 1-D functions: $D \subset \mathbb{R} \rightarrow C \subset \mathbb{R}$; $f(x):\mathbb{R} \rightarrow \mathbb{R}$, $x \rightarrow f(x)$.
+A function associates to each element of the **domain** ($\mathbb{\subset R}$) one element of the **codomain** ($\mathbb{\subset R}$). 1-D functions: $D\mathbb{\subset R \rightarrow}C\mathbb{\subset R}$; $f(x)\mathbb{:R \rightarrow R}$, $x \rightarrow f(x)$.
 
 A relation is a **function** if for each $x$ there is one and only one $y$ (vertical line test).
 
@@ -26,7 +26,7 @@ Formally, $f$ is one-to-one on $D$ if $f(a) \neq f(b)$ whenever $a \neq b$; to b
 
 A function is continuous when its graph can be drawn without lifting the pen; it can still have corners (e.g. a “$\land$” shape). A function with a jump is not continuous.
 
-Most techniques of calculus require continuous functions. Formally, a function is continuous at a point if the limit there is the same as the value of the function (the one-sided limits match the value). Continuous functions can be added, subtracted, multiplied, divided and multiplied by a constant, and the result remains continuous; composites of continuous functions are continuous (e.g. $y = sin\left( x^{2} \right)$, $y = |cos\, x|$).
+Most techniques of calculus require continuous functions. Formally, a function is continuous at a point if the limit there is the same as the value of the function (the one-sided limits match the value). Continuous functions can be added, subtracted, multiplied, divided and multiplied by a constant, and the result remains continuous; composites of continuous functions are continuous (e.g. $y = \sin\left( x^{2} \right)$, $y = |cos\, x|$).
 
 ## 4.3 Elementary functions
 
@@ -38,15 +38,15 @@ $$
 
 **Trigonometric**, $f(x) = sin\, x$ and $f(x) = cos\, x$: periodic, between $- 1$ and $1$; $sin\, x$ is 0 at $0,\pi,2\pi$ and has its maximum at $\pi/2$; $cos\, x$ is 1 at $0$.
 
-$cos$ is **even**, $cos( - x) = cos(x)$ (symmetric about the $y$ axis); $sin$ is **odd**, $sin( - x) = - sin(x)$ (symmetric about the origin). In $f(x) = A\, sin\left\lbrack \frac{2\pi}{B}(x - C) \right\rbrack + D$, $|A|$ is the amplitude, $|B|$ the period, $C$ the horizontal shift and $D$ the vertical shift. Trigonometric functions are not one-to-one, but they become invertible if the domain is restricted.
+$\cos$ is **even**, $\cos( - x) = \cos(x)$ (symmetric about the $y$ axis); $\sin$ is **odd**, $\sin( - x) = - \sin(x)$ (symmetric about the origin). In $f(x) = A\, sin\left\lbrack \frac{2\pi}{B}(x - C) \right\rbrack + D$, $|A|$ is the amplitude, $|B|$ the period, $C$ the horizontal shift and $D$ the vertical shift. Trigonometric functions are not one-to-one, but they become invertible if the domain is restricted.
 
-**Logarithm**, $ln\, x$: the inverse of the exponential, $ln\left( exp(x) \right) = x$. It is defined only for $x > 0$ and $ln\, 1 = 0$.
+**Logarithm**, $ln\, x$: the inverse of the exponential, $\ln\left( \exp(x) \right) = x$. It is defined only for $x > 0$ and $ln\, 1 = 0$.
 
 $$
 \log_{a}x = y\quad \Leftrightarrow \quad a^{y} = x
 $$
 
-$a^{x}$ is one-to-one, so it has an inverse: the **logarithm** ($a > 0$, $a \neq 1$, $x > 0$). Example: $16 = 2^{4} \Leftrightarrow 4 = \log_{2}16$ (“two raised to what power is 16?”). The most common bases are 10, $\log_{10}x = \log x$ (common log), and $e$, $\log_{e}x = ln\, x$ (natural log). Since logs and exponentiation are inverse functions, they “undo” each other.
+$a^{x}$ is one-to-one, so it has an inverse: the **logarithm** ($a > 0$, $a \neq 1$, $x > 0$). Example: $16 = 2^{4} \Leftrightarrow 4 = \log_{2}16$ (“two raised to what power is 16?”). The most common bases are 10, $\log_{10}x = logx$ (common log), and $e$, $\log_{e}x = ln\, x$ (natural log). Since logs and exponentiation are inverse functions, they “undo” each other.
 
 $$
 \log_{a}(x \cdot y) = \log_{a}x + \log_{a}y,\quad\quad\log_{a}\frac{x}{y} = \log_{a}x - \log_{a}y,\quad\quad\log_{a}x^{y} = y\log_{a}x

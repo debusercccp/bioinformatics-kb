@@ -1,12 +1,12 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 56
 tags: [note, aml]
 ---
 
-> [[AML 55 - Deep Dive – MLOps|← Deep Dive – MLOps]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 57 - Bonus Material + Time Series exercises|Bonus Material + Time Series exercises →]]
+> [[AML 55 - Deep Dive – MLOps|← Deep Dive – MLOps]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 57 - Bonus Matherial + Time Series exercises|Bonus Matherial + Time Series exercises →]]
 
 # Interpretability and Explainability in AI
 
@@ -26,7 +26,7 @@ tags: [note, aml]
 >
 > **The Interpretability Spectrum**
 
-![[AML-image340.jpg|642]]
+![[AML-image385.jpg|642]]
 
 > We can place machine learning models along a spectrum based on how transparent their internal workings are:
 
@@ -62,11 +62,11 @@ tags: [note, aml]
 
 - **Explainability**, on the other hand, refers to **external techniques** applied after a model is built. These techniques help make sense of complex models. Examples include SHAP values, LIME, and feature importance plots. Here, the goal is not to understand the model’s internal mechanics, but to explain **why it made a specific prediction**.
 
-![[AML-image341.jpg|642]]
+![[AML-image386.jpg|642]]
 
 > **Explainable AI (XAI)**
 >
-> ![[AML-image342.jpg|357]]XAI is a research field focused on making machine learning systems more transparent and accountable.
+> ![[AML-image387.jpg|357]]XAI is a research field focused on making machine learning systems more transparent and accountable.
 >
 > Its core objective is to make the model’s decisions understandable to humans. Explanations can take various forms:
 
@@ -84,7 +84,7 @@ tags: [note, aml]
 
 - **Local**: Focus on a single prediction.
 
-![[AML-image344.jpg|565]]
+![[AML-image388.jpg|565]]
 
 > **Challenges in XAI**
 
@@ -120,7 +120,7 @@ tags: [note, aml]
 >
 > Tabular data (organized into rows and columns) is common in business, finance, and healthcare. Each row is an observation, and each column is a feature.
 
-![[AML-image345.jpg|642]]
+![[AML-image389.jpg|642]]
 
 > **Before Modeling: Exploratory Data Analysis (EDA)**
 >
@@ -150,7 +150,7 @@ tags: [note, aml]
 >
 > **Example:** Predicting house price based on "Rooms", "Location", and "Age" involves looking at every possible order these features could be added. SHAP calculates how much each one contributes, regardless of order.
 
-![[AML-image346.jpg|642]]
+![[AML-image390.jpg|642]]
 
 > **Challenges**
 >
@@ -160,7 +160,7 @@ tags: [note, aml]
 >
 > LIME works by approximating the complex model **locally** using a simpler, interpretable model (like a linear regression), focusing only on one prediction at a time.
 
-![[AML-image347.jpg|642]]
+![[AML-image391.jpg|642]]
 
 > **Example**
 >
@@ -180,7 +180,7 @@ tags: [note, aml]
 
 - **Interpretability**: LIME always gives a linear explanation; SHAP can capture non-linear effects too.
 
-![[AML-image348.jpg|642]]
+![[AML-image392.jpg|642]]
 
 ---
-> [[AML 55 - Deep Dive – MLOps|← Deep Dive – MLOps]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 57 - Bonus Material + Time Series exercises|Bonus Material + Time Series exercises →]]
+> [[AML 55 - Deep Dive – MLOps|← Deep Dive – MLOps]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 57 - Bonus Matherial + Time Series exercises|Bonus Matherial + Time Series exercises →]]

@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 68
 tags: [note, aml]
 ---
@@ -122,7 +122,7 @@ In one picture we can spot several data characteristics and compare all features
 
 Growth Rate is instead more symmetric and centered around 1.
 
-![[AML-image372.jpg|642]]
+![[AML-image420.jpg|642]]
 
 In general, data exploration is not a linear process! We typically jump back and forth from univariate to bivariate analysis depending on questions that arise along the way.
 
@@ -150,7 +150,7 @@ Now we explore a bit the relationships among pairs of features. Possible questio
 </colgroup>
 <thead>
 <tr>
-<th><p>Spearman’s ρ (<strong>rho</strong>) è un <strong>indice di correlazione non parametrico</strong> che misura quanto due variabili sono <strong>ordinatamente correlate</strong>. Invece di misurare <strong>quanto due variabili sono correlate in modo lineare</strong> (come fa la correlazione di Pearson), <strong>Spearman misura se due variabili crescono o decrescono insieme in maniera ordinata</strong>, anche se la relazione non è perfettamente lineare. <img src="_attachments/AML-image196.png" width="300"></p>
+<th><p>Spearman’s ρ (<strong>rho</strong>) è un <strong>indice di correlazione non parametrico</strong> che misura quanto due variabili sono <strong>ordinatamente correlate</strong>. Invece di misurare <strong>quanto due variabili sono correlate in modo lineare</strong> (come fa la correlazione di Pearson), <strong>Spearman misura se due variabili crescono o decrescono insieme in maniera ordinata</strong>, anche se la relazione non è perfettamente lineare. <img src="_attachments/AML-image217.png" width="300"></p>
 <p><strong>Pearson’s correlation (r)</strong> misura <strong>solo relazioni lineari</strong> tra due variabili.</p>
 <ul>
 <li><p>Se una variabile cresce e l’altra cresce in modo proporzionale → <strong>correlazione alta</strong>.</p></li>
@@ -239,7 +239,7 @@ Now we explore a bit the relationships among pairs of features. Possible questio
 
 > che se è negativo e circa 1 descrive una correlazione negativa, altrimenti positiva o se è circa 0 una correlazione inesistente.
 
-![[AML-image373.jpg|642]]
+![[AML-image421.jpg|642]]
 
 **OUTLIERS**
 

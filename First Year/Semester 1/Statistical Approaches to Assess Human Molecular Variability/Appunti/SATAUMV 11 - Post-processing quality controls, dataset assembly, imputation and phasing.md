@@ -1,7 +1,7 @@
 ---
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
-source: "MCB/Statistical_Approaches/Statistical_approaches.docx"
+source: "MCB/SATAUMV/Statistical_approaches.docx"
 order: 11
 tags: [note, sataumv]
 ---
@@ -167,7 +167,7 @@ For example, for an autosomal locus containing two SNVs (G/A and T/C) and a chil
 
 **Phasing in unrelated individuals — the main algorithmic approaches:**
 
-**Clark's parsimony approach:** based on using unambiguous haplotypes (from individuals with at most one heterozygous marker) and parsimony, i.e. finding solutions that **minimize the number of unique haplotypes**. Ambiguous genotypes are resolved by assuming one of the possible haplotypes has been observed before, and deducing the other by subtraction.
+**Clark's parsimony approach:** based on using **unambiguous haplotypes** (from individuals with at most one heterozygous marker) and **parsimony**, i.e. finding solutions that **minimize the number of unique haplotypes**. Ambiguous genotypes are resolved by assuming one of the possible haplotypes has been observed before, and deducing the other by subtraction.
 
 **Pros:** performs well for very short segments and tightly linked variants, but loses accuracy for large datasets with a high number of SNPs.
 

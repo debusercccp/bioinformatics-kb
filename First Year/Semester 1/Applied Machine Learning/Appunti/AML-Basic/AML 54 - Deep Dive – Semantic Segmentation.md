@@ -1,12 +1,12 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 54
 tags: [note, aml]
 ---
 
-> [[AML 53 - Deep Dive – Object Recognition and Counting|← Deep Dive – Object Recognition and Counting]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 55 - Deep Dive – MLOps|Deep Dive – MLOps →]]
+> [[AML 53 - Deep Dive – Object Recongition and Counting|← Deep Dive – Object Recongition and Counting]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 55 - Deep Dive – MLOps|Deep Dive – MLOps →]]
 
 # Deep Dive: Semantic Segmentation
 
@@ -32,11 +32,11 @@ tags: [note, aml]
 >
 > It consists of two main parts:
 
-- ![[AML-image327.jpg|349]]A **contracting path** (encoder) for **downsampling** and extracting features. • An **expanding path** (decoder) for **upsampling** and reconstructing spatial resolution.
+- ![[AML-image372.jpg|349]]A **contracting path** (encoder) for **downsampling** and extracting features. • An **expanding path** (decoder) for **upsampling** and reconstructing spatial resolution.
 
 > **Basic U-Net block**
 >
-> ![[AML-image328.jpg|327]]Two 3×3 convolutional layers (without padding), each followed by an activation function.
+> ![[AML-image373.jpg|327]]Two 3×3 convolutional layers (without padding), each followed by an activation function.
 >
 > A 2×2 max-pooling layer for downsampling.
 >
@@ -44,7 +44,7 @@ tags: [note, aml]
 >
 > **Contracting Path (Encoder)**
 
-- ![[AML-image329.jpg|357]]Composed of **four U-Net blocks** followed by a **bottleneck** layer.
+- ![[AML-image374.jpg|357]]Composed of **four U-Net blocks** followed by a **bottleneck** layer.
 
 - With each block:
 
@@ -56,7 +56,7 @@ tags: [note, aml]
 
 > **Expanding Path (Decoder)**
 >
-> ![[AML-image330.jpg|355]]Consists of **four upsampling blocks**:
+> ![[AML-image375.jpg|355]]Consists of **four upsampling blocks**:
 
 - Uses **up-convolutions** instead of max-pooling. o Integrates **long-range skip connections** from the encoder. o Each block contains two convolutional layers.
 
@@ -72,7 +72,7 @@ tags: [note, aml]
 
 > **ResUNet**
 >
-> ![[AML-image331.jpg|226]]**ResUNet**, introduced by **Zhang et al. (2018)**, builds on the original U-Net by incorporating **residual units**, inspired by ResNet.
+> ![[AML-image376.jpg|226]]**ResUNet**, introduced by **Zhang et al. (2018)**, builds on the original U-Net by incorporating **residual units**, inspired by ResNet.
 >
 > **Benefits:**
 
@@ -80,7 +80,7 @@ tags: [note, aml]
 
 - Requires **fewer parameters**, improving efficiency.
 
-> ![[AML-image332.jpg|262]]**Residual Unit Components**:
+> ![[AML-image377.jpg|262]]**Residual Unit Components**:
 
 - Modified U-Net block with:
 
@@ -96,7 +96,7 @@ tags: [note, aml]
 
 > **cell ResUNet (c-ResUNet)**
 >
-> ![[AML-image333.jpg|295]]**Morelli et al. (2021)** proposed **c-ResUNet**, a version of ResUNet **specifically designed for fluorescence microscopy** and tested for cell counting tasks.
+> ![[AML-image378.jpg|295]]**Morelli et al. (2021)** proposed **c-ResUNet**, a version of ResUNet **specifically designed for fluorescence microscopy** and tested for cell counting tasks.
 >
 > **Key Modifications:**
 
@@ -116,7 +116,7 @@ tags: [note, aml]
 
 - Should align with the task, data distribution, and analysis objectives. **1. Binary Cross-Entropy (BCE)**
 
-![[AML-image334.jpg|523]]
+![[AML-image379.jpg|523]]
 
 > Measures the difference between predicted and actual probabilities.
 
@@ -126,7 +126,7 @@ tags: [note, aml]
 
 > **2. Weighted Binary Cross-Entropy (WBCE)**
 
-![[AML-image335.jpg|616]]
+![[AML-image380.jpg|616]]
 
 > • Assigns **different weights** to each class to **compensate for imbalance**, giving more importance to the minority class (e.g., cells).
 
@@ -136,7 +136,7 @@ tags: [note, aml]
 
     - Particularly effective in handling class imbalance.
 
-![[AML-image336.jpg|459]]
+![[AML-image381.jpg|459]]
 
 4.  **Dice Loss**
 
@@ -144,7 +144,7 @@ tags: [note, aml]
 
     - Especially well-suited for **segmentation tasks**, where spatial accuracy matters.
 
-![[AML-image337.jpg|642]]
+![[AML-image382.jpg|642]]
 
 ---
-> [[AML 53 - Deep Dive – Object Recognition and Counting|← Deep Dive – Object Recognition and Counting]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 55 - Deep Dive – MLOps|Deep Dive – MLOps →]]
+> [[AML 53 - Deep Dive – Object Recongition and Counting|← Deep Dive – Object Recongition and Counting]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 55 - Deep Dive – MLOps|Deep Dive – MLOps →]]

@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 14
 tags: [note, aml]
 ---
@@ -24,7 +24,7 @@ This simplified cost function effectively captures the essence of logistic regre
 
 This simplification allows us to condense the cost function into a single formula that dynamically adjusts based on the value of y, ensuring that the appropriate component is selected depending on whether y is 0 or This adjusted cost function will facilitate the application of gradient descent to fit the parameters of logistic regression effectively.
 
-![[AML-image81.jpg|432]]
+![[AML-image84.jpg|432]]
 
 The choice of the **cross-entropy/log loss function** in logistic regression is not arbitrary, here's why we choose this particular function:
 
@@ -44,7 +44,7 @@ Once we have obtained the optimized parameters *θ*, we can use them to make pre
 
 It's important to note that the output of our hypothesis should be interpreted as the probability that *y* = 1, given the input *x* and parameterized by *θ*. This probability indicates the confidence of our model in predicting the positive class.
 
-![[AML-image82.jpg|697]]
+![[AML-image85.jpg|697]]
 
 ## 7.5 GD LINEAR REGRESSION VS GD LOGISTIC REGRESSION
 
@@ -61,7 +61,7 @@ The GD algorithm expression for linear regression and logistic regression may se
 
 > This sigmoid transformation ensures that the output of the hypothesis lies between 0 and 1, suitable for binary classification tasks, where the output is interpreted as the probability of the positive class.
 >
-> ![[AML-image83.jpg|335]]
+> ![[AML-image86.jpg|335]]
 
 **Feature scaling** and **mean normalization**, which are techniques used to preprocess data in linear regression, can also be beneficial in logistic regression.
 

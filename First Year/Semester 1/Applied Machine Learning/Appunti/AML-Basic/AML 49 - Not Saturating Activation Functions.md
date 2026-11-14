@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 49
 tags: [note, aml]
 ---
@@ -16,7 +16,7 @@ tags: [note, aml]
 
 - Or neurons that **die permanently** (e.g., with ReLU) ReLu: rectified Linear Unit
 
-- ![[AML-image306.jpg|196]]Fast to compute
+- ![[AML-image345.jpg|196]]Fast to compute
 
 - Doesn't saturate for large positive inputs
 
@@ -50,7 +50,7 @@ tags: [note, aml]
 
 > The hyperparameter α defines how much the function “leaks”
 >
-> ![[AML-image309.jpg|307]]
+> ![[AML-image350.jpg|307]]
 
 - it is the slope of the function for z \< 0 and is typically set to 0.01 This small slope ensures that leaky ReLUs never die
 
@@ -86,7 +86,7 @@ tags: [note, aml]
 >
 > **SELU (scaled ELU)**
 
-![[AML-image312.jpg|385]]
+![[AML-image355.jpg|385]]
 
 > if you build a NN composed exclusively of a **stack of dense layers,** and if all hidden layer’s use **SELUs**, then the network will **self-normalize**: the output of each layer will tend to preserve **mean 0** and **standard deviation 1** during training, which solves the vanishing/exploding gradients problem.
 >
@@ -102,7 +102,7 @@ tags: [note, aml]
 
 - As a result, SELU often significantly outperforms other activation functions for such NNs (especially DNNs).
 
-![[AML-image313.jpg|642]]
+![[AML-image356.jpg|642]]
 
 ---
 > [[AML 48 - Handling Long Sequences – Part 1|← Handling Long Sequences – Part 1]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 50 - Handling Long Sequences – Part 2 + Alleviating the Unstable Gradient Problem for RNNs|Handling Long Sequences – Part 2 + Alleviating the Unstable Gradient Problem for RNNs →]]

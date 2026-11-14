@@ -1,12 +1,12 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 67
 tags: [note, aml]
 ---
 
-> [[AML 66 - Jupyter Notebooks & Google Colab + Pandas|← Jupyter Notebooks & Google Colab + Pandas]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 68 - Matplotlib - Customization & Advanced Features|Matplotlib - Customization & Advanced Features →]]
+> [[AML 66 - Jupiter Notebooks & Google Colab + Pandas|← Jupiter Notebooks & Google Colab + Pandas]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 68 - Matplotlib - Customization & Advanced Features|Matplotlib - Customization & Advanced Features →]]
 
 # Data visualization
 
@@ -28,7 +28,7 @@ Some advantages to use matplotlib are that:
 
 The core components of this library are:
 
-![[AML-image371.jpg|343]]**Figure** – The entire **canvas** where plots are drawn
+![[AML-image419.jpg|343]]**Figure** – The entire **canvas** where plots are drawn
 
 - (**plt.figure**() or **plt.subplots**() )
 
@@ -63,4 +63,4 @@ In general:
 - **Artists** define how data is visually represented
 
 ---
-> [[AML 66 - Jupyter Notebooks & Google Colab + Pandas|← Jupyter Notebooks & Google Colab + Pandas]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 68 - Matplotlib - Customization & Advanced Features|Matplotlib - Customization & Advanced Features →]]
+> [[AML 66 - Jupiter Notebooks & Google Colab + Pandas|← Jupiter Notebooks & Google Colab + Pandas]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 68 - Matplotlib - Customization & Advanced Features|Matplotlib - Customization & Advanced Features →]]

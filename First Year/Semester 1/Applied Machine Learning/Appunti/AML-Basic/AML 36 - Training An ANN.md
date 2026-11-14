@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 36
 tags: [note, aml]
 ---
@@ -30,7 +30,7 @@ tags: [note, aml]
 >
 > The “one single learning algorithm” hypothesis is currently just a hypothesis. But it is not with 0 evidence.
 
-![[AML-image216.jpg|608]]
+![[AML-image245.jpg|608]]
 
 > So, if the same piece of physical brain tissue may be able to process sight or sound or touch, then maybe there is just one learning algorithm behind, that can process any of them. So - **if the former is true** - in trying to emulate the brain, instead of implementing a thousand different algorithms, maybe what we need is to figure out some approximation of whatever the brain's one-and-only-one **learning algorithm** is and implement it. This might be our best shot at making real progress towards the AI dream of building someday truly intelligent machines.
 >
@@ -157,7 +157,7 @@ tags: [note, aml]
 >
 > Back propagation used **gradient descent**, logistic is ok because you don’t have any flat segments. No activation function should be linear. The first function with the step function they decided to move to the sigmoid: very good idea.
 
-![[AML-image219.jpg|622]]
+![[AML-image250.jpg|622]]
 
 > I**nitialisation**
 >

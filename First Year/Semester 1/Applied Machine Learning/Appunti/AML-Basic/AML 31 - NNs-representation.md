@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 31
 tags: [note, aml]
 ---
@@ -58,7 +58,7 @@ tags: [note, aml]
 
 - ℎ(𝑥) is the **output** of the neuron
 
-> ![[AML-image156.jpg|549]]
+> ![[AML-image162.jpg|549]]
 >
 > **From One Neuron to Multi-layer Networks Network Structure:**
 >
@@ -76,7 +76,7 @@ tags: [note, aml]
 
 > **Forward Propagation: Matrix View**
 
-![[AML-image157.jpg|490]]
+![[AML-image163.jpg|490]]
 
 > The **core computation** from one layer to the next is a **matrix operation**:
 
@@ -86,11 +86,11 @@ tags: [note, aml]
 
 > Layer j has sj units (not counting bias)
 >
-> ![[AML-image158.jpg|565]]
+> ![[AML-image164.jpg|565]]
 
 - Layer j+1 has sj+1 units has dimensions 𝑠<sub>(𝑗+1)</sub> × (𝑠<sub>𝑗</sub> + 1) **Computation for each layer:**
 
-> 𝑧![[AML-image159.png|129]]𝑒𝑛 𝑎(𝑗+1) = 𝑔(𝑧(𝑗+1))
+> 𝑧![[AML-image165.png|129]]𝑒𝑛 𝑎(𝑗+1) = 𝑔(𝑧(𝑗+1))
 >
 > Where:
 
@@ -106,7 +106,7 @@ tags: [note, aml]
 
 > 1 output neuron in the output layer
 >
-> ![[AML-image160.jpg|423]]
+> ![[AML-image166.jpg|423]]
 >
 > Then:
 
@@ -122,7 +122,7 @@ tags: [note, aml]
 
 - Building **intuition** about why NNs can learn **complex, non-linear hypotheses**
 
-![[AML-image161.jpg|476]]
+![[AML-image167.jpg|476]]
 
 > To compute the output of a neural network efficiently, we **vectorize the operations**. Rather than looping over each neuron and each connection, we work with **matrices and vectors**:
 

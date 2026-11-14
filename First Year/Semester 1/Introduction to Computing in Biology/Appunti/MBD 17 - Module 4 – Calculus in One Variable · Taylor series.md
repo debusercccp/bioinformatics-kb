@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 17
 tags: [note, mbd]
 ---
@@ -36,7 +36,7 @@ $$
 f(x) \simeq f(0) + x\left. \ \frac{df}{dx} \right|_{0} + x^{2}\frac{1}{2}\left. \ \frac{d^{2}f}{dx^{2}} \right|_{0} + \ldots + x^{n}\frac{1}{n!}\left. \ \frac{d^{n}f}{dx^{n}} \right|_{0}\quad\text{(around 0)}
 $$
 
-*Example from the slides:* $f(x) = ln(x + 1)$ at $x = 0$ with a fourth-degree polynomial. $f(0) = 0$, $f'(x) = \frac{1}{1 + x}$, $f'(0) = 1$; $f''(x) = - \frac{1}{(1 + x)^{2}}$, $f''(0) = - 1$; $f^{(3)}(0) = 2$; $f^{(4)}(0) = - 6$. Hence $a_{0} = 0$, $a_{1} = 1$, $a_{2} = - \frac{1}{2}$, $a_{3} = \frac{2}{6} = \frac{1}{3}$, $a_{4} = - \frac{6}{24} = - \frac{1}{4}$:
+*Example from the slides:* $f(x) = \ln(x + 1)$ at $x = 0$ with a fourth-degree polynomial. $f(0) = 0$, $f'(x) = \frac{1}{1 + x}$, $f'(0) = 1$; $f''(x) = - \frac{1}{(1 + x)^{2}}$, $f''(0) = - 1$; $f^{(3)}(0) = 2$; $f^{(4)}(0) = - 6$. Hence $a_{0} = 0$, $a_{1} = 1$, $a_{2} = - \frac{1}{2}$, $a_{3} = \frac{2}{6} = \frac{1}{3}$, $a_{4} = - \frac{6}{24} = - \frac{1}{4}$:
 
 $$
 P(x) = x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4}

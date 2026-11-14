@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 64
 tags: [note, aml]
 ---
@@ -16,7 +16,7 @@ A dynamic, ordered collection that can store elements of **different types** and
 
 > **Indexing & Slicing** → my_list\[0\], my_list\[1:3\]
 >
-> ![[AML-image360.jpg|281]]**Adding Elements** → append(), extend(), insert()
+> ![[AML-image408.jpg|281]]**Adding Elements** → append(), extend(), insert()
 >
 > **Removing Elements** → remove(), pop()
 
@@ -52,7 +52,7 @@ A collection of key-value pairs optimized for **fast lookups** and **structured 
 >
 > **Dict comprehension** for one-liner definitions
 
-![[AML-image361.jpg|317]]**Real-World Use Case**: ML Model Parameters
+![[AML-image409.jpg|317]]**Real-World Use Case**: ML Model Parameters
 
 Removing duplicate values from a dataset before processing **Pros**
 

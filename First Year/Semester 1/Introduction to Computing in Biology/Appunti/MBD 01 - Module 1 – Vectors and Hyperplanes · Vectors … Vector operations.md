@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 1
 tags: [note, mbd]
 ---
@@ -45,7 +45,7 @@ $$
 
 ### 1.3.1 Product by a scalar
 
-For $\lambda \in \mathbb{R}$ and $\overrightarrow{v} \in \mathbb{R}^{n}$:
+For $\lambda\mathbb{\in R}$ and $\overrightarrow{v} \in \mathbb{R}^{n}$:
 
 $$
 \overrightarrow{u} = \lambda\overrightarrow{v} = \begin{pmatrix}
@@ -56,7 +56,7 @@ $$
 \end{pmatrix},\quad\quad\left( \lambda\overrightarrow{v} \right)_{i} = \lambda v_{i},\quad\quad\lambda\overrightarrow{v} \in \mathbb{R}^{n}
 $$
 
-For $\lambda,\mu \in \mathbb{R}$: $(\lambda + \mu)\overrightarrow{v} = \lambda\overrightarrow{v} + \mu\overrightarrow{v}$; $\quad(\lambda\mu)\overrightarrow{v} = \lambda\left( \mu\overrightarrow{v} \right)$.
+For $\lambda,\mu\mathbb{\in R}$: $(\lambda + \mu)\overrightarrow{v} = \lambda\overrightarrow{v} + \mu\overrightarrow{v}$; $\quad(\lambda\mu)\overrightarrow{v} = \lambda\left( \mu\overrightarrow{v} \right)$.
 
 The components of the rescaled vector are the rescaled components: geometrically $\lambda\overrightarrow{v}$ has the same direction as $\overrightarrow{v}$ and a length multiplied by $|\lambda|$ (the verse is reversed if $\lambda < 0$).
 
@@ -102,7 +102,7 @@ $$
 
 ### 1.3.4 Properties
 
-For $\lambda,\mu \in \mathbb{R}$ and $\overrightarrow{u},\overrightarrow{v},\overrightarrow{w} \in \mathbb{R}^{n}$:
+For $\lambda,\mu\mathbb{\in R}$ and $\overrightarrow{u},\overrightarrow{v},\overrightarrow{w} \in \mathbb{R}^{n}$:
 
 $$
 \lambda\left( \overrightarrow{u} + \overrightarrow{v} \right) = \lambda\overrightarrow{u} + \lambda\overrightarrow{v},\quad(\lambda + \mu)\overrightarrow{v} = \lambda\overrightarrow{v} + \mu\overrightarrow{v},\quad\left( \overrightarrow{u} + \overrightarrow{v} \right) + \overrightarrow{w} = \overrightarrow{u} + \left( \overrightarrow{v} + \overrightarrow{w} \right),\quad\overrightarrow{u} + \overrightarrow{v} = \overrightarrow{v} + \overrightarrow{u}

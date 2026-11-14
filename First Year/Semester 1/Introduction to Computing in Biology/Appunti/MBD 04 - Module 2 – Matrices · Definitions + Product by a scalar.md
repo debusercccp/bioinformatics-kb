@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 4
 tags: [note, mbd]
 ---
@@ -38,7 +38,7 @@ A vector $\overrightarrow{v} \in \mathbb{R}^{n}$ is a **column matrix**, $\overr
 
 ## 2.2 Product by a scalar
 
-For $A \in \mathbb{R}^{m \times n}$ and $\lambda \in \mathbb{R}$, $B = \lambda A \in \mathbb{R}^{m \times n}$ with $\lbrack B\rbrack_{ij} = \lambda\lbrack A\rbrack_{ij}$, i.e. $b_{ij} = \lambda a_{ij}$:
+For $A \in \mathbb{R}^{m \times n}$ and $\lambda\mathbb{\in R}$, $B = \lambda A \in \mathbb{R}^{m \times n}$ with $\lbrack B\rbrack_{ij} = \lambda\lbrack A\rbrack_{ij}$, i.e. $b_{ij} = \lambda a_{ij}$:
 
 $$
 3\begin{pmatrix}

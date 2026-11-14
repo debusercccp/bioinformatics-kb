@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 42
 tags: [note, aml]
 ---
@@ -18,7 +18,7 @@ tags: [note, aml]
 
 > SVM can be explained as a classifier that fit the widest possible space between the instances of the classes. SVM is a large margin classification that tries to **find the best boundary (hyperplane)** that separates data points of different classes **with the maximum margin**.
 
-- ![[AML-image253.jpg|275]]**Hyperplane**: In 2D, it's a line; in 3D, it's a plane; in higher dimensions, it's called a hyperplane.
+- ![[AML-image284.jpg|275]]**Hyperplane**: In 2D, it's a line; in 3D, it's a plane; in higher dimensions, it's called a hyperplane.
 
 - **Margin**: The distance between the hyperplane and the nearest data points from each class. SVM maximizes this.
 
@@ -34,7 +34,7 @@ tags: [note, aml]
 
 - Second, it just only works if the data is **linearly** **separable** (e.g. Case 2, but not Case 1)
 
-![[AML-image254.jpg|642]]
+![[AML-image285.jpg|642]]
 
 > “Soft” margin **SVM classification**: limiting the margin violations, i.e. look for a trade-off between 1) keeping the street as large as possible (no matter what), and 2) allowing margin violations.
 >
@@ -66,7 +66,7 @@ tags: [note, aml]
 >
 > Kernel functions have a special property that makes it particularly useful in training support vector models, and the use of this property in **optimising non-linear support** vector classifiers → the **kernel trick**.
 
-![[AML-image258.jpg|642]]
+![[AML-image290.jpg|642]]
 
 > Anything that we need requires ɸ(a)Tɸ(b), for all instances a’s and b’s - which would be heavy to compute but it will eventually yield the same result as (aTb)2, which is much lighter to compute. The function ɸ is an example of a “kernel”: namely, here, a d=2 polynomial kernel
 
@@ -90,7 +90,7 @@ tags: [note, aml]
 
 - The width of the street is controlled by a hyperparameter ϵ. Adding more training instances within the margin does not affect the model’s predictions (the model is said to be “ϵinsensitive”)
 
-![[AML-image263.jpg|577]]
+![[AML-image299.jpg|577]]
 
 ---
 > [[AML 41 - ENSEMBLE – Stacking + Convolutional Neural Networks (CNN)|← ENSEMBLE – Stacking + Convolutional Neural Networks (CNN)]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 43 - Dimensionality Reduction + Dimensionality Reduction Algorithms – PCA|Dimensionality Reduction + Dimensionality Reduction Algorithms – PCA →]]

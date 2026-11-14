@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Integrative Genomics]]"
-source: "MCB/Functional_Genetics/IntegrativeGen_RS.docx"
+source: "MCB/FGIG/IG/IntegrativeGen_RS.docx"
 order: 1
 tags: [note, ig]
 ---
@@ -22,16 +22,7 @@ tags: [note, ig]
 - ~170 known types of RNA modifications (epitranscriptome)
 - IG combines bioinformatics with genomics
 
-## Sources
-
-Papers behind this:
-
-- **\[SF19\]** Schoenfelder & Fraser, *Long-range enhancer–promoter contacts in gene expression control*, Nat Rev Genet 20:437–455 (2019)
-- **\[W26\]** Wang, ten Dijke & Fan, *Deciphering the regulatory landscape of enhancer RNAs in health and disease*, Signal Transduct Target Ther 11:29 (2026)
-- **\[VB25\]** Vanyai & Blewitt, *Catalytic-independent roles of chromatin modifiers in mammalian development and the implications for treating human disease*, Biochem Soc Trans 53:1507–1516 (2025), doi:10.1042/BST20253098
-- **\[B93\]** Braunstein, Rose, Holmes, Allis & Broach, *Transcriptional silencing in yeast is associated with reduced nucleosome acetylation*, Genes Dev 7:592–604 (1993)
-- **\[R00\]** Rea, Eisenhaber, O’Carroll, Strahl, Sun, Schmid, Opravil, Mechtler, Ponting, Allis & Jenuwein, *Regulation of chromatin structure by site-specific histone H3 methyltransferases*, Nature 406:593–599 (2000)
-- **\[S12\]** Smith et al., *A unique regulatory phase of DNA methylation in the early mammalian embryo*, Nature 484:339–344 (2012)
+Paper tags such as \[SF19\], \[W26\] or \[R00\] are expanded in **Papers of the course**, at the end of these notes.
 
 ## 1. The big question
 
@@ -39,7 +30,7 @@ Papers behind this:
 - Core question: **how does the genome shape the phenotype?** The link between GENOME and PHENOTYPE is the **regulation of genome expression**.
 - Coding sequence is \<2% of the mammalian genome; the rest is full of *cis*-regulatory elements (promoters, enhancers, silencers, insulators) that act with *trans*-acting factors to decide when and where genes are expressed \[SF19\].
 
-![[IG-image1.png|604]]
+![[IG-image1.png|512]]
 
 **Take-home:** a phenotype can be altered at any of these levels, so integrative genomics layers one assay type per level to follow GENOME → PHENOTYPE.
 
@@ -54,10 +45,7 @@ Technologies that made progress possible: (a) genome-wide mapping of E–P conta
 
 ### What the crosstalk is
 
-One chapter of the paper **\[SF19\]** is what are the crosstalk between E and P, first of all:
-
-- Can instruct **direction** and the **accurate initiation** of the transcription but is **not sufficient to control the rate of transcription**: we need other elements that are involved in stimulating or repressing the polymerase.
-- The functional E apparently activates or increases the **rate of firing** of the genes.
+One chapter of the paper \[SF19\] asks what the crosstalk between E and P is: the promoter can instruct the **direction** and the accurate **initiation** of the transcription, but it is not sufficient to control the rate of transcription — we need **other elements** that are involved in stimulating or repressing the polymerase (promoter vs enhancer in detail below).
 
 ### The pre-initiation complex (PIC)
 
@@ -69,19 +57,23 @@ Early in vitro experiments in the 1980s defined the stepwise assembly of the Pre
 
 ![[IG-image2.png|483]]States to know: **closed PIC**, **open PIC** (promoter DNA, TFIIA/B/D/E/F/H, Pol II), **initially transcribing complex** (transcription bubble, nascent RNA, NTPs, ATP) and **elongation complex** (elongation factors, 5′ cap). Use it to place what enhancers act on: PIC assembly, escape and the move into elongation.
 
+**Paper — Tupler, Perini & Green, 2001** (Nature 409:832–833): the survey of the human genome behind this part. Transcription of protein-coding genes by RNA Pol II needs the general (basic) transcription factors — TFIID, TFIIA, TFIIB, TFIIE, TFIIF and TFIIH — which assemble on the promoter into the PIC, with TFIID (TBP plus the TAFs) as the primary sequence-specific DNA-binding component that starts the assembly on the TATA box; searching the genome for new factors of transcription, pre-mRNA splicing and 3′-end formation revealed a substantial but selective increase in complexity compared with Drosophila and C. elegans.
+
 ### The “sufficiency” paradox
 
-While theoretically this basal machinery is sufficient to drive transcription **in vitro** on naked synthetic DNA templates (as shown in the 1990s), this is **not true in vivo**. Inside the cell, DNA is wrapped in repressive chromatin. Generating a stable and efficient transcript requires specific **combinations of activating TFs** to stabilize RNAPII and **recruit chromatin remodelers**.
-
-In the 1990s, in vitro experiments demonstrated that providing a synthetic naked DNA template, RNA Polymerase II, and all the general transcription factors (GTFs) is sufficient to assemble the pre-initiation complex. Once nucleotides (NTPs) are added, a basal level of transcription occurs. However, to achieve robust and regulated transcript generation, **specific transcription factors and co-activators are strictly required to control the stability of RNAPII and stimulate its firing rate.**
+In the 1990s, in vitro experiments showed that a synthetic naked DNA template, RNA Polymerase II and all the general transcription factors (GTFs) are sufficient to assemble the pre-initiation complex, and that adding nucleotides (NTPs) gives a basal level of transcription. This is **not true in vivo**: inside the cell DNA is wrapped in repressive **chromatin**, so a stable and efficient transcript requires **specific combinations of activating TFs and coactivators**, which stabilise RNAPII, stimulate its firing rate and recruit chromatin remodelers.
 
 ### “Sometimes being weak means being strong”
 
-In eukaryotes, maximizing gene activity requires the **coordination of multiple TFs**. (Note: Humans have roughly 1,600 specific TFs.)
+In eukaryotes, maximizing gene activity requires the coordination of multiple TFs (humans have roughly 1,600 specific TFs).
 
-When comparing simple eukaryotes (like yeast) to mammals, multicellular organisms rely heavily on a **vast array of “weak” TFs** rather than a few “strong” ones. This “weakness is a strength” paradigm allows for high variability and precise fine-tuning: combining **multiple weak, tissue-specific TFs** with cofactors (e.g., p300, Mediator, BRG1) generates **highly specific, combinatorial transcriptional responses**.
+Yeast only needs one factor to activate about 15% of its genes ⇒ an ON/OFF switch mechanism, because the maximum activity is already reached with one TF bound;
 
-Yeast only needs one factor to activate about 15% of the genes ⇒ ON/OFF mechanism, because the moment you have one TF bound you have the maximum activity. In multicellular organisms, the maximum activity is reached with 6–10 TFs bound ⇒ weak TFs. *Apes together, strong lol.*
+in multicellular organisms the maximum is reached with 6–10 TFs bound ⇒ many “weak” TFs instead of a few strong ones.
+
+This “weakness is a strength” paradigm allows high variability and precise fine-tuning: combining multiple weak, tissue-specific TFs with cofactors (e.g. p300, Mediator, BRG1) generates highly specific, combinatorial transcriptional responses. Apes together, strong lol.
+
+**Paper — Lambert et al., 2018** (Cell 172:650–665): the catalogue behind the number of human TFs — over 1,600 likely TFs, with binding motifs known for about two thirds of them. The major classes differ markedly in evolutionary trajectory and expression pattern, and the review stresses that it remains hard to say from the motif alone where a TF binds in the genome and how that binding relates to the regulation of transcription.
 
 ### Key facts: promoter vs enhancer
 
@@ -93,11 +85,10 @@ Yeast only needs one factor to activate about 15% of the genes ⇒ ON/OFF mechan
   - **poised**: H3K4me1 + H3K27me3 (Like a runner on his way to sprint when he hears the gunshot lol: the histone mark H3K4me1 prepares it, but the repressive methylation H3K27me3 keeps it in the starting blocks.)
   - **active**: H3K4me1 + H3K27ac
 - Number of enhancers: ~1,000,000 putative enhancers (this is the **\[SF19\]** estimate; **\[W26\]** quotes \>400,000 from ENCODE, of which only ~40,000–65,000 are actively transcribed). Different counting methods, so quote the source. Mark-based enhancer calls overestimate the real ones: only ~12% of H3K27ac peaks work in an MPRA in hESCs, and 41–48% of candidate enhancers fail in VISTA in vivo assays \[SF19\].
-- Strong evidence in support of physical contact between enhancers and promoters with the Blobel experiments on the Hbb locus.
 
 ### The poised state in development
 
-This poised state is crucial during embryonic development. Embryonic stem cells (e.g., within a mouse blastocyst containing 40–50 undifferentiated cells) possess many poised enhancers. Upon implantation into the uterus, signaling cascades instruct lineage commitment. Because these enhancers are already “poised,” the cell **does not need to undergo slow, extensive chromatin remodeling from scratch**; genes can rapidly **transition to an active or silenced state to drive tissue differentiation**.
+This poised state is crucial during embryonic development. Embryonic stem cells (e.g., within a mouse blastocyst containing 40–50 undifferentiated cells) possess many poised enhancers. Upon implantation into the uterus, signaling cascades instruct lineage commitment. Because these enhancers are already “poised,” the cell does **not need to remodel chromatin from scratch**; genes can **rapidly transition to an active or silenced state** to drive tissue differentiation.
 
 ---
 > [[Integrative Genomics|↑ Integrative Genomics]] · [[IG 02 - Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family|Evidence that physical contact matters … Measuring contacts – 3C, Hi-C and the whole family →]]

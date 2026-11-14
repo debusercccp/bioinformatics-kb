@@ -36,7 +36,7 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/en/study/co
 
 ## Appunti (MCB)
 
-Fonte: `MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx` — 20 note collegate in ordine.
+Fonte: `MCB/MBD/ModelingBioData.docx` — 25 note collegate in ordine.
 
 1. [[MBD 01 - Module 1 – Vectors and Hyperplanes · Vectors … Vector operations|Module 1 – Vectors and Hyperplanes · Vectors … Vector operations]]
 2. [[MBD 02 - Module 1 – Vectors and Hyperplanes · Scalar (dot) product|Module 1 – Vectors and Hyperplanes · Scalar (dot) product]]
@@ -58,6 +58,11 @@ Fonte: `MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx` — 20 note col
 18. [[MBD 18 - Module 4 – Calculus in One Variable · Integrals|Module 4 – Calculus in One Variable · Integrals]]
 19. [[MBD 19 - Module 5 – Calculus in More Variables and Optimisation|Module 5 – Calculus in More Variables and Optimisation]]
 20. [[MBD 20 - Module 6 – Probability|Module 6 – Probability]]
+21. [[MBD 21 - Module 7 – Distributions|Module 7 – Distributions]]
+22. [[MBD 22 - Module 8 – Exam Exercises – How to Solve Them|Module 8 – Exam Exercises – How to Solve Them]]
+23. [[MBD 23 - Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation|Module 8 – Exam Exercises – How to Solve Them · Exercise 2 – Derivatives and optimisation]]
+24. [[MBD 24 - Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem|Module 8 – Exam Exercises – How to Solve Them · Exercise 3 – Constrained optimisation (Lagrange) + Exercise 4 – Probability – diagnostic test and Bayes’ theorem]]
+25. [[MBD 25 - Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam|Module 8 – Exam Exercises – How to Solve Them · Exercise 5 – Distributions or correlation + Checklist for the exam]]
 
 ## Exam
 

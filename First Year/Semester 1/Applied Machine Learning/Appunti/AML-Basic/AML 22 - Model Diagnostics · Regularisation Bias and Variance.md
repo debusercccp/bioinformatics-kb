@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 22
 tags: [note, aml]
 ---
@@ -18,11 +18,11 @@ When applying regularization to a polynomial hypothesis, the choice of the regul
 
 - **Small** value effectively **disables regularizatio**n, allowing the model to become overly complex and prone to overfitting.
 
-> ![[AML-image115.jpg|414]]
+> ![[AML-image118.jpg|414]]
 
 Achieving the right balance between regularization and model complexity requires selecting an appropriate lambda value. To <u>**select the regularization parameter lambda**,</u> we **employ the model selection procedure** discussed previously. This involves defining three error metrics: training error, validation error, and test error.
 
-> ![[AML-image116.jpg|375]]
+> ![[AML-image119.jpg|375]]
 
 1.  **<u>Initializing Lambda</u>**
 
@@ -48,7 +48,7 @@ Report the test error using the theta parameters derived from the selected lambd
 
 This comprehensive process of model selection and hyperparameter tuning ensures the performance and generalization ability of the model.
 
-![[AML-image117.jpg|697]]
+![[AML-image120.jpg|697]]
 
 So we have seen that the process of model selection also applies to choosing the best regularization parameter lambda. This logic underlies various hyperparameter scan methods that you can readily import and use in your code.
 
@@ -68,9 +68,9 @@ This logic underlies various hyperparameter scan methods commonly used in machin
 
 During the validation phase, the model is trained on the training set and evaluated on the validation set. By monitoring the validation error as lambda varies, we can identify the optimal value that strikes a balance between fitting the training data well and generalizing effectively to unseen data.
 
-![[AML-image118.jpg|662]]
+![[AML-image121.jpg|662]]
 
-> ![[AML-image119.jpg|679]]
+> ![[AML-image122.jpg|679]]
 
 ---
 > [[AML 21 - Model Diagnostics · Bias and Variance|← Model Diagnostics · Bias and Variance]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 23 - Model Diagnostics · Learning Curves|Model Diagnostics · Learning Curves →]]

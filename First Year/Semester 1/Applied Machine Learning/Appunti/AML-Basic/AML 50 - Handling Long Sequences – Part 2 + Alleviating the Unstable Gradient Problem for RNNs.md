@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 50
 tags: [note, aml]
 ---
@@ -28,7 +28,7 @@ tags: [note, aml]
 
 ![](media/media/image3020.jpg)
 
-![[AML-image316.jpg|521]]
+![[AML-image359.jpg|521]]
 
 > To keep in mind
 
@@ -114,7 +114,7 @@ tags: [note, aml]
 
 - These functions **compress outputs** into a bounded range:
 
-  - tanh(x) ![[AML-image317.png]] \[-1, 1\] o Helps keep the outputs stable across time steps.
+  - tanh(x) ![[AML-image360.png]] \[-1, 1\] o Helps keep the outputs stable across time steps.
 
 > **Use a Smaller Learning Rate**
 

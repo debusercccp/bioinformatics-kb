@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 19
 tags: [note, mbd]
 ---
@@ -12,10 +12,10 @@ tags: [note, mbd]
 
 ## 5.1 Functions of more variables, partial derivatives, gradient
 
-$f\left( x_{1},x_{2} \right):\mathbb{R}^{2} \rightarrow \mathbb{R}$; in general
+$f\left( x_{1},x_{2} \right):\mathbb{R}^{2}\mathbb{\rightarrow R}$; in general
 
 $$
-f:\mathbb{R}^{n} \rightarrow \mathbb{R},\quad\quad\begin{pmatrix}
+f:\mathbb{R}^{n}\mathbb{\rightarrow R,}\quad\quad\begin{pmatrix}
 x_{1} \\
  \vdots \\
 x_{n}
@@ -70,7 +70,7 @@ At a critical point, compute the eigenvalues of $H$, $\det(H - \lambda I) = 0$:
 0 & - 8
 \end{pmatrix}$ for every point: eigenvalues of different sign ⇒ **saddle point**.
 
-*Example 2.* $f(x,y) = (x + y)\, exp\left( - x^{2} - y^{2} \right)$: $\overrightarrow{\nabla}f = exp\left( - x^{2} - y^{2} \right)\left( 1 - 2x^{2} - 2xy,\ 1 - 2y^{2} - 2xy \right) = \overrightarrow{0}$ gives $x = \pm y$; $x = y$ ⇒ $1 - 4x^{2} = 0$ ⇒ critical points $(1/2,1/2)$ and $( - 1/2, - 1/2)$ ($x = - y$ gives no solution).
+*Example 2.* $f(x,y) = (x + y)\, exp\left( - x^{2} - y^{2} \right)$: $\overrightarrow{\nabla}f = \exp\left( - x^{2} - y^{2} \right)\left( 1 - 2x^{2} - 2xy,\ 1 - 2y^{2} - 2xy \right) = \overrightarrow{0}$ gives $x = \pm y$; $x = y$ ⇒ $1 - 4x^{2} = 0$ ⇒ critical points $(1/2,1/2)$ and $( - 1/2, - 1/2)$ ($x = - y$ gives no solution).
 
 $$
 H(1/2,1/2) = e^{- 1/2}\begin{pmatrix}
@@ -107,9 +107,9 @@ $$
 \end{matrix} \right.\ 
 $$
 
-The auxiliary function $\mathcal{L}$ (the **Lagrangian**, for a constraint $g = c$: $\mathcal{L} = f - \lambda(g - c)$) puts both conditions into one equation, ${\overrightarrow{\nabla}}_{x,\lambda}\mathcal{L} = \overrightarrow{0}$. With several constraints $g_{i}\left( \overrightarrow{x} \right) = 0$, $i = 1,\ldots,m$, there is one Lagrange multiplier $\lambda_{i}$ for each constraint.
+The auxiliary function $\mathcal{L}$ (the **Lagrangian**, for a constraint $g = c$: $\mathcal{L =}f - \lambda(g - c)$) puts both conditions into one equation, ${\overrightarrow{\nabla}}_{x,\lambda}\mathcal{L =}\overrightarrow{0}$. With several constraints $g_{i}\left( \overrightarrow{x} \right) = 0$, $i = 1,\ldots,m$, there is one Lagrange multiplier $\lambda_{i}$ for each constraint.
 
-*Example from the slides:* the box (rectangular parallelepiped) with the largest volume and total surface $64\ cm^{2}$. Maximise $f = xyz$ with $2xy + 2xz + 2yz = 64$: $\mathcal{L} = xyz - \lambda(xy + xz + yz - 32)$,
+*Example from the slides:* the box (rectangular parallelepiped) with the largest volume and total surface $64\ cm^{2}$. Maximise $f = xyz$ with $2xy + 2xz + 2yz = 64$: $\mathcal{L =}xyz - \lambda(xy + xz + yz - 32)$,
 
 $$
 \left\{ \begin{matrix}

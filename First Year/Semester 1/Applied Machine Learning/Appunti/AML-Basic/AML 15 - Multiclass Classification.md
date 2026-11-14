@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 15
 tags: [note, aml]
 ---
@@ -54,7 +54,7 @@ The one-vs-all method for multi-class classification problems involves the follo
 
 - Select the class that maximizes the probability score ( the class with the highest predicted probability) as the final predicted class for the instance.
 
-![[AML-image84.jpg|339]]By training separate logistic classifiers for each class and selecting the class with the highest probability score during prediction, the one-vs-all method enables the logistic regression classifier to effectively handle multi-class classification problems.
+![[AML-image87.jpg|339]]By training separate logistic classifiers for each class and selecting the class with the highest probability score during prediction, the one-vs-all method enables the logistic regression classifier to effectively handle multi-class classification problems.
 
 ---
 > [[AML 14 - Simplified Cost Function and Gradient Descent + GD Linear Regression vs GD Logistic Regression|← Simplified Cost Function and Gradient Descent + GD Linear Regression vs GD Logistic Regression]] · [[Applied Machine Learning (AML-Basic)|↑ AML-Basic]] · [[AML 16 - Alternatives to GD|Alternatives to GD →]]

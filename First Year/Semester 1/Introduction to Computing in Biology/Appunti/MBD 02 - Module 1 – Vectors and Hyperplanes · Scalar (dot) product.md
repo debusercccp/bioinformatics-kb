@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 2
 tags: [note, mbd]
 ---
@@ -13,10 +13,10 @@ tags: [note, mbd]
 For $\overrightarrow{v},\overrightarrow{u} \in \mathbb{R}^{n}$ the scalar product is a number:
 
 $$
-\overrightarrow{v} \cdot \overrightarrow{u} = \langle\overrightarrow{v},\overrightarrow{u}\rangle = {\overrightarrow{v}}^{\, T}\overrightarrow{u} \in \mathbb{R}
+\overrightarrow{v} \cdot \overrightarrow{u} = \langle\overrightarrow{v},\overrightarrow{u}\rangle = {\overrightarrow{v}}^{\, T}\overrightarrow{u}\mathbb{\in R}
 $$
 
-The scalar (or “dot”, or “inner”) product is a map that takes two vectors of the same dimension and returns a real number, $c:\mathbb{R}^{n} \times \mathbb{R}^{n} \rightarrow \mathbb{R}$.
+The scalar (or “dot”, or “inner”) product is a map that takes two vectors of the same dimension and returns a real number, $c:\mathbb{R}^{n} \times \mathbb{R}^{n}\mathbb{\rightarrow R}$.
 
 ### 1.4.1 Physical example: work
 

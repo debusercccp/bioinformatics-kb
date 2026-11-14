@@ -1,7 +1,7 @@
 ---
 course: "[[Applied Machine Learning]]"
 module: "[[Applied Machine Learning (AML-Basic)]]"
-source: "MCB/Applied_ML/MLFULL.docx"
+source: "MCB/AML/MLFULL.docx"
 order: 3
 tags: [note, aml]
 ---
@@ -40,7 +40,7 @@ This table essentially represents the training set, which is the data used to tr
 
 > ![[AML-image9.jpg|278]]
 
-## 3.1 HYPOTHESIS
+**3.1 HYPOTHESIS**
 
 How do I represent this hypothesis h?
 

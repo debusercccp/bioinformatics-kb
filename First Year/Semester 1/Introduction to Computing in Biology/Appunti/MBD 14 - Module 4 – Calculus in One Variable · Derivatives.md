@@ -1,7 +1,7 @@
 ---
 course: "[[Introduction to Computing in Biology]]"
 module: "[[Introduction to Modeling of Biological Data]]"
-source: "MCB/I_C_in_Biology/ModelingBioData/ModelingBioData.docx"
+source: "MCB/MBD/ModelingBioData.docx"
 order: 14
 tags: [note, mbd]
 ---
@@ -88,14 +88,14 @@ $$
 \frac{dg}{dx} = \frac{df_{2}}{dy} \cdot \frac{df_{1}}{dx} = \frac{df_{2}}{dy} \cdot \frac{dy}{dx} = \frac{dz}{dy} \cdot \frac{dy}{dx}
 $$
 
-In words: differentiate the outside function (at the inside one), then multiply by the derivative of the inside function. E.g. $y = sin\left( x^{2} - 4 \right) \Rightarrow y' = cos\left( x^{2} - 4 \right) \cdot 2x$. The rule can be used more than once (that is what makes the “chain”): $\frac{d}{dx}cos^{2}(3x) = 2cos(3x) \cdot \left( - sin(3x) \right) \cdot 3 = - 6\, cos(3x)\, sin(3x)$.
+In words: differentiate the outside function (at the inside one), then multiply by the derivative of the inside function. E.g. $y = \sin\left( x^{2} - 4 \right) \Rightarrow y' = \cos\left( x^{2} - 4 \right) \cdot 2x$. The rule can be used more than once (that is what makes the “chain”): $\frac{d}{dx}cos^{2}(3x) = 2cos(3x) \cdot \left( - \sin(3x) \right) \cdot 3 = - 6\, cos(3x)\, sin(3x)$.
 
 ### 4.4.3 Worked examples
 
 *1.* $g(x) = cos\, 3x$: $x \rightarrow y = 3x \rightarrow z = cos\, y$
 
 $$
-\frac{dg}{dx} = \frac{d(cos\, y)}{dy} \cdot \frac{d(3x)}{dx} = - sin(3x) \cdot 3
+\frac{dg}{dx} = \frac{d(cos\, y)}{dy} \cdot \frac{d(3x)}{dx} = - \sin(3x) \cdot 3
 $$
 
 *2. Sigmoid function,* $f(x) = \frac{1}{1 + e^{- x}}$, with the quotient rule ($n(x) = 1$, $d(x) = 1 + e^{- x}$):
@@ -112,13 +112,13 @@ $$
 
 The result can be written in terms of $f$ itself: $\frac{e^{- x}}{\left( 1 + e^{- x} \right)^{2}} = \frac{1}{1 + e^{- x}} \cdot \frac{1 + e^{- x} - 1}{1 + e^{- x}} = f(x)\left( 1 - f(x) \right)$ (used in §4.6.1).
 
-*3.* $f(x) = cos\left\lbrack ln\left( 3x^{3} + 2x \right) \right\rbrack$, with $3x^{3} + 2x > 0$: $x \rightarrow y = 3x^{3} + 2x \rightarrow z = ln\, y \rightarrow s = cos\, z$
+*3.* $f(x) = \cos\left\lbrack \ln\left( 3x^{3} + 2x \right) \right\rbrack$, with $3x^{3} + 2x > 0$: $x \rightarrow y = 3x^{3} + 2x \rightarrow z = ln\, y \rightarrow s = cos\, z$
 
 $$
-\frac{df}{dx} = \frac{d(cos\, z)}{dz} \cdot \frac{d(ln\, y)}{dy} \cdot \frac{d\left( 3x^{3} + 2x \right)}{dx} = - sin(z) \cdot \frac{1}{y} \cdot \left( 9x^{2} + 2 \right) = - sin\left( ln\left( 3x^{3} + 2x \right) \right) \cdot \frac{1}{3x^{3} + 2x} \cdot \left( 9x^{2} + 2 \right)
+\frac{df}{dx} = \frac{d(cos\, z)}{dz} \cdot \frac{d(ln\, y)}{dy} \cdot \frac{d\left( 3x^{3} + 2x \right)}{dx} = - \sin(z) \cdot \frac{1}{y} \cdot \left( 9x^{2} + 2 \right) = - \sin\left( \ln\left( 3x^{3} + 2x \right) \right) \cdot \frac{1}{3x^{3} + 2x} \cdot \left( 9x^{2} + 2 \right)
 $$
 
-*4.* $f(x) = exp\left( exp( - x) \right) = e^{e^{- x}}$: $x \rightarrow y = - x \rightarrow z = exp(y) \rightarrow s = exp\, z$
+*4.* $f(x) = \exp\left( \exp( - x) \right) = e^{e^{- x}}$: $x \rightarrow y = - x \rightarrow z = \exp(y) \rightarrow s = exp\, z$
 
 $$
 \frac{df}{dx} = \frac{d\left( e^{z} \right)}{dz} \cdot \frac{d\left( e^{y} \right)}{dy} \cdot \frac{d( - x)}{dx} = e^{z} \cdot e^{y}( - 1) = - 1 \cdot e^{e^{- x}}e^{- x}

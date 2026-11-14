@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Integrative Genomics]]"
-source: "MCB/Functional_Genetics/IntegrativeGen_RS.docx"
+source: "MCB/FGIG/IG/IntegrativeGen_RS.docx"
 order: 4
 tags: [note, ig]
 ---
@@ -10,17 +10,17 @@ tags: [note, ig]
 
 # Genomic imprinting
 
-For most of our genes, we express both alleles simultaneously (biallelic expression) — one inherited from the Father (F) and one from the Mother (M). However, a small subset of genes (less than 1%) undergoes genomic imprinting.
+For most of our genes, we express **both alleles simultaneously** (biallelic expression) — one inherited from the Father (F) and one from the Mother (M). However, a small subset of genes (less than 1%) undergoes genomic imprinting.
 
-- **Mechanism:** Imprinting is an epigenetic phenomenon (primarily driven by DNA methylation at specific Imprinting Control Regions, ICRs). It prevents the expression of one allele in a parent-of-origin-specific manner.
-- **Maintenance:** This epigenetic silencing is established in the germline (sperm or egg). When the zygote is formed, **one of the two alleles is already silenced**. Crucially, this imprinted state is maintained clonally in all somatic cells of the developing organism. Every cell in your body will keep that specific parental allele silenced.
+- **Mechanism:** Imprinting is an **epigenetic phenomenon** (primarily driven by DNA methylation at specific Imprinting Control Regions, ICRs). It prevents the expression of one allele in a parent-of-origin-specific manner.
+- **Maintenance:** This epigenetic silencing is established in the germline (sperm or egg). When the zygote is formed, **one of the two alleles is already silenced**. Crucially, this imprinted state is **maintained clonally in all somatic cells** of the developing organism. Every cell in your body will keep that specific parental allele silenced.
 
 ### Loss of Imprinting (LOI)
 
-“Loss of Imprinting” is not the normal physiological process, but rather a pathological epigenetic error (frequently observed in cancer).
+“Loss of Imprinting” is not the normal physiological process, but rather **a pathological epigenetic error** (frequently observed in cancer).
 
-- In LOI, the cell loses epigenetic marks (like DNA methylation) that were keeping the imprinted allele silenced.
-- As a result, a gene that should be expressed from only one allele is now abnormally expressed from both alleles (aberrant biallelic expression), leading to an overproduction of the gene product (often a growth factor, driving tumor formation).
+- In LOI, the cell **loses epigenetic marks** (like DNA methylation) that were keeping the imprinted allele **silenced**.
+- As a result, a gene that should be expressed from only one allele is now **abnormally expressed from both alleles** (aberrant biallelic expression), leading to an overproduction of the gene product (often a growth factor, driving tumor formation).
 
 ## 10. Enhancer RNAs (eRNAs)
 
@@ -45,33 +45,26 @@ Enhancers can give rise to **non-coding RNAs** (**eRNAs**), a **novel layer** of
 
 ### What eRNAs do, mechanism by mechanism
 
-![[IG-image11.png|424]]
+![[IG-image10.png|424]]
 
 In more detail, **YY1 binds** the enhancer DNA, **drives** the eRNA transcription and also **binds** the nascent eRNA, which increases the YY1 occupancy at the enhancer (**positive feedback loop**). In the **pause release**, Pol II is held near the promoter by **NELF/DSIF**; a stimulus (e.g. neuronal activity or the androgen receptor) induces the eRNA, which binds NELF and acts as a **decoy**, so NELF dissociates and Pol II enters elongation (in prostate cancer, the **KLK3 eRNA** also activates P-TEFb); this is probably a **contributor** rather than the **only determinant**, since the pause release is also needed to produce the eRNAs. eRNAs bind **CBP** and stimulate its acetyltransferase activity (more H3K27ac), and BRD4 binds both acetylated histones and eRNAs through its bromodomains, so the eRNA reinforces the BRD4 retention (e.g. the SNAI1 eRNA); m6A-eRNAs read by **YTHDC2** engage **MLL1**, which increases H3K4me3 and accessibility at super-enhancers in pancreatic cancer (PDAC). In looping, eRNAs bind **cohesin** (RAD21, SMC3), **CTCF** (CCAT1-L at the MYC locus) or **Mediator** (MED1), and the knockdown of the eRNA with **ASOs** loosens the loop and lowers the target transcription. The condensates formed by m6A-eRNAs and YTHDC1 are abolished when m6A is removed with dCas13d–FTO. Finally, the **HOXD eRNA** binds PRC2-covered CpG islands, removes **EZH2** and activates glioma driver genes.
 
-![[IG-image12.png|363]]
+![[IG-image11.png|363]]
 
 We already must figure out why lncRNAs are in the cytoplasm: most of the time, we see them associated with ribosomes. They may control the activity of the ribosomes, or they can be no longer lncRNA, encoding for small proteins.
 
-### Fixes from the paper \[W26\]
-
-- **Size:** 2D-eRNAs are typically **\<150 nt**; 1D-eRNAs are 500 to \>2,000 nt.
-- **Mark ratio:** active enhancers have a high **H3K4me1 : H3K4me3 ratio** plus H3K27ac.
-- eRNAs are low abundance and unstable (NEXT/exosome decay), nuclear, chromatin-bound, very tissue-specific.
-- Their definition overlaps with lncRNA (\>200 nt); the review treats enhancer-derived lncRNAs together with eRNAs.
-
-### How can we prove that eRNAs are important?
+### ![[IG-image12.png|271]]How can we prove that eRNAs are important?
 
 - **siRNA:** small RNA that forms a dsRNA targeting RNA, loaded into the **RISC (RNA-induced silencing complex)** ⇒ not so efficient, because siRNAs remain in the cytoplasm whereas eRNAs are mostly **nuclear**.
 - **Cas13**, which, unlike Cas9, targets RNA.
 
-![[IG-image13.png|271]]**How Cas13 knocks down an eRNA** (diagram of CRISPR-Cas13):
+**How Cas13 knocks down an eRNA** (diagram of CRISPR-Cas13):
 
 1.  A CRISPR array is transcribed into a **pre-crRNA** (repeats and spacers).
 2.  Cas13 processes it into **mature crRNAs**, each carrying **one spacer**.
 3.  The Cas13–crRNA complex scans RNA and **base-pairs through the spacer with a complementary target RNA**.
 4.  Target recognition activates the RNase domains, which **cut** **the** **target**. Both cytoplasmic RNA and targeted RNA are cleaved.
-5.  For eRNAs, the point is that Cas13d can be given a nuclear localization, so it reaches chromatin-bound transcripts that siRNA/shRNA (RISC, mainly cytoplasmic) miss; the DNA itself is not touched, so the enhancer stays intact (unlike Cas9 deletion). Cas13 can also cut collaterally and off-target, which \[W26\] lists as a limitation.
+5.  For eRNAs, the point is that Cas13d can be given a **nuclear localization**, so it reaches chromatin-bound transcripts that siRNA/shRNA (RISC, mainly cytoplasmic) miss; the DNA itself is not touched, so the enhancer stays intact (unlike Cas9 deletion). Cas13 can also cut collaterally and off-target, which \[W26\] lists as a limitation.
 
 ### Step by step: eRNA biogenesis and fate
 
