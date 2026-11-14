@@ -1,14 +1,14 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
+source: "MCB/FGIG/FG/FunctionalGen_common.docx"
 order: 12
 tags: [note, fg]
 ---
 
 > [[FG 11 - Drosophila melanogaster · The fly as a model organism|← Drosophila melanogaster · The fly as a model organism]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 13 - Drosophila melanogaster · Reverse genetics in Drosophila|Drosophila melanogaster · Reverse genetics in Drosophila →]]
 
-*Approfondimento: [[FGx 02 - Balancer chromosomes – step by step|Balancer chromosomes – step by step]] · [[FGx 03 - Breaking, switching on, switching off – step by step|Breaking, switching on, switching off – step by step]]*
+*Approfondimento: [[FGx 02 - Balancer chromosomes – step by step|Balancer chromosomes – step by step]] · [[FGx 03 - Breaking, switching on, switching off – step by step|Breaking, switching on, switching off – step by step]] · [[FGx 04 - Fly vs fish – forward screens compared|Fly vs fish – forward screens compared]]*
 
 # Forward genetics in Drosophila
 

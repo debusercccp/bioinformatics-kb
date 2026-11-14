@@ -37,7 +37,7 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/it/studiare
 
 ## Appunti (MCB)
 
-Fonte: `MCB/Functional_Genetics/FunctionalGen_common.docx` — 21 note collegate in ordine.
+Fonte: `MCB/FGIG/FG/FunctionalGen_common.docx` — 21 note collegate in ordine.
 
 1. [[FG 01 - What is functional genomics + Genomic equivalence – the premise of the discipline|What is functional genomics + Genomic equivalence – the premise of the discipline]]
 2. [[FG 02 - Why function requires perturbation + Forward genetics|Why function requires perturbation + Forward genetics]]
@@ -66,6 +66,7 @@ Approfondimenti (note scritte a mano in `Approfondimenti/`, non generate dal doc
 - [[FGx 01 - CRISPR-Cas9 – step by step|CRISPR-Cas9 – step by step]]
 - [[FGx 02 - Balancer chromosomes – step by step|Balancer chromosomes – step by step]]
 - [[FGx 03 - Breaking, switching on, switching off – step by step|Breaking, switching on, switching off – step by step]]
+- [[FGx 04 - Fly vs fish – forward screens compared|Fly vs fish – forward screens compared]]
 
 ## Exam
 

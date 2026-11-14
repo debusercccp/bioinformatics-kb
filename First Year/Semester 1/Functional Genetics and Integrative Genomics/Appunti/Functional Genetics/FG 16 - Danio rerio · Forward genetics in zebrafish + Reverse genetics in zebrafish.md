@@ -1,12 +1,14 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
+source: "MCB/FGIG/FG/FunctionalGen_common.docx"
 order: 16
 tags: [note, fg]
 ---
 
 > [[FG 15 - Danio rerio · Embryonic development of zebrafish|← Danio rerio · Embryonic development of zebrafish]] · [[Functional Genetics|↑ Functional Genetics]] · [[FG 17 - Danio rerio · Transgenesis and gene targeting|Danio rerio · Transgenesis and gene targeting →]]
+
+*Approfondimento: [[FGx 04 - Fly vs fish – forward screens compared|Fly vs fish – forward screens compared]]*
 
 # Forward genetics in zebrafish
 
@@ -19,29 +21,6 @@ The forward-genetics approach in zebrafish is almost the same as in *Drosophila*
 > **Focus — ENU and publication. Alkylating spermatogonial mutagen, mainly point mutations; both screens published in 1996 (Development).**
 >
 > **Paper — Driever et al., 1996** (Development 123:37–46): The Boston half of the Big Screen, the first large-scale vertebrate screen: 2,383 mutations, 695 kept and 220 loci defined, with only 1.5 alleles per locus, too few to estimate saturation (unlike the fly screen).
-
-### Fly vs fish: what the two forward screens share
-
-*Compare with [[FG 12 - Drosophila melanogaster · Forward genetics in Drosophila|Forward genetics in Drosophila]].*
-
-**In common:**
-
-1. **Phenotype → gene.** Random, genome-wide mutagenesis, a screen for a phenotype, and only then identification of the gene.
-2. **Chemical mutagenesis of males.** **EMS** in the fly, **ENU** in the fish: both are **alkylating agents** giving mainly **point mutations**, hence allelic series rather than deletions. Males are treated because one male propagates the mutagenised genome to many offspring.
-3. **Three-generation recessive screen.** **F1** heterozygous (+/m) for independent mutations → **F2** one line/family per mutation → **F3** from sibling intercrosses, where **¼ of the embryos are homozygous** and can be scored. Three generations because **neither organism self-fertilises** (unlike *C. elegans*, which reaches homozygotes in F2).
-4. **Scoring embryos, lethals included.** Larval cuticle in the fly; transparent, externally developing embryo in the fish. Embryonic lethal mutants can be recovered in both.
-5. **Large systematic screens, same scientist.** Nüsslein-Volhard led both the Heidelberg fly screen (1979–80, ~27,000 balanced lines, 139 loci) and the zebrafish Big Screen (1993, with Driever, ~4000 embryonic lethal mutants).
-6. **Complementation testing** to group the mutations into loci.
-
-**Differences:**
-
-| | *Drosophila* | Zebrafish |
-|---|---|---|
-| Mutagen | EMS | ENU (acts on spermatogonia) |
-| Keeping the recessive mutation | **Balancer chromosomes** (inversions + recessive lethal + dominant marker, e.g. *Cy*) | **No balancers**: F2 families in which half the fish carry the mutation; random sib matings, so only ~¼ of the crosses (+/m × +/m) yield homozygotes |
-| Saturation | Reached: most loci hit more than once | Not reached: ~1.5 alleles per locus (Driever et al., 1996) |
-
-**In short:** the fish reuses the fly's three-generation logic without balancers, so the screen is more laborious and less clean, but it is done in a vertebrate.
 
 ## Reverse genetics in zebrafish
 

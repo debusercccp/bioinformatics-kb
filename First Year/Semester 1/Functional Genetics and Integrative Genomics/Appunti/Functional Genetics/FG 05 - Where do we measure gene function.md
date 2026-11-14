@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
+source: "MCB/FGIG/FG/FunctionalGen_common.docx"
 order: 5
 tags: [note, fg]
 ---
@@ -115,7 +115,7 @@ The breakthrough is the **reprogramming of somatic cells into induced pluripoten
 In 2012 the **Nobel Prize in Physiology or Medicine** went to **John B. Gurdon** (nuclear transfer, experiments in amphibians) and **Shinya Yamanaka**. The conceptual meaning is **nuclear equivalence**: *all the genes in the genome are retained in every specialised cell type, even if silent and not used by that cell*. Specialisation is therefore epigenetic and regulatory, not a loss of DNA.
 
 > **Focus — the Yamanaka factors: OCT4 (OCT3/4), SOX2, KLF4, c-MYC (OSKM).** Pluripotency TFs; c-MYC is an oncogene and dispensable (OSK).
-
+>
 > **Paper — Takahashi & Yamanaka, 2006** (Cell 126:663–676): 24 candidate ES-cell genes were transduced by retrovirus into fibroblasts carrying a **Fbx15–βgeo** reporter (only pluripotent cells survive G418), and removing one factor at a time narrowed them down to the four **OSKM** factors, while Nanog proved dispensable. Pluripotency was shown by teratomas with all three germ layers and by contribution to chimeric embryos.
 
 ![[FG-image10.png|368]]Here is a possible application of iPSCs to treat diabetes:

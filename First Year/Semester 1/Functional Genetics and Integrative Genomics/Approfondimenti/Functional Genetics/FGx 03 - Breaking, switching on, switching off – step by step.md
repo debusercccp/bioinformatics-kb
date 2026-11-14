@@ -12,7 +12,7 @@ companion_of:
   - "Reverse genetics in Drosophila"
 ---
 
-> [[FGx 02 - Balancer chromosomes – step by step|← Balancer chromosomes — step by step]] · [[Functional Genetics|↑ Functional Genetics]]
+> [[FGx 02 - Balancer chromosomes – step by step|← Balancer chromosomes — step by step]] · [[Functional Genetics|↑ Functional Genetics]] · [[FGx 04 - Fly vs fish – forward screens compared|Fly vs fish — forward screens compared →]]
 
 # Breaking, switching on, switching off — step by step
 
@@ -217,4 +217,4 @@ In the worm there are three routes, all starting from the same plasmid. The fly 
 - The known problem is **off-target knockdown** through partial homology, made worse by CAN/CAG repeats.
 
 ---
-> [[FGx 02 - Balancer chromosomes – step by step|← Balancer chromosomes — step by step]] · [[Functional Genetics|↑ Functional Genetics]]
+> [[FGx 02 - Balancer chromosomes – step by step|← Balancer chromosomes — step by step]] · [[Functional Genetics|↑ Functional Genetics]] · [[FGx 04 - Fly vs fish – forward screens compared|Fly vs fish — forward screens compared →]]

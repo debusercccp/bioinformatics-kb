@@ -1,7 +1,7 @@
 ---
 course: "[[Functional Genetics and Integrative Genomics]]"
 module: "[[Functional Genetics]]"
-source: "MCB/Functional_Genetics/FunctionalGen_common.docx"
+source: "MCB/FGIG/FG/FunctionalGen_common.docx"
 order: 8
 tags: [note, fg]
 ---
