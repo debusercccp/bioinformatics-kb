@@ -90,8 +90,7 @@ FIXES = [
 # typos in the docx, fixed in the converted text (titles, links and body) before splitting
 SPELLING = {
     'AML': [('RECONGITION', 'RECOGNITION'), ('Recongition', 'Recognition'),
-            ('MATHERIAL', 'MATERIAL'), ('Matherial', 'Material'), ('Jupiter', 'Jupyter'),
-            ('function shaped like a ball,', 'function shaped like a bowl,')],
+            ('MATHERIAL', 'MATERIAL'), ('Matherial', 'Material'), ('Jupiter', 'Jupyter')],
 }
 
 BIG = 300      # lines: a chapter longer than this is split at its H2s

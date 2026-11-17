@@ -3,5 +3,6 @@
   "enabledCssSnippets": [
     "oscura-corsi"
   ],
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "showRibbon": true
 }
