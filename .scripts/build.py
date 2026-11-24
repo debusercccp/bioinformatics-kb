@@ -47,6 +47,7 @@ def tool(*names):
                 return str(hit)
     sys.exit(f'Not found: {" / ".join(names)} (install it or add it to PATH)')
 S1 = VAULT / 'First Year' / 'Semester 1'
+S2 = VAULT / 'First Year' / 'Semester 2'
 ATT = VAULT / '_attachments'
 
 FGIG = 'Functional Genetics and Integrative Genomics'
@@ -75,6 +76,11 @@ SOURCES = {
         course='Bioinformatics for Biology', module_note='Bioinformatics for Biology',
         dir=S1 / 'Bioinformatics for Biology', src='MCB/BFB/Bioinformatics_for_Biology.docx',
         label='Bioinformatics for Biology'),
+    'AADS': dict(
+        course='Algorithms and Data Structures', module_note='Algorithms and Data Structures',
+        dir=S2 / 'Algorithms and Data Structures',
+        src='MCB/AADS/Algorithms_and_Data_Structures_merged_notes.docx',
+        label='Algorithms and Data Structures'),
 }
 
 # hand fixes re-applied after every rebuild: (note name prefix, old text, new text)
@@ -308,11 +314,14 @@ def build(key):
     for bad, good in SPELLING.get(key, []):
         text = text.replace(bad, good)
     text = americanize(text)
+    # AADS: drop '[Non nei topics]' from chapter titles (the docx already says it under the heading)
+    text = re.sub(r'^(# .*?) \*\*\\\[Non nei topics\\\]\*\*[ \t]*$',
+                  r'\1', text, flags=re.M)
     media_map = convert_media(key)
     secs = parse_sections(text, key)
 
     # drop preamble (cover / TOC)
-    secs = [x for x in secs if x[0] != 0 and x[1] != 'Table of Contents']
+    secs = [x for x in secs if x[0] != 0 and x[1] not in ('Table of Contents', 'Contents')]
 
     chunks = group_chunks(secs)
     out_dir = cfg['dir'] / 'Appunti' / (cfg.get('sub') or '')
