@@ -51,14 +51,29 @@ Number of SNPs by class and minor allele frequency (MAF) bin, from the chart on 
 
 ## 8.4 Positive selection
 
-**Positive selection** favors the **increase in frequency of advantageous alleles**.
+**Positive selection** favors the **increase in frequency of advantageous alleles**. The slide map links candidate genes to the selective pressures met during the dispersal of modern humans:
+
+| **Trait / pressure** | **Genes on the map** | **Region on the map** |
+|:---|:---|:---|
+| Skin pigmentation | *SLC24A5*, *SLC45A2*, *TYR*, *MC1R* | Europe |
+| Lactase persistence | *MCM6* | Northern Europe; East Africa and Arabian peninsula |
+| Arctic environment | *CPT1A*, *LRP5*, *THADA*, *PRKG1* | Siberia |
+| High-fat diet | *FADS* loci | Greenland |
+| High altitude | *EGLN1*, *EPAS1*; *VAV3*, *ARNT2*, *THRB*; *EGLN1* | Tibet and Central Asia; Ethiopian highlands; Andes |
+| Starchy food | *AMY1* | East Asia |
+| Thick hair | *EDAR1* | East Asia |
+| Trypanosome resistance | *APOL1* | West Africa |
+| Malaria | *G6PD*, *HBB*, *GYPA*, *GYPB*, *GYPC* | Africa |
+| Height | *CISH*, *DOCK3*, *STAT5*, *HESX1*, *POU1F1*; polygenic signal | Central Africa; Europe |
+| Increased BMI | *CREBRF* | Polynesia |
+| Toxic arsenic-rich environments | *AS3MT* | Andes (South America) |
 
 ## 8.5 Selective sweep
 
 A **selective sweep** is the footprint left by positive selection: a **loss of genetic variation in the genomic region surrounding the beneficial allele** that has been positively selected.
 
 - **Before selection**, chromosomes carry different combinations of variants and the beneficial allele is present on only one of them.
-- **After selection**, the chromosomes carrying the beneficial allele have become frequent and look alike in the surrounding region, because linked variants are dragged along with the selected allele; the other haplotypes are lost.
+- **After selection**, the chromosomes **carrying the beneficial allele have become frequent** and look alike in the surrounding region, because linked variants are dragged along with the selected allele; the other haplotypes are lost.
 - Recombination progressively breaks the association with distance, so the footprint is **localized** around the selected site (see LD in chapter 5).
 
 ![[SATAUMV-image18.png|440]]
@@ -76,7 +91,7 @@ The footprint depends on how many variants and genes are involved. Three models 
   - Only a **moderate reduction in diversity** (a narrow dip), because several haplotypes carry the favored allele.
   - **Difficult to test:** often requires **functional data**.
 - **Polygenic adaptation model** (*multiple variants, different genes*)
-  - Favored alleles at several genes (e.g. genes A, B and C), usually acting on **standing variation**.
+  - Favored alleles at several genes, usually acting on **standing variation**.
   - **Very difficult to test** because of the **moderate reduction in diversity** and the **small effect** of single genes/variants on the phenotype.
   - Footprint: small dips in diversity at several loci.
 

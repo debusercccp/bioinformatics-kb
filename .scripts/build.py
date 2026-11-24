@@ -73,7 +73,7 @@ SOURCES = {
         label='Modeling of Biological Data'),
     'BFB': dict(
         course='Bioinformatics for Biology', module_note='Bioinformatics for Biology',
-        dir=S1 / 'Bioinformatics for Biology', src='MCB/BFB/Bioinformatics_For_Biology.docx',
+        dir=S1 / 'Bioinformatics for Biology', src='MCB/BFB/Bioinformatics_for_Biology.docx',
         label='Bioinformatics for Biology'),
 }
 
@@ -93,7 +93,43 @@ SPELLING = {
             ('MATHERIAL', 'MATERIAL'), ('Matherial', 'Material'), ('Jupiter', 'Jupyter')],
 }
 
-BIG = 300      # lines: a chapter longer than this is split at its H2s
+# British -> American spelling, applied to every docx (whole words, case kept, URLs skipped)
+US_WORDS = {
+    'remodelling': 'remodeling', 'remodelled': 'remodeled', 'remodeller': 'remodeler', 'remodellers': 'remodelers',
+    'modelled': 'modeled', 'modelling': 'modeling',
+    'labelled': 'labeled', 'unlabelled': 'unlabeled', 'radiolabelled': 'radiolabeled', 'labelling': 'labeling',
+    'colour': 'color', 'colours': 'colors', 'coloured': 'colored', 'colouring': 'coloring',
+    'neighbour': 'neighbor', 'neighbours': 'neighbors', 'neighbouring': 'neighboring',
+    'favour': 'favor', 'favours': 'favors', 'behaviour': 'behavior', 'behaviours': 'behaviors',
+    'tumour': 'tumor', 'tumours': 'tumors', 'centre': 'center', 'centres': 'centers',
+    'leukaemia': 'leukemia', 'paediatric': 'pediatric',
+    'homologue': 'homolog', 'homologues': 'homologs', 'paralogue': 'paralog', 'paralogues': 'paralogs',
+    'orthologue': 'ortholog', 'orthologues': 'orthologs', 'analogue': 'analog', 'analogues': 'analogs',
+    'catalogue': 'catalog', 'catalogues': 'catalogs',
+    'analysed': 'analyzed', 'analysing': 'analyzing', 'analyse': 'analyze',
+}
+for _stem in ('stabilis', 'neutralis', 'dimeris', 'recognis', 'visualis', 'summaris', 'polaris', 'mislocalis',
+              'oxidis', 'organis', 'standardis', 'specialis', 'polymeris', 'optimis', 'memoris', 'initialis',
+              'capitalis', 'isomeris', 'immunolocalis', 'fertilis', 'normalis', 'characteris', 'minimis',
+              'maximis', 'randomis', 'utilis', 'parameteris', 'categoris', 'prioritis', 'synthesis'):
+    _us = _stem[:-1] + 'z'
+    for _end in ('e', 'es', 'ed', 'ing', 'ation', 'ations', 'er', 'ers'):
+        if _stem != 'synthesis' or _end in ('e', 'es', 'ed', 'ing'):
+            US_WORDS[_stem + _end] = _us + _end
+US_RE = re.compile(r'https?://\S+|\b(' + '|'.join(sorted(US_WORDS, key=len, reverse=True)) + r')\b', re.I)
+
+
+def americanize(text):
+    def fix(m):
+        w = m.group(1)
+        if not w:
+            return m.group(0)          # URL: untouched
+        us = US_WORDS[w.lower()]
+        return us.upper() if w.isupper() else us.capitalize() if w[0].isupper() else us
+    return US_RE.sub(fix, text)
+
+
+BIG = 300     # lines: a chapter longer than this is split at its H2s
 MIN = 40       # lines: smaller H2 chunks are merged forward
 
 
@@ -271,6 +307,7 @@ def build(key):
     text = (CONV / key / f'{key}.md').read_text(encoding='utf-8')
     for bad, good in SPELLING.get(key, []):
         text = text.replace(bad, good)
+    text = americanize(text)
     media_map = convert_media(key)
     secs = parse_sections(text, key)
 

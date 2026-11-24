@@ -1,7 +1,7 @@
 ---
 course: "[[Bioinformatics for Biology]]"
 module: "[[Bioinformatics for Biology]]"
-source: "MCB/BFB/Bioinformatics_For_Biology.docx"
+source: "MCB/BFB/Bioinformatics_for_Biology.docx"
 order: 3
 tags: [note, bfb]
 ---
@@ -116,6 +116,16 @@ Rules for building queries:
 - Numeric ranges work inside limiters: `500000:999999[Molecular weight]`, `010000:050000[MOLWT] AND "pevsner j"[Author]`, `30000:50000[Sequence Length]`.
 - Organisms can be specified by name or taxonomy ID, equivalently: `Human[Organism]`, `"Homo sapiens"[Organism]`, `txid9606[Organism]`.
 - The **query builder** at `/gene/advanced` composes complex expressions, e.g. `((Platypus[Organism]) AND Enzyme[Title]) NOT 5[Chromosome]`.
+
+<figure>
+![[BFB-image1.png|537]]
+<figcaption aria-hidden="true"><p>The NCBI query builder: each row is a field limiter joined by a Boolean operator, and the box on top shows the resulting query string.</p></figcaption>
+</figure>
+
+<figure>
+![[BFB-image2.png|559]]
+<figcaption aria-hidden="true"><p>Results of that query in NCBI Gene: platypus enzymes, each with gene ID, description and chromosomal location (note the <code>NC_</code> RefSeq accessions in the Location column).</p></figcaption>
+</figure>
 
 ### 3.3.2 Exercises from the book (Ch. 2)
 

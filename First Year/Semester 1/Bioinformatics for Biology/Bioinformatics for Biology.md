@@ -38,13 +38,14 @@ Fonte: [pagina insegnamento UniBo A.A. 2026/27](https://www.unibo.it/en/study/co
 
 ## Appunti (MCB)
 
-Fonte: `MCB/BFB/Bioinformatics_For_Biology.docx` — 5 note collegate in ordine.
+Fonte: `MCB/BFB/Bioinformatics_for_Biology.docx` — 6 note collegate in ordine.
 
 1. [[BFB 01 - Introduction to bioinformatics|Introduction to bioinformatics]]
 2. [[BFB 02 - The practical hardware needs of biology (Chapter I)|The practical hardware needs of biology (Chapter I)]]
 3. [[BFB 03 - Access to sequence data and related information (Chapter II)|Access to sequence data and related information (Chapter II)]]
 4. [[BFB 04 - Pairwise sequence alignment (Chapter III)|Pairwise sequence alignment (Chapter III)]]
 5. [[BFB 05 - Basic Local Alignment Search Tool – BLAST (Chapter IV)|Basic Local Alignment Search Tool – BLAST (Chapter IV)]]
+6. [[BFB 06 - Next Generation Sequencing data (Chapter IX)|Next Generation Sequencing data (Chapter IX)]]
 
 ## Exam
 

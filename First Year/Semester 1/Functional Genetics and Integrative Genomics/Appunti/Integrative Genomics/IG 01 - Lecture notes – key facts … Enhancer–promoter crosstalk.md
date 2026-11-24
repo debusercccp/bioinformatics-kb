@@ -55,7 +55,9 @@ Early in vitro experiments in the 1980s defined the stepwise assembly of the Pre
 - Additional basal transcription factors join to fully assemble the PIC, providing the scaffold onto which RNAPII associates.
 - Finally, TFIIH phosphorylates the C-Terminal Domain (CTD) of RNAPII’s major subunit. The specific pattern of this phosphorylation triggers the transition from transcriptional initiation to elongation, and eventually termination.
 
-![[IG-image2.png|483]]States to know: **closed PIC**, **open PIC** (promoter DNA, TFIIA/B/D/E/F/H, Pol II), **initially transcribing complex** (transcription bubble, nascent RNA, NTPs, ATP) and **elongation complex** (elongation factors, 5′ cap). Use it to place what enhancers act on: PIC assembly, escape and the move into elongation.
+States to know: **closed PIC**, **open PIC** (promoter DNA, TFIIA/B/D/E/F/H, Pol II), **initially transcribing complex** (transcription bubble, nascent RNA, NTPs, ATP) and **elongation complex** (elongation factors, 5′ cap). Use it to place what enhancers act on: PIC assembly, escape and the move into elongation.
+
+![[IG-image2.png|483]]
 
 **Paper — Tupler, Perini & Green, 2001** (Nature 409:832–833): the survey of the human genome behind this part. Transcription of protein-coding genes by RNA Pol II needs the general (basic) transcription factors — TFIID, TFIIA, TFIIB, TFIIE, TFIIF and TFIIH — which assemble on the promoter into the PIC, with TFIID (TBP plus the TAFs) as the primary sequence-specific DNA-binding component that starts the assembly on the TATA box; searching the genome for new factors of transcription, pre-mRNA splicing and 3′-end formation revealed a substantial but selective increase in complexity compared with Drosophila and C. elegans.
 

@@ -96,7 +96,7 @@ Binary files are much more compact and faster to read; conversion in both direct
 
 - **DNA fragmentation and library preparation:** genomic DNA is fragmented into short pieces of specific size (150–200 bp); the ends are repaired, an A overhang is added and "forward" and "reverse read" **adapters** are ligated at both ends of each fragment. Adapters allow binding to the flow cell and provide the binding sites for the **primers** needed during amplification and sequencing.
 - **Bridge amplification and cluster generation:** fragments attached to the flow-cell surface are amplified locally through **bridge amplification**, producing **clusters of identical DNA molecules** with hundreds of copies of each original fragment (about 1000 molecules per cluster, millions of clusters, each ≤ 1 µm). A sequencing primer is then annealed.
-- **Sequencing:** in each cluster a DNA polymerase incorporates **fluorescently labeled terminating nucleotides** into the growing strand. The fluorescent signal is recorded by imaging the clusters and its **color identifies which base was added**; the terminator is then removed (deblock) and the cycle repeats to extend the strand. The process continues for all the copies of each cluster, so **multiple sequencing reads** are obtained for each single DNA fragment.
+- **Sequencing:** in each cluster a DNA polymerase incorporates **fluorescently labeled terminating nucleotides** into the growing strand. The fluorescent signal is recorded by imaging the clusters and **its color identifies which base was added**; the terminator is then removed (deblock) and the cycle repeats to extend the strand. The process continues for all the copies of each cluster, so **multiple sequencing reads** are obtained for each single DNA fragment.
 - ![[SATAUMV-image27.png|247]]**Alignment and data analysis:** the sequencing reads are **mapped and aligned** to a **reference genome** and **variant calling** is then performed. The slide figure shows reads carrying a *known SNV* and an *unknown SNV* relative to the reference sequence.
 
 The chemistry is therefore related to Sanger sequencing (labeled terminating nucleotides), but it is run in cycles and in millions of clusters in parallel on the same flow cell.
@@ -112,9 +112,9 @@ The chemistry is therefore related to Sanger sequencing (labeled terminating nuc
 | Variant calling | **VCF** file |
 | Quality filtering | Filtered variant set |
 
-**Coverage (read depth)** is the mean number of times a nucleotide is covered by sequencing reads. It is expressed as "X": 30X means that each base is covered on average by 30 reads.
+**Coverage (read depth)** is the **mean number of times** a nucleotide is **covered** by sequencing reads. It is expressed as "X": 30X means that each base is covered on average by 30 reads.
 
-Variants supported by a single read at isolated positions are **likely sequencing errors**, and **regions of poor coverage** have too few reads to support a reliable call. Hence the need for sufficient coverage to separate true heterozygotes from errors.
+In the slide figure the reads aligned to the reference sequence show a **heterozygous SNV (C/G)**: some reads carry the reference allele (C, REF) and others the alternative allele (G, ALT). Variants supported by a single read at isolated positions are **likely sequencing errors**, and **regions of poor coverage** have too few reads to support a reliable call. Hence the need for sufficient coverage to separate true heterozygotes from errors.
 
 ## 9.8 FASTQ files
 
@@ -198,9 +198,9 @@ After sequencing, the reads in the FASTQ file are aligned to a reference genome 
 
 Thus, a line carries the read name and position (fields 1, 4), the reference sequence name (3), the sequence string (10) and the base qualities taken from the FASTQ (11), plus additional information such as mapping quality (5) and CIGAR string (6).
 
-**MAPQ (mapping quality)** is equal to −10 log₁₀ Pr{mapping position is wrong}, rounded to the nearest integer: it is a Phred score of the **alignment**, not of the base calls. A value of 255 indicates that the mapping quality is not available.
+**MAPQ (mapping quality)** is equal to −10 log₁₀ Pr{mapping position is wrong}, rounded to the nearest integer: it is a **Phred score of the alignment**, not of the base calls. A value of 255 indicates that the mapping quality is not available.
 
-**CIGAR** (Compact Idiosyncratic Gapped Alignment Report) is a concise code that describes how a read **aligns** to the reference genome, as a series of numbers and letters giving the **length** and **type** of each stretch of alignment; it saves space while detailing insertions, deletions and matches (set to '\*' if unavailable).
+**CIGAR** (Compact Idiosyncratic Gapped Alignment Report) is a concise code that describes **how a read aligns to the reference genome**, as a series of numbers and letters giving the length and type of each stretch of alignment; it saves space while detailing insertions, deletions and matches (set to '\*' if unavailable).
 
 | **Op** | **BAM** | **Description**                   |
 |:-------|:--------|:----------------------------------|
@@ -218,7 +218,7 @@ Second example, from the alignment-section slide: FLAG = 113, POS = 497, MAPQ = 
 
 ## 9.11 Variant calling and the VCF format
 
-**Variant calling** identifies genetic variants, i.e. the differences in DNA sequence between the reference genome and the analyzed samples, based on the aligned reads (SAM/BAM/CRAM files in; VCF, or its binary version BCF, out). For each identified polymorphism a **genotype** is assigned to each individual from the combination of reference and/or alternative alleles observed, according to ploidy (diploid, **n** = 2: Ref/Ref, Ref/Alt, Alt/Alt).
+**Variant calling** identifies genetic variants, i.e. the **differences** in DNA sequence between the **reference** genome and the **analyzed** samples, based on the aligned reads (SAM/BAM/CRAM files in; VCF, or its binary version BCF, out). For each identified polymorphism a **genotype** is assigned to each individual from the combination of reference and/or alternative alleles observed, according to ploidy (diploid, **n** = 2: Ref/Ref, Ref/Alt, Alt/Alt).
 
 ![[SATAUMV-image32.png|624]]
 

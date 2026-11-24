@@ -1,12 +1,12 @@
 ---
 course: "[[Bioinformatics for Biology]]"
 module: "[[Bioinformatics for Biology]]"
-source: "MCB/BFB/Bioinformatics_For_Biology.docx"
+source: "MCB/BFB/Bioinformatics_for_Biology.docx"
 order: 5
 tags: [note, bfb]
 ---
 
-> [[BFB 04 - Pairwise sequence alignment (Chapter III)|← Pairwise sequence alignment (Chapter III)]] · [[Bioinformatics for Biology|↑ Bioinformatics for Biology]]
+> [[BFB 04 - Pairwise sequence alignment (Chapter III)|← Pairwise sequence alignment (Chapter III)]] · [[Bioinformatics for Biology|↑ Bioinformatics for Biology]] · [[BFB 06 - Next Generation Sequencing data (Chapter IX)|Next Generation Sequencing data (Chapter IX) →]]
 
 # Basic Local Alignment Search Tool — BLAST (Chapter IV)
 
@@ -88,4 +88,4 @@ Questions from the book (Ch. 3, pp. 114–115), with the reasoning rather than j
 - Single-letter amino acid codes worth memorizing from the exercise: N asparagine, Q glutamine, W tryptophan, C cysteine, F phenylalanine, A alanine.
 
 ---
-> [[BFB 04 - Pairwise sequence alignment (Chapter III)|← Pairwise sequence alignment (Chapter III)]] · [[Bioinformatics for Biology|↑ Bioinformatics for Biology]]
+> [[BFB 04 - Pairwise sequence alignment (Chapter III)|← Pairwise sequence alignment (Chapter III)]] · [[Bioinformatics for Biology|↑ Bioinformatics for Biology]] · [[BFB 06 - Next Generation Sequencing data (Chapter IX)|Next Generation Sequencing data (Chapter IX) →]]

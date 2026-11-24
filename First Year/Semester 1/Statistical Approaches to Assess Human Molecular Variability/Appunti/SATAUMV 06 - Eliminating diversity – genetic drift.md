@@ -10,7 +10,7 @@ tags: [note, sataumv]
 
 # Eliminating diversity: genetic drift
 
-No population is infinitely large as assumed under HWE: each generation is a *finite sample* drawn from the previous one. **Genetic drift** is the variation in allele frequencies over generations that occurs solely through **stochastic sampling**.
+No population is infinitely large as assumed under HWE: each generation is a *finite sample* drawn from the previous one. **Genetic drift** is the **variation** in allele frequencies **over generations** that occurs solely through **stochastic sampling**.
 
 ## 6.1 Overall effects of genetic drift
 
@@ -28,7 +28,7 @@ The **Wright-Fisher model** is the **theoretical framework** for understanding t
 - random mating;
 - non-overlapping generations.
 
-The model contains many *unrealistic assumptions*, because these factors vary among populations. To compare the amount of drift experienced by different populations, Wright introduced the concept of **effective population size** (**N<sub>e</sub>**): the size of an idealized population that would experience the same amount of drift as the studied population.
+The model contains many *unrealistic assumptions*, because these factors vary among populations. To compare the amount of drift experienced by different populations, Wright introduced the concept of **effective population size** (**N<sub>e</sub>**): the size of an **idealized population** that would **experience the same amount of drift** as the **studied population**.
 
 **N<sub>e</sub>** is a basic parameter for many population-genetics models and is usually **smaller than** the absolute (census) population size **N**. Few populations are constant in size over many generations: the long-term **N<sub>e</sub>** equals the **harmonic mean** of population size over time (the reciprocal of the mean of the reciprocals), so **N<sub>e</sub>** stays close to the **smallest N**. For most of our past evolutionary history human populations had very small sizes, and *H. sapiens* expanded only recently; this is why **N<sub>e</sub>** is much smaller than **N**.
 
@@ -76,7 +76,7 @@ The mean expected heterozygosity across demes is **H<sub>S</sub>** = (0.4800 + 0
 
 The **coefficient of consanguinity (F)** is the probability that two homologous alleles are **identical by descent** (IBD), i.e. inherited from a **common ancestor**, as opposed to **identity by state** (IBS), in which the alleles are the same due to **independent mutations**.
 
-![[SATAUMV-image12.png|371]]
+![[SATAUMV-image12.png|398]]
 
 ---
 > [[SATAUMV 05 - Generating diversity – recombination|← Generating diversity – recombination]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]] · [[SATAUMV 07 - Shaping diversity – gene flow|Shaping diversity – gene flow →]]

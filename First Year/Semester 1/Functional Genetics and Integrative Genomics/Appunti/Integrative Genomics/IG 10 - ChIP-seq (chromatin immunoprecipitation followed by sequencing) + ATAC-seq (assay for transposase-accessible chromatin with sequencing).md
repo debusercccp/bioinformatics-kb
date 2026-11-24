@@ -42,7 +42,7 @@ ChIP-seq maps genome-wide **where a protein binds DNA or a histone mark sits**: 
 
 ## 18. ATAC-seq (assay for transposase-accessible chromatin with sequencing)
 
-ATAC-seq maps **open, nucleosome-free chromatin** (active promoters, enhancers, insulators) **genome-wide**. Instead of an antibody (ChIP-seq) or a nuclease (DNase-seq, MNase-seq), it uses a **transposase** that only inserts into DNA not wrapped around nucleosomes.
+ATAC-seq maps **open, nucleosome-free chromatin** (active promoters, enhancers, insulators) **genome-wide**. Instead of an antibody (ChIP-seq) or a nuclease (DNase-seq, MNase-seq), it uses a **transposase** that only inserts into DNA **not wrapped** around nucleosomes.
 
 ### Transposase and mobile elements
 

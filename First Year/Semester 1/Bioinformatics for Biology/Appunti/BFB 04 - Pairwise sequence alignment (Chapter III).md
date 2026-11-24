@@ -1,7 +1,7 @@
 ---
 course: "[[Bioinformatics for Biology]]"
 module: "[[Bioinformatics for Biology]]"
-source: "MCB/BFB/Bioinformatics_For_Biology.docx"
+source: "MCB/BFB/Bioinformatics_for_Biology.docx"
 order: 4
 tags: [note, bfb]
 ---
@@ -79,7 +79,19 @@ Match/mismatch scores come from a substitution matrix, and the choice of matrix 
 
 Rough equivalences: PAM250 ≈ BLOSUM45, PAM1 ≈ BLOSUM80. BLOSUM62 is the default at the NCBI BLAST site.
 
-This is directly actionable: aligning `NP_000509.1` with `NP_005359.1` returns **no hit** under BLOSUM62, and works once the matrix is switched to BLOSUM45. A negative result is therefore not evidence of absence until the parameters have been examined.
+<figure>
+![[BFB-image3.png|559]]
+<figcaption aria-hidden="true"><p>BLOSUM62, the default scoring matrix at NCBI BLAST. Only the lower triangle is shown because the matrix is symmetric; the diagonal holds the score of a residue against itself (note Trp = 11 and Cys = 9, the rarest and most constrained residues, versus Ala = 4).</p></figcaption>
+</figure>
+
+<figure>
+![[BFB-image4.png|559]]
+<figcaption aria-hidden="true"><p>PAM10, a matrix with severe penalties: built on sequences diverged only 10 million years, it scores almost every substitution strongly negative (down to −23), so it only tolerates very close relationships.</p></figcaption>
+</figure>
+
+This is directly actionable: aligning `NP_000509.1` with `NP_005359.1` returns **no hit** under BLOSUM62, and works once the matrix is switched to BLOSUM45.
+
+![[BFB-image5.png|559]] A negative result is therefore not evidence of absence until the parameters have been examined.
 
 ## 4.7 Global alignment: Needleman–Wunsch (1970)
 
@@ -90,6 +102,11 @@ Three steps, with the worked example Sequence 1 = `FMDTPLNE`, Sequence 2 = `FKHM
 1.  **Initialize a 2D matrix** — x axis: sequence 1, y axis: sequence 2. Fill the first row and column with cumulative gap penalties (0, −2, −4, −6, …). Cells corresponding to identical residues can be marked.
 2.  **Score the matrix** — for every cell take the highest of three candidates: from the LEFT (add gap score), from UP (add gap score), from the DIAGONAL (add match or mismatch score). Record which neighbor produced the best score (the arrows). First cell: left −2−2 = −4, up −2−2 = −4, diagonal 0+1 = 1 → the cell takes **1**. Second cell: left 1−2 = −1, up −4−2 = −6, diagonal −2−2 = −4 → **−1**. And so on until all cells are filled. In real life the match/mismatch values come from a PAM/BLOSUM matrix rather than from a flat ±1/−2.
 3.  **Traceback** — start from the bottom-right cell, whose value is the final alignment score (here **−4**), and follow the arrows back to the top-left. Translate each step: diagonal = match or mismatch, moving down = gap in sequence 1, moving right = gap in sequence 2.
+
+<figure>
+![[BFB-image6.png|412]]
+<figcaption aria-hidden="true"><p>The completed Needleman–Wunsch matrix for <code>FMDTPLNE</code> vs <code>FKHMEDPLE</code> (+1 match, −2 mismatch, −2 gap). Grey cells mark identities, red arrows record for each cell which neighbor produced its best score, and the traceback runs from the bottom-right cell (−4, the final alignment score) back to the origin.</p></figcaption>
+</figure>
 
 Resulting optimal alignment:
 

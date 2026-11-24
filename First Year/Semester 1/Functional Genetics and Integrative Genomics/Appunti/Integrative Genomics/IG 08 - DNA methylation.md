@@ -38,29 +38,29 @@ tags: [note, ig]
 
 - Methylated CpGs in a promoter block the binding of TFs that need an unmethylated site (TF cannot bind → target gene silenced) and recruit methyl-CpG-binding proteins with HDACs.
 - **CpG island (CGI):** a region of **0.2 to 1–2 kb** where CpG frequency is higher than in the rest of the genome; usually **unmethylated**; found at ~60% of gene promoters.
-- **Bioinformatic definition** (Gardiner-Garden & Frommer): length ≥ 200 bp, GC content \> 50%, and **observed/expected CpG \> 0.6**, where Obs/Exp = N(CpG) × L / (N(C) × N(G)). A sliding window computes both curves along the sequence; windows that pass the thresholds are called putative islands.
+- **Bioinformatic definition** (Gardiner-Garden & Frommer): length ≥ 200 bp, GC content \> 50%, and **observed/expected CpG \> 0.6**, where Obs/Exp = N(CpG) × L / (N(C) × N(G)). A sliding window computes both curves along the sequence; windows that **pass the thresholds are called putative islands**.
 - **Probability of finding a CpG (the “expected” value):** if the four bases were equally frequent and independent, the chance that a given position starts a CpG is P(C) × P(G) = 1/4 × 1/4 = **1/16 ≈ 6%**, i.e. one CpG every ~16 bp. The human genome is only ~40% GC (P(C) = P(G) ≈ 0.2), so the expected frequency is ≈ 0.2 × 0.2 = **0.04 → one CpG every ~25 bp**. The observed frequency is ~1%, about **one CpG every ~100 bp**, so in bulk DNA Obs/Exp ≈ 0.2–0.25 (**CpG depletion / CpG suppression**). The missing CpGs were lost by deamination of 5mC → T (UNG cannot repair it, above): CpG became TpG (and CpA on the other strand), which are correspondingly over-represented.
 - **Why islands exist:** CGIs are the regions that kept Obs/Exp close to 1 because they stay **unmethylated in the germline**: no 5mC → no deamination → the CpGs are not lost. An island is therefore the evolutionary footprint of a region that is never methylated, not a random cluster. Worked example: in a 200 bp window with 50% GC (N(C) = N(G) = 50) the expected number of CpGs is N(C) × N(G) / L = 50 × 50 / 200 = **12.5**; bulk-genome DNA (Obs/Exp ≈ 0.25) would contain only ~3, while an island needs at least 0.6 × 12.5 ≈ **8 CpGs**. The human genome has roughly **28,000–30,000 CGIs**, covering only ~1% of the sequence.
 - **How to find them, step by step (slide 25 = output of a cpgplot-type program):** (1) take the sequence (e.g. the promoter region from a genome browser), with repeats masked; (2) slide a window (100–200 bp, moving 1 bp at a time) and compute for each window the **GC%** and the **CpG Obs/Exp**; (3) mark the windows that pass **both** thresholds (GC \> 50%, Obs/Exp \> 0.6); (4) merge consecutive passing windows and keep the regions **≥ 200 bp** → putative islands.
 - **Reading slide 25:** a ~6 kb sequence. Top panel = Obs/Exp along the sequence; middle = GC%; bottom = putative islands. Obs/Exp exceeds 0.6 in several places (peaks of ~1.4 at ~2,150 and ~5,400), but only the region at ~2,000–2,350 also has a GC content well above 50% (up to ~75%) for a long enough stretch → **one island (~350 bp)**. At ~5,400 Obs/Exp is high but GC% drops (down to ~25%) → not called. Both criteria must be met at the same time. **Slide 24** shows the same idea by eye: CpGs highlighted in pink are sparse in the flanking sequence and become dense from ~12,600 (asterisks) to ~13,500 = the island.
 - **Cancer:** in normal cells the CGI of a tumor suppressor is unmethylated with H3K4me3 nucleosomes (gene ON); in cancer the CGI is hypermethylated with H3K9me nucleosomes (gene OFF). Example: **MLH1** (mismatch repair).
 
-![[IG-image25.png|368]]
+![[IG-image24.png|368]]
 
 FAS receptor and FAS ligand: FASL binding to the FAS death receptor triggers apoptosis. In cancer cells the FAS promoter is often hypermethylated, so FAS is silenced and the cell escapes apoptosis.
 
 Example: oncogenic (mutated) RAS triggers de novo methylation of the FAS promoter by DNMT3A/3B, which switches FAS off.
 
-**Methylome=** the **genome-wide map of DNA methylation** (mostly 5mC at CpG) in one cell type at one moment. The genome is the same in every cell; the methylome, like the transcriptome, is **cell-type specific** and changes in development, aging and disease.
+**Methylome=** the **genome-wide map of DNA methylation** (mostly 5mC at CpG) in one cell type at one moment. The genome is the same in every cell; the methylome, like the transcriptome, is **cell-type specific** and changes in development, ageing and disease.
 
 - **Cancer methylome:** global hypomethylation (repeats, genomic instability) together with focal hypermethylation of tumor-suppressor CGIs (e.g. MLH1, above). The "epigenetic clock" (Horvath) estimates age from the methylation of a few hundred CpGs.
 - How it is measured (section 15): WGBS = whole-genome bisulfite sequencing, single-base and all CpGs (gold standard); RRBS = only the CpG-rich fraction (cheaper); arrays (Illumina EPIC, ~850,000 CpGs); MeDIP / MBD-seq = enrichment, lower resolution; long-read sequencing (nanopore, PacBio) reads 5mC directly.
 
 ### Methylation dynamics in the early mouse embryo \[S12\]
 
-- ![[IG-image26.png|291]]Three levels of DNA methylation: high, intermediate and low (the anti-5mC enrichment used here, MeDIP, is in section 15).
+- ![[IG-image25.png|291]]Three levels of DNA methylation: high, intermediate and low (the anti-5mC enrichment used here, MeDIP, is in section 15).
 - Reduced-representation bisulfite sequencing from gametes to post-implantation embryos: **sperm** is highly methylated, the **oocyte** intermediate. (both haploids)
-- After fertilization, methylation drops genome-wide to a **minimum in the ICM/blastocyst**, then rises again at implantation (E6.5–E7.5) to the high somatic level (brain, heart, liver).
+- After fertilization, methylation **drops** genome-wide to a **minimum in the ICM/blastocyst**, then **rises** again at implantation (E6.5–E7.5) to the high somatic level (brain, heart, liver).
 - High-CpG-density regions (CGIs) stay unmethylated at all stages; the changes involve mostly low-CpG-density regions.
 - **Zygote:** TET3 actively demethylates the paternal (sperm) genome, oxidizing 5mC → 5hmC in the male pronucleus; the maternal genome loses methylation more slowly and passively, through DNA replication.
 

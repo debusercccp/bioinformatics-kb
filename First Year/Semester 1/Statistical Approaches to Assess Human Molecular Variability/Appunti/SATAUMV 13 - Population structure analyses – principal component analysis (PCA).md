@@ -14,14 +14,14 @@ tags: [note, sataumv]
 
 **Population structure analyses** describe how genetic variation is organized among individuals and populations. The main approaches, often used together on the same genome-wide dataset, are:
 
-- **ADMIXTURE** (model-based clustering): estimates for each individual the **membership coefficients (Q)** to K ancestral components (K = 3 in the example);
+- **ADMIXTURE** (model-based clustering): estimates for each individual the **membership coefficients (Q)** to K ancestral components, shown as a bar plot in which each vertical bar is one individual (section 14.5);
 - **PCA**: summarizes genotype variation into a few principal components and plots the individuals in a low-dimensional space;
-- **Fine-scale clustering**: groups individuals according to their **genetic similarity** (shared haplotypes), producing trees of genetically homogeneous clusters;
+- **Fine-scale clustering**: groups individuals according to their genetic similarity (shared haplotypes), producing trees of genetically homogeneous clusters;
 - **LD decay**: describes how r² between pairs of markers decreases with physical distance (kb) in each population (section 5.6), reflecting its demographic history.
 
 With genome-wide data, as the **number of loci rises** the variation we can observe among individuals (e.g. the combinations of possible genotypes) **increases**, particularly if the loci are independent (no LD). With enough loci each **individual can be identified as genetically unique**, so we can compare **each individual against every other individual** for all SNPs and measure the **degree of similarity** between two individuals as summarized by all SNPs: the analysis moves **from populations to individual-based comparisons**.
 
-The other side of the coin is that, as the **number of variables increases**, so does the **complexity** of the statistical approaches required to analyze the data, as well as the **difficulty of summarizing, describing and interpreting** such large quantities of information in a clear and comprehensible way.
+The other side of the coin is that, as the number of variables increases, so does the **complexity** of the statistical approaches required to analyze the data, as well as the **difficulty of summarizing, describing and interpreting** such large quantities of information in a clear and comprehensible way.
 
 ## 13.2 Multivariate methods: dimensionality reduction
 
@@ -46,20 +46,20 @@ Geometrically, by a linear transformation of the original variables PCA identifi
 - **Maximum variance**: the first component is the direction along which the projections of the data have the **largest variance**;
 - **Minimum error**: the same direction **minimizes the sum of squared orthogonal distances** between the observations and the line.
 
-The second component is the direction orthogonal to the first that captures the largest part of the remaining variance, and so on. In this way PCA **encapsulates as much variability as possible** while **minimizing the loss of information**.
+The second component is the direction **orthogonal** to the first that captures the largest part of the remaining variance, and so on. In this way PCA **encapsulates as much variability as possible** while **minimizing the loss of information**.
 
-Note — how PCA is applied to genotype data: genotypes are arranged in a matrix of individuals × SNPs, coded as 0, 1 or 2 copies of an allele (as in section 11.7); each SNP is centered on its mean (and usually normalized). The **eigenvectors** of the covariance matrix between individuals give the **coordinates** of each individual on the PCs, and the corresponding **eigenvalues** give the **variance explained** by each PC. Because PCA assumes that the variables are independent, it is usually run on an LD-pruned set of SNPs (section 11.5).
+Note — how PCA is applied to genotype data: genotypes are arranged in a matrix of individuals × SNPs, coded as 0, 1 or 2 copies of an allele (as in section 11.7); each SNP is centered on its mean (and usually normalized). The **eigenvectors** of the covariance matrix between individuals give the coordinates of each individual on the PCs, and the corresponding **eigenvalues** give the variance explained by each PC. Because PCA assumes that the variables are independent, it is usually run on an LD-pruned set of SNPs (section 11.5).
 
 ## 13.4 Properties of the principal components, input and output files
 
 The new components capture and organize the variance with two main advantages:
 
 - **Variance-based ordering**: PCs are **ranked according to the variance** they explain, so subsequent components account for progressively smaller proportions of the total variance;
-- **Orthogonality and reduced redundancy**: PCs are mutually **orthogonal and uncorrelated**, so PCA reorganizes the information contained in the original, potentially correlated variables into a set of **independent linear combinations that maximize the variance**.
+- **Orthogonality and reduced redundancy**: PCs are mutually **orthogonal and uncorrelated**, so PCA reorganizes the information contained in the original, potentially correlated variables into a set of independent linear combinations that maximize the variance.
 
 Each PC (eigenvector) is independent and encapsulates as much of the remaining variation as possible, and we can compute the **proportion of the total variance** summarized within the reduced dimensions. In the example, the top five PCs explain 38.3%, 24.2%, 15.6%, 9.9% and 7.0% of the variance (95% in total), and a plot of PC1 vs. PC2 represents 38.3 + 24.2 = 62.5% of the variance.
 
-![[SATAUMV-image61.jpeg|356]]**Pros**: reduces the dimensionality of complex multivariate datasets; captures the main patterns of variation.
+![[SATAUMV-image61.png|402]]**Pros**: reduces the dimensionality of complex multivariate datasets; captures the main patterns of variation.
 
 **Cons**: may lose specific details (the variance not captured by the plotted PCs); interpretation issues (PCs are mathematical axes, not necessarily distinct biological processes).
 
@@ -75,14 +75,14 @@ Each PC (eigenvector) is independent and encapsulates as much of the remaining v
 | ⋮          | ⋮              | ⋮      | ⋮      |       | ⋮      |
 | Sn         | Pn             | AA     | TT     | …     | GG     |
 
-In practice the genotypes come from the formats seen in section 9.4 (PLINK PED/MAP or BED/BIM/FAM, or the EIGENSOFT formats) and are **recoded as allele counts** (0, 1, 2) before computing the PCs.
+In practice the genotypes come from the formats seen in section 9.4 (PLINK PED/MAP or BED/BIM/FAM, or the EIGENSOFT formats) and are recoded as allele counts (0, 1, 2) before computing the PCs.
 
 **Output files.** The output of a PCA on genotype data (e.g. with EIGENSOFT smartpca; PLINK --pca writes the equivalent .eigenvec and .eigenval files) consists of two files:
 
-- **Eigenvectors file** (.evec or .pca.evec): the projection of each individual onto the PCs, one row per sample with its ID, its coordinates on PC1, PC2, …, PCn and its population label. These are the values plotted to show population structure;
-- **Eigenvalues file** (.eval or .pca.eval): the ordered eigenvalues (one per line) corresponding to the eigenvectors; each eigenvalue represents the amount of genetic variance explained by that PC.
+- **Eigenvectors file** (.evec or .pca.evec): the **projection** of each individual onto the PCs, one row per sample with its ID, its coordinates on PC1, PC2, …, PCn and its population label. These are the values plotted to show population structure;
+- **Eigenvalues file** (.eval or .pca.eval): the **ordered eigenvalues** (one per line) corresponding to the eigenvectors; each eigenvalue represents the amount of genetic variance explained by that PC.
 
-The percentage of variance explained by a specific PC is **its eigenvalue divided by the sum of all eigenvalues**:
+The percentage of variance explained by a specific PC is its eigenvalue divided by the sum of all eigenvalues:
 
 ***Variance explained (PCₖ)*** *= λₖ / Σ λ*
 
@@ -102,7 +102,7 @@ PCA summarizes the overall patterns of genomic variability in a flat low-dimensi
 
 ## 13.6 Challenges of PCA
 
-**Scale and dataset composition.** PCA results are always **relative to the dataset being analyzed** and should not be interpreted in absolute terms: the composition of the dataset and the geographical scale determine the patterns of variation observed and the percentage of variance captured. In a worldwide PCA (A), the first dimension explains 7.1% of the variance and separates Africans (AFR) from the other groups; in a PCA restricted to European populations (B), the first dimension explains only 0.5%, and differences invisible at the worldwide scale (e.g. Finns, FIN, and Russians, RUS, vs. the other Europeans) become the main axis of variation.
+**Scale and dataset composition.** PCA results are always **relative to the dataset being analyzed** and should not be interpreted in absolute terms: the **composition** of the dataset and the **geographical** **scale** determine the **patterns of variation observed** and the **percentage of variance captured**. In a worldwide PCA (A), the first dimension explains 7.1% of the variance and separates Africans (AFR) from the other groups; in a PCA restricted to European populations (B), the first dimension explains only 0.5%, and differences invisible at the worldwide scale (e.g. Finns, FIN, and Russians, RUS, vs. the other Europeans) become the main axis of variation.
 
 ![[SATAUMV-image64.jpg|604]]
 
@@ -130,7 +130,7 @@ The alternative to discrete population structure is the case where individuals a
 
 **Batch effects and outliers.** The presence of single **divergent individuals or populations** can affect the analysis, because PCA is **sensitive to extreme values**: in the example, an extreme point (A) stretches the first component, while a point far from the main axis (B) appears as an outlier on PC2. At the same time, PCA can be used to **identify outliers** in the data and to help determine whether they represent true biological variation, data errors or artefacts.
 
-![[SATAUMV-image69.jpeg|383]]**Batch effects** (section 11.4) are all the technical variation introduced during data generation, e.g. differences in genotyping platforms, laboratories or processing pipelines, and can create **artificial structure** in the data. PCA may capture batch effects as major components (**samples cluster by experiment**, as experiments A and B in the example), thus allowing such artefacts to be assessed and removed, so that they do not influence subsequent analyses: after batch-effect removal the two experiments overlap.
+![[SATAUMV-image69.jpeg|383]]**Batch effects** (section 11.4) are all the **technical variation** introduced during data generation, e.g. differences in genotyping platforms, laboratories or processing pipelines, and can create **artificial structure** in the data. PCA may capture batch effects as major components (**samples cluster by experiment**, as experiments A and B in the example), thus allowing such artefacts to be assessed and removed, so that they do not influence subsequent analyses: after batch-effect removal the two experiments overlap.
 
 ## 13.7 Applications of PCA
 

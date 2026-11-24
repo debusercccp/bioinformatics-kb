@@ -2,11 +2,11 @@
 course: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 module: "[[Statistical Approaches to Assess Human Molecular Variability]]"
 source: "MCB/SATAUMV/Statistical_approaches.docx"
-order: 15
+order: 17
 tags: [note, sataumv]
 ---
 
-> [[SATAUMV 14 - Clustering and inference of admixture|← Clustering and inference of admixture]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]]
+> [[SATAUMV 16 - Haplotype-based analyses|← Haplotype-based analyses]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]]
 
 # Summary of the main points
 
@@ -26,7 +26,7 @@ tags: [note, sataumv]
 - **Quality control** is performed per individual (missingness with --mind, heterozygosity with --het, relatedness with --genome via **PI_HAT** = **Z2** + 0.5·**Z1**, sex check) and per marker (missingness with --geno, HWE with --hwe, MAF with --maf); heterozygosity and missingness are best inspected jointly to detect contamination (high heterozygosity), inbreeding (low heterozygosity) and poor-quality samples (high missingness).
 - **Dataset assembly** merges multiple QCed datasets with PLINK --merge/--bmerge (union by default; intersection via --extract); key issues are batch effects (detected by PCA or hierarchical clustering and removed), non-overlapping variant sets, and reference-genome inconsistencies (resolved by LiftOver and harmonization of rsIDs, chromosome coding and positions).
 - **LD pruning** (--indep-pairwise window step **r²**) removes markers in high LD to leave approximately independent sites, producing plink.prune.in and plink.prune.out lists.
-- **Phasing** reconstructs haplotypes from genotypes: trio-based phasing is accurate but requires family data; in unrelated individuals, Clark's parsimony and EM work for small numbers of tightly linked SNPs, while HMM-based methods using a reference panel are the standard for genome-wide data.
+- **Phasing** reconstructs haplotypes from genotypes: trio-based phasing is accurate but requires family data; in unrelateds, Clark's parsimony and EM work for small numbers of tightly linked SNPs, while HMM-based methods using a reference panel are the standard for genome-wide data.
 - *\[Not in the updated slides, deck 7 NEW\]* **Imputation** predicts untyped variants by matching phased haplotypes to a dense reference panel, increasing marker density and power, but its accuracy depends on the representativeness of the panel and is lower for rare variants and underrepresented populations; phasing errors propagate into imputation.
 - **Summary statistics** describe within-population variability: segregating sites (**S**) and number of haplotypes (**k**) depend strongly on sample size, while nucleotide diversity **π** = **n**/(**n** − 1) Σ **xᵢxⱼdᵢⱼ** and gene/haplotype diversity **h** = **n**/(**n** − 1)(1 − Σ **pᵢ²**) are corrected for it; computed in sliding windows they provide a genome-wide baseline for spotting unusually low or high diversity.
 - **Distance matrices** (square, zero diagonal, symmetric, hence shown in triangular form) summarize pairwise differences; **FST** = (**HT** − **HS**)/**HT** = Var(**p**)/\[p̄(1 − p̄)\] is the most used **genetic distance** (Wright: \< 0.05 little, 0.05–0.15 moderate, 0.15–0.25 great, \> 0.25 very great differentiation).
@@ -41,6 +41,14 @@ tags: [note, sataumv]
 - **Admixture** (a hybrid population formed from previously isolated ancestral populations) differs from ongoing bidirectional **gene flow**; from allele frequencies, **p<sub>H</sub> = M·p<sub>A</sub> + (1 − M)·p<sub>B</sub>** gives **M = (p<sub>H</sub> − p<sub>B</sub>)/(p<sub>A</sub> − p<sub>B</sub>)**, which requires known ancestral populations, two sources and differentiated alleles, and is affected by drift and selection.
 - **ADMIXTURE** estimates by **maximum likelihood** the **Q matrix** (ancestry fractions of each individual) and the **F matrix** (allele frequencies of each ancestral population), with p<sub>ij</sub> = Σ q<sub>ik</sub>·f<sub>kj</sub>; the **.Q file** has one row per individual summing to 1, and K is chosen by the **lowest cross-validation error** (the smallest K when values are similar). Trees, DAPC and ADMIXTURE give corresponding pictures of population structure.
 - **Population admixture can be derived from individual admixture but not vice versa**: **recent admixture** gives a full 0–100% range of individual ancestry, **ancient admixture** a narrow range. Examples: **Italy** (four components linked to Early Neolithic, Post Neolithic, Late Neolithic/Bronze Age and historical events) and **Mexico** (NAM increasing and EUR decreasing from north to south).
+- Soon after admixture the chromosomes carry long blocks of a single ancestry; recombination splits them into **smaller, more evenly distributed blocks**, so the **number and width of admixture blocks** inform on the **time since admixture**.
+- **F-statistics** are simple, robust allele-sharing statistics for testing population relationships. The **admixture f3(C; A, B)** = mean of (c − a)(c − b) tests treeness: positive under a tree (H0), **negative with Z \< −3** means that C is significantly admixed from populations close to A and B (H1).
+- Admixture creates **admixture-induced LD** even between unlinked loci; its decay with genetic distance dates the event. **ALDER** fits **y = a·e^(−b·x)** to weighted LD and converts the decay rate into **generations since admixture**; with continuous or multiple admixture only the **most recent event** is dated.
+- In Sicily (unpublished “Crossing the Sea” data) a **North African (Mozabite) component** is supported by significant negative f3 values and dated by ALDER to about 37–61 generations ago. Admixture studies reconstruct **demographic history** and use **local ancestry** to study selection and trait or disease variants.
+- **Haplotype-based methods** analyze combinations of alleles (multi-locus haplotype sharing) instead of single-marker allele frequencies: they require good **phasing** and give more power to detect **fine-scale structure**, demographic processes, selection and trait-related variants.
+- **ChromoPainter** paints each recipient genome as a mosaic of haplotypes copied from donors; painting everyone against everyone gives the **co-ancestry matrix** (chunk-count and chunk-length matrices, recipients in rows and donors in columns). **fineSTRUCTURE** clusters these copying profiles with a **Bayesian MCMC** approach, without fixing K in advance, and outputs a **dendrogram** (e.g. southern vs central/northern Italy; northern, central and southern Native Mexican groups).
+- fineSTRUCTURE works in an **unsupervised** way and its **assignment probabilities** (shown only when \< 1) measure the confidence of assigning each individual to a cluster.
+- **GLOBETROTTER** paints a target population against reference populations with CHROMOPAINTER, models it as a mixture of haplotypes from **surrogate sources** (without predefining them), infers the best surrogates and their contributions, and dates admixture from the exponential decay of **coancestry curves** (rate = generations since admixture; e.g. 30 generations, 95% CI 27–33, in the Brahui–Yoruba simulation). Possible results: uncertain, one-date, one-date-multiway, multiple-dates, unclear signal.
 
 ---
-> [[SATAUMV 14 - Clustering and inference of admixture|← Clustering and inference of admixture]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]]
+> [[SATAUMV 16 - Haplotype-based analyses|← Haplotype-based analyses]] · [[Statistical Approaches to Assess Human Molecular Variability|↑ Statistical Approaches]]

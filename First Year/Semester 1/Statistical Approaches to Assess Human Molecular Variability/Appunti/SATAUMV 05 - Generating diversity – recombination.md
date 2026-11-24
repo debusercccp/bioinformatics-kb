@@ -31,7 +31,7 @@ A **haplotype** is the combination of allelic states for a set of polymorphic si
 
 Linkage disequilibrium (LD) is simply the term for when the alleles stick together more often than expected by pure mathematical chance. **LD is the non-random association of alleles at different loci.**
 
-Consider two loci, A and B. If there is no association between them (**linkage equilibrium**), the frequency of haplotype AB should equal the product of the frequencies of A and B:
+Consider two loci, A and B. If there is no association between them (**linkage equilibrium**), the frequency of haplotype AB should equal the **product of the frequencies of A and B**:
 
 > ***P<sub>AB</sub>** = **P<sub>A</sub>** × **P<sub>B</sub>***
 
@@ -73,7 +73,7 @@ Graphically, under linkage equilibrium the area of each haplotype square equals 
 
 *(**r** = recombination fraction between the loci, **t** = generations)*
 
-![[SATAUMV-image9.png|585]]
+![[SATAUMV-image9.png|518]]
 
 | **Recombination fraction** | **Behavior of LD (graph with D₀ = 0.25)** |
 |:---|:---|

@@ -13,7 +13,7 @@ tags: [note, ig]
 ### Bisulfite sequencing
 
 - **Steps:** **denaturation** at 95 °C (bisulfite acts only on single strands) → **conversion** with sodium bisulfite, 65 °C, pH 5–6 (C → uracil-sulfonate) → **desulfonation** at high pH, room temperature, 15 min → uracil.
-- ![[IG-image27.png|350]]**5mC and 5hmC are not converted**; after PCR U → T. Unmethylated C → read as T; methylated C → stays C. Bisulfite cannot tell 5mC from 5hmC (oxidative bisulfite or TAB-seq needed).
+- ![[IG-image26.png|350]]**5mC and 5hmC are not converted**; after PCR U → T. Unmethylated C → read as T; methylated C → stays C. Bisulfite cannot tell 5mC from 5hmC (oxidative bisulfite or TAB-seq needed).
 - **UNG and bisulfite:** after conversion the template is full of U, so the PCR needs a polymerase that reads U as A (standard Taq; many proofreading enzymes stall on uracil), and the common anti-contamination trick (dUTP + UNG treatment before PCR) cannot be used, because UNG would destroy the converted template itself.
 - Chromatogram: non-CpG Cs all become T (complete conversion); a surviving C at a CpG = methylated.
 - Output: the clones are drawn as lollipops, one row per clone, filled = methylated CpG.
@@ -21,7 +21,7 @@ tags: [note, ig]
 
 > **MLH1:** Bisulfite sequencing of the MLH1 promoter CGI (each row = one clone, filled circle = methylated CpG): in normal lymphocytes (A) the CpGs are unmethylated, while in leukemia/lymphoma cell lines (B) Kg1a is almost fully and Raji partly methylated (HL60 stays unmethylated); this hypermethylation silences the MMR gene MLH1, an epigenetic way for tumors to lose a tumor suppressor.
 >
-> ![[IG-image28.jpeg|361]]![[IG-image29.png|279]]
+> ![[IG-image27.jpeg|361]]![[IG-image28.png|279]]
 
 ### Genome-wide methods
 

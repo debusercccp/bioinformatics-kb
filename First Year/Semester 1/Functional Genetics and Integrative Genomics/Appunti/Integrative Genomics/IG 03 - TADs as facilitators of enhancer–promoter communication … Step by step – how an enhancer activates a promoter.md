@@ -19,7 +19,7 @@ TADs (topologically associating domains), i.e. submegabase domains with **prefer
 - **Reporter integrations.** Random integrations of a **single-copy reporter** in the genome (hundreds of “regulatory sensors”, Symmons et al.): reporters integrated inside the same TAD display the **same tissue-specific expression**, while **reporters in neighboring TADs behave differently**. Interpretation: an enhancer can reach everything inside its TAD, and **TADs may favor enhancer–promoter contacts** that otherwise could occur **too infrequently**. Caveat: the same result could also reflect a **permissive chromatin environment** shared by the whole domain.
 - **Rearranging the *Shh* TAD.** Mouse lines carrying inversions, deletions and duplications of the locus: **changing the distances inside the TAD has little effect on Shh**, while **inversions that break the TAD prevent the ZRS from reaching Shh**, which gives **loss of Shh and monodactyly**; so the **boundaries**, not the distance, matter.
 - **Human disease.** Structural variants that remove a boundary at the WNT6–IHH–EPHA4–PAX3 locus let *Ihh*, *Wnt6* and *Pax3* contact the **EPHA4 enhancers**, causing **limb malformations**; a duplication exposes *Kcnj2* to the *Sox9* enhancers.
-- **Cancer.** The deletion or the methylation of CTCF sites at the boundaries of insulated neighborhoods activates nearby **proto-oncogenes** through new enhancer contacts (e.g. PDGFRA in IDH-mutant gliomas).
+- **Cancer.** The deletion or the methylation of CTCF sites at the boundaries of insulated neighbourhoods activates nearby **proto-oncogenes** through new enhancer contacts (e.g. PDGFRA in IDH-mutant gliomas).
 - **Removing the architects.** The insulation is **not absolute**: about **one third** of the contacts between promoters and distal elements **cross the TAD boundaries**, and after an **acute degradation of CTCF or cohesin** (auxin-inducible degron) loops and TADs disappear within hours (while compartments remain, or even get stronger), but **only a few genes change their expression**.
 - **Single cells.** **Single-cell (super-resolution) chromatin tracing** shows TAD-like domains in single cells even without cohesin, so TADs are not just an averaging artefact of Hi-C.
 
@@ -56,11 +56,11 @@ Cell-type-specific TFs bind the accessible DNA and **recruit coactivators** (Med
 
 3D genome structure **shrinks the search space** from the whole nucleus: compartment A (active) **segregates** from B, sub-megabase TADs **favor internal contacts**, CTCF–cohesin loops form, and genes relocate to transcription factories/condensates (BRD4 and MED1 at super-enhancers).
 
-**Key points**: TAD insulation is **preferential** and not absolute, the enhancer–gene assignment needs 3D contact maps rather than the linear distance, and at the Shh locus the boundaries matter while the internal distance matters little (section 6).
+![[IG-image9.png|231]]**Key points**: TAD insulation is **preferential** and not absolute, the enhancer–gene assignment needs 3D contact maps rather than the linear distance, and at the Shh locus the boundaries matter while the internal distance matters little (section 6).
 
 ### 4. Loop formation (linking step): Cohesin extrudes the loop
 
-![[IG-image9.png|231]]NIPBL–MAU2 loads cohesin (SMC1–SMC3–RAD21 ring), which extrudes DNA **until it reaches two convergent CTCF sites**, bringing enhancer and promoter together; WAPL unloads it, so loops are dynamic.
+NIPBL–MAU2 loads cohesin (SMC1–SMC3–RAD21 ring), which extrudes DNA **until it reaches two convergent CTCF sites**, bringing enhancer and promoter together; WAPL unloads it, so loops are dynamic.
 
 **Key points**: what happens when CTCF or cohesin is degraded, and why it is not proven that extrusion is what directs E–P contacts, is in sections 6 and 7.
 

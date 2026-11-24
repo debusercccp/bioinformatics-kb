@@ -27,13 +27,13 @@ Most marks sit on the **N-terminal tails** that protrude from the nucleosome cor
 
 ### Histone acetylation
 
-- ![[IG-image18.png|324]]**Chemistry:** KATs/HATs transfer an acetyl group from **acetyl-CoA** to the ε-NH₃⁺ of lysine → **acetyl-lysine**, which is neutral. HDACs remove it (classes below).
-- **Effect 1, charge:** the basic tails bind DNA **phosphates** and the acidic patch of neighboring nucleosomes. Acetylation **neutralizes them and weakens these contacts**. Deacetylated chromatin (HDAC) forms compact arrays with the tails on the DNA; acetylated chromatin (HAT) has spaced nucleosomes and an open fiber, so factors can reach the DNA. H4K16ac alone is enough to block compaction of the fiber in vitro.
+- ![[IG-image17.png|324]]**Chemistry:** KATs/HATs transfer an acetyl group from **acetyl-CoA** to the ε-NH₃⁺ of lysine → **acetyl-lysine**, which is neutral. HDACs remove it (classes below).
+- **Effect 1, charge:** the basic tails bind DNA **phosphates** and the acidic patch of neighboring nucleosomes. Acetylation **neutralizes them and weakens these contacts**. Deacetylated chromatin (HDAC) forms compact arrays with the tails on the DNA; acetylated chromatin (HAT) has spaced nucleosomes and an open fibre, so factors can reach the DNA. H4K16ac alone is enough to block compaction of the fibre in vitro.
 - **Effect 2, readers:** acetyl-lysine is bound by **bromodomains** (BRD4, TAF1, GCN5, CBP/p300, BRG1 of SWI/SNF), which **bring coactivators, remodelers and elongation factors** (BRD4 → P-TEFb, section 10).
 - **Targeting:** HATs and HDACs have no sequence specificity; TFs recruit them. **Activators bring coactivator HATs** (GCN5/SAGA, CBP/p300); **repressors bring corepressor HDAC complexes** (Sin3, NuRD, NCOR/SMRT–HDAC3).
 - **Where:** promoters (H3K9ac, H3K14ac, together with H3K4me3) and active enhancers (**H3K27ac** with H3K4me1; sections 2 and 10). Turnover is fast (minutes), so acetylation **follows the activity of the TFs that recruit the enzymes**.
 
-#### **Sir proteins and yeast replicative aging**
+#### **Sir proteins and yeast replicative ageing**
 
 - **Bud scars:** each division leaves a chitin scar on the mother cell wall, so the number of scars **gives the replicative age**; a cell with ~25 scars is old.
 - **Bud position:** as described in the lecture, each new bud forms **180**° opposite the previous one (bipolar budding, typical of diploids; haploids bud axially, next to the previous scar).
@@ -52,13 +52,13 @@ Most marks sit on the **N-terminal tails** that protrude from the nucleosome cor
 ##### **CBP/p300**
 
 - Two large paralogs (**CBP 2,441 aa**, **p300 2,414 aa**) with high identity in the functional domains (up to 93%). Domains: **CH1 (TAZ1)**, **KIX** (binds phosphorylated CREB), **bromodomain**, **HAT domain**, **CH2** (PHD), **CH3** (TAZ2/ZZ; ADA2 homology); nuclear-receptor interaction at the N-terminus, SRC-1 at the C-terminus.
-- They bind hundreds of partners: nuclear receptors, CREB, p53, STATs, JUN/FOS, MYB, NF-κB p65, HIF1, MYOD, GATA1, YY1, the basal factors TBP and TFIIB, and viral oncoproteins (E1A, SV40 T antigen, HPV E6/E7, HTLV Tax). So CBP/p300 are **coactivators and integrators**: they bridge many TFs to the basal machinery and acetylate histones (H3K27ac, link to enhancers in sections 2 and 10) and non-histone proteins.
+- They bind **hundreds of partners**: nuclear receptors, CREB, p53, STATs, JUN/FOS, MYB, NF-κB p65, HIF1, MYOD, GATA1, YY1, the basal factors TBP and TFIIB, and viral oncoproteins (E1A, SV40 T antigen, HPV E6/E7, HTLV Tax). So CBP/p300 are **coactivators and integrators**: they bridge many TFs to the basal machinery and acetylate histones (H3K27ac, link to enhancers in sections 2 and 10) and non-histone proteins.
 - **Rubinstein–Taybi syndrome:** point mutations or microdeletions in **CREBBP** or **EP300** (haploinsufficiency); intellectual disability, broad thumbs and big toes, characteristic face. It shows that the **dose** of a coactivator matters.
 - **Link to \[VB25\]:** for p300/CBP, PROTAC degradation works better than enzymatic inhibitors; KAT2A null vs catalytic-dead mice are compared in section 16.
 
 #### **Histone deacetylases (HDACs)**
 
-- ![[IG-image19.png|339]]**Zn²⁺-dependent HDACs:** **Class I** (HDAC1, 2, 3, 8; Rpd3-like, nuclear, ubiquitous), **Class IIa** (HDAC4, 5, 7, 9; shuttle between nucleus and cytoplasm, tissue-specific), **Class IIb** (HDAC6, two catalytic domains, cytoplasmic, tubulin deacetylase; HDAC10), **Class IV** (HDAC11).
+- ![[IG-image18.png|339]]**Zn²⁺-dependent HDACs:** **Class I** (HDAC1, 2, 3, 8; Rpd3-like, nuclear, ubiquitous), **Class IIa** (HDAC4, 5, 7, 9; shuttle between nucleus and cytoplasm, tissue-specific), **Class IIb** (HDAC6, two catalytic domains, cytoplasmic, tubulin deacetylase; HDAC10), **Class IV** (HDAC11).
 - **Class III = sirtuins** (Sir2-like): **NAD⁺-dependent**, so deacetylation is coupled to the metabolic state of the cell.
 - **Reaction:** acetyl-lysine + NAD⁺ → lysine + nicotinamide + 2′-O-acetyl-ADP-ribose. Some sirtuins instead transfer the ADP-ribose to the protein (mono-ADP-ribosyltransferase). The bacterial homolog CobB regulates acetyl-CoA synthetase.
 - **Inhibitors and selectivity:** SAHA (vorinostat), TSA, PXD101 (belinostat), LBH589 (panobinostat), LAQ824 → pan-inhibitors (classes I, II, IV); valproic acid, butyrate, trapoxin → classes I and IIa; MS-275 (entinostat) → HDAC1–3; depsipeptide (romidepsin) → HDAC1–2; SB-379872-A → HDAC8; tubacin → HDAC6.
@@ -70,7 +70,7 @@ Most marks sit on the **N-terminal tails** that protrude from the nucleosome cor
 - **Chemistry:** HMTs transfer a methyl group from **S-adenosyl-L-methionine (SAM)**, which becomes S-adenosyl-L-homocysteine (SAH). Lysine: mono-, di- or tri-methyl. Arginine (PRMTs): mono-methyl, then **symmetric** or **asymmetric** di-methyl.
 - **No charge change** (unlike acetylation): methylation acts mainly by **recruiting readers**, and its meaning depends on the **residue** and the **degree of methylation**. Turnover is slower than for acetylation, which suits methylation to long-term states and epigenetic memory.
 - **Active marks:** H3K4me3 (promoters), H3K4me1 (enhancers), H3K36me3 (bodies of transcribed genes), H3K79me. **Repressive marks:** H3K9me3 (constitutive heterochromatin, read by HP1), H3K27me3 (Polycomb, facultative heterochromatin), H4K20me3.
-- **Erasers** (exam question): methylation was long thought permanent, because the methyl–lysine bond is very stable and methyl groups turn over at about the same rate as the histones themselves (removal only by histone exchange or dilution at replication); the demethylases found later are in the comparison table at the end of this section.
+- **Erasers** (exam question): methylation was long thought permanent, because the methyl–lysine bond is very **stable** and methyl groups **turn over** at about the **same rate as the histones themselves** (removal only by histone exchange or dilution at replication); the demethylases found later are in the comparison table at the end of this section.
 - Most lysine HMTases contain a **SET domain** (named after Su(var)3-9, Enhancer of zeste, Trithorax). Exception: **DOT1L** (H3K79) has no SET domain.
 
 ### Repression vs silencing
@@ -79,7 +79,7 @@ Most marks sit on the **N-terminal tails** that protrude from the nucleosome cor
 
 **Repression** targets one gene (or a set of genes) carrying a binding site for a **sequence-specific repressor** at the promoter/enhancer, which recruits corepressors (HDAC, Sin3, NCOR/SMRT) for local deacetylation of a few nucleosomes; it is graded, reversible and continuously dependent on the signal, so **when the repressor leaves the gene turns on again** and the off state must be re-established in every cell cycle (e.g. HDAC-sensitive promoters, inducible genes).
 
-**Silencing** instead targets a **chromatin region** and switches off **any gene placed there** (position effect): it **starts (nucleates) at** **specific DNA elements**, such as silencers in yeast, repetitive sequences or Polycomb response elements (PREs), and then **spreads along the chromatin fiber by a read–write loop** (a protein that reads the mark recruits the enzyme that writes it on the next nucleosome) until it reaches a **boundary**; the spread region is kept compact by structural heterochromatin proteins; it is self-maintaining, all-or-none and often variegated per cell, and is inherited through mitosis because the marks are copied in cis, like imprinting and CpG-island methylation in cancer. Silenced heterochromatin can be **constitutive** or **facultative**.
+**Silencing** instead targets a **chromatin region** and switches off **any gene placed there** (position effect): it **starts (nucleates) at** **specific DNA elements**, such as silencers in yeast, repetitive sequences or Polycomb response elements (PREs), and then **spreads along the chromatin fibre by a read–write loop** (a protein that reads the mark recruits the enzyme that writes it on the next nucleosome) until it reaches a **boundary**; the spread region is kept compact by structural heterochromatin proteins; it is self-maintaining, all-or-none and often variegated per cell, and is inherited through mitosis because the marks are copied in cis, like imprinting and CpG-island methylation in cancer. Silenced heterochromatin can be **constitutive** or **facultative**.
 
 Experimentally, a repressed gene comes back when the repressor or signal is removed while a **silenced one stays off for several divisions**, and silencing affects any reporter moved into the region.
 
@@ -87,7 +87,7 @@ The two form a continuum: a repressor that recruits writers of self-propagating 
 
 #### **Position-effect variegation (PEV) in Drosophila**
 
-![[IG-image20.png|348]]PEV is the classic genetic model of heterochromatin-mediated **silencing**: a gene with an unchanged sequence is ON in some cells and OFF in others, only because of where **it sits relative to heterochromatin**.
+![[IG-image19.png|348]]PEV is the classic genetic model of heterochromatin-mediated **silencing**: a gene with an unchanged sequence is ON in some cells and OFF in others, only because of where **it sits relative to heterochromatin**.
 
 ##### **The phenomenon**
 
@@ -99,7 +99,7 @@ The two form a continuum: a repressor that recruits writers of self-propagating 
 
 ##### **Modifiers: Su(var) and E(var)**
 
-- ![[IG-image21.png|316]]Genetic screens for **dominant** modifiers of *w*<sup>m4</sup> found well over a hundred loci.
+- ![[IG-image20.png|316]]Genetic screens for **dominant** modifiers of *w*<sup>m4</sup> found well over a hundred loci.
 
 > **Su(var)** = suppressor of variegation: the mutation makes the eye redder (less silencing).
 >
@@ -117,13 +117,13 @@ The two form a continuum: a repressor that recruits writers of self-propagating 
 
 ##### **Molecular explanation**
 
-- **Read–write loop:** the cycle that lets heterochromatin **spread along the fiber** and be rebuilt after division (memory, section 13). Step by step:
+- **Read–write loop:** the cycle that lets heterochromatin **spread along the fibre** and be rebuilt after division (memory, section 13). Step by step:
 
 1.  HDACs **remove the acetyl** groups from the H3 tail.
 2.  SU(VAR)3-9 (the “writer”) **methylates** H3K9.
 3.  HP1 (the “reader”) binds the methyl mark through its **chromodomain**.
 4.  HP1 **recruits more SU(VAR)3-9**, which **methylates the neighboring** nucleosome.
-5.  The cycle repeats: heterochromatin advances along the fiber and, after cell division, is rebuilt.
+5.  The cycle repeats: heterochromatin advances along the fibre and, after cell division, is rebuilt.
 
 - **Role of the chromodomain:** it is the link between the written mark (H3K9me) and the protein that silences and spreads. Without the chromodomain, HP1 **cannot find heterochromatin** and the loop breaks. This is seen in Su(var)3-9 null flies: H3K9 methylation is lost from the chromocenter, so HP1 has nothing to grab and is mislocalized (Schotta et al. 2002).
 - **Link to \[R00\] (below):** the human homolog SUV39H1 is the first histone methyltransferase identified, specific for H3K9; this gives the biochemical basis of the Su(var)3-9 phenotype.

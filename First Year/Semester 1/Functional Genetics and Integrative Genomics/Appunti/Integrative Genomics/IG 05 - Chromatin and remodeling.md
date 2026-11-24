@@ -16,12 +16,12 @@ tags: [note, ig]
 - Problem: transcription in vitro is **inhibited when the template is nucleosomal** rather than naked DNA, because the histones cover the promoter and the TF sites, so Gal4, the PIC and Pol II cannot reach the DNA. Chromatin is therefore not neutral: it is a **regulated barrier** (“the chromatin player”, Kornberg) and the histones are **regulatory elements**, not only packaging.
 - Histones: small (10–23 kDa), basic, highly conserved proteins (packaging and nucleosome structure below).
 
-### ![[IG-image13.jpeg|188]]PIC and nucleosome packing
+### ![[IG-image12.jpeg|188]]PIC and nucleosome packing
 
 **Gal4**: one of the major TFs in yeast.
 
 - *Gal4/PIC reconstitution.* In vitro steps in the figure: (i) **Gal4 binds its sites** upstream of a TATA promoter; (ii) incubate with Gal4 and TFIID (TBP); (iii) wash; (iv) add the other factors and RNA polymerase; (v) add NTPs; (vi) assay the transcript by primer extension. Reading: pre-binding by Gal4 is needed to recruit the machinery, and Gal4 also supports **re-initiation** (the scaffold left on the promoter fires again).
-- *Nucleosome.* Core octamer: two each of H2A, H2B, H3, H4. Linker histone H1 seals the entry/exit DNA; the figure shows fully folded, partially folded and unfolded fiber states. ~2 m of DNA per diploid cell must fit a ~90 fL nucleus (~6 µm diameter).
+- *Nucleosome.* Core octamer: two each of H2A, H2B, H3, H4. Linker histone H1 seals the entry/exit DNA; the figure shows fully folded, partially folded and unfolded fibre states. ~2 m of DNA per diploid cell must fit a ~90 fL nucleus (~6 µm diameter).
 
 Naked DNA does not exist in vivo. And the chromatin is organized in fractals.
 
@@ -50,7 +50,7 @@ This switch is a specialized form of gene conversion that unfolds in specific bi
 
 To successfully switch to the opposite sex, the recombinase must actively choose the correct silent cassette. This choice is dictated by the Recombination Enhancer (RE):
 
-- ![[IG-image14.png|310]]In **MATa** cells, the RE strongly biases the repair machinery to use the **HMLα cassette** (~85–90% of the time) rather than HMRa (the cassette) (~10–15%).
+- ![[IG-image13.png|310]]In **MATa** cells, the RE strongly biases the repair machinery to use the **HMLα cassette** (~85–90% of the time) rather than HMRa (the cassette) (~10–15%).
 - If the RE is **deleted** (REΔ), this directionality flips almost entirely, resulting in the cell choosing HML (the cassette) only ~5–10% of the time and incorrectly choosing the already-matching HMR (the cassette) ~90–95% of the time.
 
 #### **Gene conversion in meiosis**
@@ -90,7 +90,7 @@ The biology of the SWI/SNF regulatory complex was mapped using **suppressor scre
 
 ### How it was shown biochemically (Peterson lab figures)
 
-![[IG-image15.png|366]]**Paper — Côté et al., 1994** (Science 265:53–60): the source of these figures. The purified SWI/SNF complex is made of **10 subunits** and contains the SWI1, SWI2/SNF2, SWI3, SNF5 and SNF6 gene products; it **has DNA-stimulated ATPase activity but no helicase activity**, and it stimulates the binding of GAL4 derivatives to nucleosomal DNA 10- to 30-fold in a reaction that requires ATP hydrolysis but is independent of the activation domain. A mutant SWI2 subunit abolishes the stimulation, the histone-binding protein nucleoplasmin increases it, and a direct ATP-dependent interaction between the complex and nucleosomal DNA was detected: so the primary role of SWI/SNF is to promote activator binding to nucleosomal DNA.
+![[IG-image14.png|366]]**Paper — Côté et al., 1994** (Science 265:53–60): the source of these figures. The purified SWI/SNF complex is made of **10 subunits** and contains the SWI1, SWI2/SNF2, SWI3, SNF5 and SNF6 gene products; it **has DNA-stimulated ATPase activity but no helicase activity**, and it stimulates the binding of GAL4 derivatives to nucleosomal DNA 10- to 30-fold in a reaction that **requires ATP hydrolysis** but is independent of the activation domain. A mutant SWI2 subunit abolishes the stimulation, the histone-binding protein nucleoplasmin increases it, and a direct ATP-dependent interaction between the complex and nucleosomal DNA was detected: so **the primary role of SWI/SNF is to promote activator binding to nucleosomal DNA**.
 
 - **Purification** of the complex through successive columns: Ni2+-NTA (affinity), Mono-Q (ion exchange), Superose 6 (size exclusion/gel filtration) — purification of SWI2-HA-6HIS-tagged SWI/SNF.
 - **EMSA** (Electrophoretic Mobility Shift Assay gel shift): a **labeled probe** is **incubated** with a **protein** and the complexes are **separated on a native gel**: the **free probe runs fast**, the **probe** bound by the **protein runs slower** (**shift**), and the addition of an **antibody** against the protein **slows it further** (**supershift**). An unlabeled specific competitor abolishes the shift, while a mutant or non-specific competitor doesn’t.
@@ -102,7 +102,7 @@ A **DNA footprint** is the stretch of DNA that a bound **protein** protects from
 - **Probe:** a DNA fragment (a few hundred bp) labeled at **one end only** (³²P or a fluorophore), so every band on the gel is defined by its distance from that end.
 - **Binding:** the probe is incubated with increasing amounts of protein, on naked DNA or on a reconstituted nucleosome.
 - **Partial digestion:** a small dose of DNase I for a short time, so that each molecule is cut on average **once**, at a random position (single-hit conditions).
-- ![[IG-image16.png|259]]**Reading:** without protein the cuts **give a continuous ladder**; with the protein bound, DNase I cannot reach the DNA underneath and the bands of that region disappear: **the gap is the** **footprint**. Bands at the edges can become stronger (**hypersensitive** sites), because the protein bends or distorts the DNA.
+- ![[IG-image15.png|259]]**Reading:** without protein the cuts **give a continuous ladder**; with the protein bound, DNase I cannot reach the DNA underneath and the bands of that region disappear: **the gap is the** **footprint**. Bands at the edges can become stronger (**hypersensitive** sites), because the protein bends or distorts the DNA.
 - **Titration:** the protein concentration at which the footprint appears is a measure of affinity (half-protection ≈ Kd).
 - **On a nucleosome:** DNA wrapped on the octamer is cut only where its minor groove faces outwards, about every 10 bp; a positioned nucleosome therefore gives a typical **10-bp periodic ladder**. If this pattern disappears or changes, the nucleosome has been remodeled.
 - **Other probes:** hydroxyl radicals (cut at every nucleotide, sequence-neutral, finer resolution), DMS (methylates guanine N7; contact Gs are protected or enhanced), exonuclease III (maps the borders of the bound protein). **In vivo footprinting:** cells are treated with DMS or DNase I and the result is read by ligation-mediated PCR. **Genome-wide:** in DNase-seq or ATAC-seq data a bound TF leaves a dip in cut density at its motif inside an accessible region (computational footprinting).
@@ -111,13 +111,13 @@ A **DNA footprint** is the stretch of DNA that a bound **protein** protects from
 
 #### **SWI/SNF promotes GAL4-AH binding to its own cognate site in the nucleosome**
 
-![[IG-image17.png|277]]A nucleosome containing a GAL4 site was incubated with GAL4-AH, with or without SWI/SNF and ATP:
+![[IG-image16.png|277]]A nucleosome containing a GAL4 site was incubated with GAL4-AH, with or without SWI/SNF and ATP:
 
 - GAL4-AH (GAL4 DNA-binding domain fused to an acidic activation helix) alone **binds the naked DNA** (G-AH/DNA band) but binds the nucleosome only **poorly**;
 - **With SWI/SNF and ATP**, the G-AH/nucleosome complex **forms**, and it increases with the amount of SWI/SNF;
 - **Without SWI/SNF**, much higher concentrations of GAL4-AH (30–100 nM) are needed to obtain the **same complex**.
 
-The stimulation also appears at **lower GAL4-AH concentrations**, it requires a hydrolyzable ATP (because ATP-γ-S doesn’t work), and it occurs with different GAL4 derivatives: GAL4(1–94) (only the DNA-binding domain), GAL4-VP16 and GAL4-AH; **so SWI/SNF doesn’t need the activation domain of the factor**: it acts on the **nucleosome**, using the **energy of ATP hydrolysis**. However, the EMSA shows that a complex forms, but it doesn’t show where exactly the protein binds, nor whether the nucleosome has been rearranged: for this, the footprinting is needed.
+The stimulation also appears at **lower GAL4-AH concentrations**, it requires a hydrolysable ATP (because ATP-γ-S doesn’t work), and it occurs with different GAL4 derivatives: GAL4(1–94) (only the DNA-binding domain), GAL4-VP16 and GAL4-AH; **so SWI/SNF doesn’t need the activation domain of the factor**: it acts on the **nucleosome**, using the **energy of ATP hydrolysis**. However, the EMSA shows that a complex forms, but it doesn’t show where exactly the protein binds, nor whether the nucleosome has been rearranged: for this, the footprinting is needed.
 
 **Footprinting result:** on naked DNA, GAL4-AH protects its site already at ~3–10 nM; on the nucleosome, only at 300–1,000 nM. With increasing SWI/SNF (1.5–6 µl) plus ATP, **the footprint on the nucleosomal GAL4 site appears at much lower GAL4-AH concentrations**, and only when SWI/SNF, GAL4-AH and ATP are all present. The 10-bp DNase I pattern of the nucleosome itself also changes: the nucleosome is really rearranged, not simply displaced, and GAL4-AH binds on it.
 

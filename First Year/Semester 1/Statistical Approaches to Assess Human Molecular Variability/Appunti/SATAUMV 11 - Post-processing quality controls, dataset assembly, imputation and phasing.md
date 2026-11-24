@@ -75,7 +75,7 @@ Example of the calculation of the HWE exact test statistics using PLINK: GENO re
 
 ![[SATAUMV-image40.png|563]]
 
-**Minor allele frequency (MAF).** It is the frequency at which the *second most common* allele occurs in each population. Some analyses require the removal of markers with very low MAF because they may lead to low detection power or spurious signals. The minor allele frequency of each SNP is reported with the **--freq** option, and SNPs are removed with the **--maf** function followed by a lower-limit threshold. Generally a threshold **below 1%** is recommended to filter SNPs with too-low frequency and any extremely rare SNPs, including monomorphic SNPs. The MAF histogram is strongly skewed: the vast majority of SNPs are very rare (MAF \< 0.01), and the threshold is placed at the point where the curve flattens.
+**Minor allele frequency (MAF).** It is the frequency at which the *second most common* allele occurs in each population. Some analyses require the removal of markers with very low MAF because they may lead to **low detection power** or **spurious signals**. The minor allele frequency of each SNP is reported with the **--freq** option, and SNPs are removed with the **--maf** function followed by a lower-limit threshold. Generally a threshold **below 1%** is recommended to filter SNPs with too-low frequency and any extremely rare SNPs, including monomorphic SNPs. The MAF histogram is strongly skewed: the vast majority of SNPs are very rare (MAF \< 0.01), and the threshold is placed at the point where the curve flattens.
 
 ![[SATAUMV-image41.png|426]]
 
@@ -115,9 +115,9 @@ Merging datasets in PLINK uses the **--merge** or **--bmerge** command to combin
 
 ## 11.5 Linkage disequilibrium and LD pruning
 
-![[SATAUMV-image42.png|270]]**Linkage disequilibrium (LD)** is the non-random association of alleles at different loci: specific combinations of alleles (haplotypes) occur more or less frequently than expected by chance. The **closer the markers**, the **stronger the LD**, because recombination occurs at a lower rate between them. LD is created by mutation, drift, inbreeding, admixture, population structure and selection, and decays over generations as ***D<sub>t</sub>** = (1 − **r**)**<sup>t</sup>** × **D₀***. The overall LD pattern carries important signals for population-genetic inferences (demographic history, selection events) and is useful in GWAS to detect causal variants; however, some analyses require **site independence** (markers in approximate linkage equilibrium).
+![[SATAUMV-image42.png|270]]**Linkage disequilibrium (LD)** is the non-random association of alleles at different loci: specific combinations of alleles (haplotypes) occur more or less frequently than expected by chance. The **closer the markers**, the **stronger the LD**, because recombination occurs at a lower rate between them. LD is created by mutation, drift, inbreeding, admixture, population structure and selection, and decays over generations as ***D<sub>t</sub>** = (1 − **r**)**<sup>t</sup>** × **D₀***. The overall LD pattern carries important signals for population-genetic inferences (demographic history, selection events) and is useful in GWAS to detect causal variants; however, **some analyses require site independence** (markers in approximate linkage equilibrium).
 
-Under linkage equilibrium the frequency of each haplotype is the product of the frequencies of its alleles, while under LD some haplotypes, such as Ab and aB, are more frequent and others, such as AB and ab, less frequent. The measures of LD (**D**, **D′** and **r²**) are the same seen in chapter 5. In LD plots, each diamond represents the LD between two SNVs (low, moderate or high LD), and in real data the plot shows blocks of high LD.
+Under linkage **equilibrium** the frequency of each haplotype is the **product of the frequencies of its alleles**, while **under LD** some haplotypes, such as Ab and aB, are **more frequent** and others, such as AB and ab, less frequent. The measures of LD (**D**, **D′** and **r²**) are the same seen in chapter 5. In LD plots, each diamond represents the LD between two SNVs (low, moderate or high LD), and in real data the plot shows blocks of high LD.
 
 **LD pruning** removes markers in **high LD to ensure that the remaining sites are independent**. PLINK implements this with the **--indep-pairwise** option, which performs LD thinning based on pairwise **r²** so that all SNP pairs within a certain distance have LD below a specified threshold. All pairs of markers within a moving window are compared, and if any pair exceeds the threshold one marker of the pair is removed. The command takes three parameters:
 
@@ -125,7 +125,7 @@ Under linkage equilibrium the frequency of each haplotype is the product of the 
 - **step size** (how far the window shifts forward each time, e.g. 5 SNPs);
 - **r² threshold** (e.g. 0.5).
 
-For example, **--indep-pairwise 50 5 0.5** considers a window of 50 SNPs, calculates LD between each pair of SNPs in the window, removes one SNP of any pair whose **r²** is greater than 0.5, then shifts the window 5 SNPs forward and repeats the procedure. The output consists of two SNP lists: **plink.prune.in** (SNPs kept) and **plink.prune.out** (SNPs removed). The LD-heatmap comparison on the slide shows the dramatic effect: before pruning, large red (high-LD) blocks are visible; after default pruning the map is almost entirely blue (low LD).
+For example, **--indep-pairwise 50 5 0.5** considers a window of 50 SNPs, calculates LD between each pair of SNPs in the window, removes one SNP of any pair whose **r²** is greater than 0.5, then shifts the window 5 SNPs forward and repeats the procedure. The output consists of two SNP lists: **plink.prune.in** (SNPs kept) and **plink.prune.out** (SNPs removed).
 
 | **Command** | **Comment** |
 |:---|:---|
@@ -150,7 +150,7 @@ After mapping and variant calling of the WGS reads, we get pairs of unordered al
 | Haplotype 2      | A              | A              | C              | A              |
 | Phased VCF       | 1\|1           | 0\|1           | 0\|1           | 0\|0           |
 
-Only the heterozygous sites (C/A and C/T) are phase-informative sites, because at homozygous sites both haplotypes carry the same allele.
+**Only the heterozygous sites** (C/A and C/T) **are phase-informative sites**, because at homozygous sites both haplotypes carry the same allele.
 
 **Phasing from pedigrees or trios (father-mother-child).** Haplotypes can be deduced from the parental genotypes: where the child is heterozygous and both parents are homozygous for different alleles, the phase is fully resolved; where the child is heterozygous and one parent is also heterozygous at both sites, the phase may remain ambiguous.
 
@@ -167,7 +167,7 @@ For example, for an autosomal locus containing two SNVs (G/A and T/C) and a chil
 
 **Phasing in unrelated individuals — the main algorithmic approaches:**
 
-**Clark's parsimony approach:** based on using **unambiguous haplotypes** (from individuals with at most one heterozygous marker) and **parsimony**, i.e. finding solutions that **minimize the number of unique haplotypes**. Ambiguous genotypes are resolved by assuming one of the possible haplotypes has been observed before, and deducing the other by subtraction.
+**Clark's parsimony approach:** based on using unambiguous haplotypes (from individuals with at most one heterozygous marker) and parsimony, i.e. finding solutions that **minimize the number of unique haplotypes**. Ambiguous genotypes are resolved by assuming one of the possible haplotypes has been observed before, and deducing the other by subtraction.
 
 **Pros:** performs well for very short segments and tightly linked variants, but loses accuracy for large datasets with a high number of SNPs.
 
