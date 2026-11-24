@@ -18,18 +18,22 @@ tags: [course]
 
 Docente: Pietro Di Lena.
 
-- Analisi della complessità: costo computazionale, notazione asintotica, analisi delle prestazioni
-- Algoritmi di ordinamento: Insertion Sort, Merge Sort, Quick Sort, lower bound per ordinamento basato su confronti, Counting Sort
-- Strutture dati base: array, liste concatenate, pile, code
-- Strutture dati avanzate: alberi binari, alberi generali, tabelle hash, grafi
-- Tecniche algoritmiche: forza bruta, divide et impera, programmazione dinamica, algoritmi greedy
-- Problemi computazionalmente difficili: algoritmi di approssimazione, branch-and-bound, euristiche
+Il corso introduce i concetti fondamentali di algoritmi e strutture dati, con particolare attenzione, dove pertinente, ad applicazioni e problemi di biologia computazionale.
 
-Pseudocodice + implementazioni in Python, con esempi orientati alla biologia computazionale dove pertinente.
+- Introduzione all'analisi della complessità: costo computazionale, notazione asintotica, analisi delle prestazioni degli algoritmi
+- Algoritmi di ordinamento: principali algoritmi (Insertion Sort, Merge Sort, Quick Sort), lower bound per l'ordinamento basato su confronti, ordinamenti in tempo lineare come il Counting Sort
+- Strutture dati di base: array, liste concatenate, pile, code
+- Strutture dati avanzate: alberi binari, alberi generali, tabelle hash, grafi
+- Tecniche algoritmiche fondamentali: paradigmi di progettazione — forza bruta, divide et impera, programmazione dinamica, algoritmi greedy
+- Algoritmi per problemi computazionalmente difficili: introduzione ad algoritmi di approssimazione, branch-and-bound, algoritmi euristici
+
+Algoritmi presentati in pseudocodice e illustrati con implementazioni in Python, con esempi ed esercizi ispirati, dove pertinente, alla biologia computazionale.
+
+Metodi didattici: lezioni frontali (slide e lavagna) e discussione di esercizi da risolvere su carta.
 
 ## Notes
 
-Bibliografia (letture consigliate, non necessarie all'acquisto — le slide del corso sono il materiale di riferimento):
+Materiale di riferimento: slide e materiale fornito a lezione (inclusi gli esercizi svolti in diretta), pubblicati sulla pagina web del corso. I testi sotto sono consigliati, non è necessario acquistarli.
 
 Testi specifici su biologia computazionale:
 - Carlos Setubal, Joao Meidanis — *Introduction to computational molecular biology*, Cengage Learning, 1997
@@ -76,4 +80,11 @@ Fonte: `MCB/AADS/Algorithms_and_Data_Structures_merged_notes.docx` — 26 note c
 
 ## Exam
 
-**Scritto.** 2 ore, 4 esercizi (2 da 9 punti, 2 da 7 punti, max 32/30 con lode possibile oltre 30). Libri/appunti/dispositivi elettronici e IA vietati.
+**Scritto.** 2 ore, 4 esercizi sull'intero programma:
+- 2 esercizi di difficoltà intermedia, 7 punti ciascuno
+- 2 esercizi più impegnativi (richiedono capacità analitiche più avanzate), 9 punti ciascuno
+
+Massimo 32 punti; voto in trentesimi, lode possibile con punteggio > 30. Vietati libri, appunti, dispositivi elettronici e qualsiasi materiale non esplicitamente autorizzato. L'uso di IA è vietato e costituisce violazione dell'integrità accademica.
+
+- Studenti con DSA / disabilità: contattare il [servizio dedicato](https://site.unibo.it/studenti-con-disabilita-e-dsa/en) il prima possibile; la richiesta di adattamento va inviata al docente almeno 15 giorni prima dell'esame.
+- Studenti lavoratori: vedi la [pagina dedicata](https://www.unibo.it/en/study/guide-to-choosing-your-programme/balancing-study-and-work) per lo status e le misure disponibili.
